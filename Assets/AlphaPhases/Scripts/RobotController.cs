@@ -35,7 +35,7 @@ public class RobotController : MonoBehaviour
     {
         HandleMovementInput();
         HandleJumpAndGravity();
-        HandleMouseRaycast();
+      //  HandleMouseRaycast();
     }
 
     private void HandleMovementInput()
@@ -76,31 +76,32 @@ public class RobotController : MonoBehaviour
         // Apply vertical velocity
         charControl.Move(v_velocity * Time.deltaTime);
     }
-
-    private void HandleMouseRaycast()
-    {
-        
-            if (Input.GetMouseButtonDown(0) && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
-        {
-            Ray cameraRay = mainCam.ScreenPointToRay(Input.mousePosition); // Cast a ray from the camera
-            RaycastHit hitInfo; // Store hit info
-
-            if (Physics.Raycast(cameraRay, out hitInfo, 100f, ~ignoreMe))
+        /*
+            private void HandleMouseRaycast()
             {
-                Debug.Log("We Hit: " + hitInfo.collider.name); // Log the hit object
-            }
-        }
-    }
 
-    private void OnDrawGizmosSelected()
-    {
-        // Visualize the ground check in the Scene view
-        if (groundCheck != null)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(groundCheck.position, groundDistance);
-        }
+                    if (Input.GetMouseButtonDown(0) && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
+                {
+                    Ray cameraRay = mainCam.ScreenPointToRay(Input.mousePosition); // Cast a ray from the camera
+                    RaycastHit hitInfo; // Store hit info
+
+                    if (Physics.Raycast(cameraRay, out hitInfo, 100f, ~ignoreMe))
+                    {
+                        Debug.Log("We Hit: " + hitInfo.collider.name); // Log the hit object
+                    }
+                }
+            }
+
+            private void OnDrawGizmosSelected()
+            {
+                // Visualize the ground check in the Scene view
+                if (groundCheck != null)
+                {
+                    Gizmos.color = Color.red;
+                    Gizmos.DrawWireSphere(groundCheck.position, groundDistance);
+                }
+            }
+        */
     }
-}
 }
 
