@@ -8,8 +8,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
     {
         public GameObject sphere14;
         public Button sphereButton;
+        public AudioSource pickupSFX;
+        public CollectablesManager collectMan;
+
         private void OnTriggerEnter(Collider other)
         {
+            pickupSFX.Play();
+            collectMan.collectableCount++;
             sphereButton.gameObject.SetActive(true);
             sphere14.gameObject.SetActive(false);
 

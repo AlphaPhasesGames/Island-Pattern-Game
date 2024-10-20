@@ -19,7 +19,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Button closeInv;
         public Button openInv;
 
-        [SerializeField]
+   
         public bool isInvOpen; // bool to check is the inventory is open 
         public bool resetBools; // this book
         public bool stopRepeat;
@@ -68,7 +68,6 @@ namespace Pattern.Quest.Alpha.Phases.Games
             {
 
                 no1Prop.DeSelectSphereItem();
-                sphereNumber1Button.gameObject.SetActive(true);
                 no6Prop.DeSelectSphereItem();
                 no7Prop.DeSelectSphereItem();
                 no10Prop.DeSelectSphereItem();

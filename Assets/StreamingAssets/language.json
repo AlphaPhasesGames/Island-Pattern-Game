@@ -1,51 +1,43 @@
 {
   "_meta": {
     "maxChars": {
-      "welcome": 20,
-      "readyToPlay": 20,
-      "pressContinue": 50,
-      "greatJob": 20,
-      "onePlusOne": 30
+    "newGame": 10,
+    "continue": 10,
+    "Stage1Scene1TextBox1": 50,
+    "Stage1Scene1TextBox2": 90,
+    "Stage1Scene1TextBox3": 90,
+    "Stage1Scene1TextBox4": 60,
+    "Stage1Scene1TextBox5": 20,
+    "Stage1Scene1TextBox6": 130,
+    "Stage1Scene1TextBox7": 130,
+    "Stage1Scene1TextBox8": 100,
+    "autoSave": 30
     }
   },
   "en": {
-    "welcome": "Welcome!",
-    "readyToPlay": "Are you ready to play?",
-    "greatJob": "Great job!",
-    "pressContinue": "Press the next button to continue.",
-    "onePlusOne": "One + One = Two",
     "newGame": "New Game",
     "continue": "Continue",
-    "pantry": "Pantry",
-    "purchasePan": "Purchase Pan",
+    "Stage1Scene1TextBox1": "Where am I? What is this place?",
+    "Stage1Scene1TextBox2": "I should have a look around. I can move with the WASD keys or the arrow keys.",
+    "Stage1Scene1TextBox3": "There is a wall blocking my way. I can jump over it with the Space Bar.",
+    "Stage1Scene1TextBox4": "Oh, look, a parrot! I wonder if it can talk?",
+    "Stage1Scene1TextBox5": "Yes, I can!",
+    "Stage1Scene1TextBox6": "I’m Polly. Welcome to the Pattern Islands. A mystic set of islands that are filled with pattern-based puzzles.",
+    "Stage1Scene1TextBox7": "Look ahead. There is a numbered sphere. Go ahead and walk over it to collect it. It will be added to your inventory. ",
+    "Stage1Scene1TextBox8": "You can open the inventory with the button on the top of the screen or use the I key.",
     "autoSave": "...Auto Saving Complete"
   },
   "es": {
-    "welcome": "¡Bienvenido!",
-    "readyToPlay": "¿Estás listo para jugar?",
-    "greatJob": "¡Gran trabajo!",
-    "pressContinue": "Presione el botón 'siguiente' para continuar.",
-    "onePlusOne": "Uno + Uno = Dos"
-  },
-  "zh": {
-    "welcome": "欢迎！",
-    "readyToPlay": "你准备好玩吗",
-    "greatJob": "做得好！",
-    "pressContinue": "按“下一步”按钮继续。",
-    "onePlusOne": "一+一=二"
-  },
-  "jp": {
-    "welcome": "ようこそ!",
-    "readyToPlay": "あなたは遊ぶ準備ができていますか？",
-    "greatJob": "よくやった！",
-    "pressContinue": "続行するには '次へ'ボタンを押してください。",
-    "onePlusOne": "1 + 1 = 2"
-  },
-  "ru": {
-    "welcome": "Добро пожаловать!",
-    "readyToPlay": "Вы готовы играть?",
-    "greatJob": "Отличная работа!",
-    "pressContinue": "Нажмите следующую кнопку, чтобы продолжить.",
-    "onePlusOne": "один + один"
-  }
+    "newGame": "New Game",
+    "continue": "Continue",
+    "Stage1Scene1TextBox1": "Where am I? What is this place?",
+    "Stage1Scene1TextBox2": "I should have a look around. I can move with the WASD keys or the arrow keys.",
+    "Stage1Scene1TextBox3": "There is a wall blocking my way. I can jump over it with the Space Bar.",
+    "Stage1Scene1TextBox4": "Oh, look, a parrot! I wonder if it can talk?",
+    "Stage1Scene1TextBox5": "Yes, I can!",
+    "Stage1Scene1TextBox6": "I’m Polly. Welcome to the Pattern Islands. A mystic set of islands that are filled with pattern-based puzzles.",
+    "Stage1Scene1TextBox7": "Look ahead. There is a numbered sphere. Go ahead and walk over it to collect it. It will be added to your inventory. ",
+    "Stage1Scene1TextBox8": "You can open the inventory with the button on the top of the screen or use the I key.",
+    "autoSave": "...Auto Saving Complete"
+  }, 
 }
