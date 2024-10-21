@@ -6,20 +6,22 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 namespace Pattern.Quest.Alpha.Phases.Games
 {
+    [System.Serializable] // serialize this save data
     public class PQTMISaveData
     {
         [Header("StageProgress")] // header for the save location for the robot
         public int current_stage; // int to hold the level number
-
+        public Vector3 player_position_save;
         [Header("StageTasks")] // header for the save location for the robot       
         public int task_number;
+
         //  public int task_number_crew_quarter;
         //  public int task_number_comms_room;
         //  public int task_number_dock;
         // public int task_number_ship;
 
     }
-    [System.Serializable] // serialize this save data
+    
     public class PatternQuestMain : MonoBehaviour
     {
   
@@ -27,13 +29,17 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
             #region global code
             [SerializeField, Header("Initial State Data")]
-            PQTMISaveData pQTMISaveData; // get access to save section of this script
-
+            PQTMISaveData pQTMISaveData1; // get access to save section of this script
+            public CharacterController charCont;
+            public Vector3 posOfPlayer;
             public int taskNumber;
-            //   public int taskNumberCrewQuarters;
-            //  public int taskNumberCommsRoom;
-            // public int taskNumberDock;
-            //   public int taskNumberShip;
+        //   public int taskNumberCrewQuarters;
+        //  public int taskNumberCommsRoom;
+        // public int taskNumberDock;
+        //   public int taskNumberShip;
+
+          
+            public GameObject playerRobot;
 
             public int currentStage;
 
@@ -60,17 +66,19 @@ namespace Pattern.Quest.Alpha.Phases.Games
             {
                 Application.runInBackground = false; // dont let the game run in the background
                 DontDestroyOnLoad(this.gameObject);
-                //  stage1Started = true;
-                //    currentStage = 1;
-            }
+                
+            //  stage1Started = true;
+            //    currentStage = 1;
+        }
 
             void Start()
             {
+             
                 newGameButton.onClick.AddListener(RemoveMainMenuUINewGame); // new game button after pressing, hides the button - see script at the bottom of the script
                 continueButton.onClick.AddListener(RemoveMainMenuUIContinue); ; // continune saved game button after pressing, hides the button - see script at the bottom of the script
-
+            
 #if UNITY_EDITOR
-                ILOLSDK sdk = new LoLSDK.MockWebGL();
+            ILOLSDK sdk = new LoLSDK.MockWebGL();
 #elif UNITY_WEBGL
 	    ILOLSDK sdk = new LoLSDK.WebGL();
 #endif
@@ -78,10 +86,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
             }
 
 
-
-            public void Save()
+        public void Save()
             {
-                LOLSDK.Instance.SaveState(pQTMISaveData); // save data to cargoSaveData
+                LOLSDK.Instance.SaveState(pQTMISaveData1); // save data to cargoSaveData
                 Debug.Log("Game Saved");
             }
 
@@ -89,18 +96,23 @@ namespace Pattern.Quest.Alpha.Phases.Games
         {
 
             currentStage = 1;
+            SaveStage();
 
 
         }
         void RemoveMainMenuUIContinue()
         {
-
-            currentStage = pQTMISaveData.current_stage;
+            //posOfPlayer = pQTMISaveData.player_position_save;
+            currentStage = pQTMISaveData1.current_stage;
 
             if (currentStage == 1)
             {
-                taskNumber = pQTMISaveData.task_number;
+                // taskNumber = pQTMISaveData.task_number;
+         
                 SceneManager.LoadScene("Stage 1 Scene 1");
+                //charCont.enabled = false;
+                //LoadPosition();
+               // charCont.enabled = true;
 
             }
             /*
@@ -127,22 +139,24 @@ namespace Pattern.Quest.Alpha.Phases.Games
             Debug.Log("Loaded Save");
         }
 
-        void OnLoad(PQTMISaveData ssQFESaveData)
+        void OnLoad(PQTMISaveData pQTMISaveData)
             {
                 JSONNode langs = SharedState.LanguageDefs;
                 // Overrides serialized state data or continues with editor serialized values.
-                if (ssQFESaveData != null)
-                    pQTMISaveData = ssQFESaveData;
-                //  currentStage = tusomSaveData.current_stage;
-
-                if (currentStage == 1)
+                if (pQTMISaveData != null)
+                pQTMISaveData1= pQTMISaveData;
+            //  currentStage = tusomSaveData.current_stage;
+              
+                if (pQTMISaveData1.current_stage == 1)
                 {
 
                     if (!loadSavesOnce)
                     {
+                 
                         SceneManager.LoadScene("Stage 1 Scene 1");
-                        // taskNumber = sSQFESaveData.task_number;
-                        loadSavesOnce = true;
+                    // taskNumber = sSQFESaveData.task_number;
+                    //playerRobot.transform.position = posOfPlayer;
+                    loadSavesOnce = true;
                         Debug.Log("Stage 1 update runs - load save data from save");
                     }
 
@@ -193,11 +207,29 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     public void SaveStage()
                     {
                         currentStage = 1;
-                            pQTMISaveData.current_stage = currentStage;
+                        pQTMISaveData1.current_stage = currentStage;
                         //sSQFESaveData.current_stage = currentStage;
                         Save();
                         Debug.Log("Forces Saved Fired");
                     }
+
+                    public void SavePosition()
+                    {
+                        pQTMISaveData1.player_position_save = posOfPlayer;
+                        //sSQFESaveData.current_stage = currentStage;
+                        Save();
+                        Debug.Log("Forces Saved Fired");
+                    }
+
+                    public void LoadPosition()
+                    {
+                       
+                        playerRobot.transform.position = pQTMISaveData1.player_position_save;
+        
+                        Debug.Log("Forces Load Fired");
+                    }
+
+
             /*
                    public void SaveStage2()
                    {
