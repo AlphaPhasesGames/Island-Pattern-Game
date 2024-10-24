@@ -11,15 +11,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public PatternQuestMain main;
         public CharacterController charCont;
         public GameObject player;
-        private void Awake()
-        {
-        }
+
         // Start is called before the first frame update
         void Start()
         {
 
             main = FindObjectOfType<PatternQuestMain>();
-            main.SaveStage();
+         //   main.SaveStage();
             main.charCont = FindObjectOfType<CharacterController>();
             //LoadGame();
             main.playerRobot = player.gameObject;

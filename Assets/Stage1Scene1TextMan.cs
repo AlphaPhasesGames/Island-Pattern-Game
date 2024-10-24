@@ -8,6 +8,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
     public class Stage1Scene1TextMan : MonoBehaviour
     {
+        public PatternQuestMain main;
+        public CharacterController charCont;
         public bool hasScrolled;
         public GameObject currentTextSection;
         public int arrayPos;
@@ -17,11 +19,18 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public GameObject pollyImage;
         public GameObject unit17Image;
 
+        public GameObject pollyModelToHide;
+        public GameObject pollyModelToShow;
+
+        public GameObject triggerBoxes;
+
         public GameObject[] modelArray;
 
         public GameObject textPanalParent;
         public GameObject textPanal;
 
+
+     
         public bool panalOpen;
         public bool runOnce;
         public bool runOnce2;
@@ -40,50 +49,57 @@ namespace Pattern.Quest.Alpha.Phases.Games
         {
             forwardButton.onClick.AddListener(ProgressTextForward);
             backwardsButton.onClick.AddListener(ProgressTextBack);
-
+            main = GameObject.FindObjectOfType<PatternQuestMain>();
             for (int i = 0; i < textButtons.Length; i++)
             {
                 int index = i + 1;  // Adjust index to match textButton number
                 textButtons[i].onClick.AddListener(() => IntroTTSSpeak(index));
             }
            
-            StartCoroutine(StartLevelText());
+          
         }
         // Start is called before the first frame update
 
         void Start()
         {
-            arrayPos = 0;
+            if (main.s1S1AS)
+            {
+                arrayPos = 9;
+                pollyModelToHide.gameObject.SetActive(false);
+                pollyModelToShow.gameObject.SetActive(true);
+                triggerBoxes.gameObject.SetActive(false);
+                //StopAllCoroutines();
+            }
+            else
+            {
+                StartCoroutine(StartLevelText());
+                //  arrayPos = 0;
+            }
+           
             maxLengthArray = modelArray.Length;
             textBools = new bool[maxLengthArray];
         }
 
         void Update()
         {
-            if (!hasScrolled)
+            // Deactivate all text objects before activating the current one
+            foreach (var obj in modelArray)
             {
-                // Deactivate all previous text objects
-                foreach (var obj in modelArray)
-                {
-                    obj.SetActive(false);
-                }
-
-                // Activate the current text object
-                if (arrayPos >= 0 && arrayPos < modelArray.Length)
-                {
-                    modelArray[arrayPos].SetActive(true);
-                }
-
-                hasScrolled = true;
+                obj.SetActive(false);
             }
-          
+
+            // Activate the current text object if within bounds
+            if (arrayPos >= 0 && arrayPos < modelArray.Length)
+            {
+                modelArray[arrayPos].SetActive(true);
+            }
+
+            // Ensure that actions are only handled once per position
             if (!textBools[arrayPos])
             {
                 HandleArrayPosActions();
                 textBools[arrayPos] = true;
             }
-
-
         }
 
         private void HandleArrayPosActions()
@@ -102,6 +118,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     forwardParent.gameObject.SetActive(true);
                     SpeakText("stage3MissionText1"); break;
                 case 1:
+                    charCont.enabled = true;
                     backwardsButton.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
                     //StopCoroutine(DelayTextButton());
@@ -109,20 +126,52 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage3MissionText2ChooseCar"); break;
                 case 2:
+                  //  textPos1.gameObject.SetActive(false);
+                  //  textPos2.gameObject.SetActive(true);
+                   // unit17Image.gameObject.SetActive(true);
+                    textPanal.gameObject.SetActive(true);
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage3MissionText3"); break;
                 case 3:
+                    StopAllCoroutines();
+                    charCont.enabled = false;
+                  //  textPos2.gameObject.SetActive(false);
+                  //  textPos3.gameObject.SetActive(true);
+                    textPanal.gameObject.SetActive(true);
+                    forwardParent.gameObject.SetActive(true);
                     SpeakText("stage3MissionText4"); break;
                 case 4:
-                    
-
+                    backwardsButton.gameObject.SetActive(true);
+                    unit17Image.gameObject.SetActive(false);
+                    pollyImage.gameObject.SetActive(true);
                     SpeakText("stage3MissionText5"); break;
                 case 5: SpeakText("stage3MissionText6"); break;
-                case 6: SpeakText("stage3MissionText7"); break;
-                case 7: SpeakText("stage3MissionText8"); break;
-                case 8: SpeakText("stage3MissionText9");
-                    forwardButton.gameObject.SetActive(false);
+                case 6:
+                    charCont.enabled = true;
+                    forwardParent.gameObject.SetActive(false);
+                    //StopCoroutine(DelayTextButton());
+                    HideButton();
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                    SpeakText("stage3MissionText7"); break;
+                case 7:
+                    StopAllCoroutines();
+                    textPanal.gameObject.SetActive(true);
+                    main.s1S1AS = true;
+                    forwardParent.gameObject.SetActive(true);
+                    main.SaveScene1Stage1();
+                    SpeakText("stage3MissionText8"); break;
+                case 8:
+                    
+                    //textPanalParent.gameObject.SetActive(true);
+                   // pollyImage.gameObject.SetActive(true);
+                   // textPanal.gameObject.SetActive(true);
+                    pollyModelToHide.gameObject.SetActive(false);
+                    pollyModelToShow.gameObject.SetActive(true);
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                    SpeakText("stage3MissionText9");
                     break;
                 case 9:
+                    charCont.enabled = true;
                     forwardParent.gameObject.SetActive(false);
                     backwardsButton.gameObject.SetActive(false);
                     break;
@@ -198,7 +247,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         {
             yield return new WaitForSeconds(5);
             textPanal.gameObject.SetActive(false);
-            arrayPos = 9;
+            arrayPos = 10;
             Debug.Log("This start coRoutine Runs");
 
         }

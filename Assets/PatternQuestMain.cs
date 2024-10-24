@@ -12,6 +12,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         [Header("StageProgress")] // header for the save location for the robot
         public int current_stage; // int to hold the level number
         public Vector3 player_position_save;
+        public bool s1_s1_as;
         [Header("StageTasks")] // header for the save location for the robot       
         public int task_number;
 
@@ -44,10 +45,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
             public int currentStage;
 
             public bool loadSavesOnce;
+            public bool s1S1AS;
 
-
-            #region "stage1stufftobecollapsed"
-            [SerializeField, Header("Stage 1 Code")]
+        #region "stage1stufftobecollapsed"
+        [SerializeField, Header("Stage 1 Code")]
             #endregion
             JSONNode _langNode; // declare lanuage code for this game so we know if its spanish or english
             public string _langCode = "en"; // declare string for english text
@@ -73,7 +74,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
             void Start()
             {
-             
+                playerRobot = GameObject.FindGameObjectWithTag("Player");
                 newGameButton.onClick.AddListener(RemoveMainMenuUINewGame); // new game button after pressing, hides the button - see script at the bottom of the script
                 continueButton.onClick.AddListener(RemoveMainMenuUIContinue); ; // continune saved game button after pressing, hides the button - see script at the bottom of the script
             
@@ -96,7 +97,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         {
 
             currentStage = 1;
-            SaveStage();
+            SaveS1S1();
 
 
         }
@@ -152,8 +153,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
                     if (!loadSavesOnce)
                     {
-                 
-                        SceneManager.LoadScene("Stage 1 Scene 1");
+                   
+                    SceneManager.LoadScene("Stage 1 Scene 1");
+                    s1S1AS = pQTMISaveData1.s1_s1_as;
                     // taskNumber = sSQFESaveData.task_number;
                     //playerRobot.transform.position = posOfPlayer;
                     loadSavesOnce = true;
@@ -202,12 +204,18 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 Debug.Log("Load Function Called");
             }
 
-          
-           
-                    public void SaveStage()
+            public void SaveS1S1()
+            {
+                 currentStage = 1;
+                 pQTMISaveData1.current_stage = currentStage;
+                 Save();
+            }
+                     public void SaveScene1Stage1()
                     {
-                        currentStage = 1;
-                        pQTMISaveData1.current_stage = currentStage;
+
+                          pQTMISaveData1.player_position_save = posOfPlayer;
+                          pQTMISaveData1.s1_s1_as = s1S1AS;
+
                         //sSQFESaveData.current_stage = currentStage;
                         Save();
                         Debug.Log("Forces Saved Fired");

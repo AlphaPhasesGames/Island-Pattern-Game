@@ -14,6 +14,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public TextMeshProUGUI pollyText6;
         public TextMeshProUGUI pollyText7;
         public TextMeshProUGUI pollyText8;
+        public TextMeshProUGUI pollyText9;
 
         private void Awake()
         {
@@ -26,6 +27,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             pollyText6.text = defs["Stage1Scene1TextBox6"];
             pollyText7.text = defs["Stage1Scene1TextBox7"];
             pollyText8.text = defs["Stage1Scene1TextBox8"];
+            pollyText9.text = defs["Stage1Scene1TextBox9"];
         }
     }
 }

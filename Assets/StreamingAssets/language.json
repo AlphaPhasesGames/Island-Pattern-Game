@@ -11,6 +11,7 @@
     "Stage1Scene1TextBox6": 130,
     "Stage1Scene1TextBox7": 130,
     "Stage1Scene1TextBox8": 100,
+    "Stage1Scene1TextBox9": 100,
     "autoSave": 30
     }
   },
@@ -25,6 +26,7 @@
     "Stage1Scene1TextBox6": "I’m Polly. Welcome to the Pattern Islands. A mystic set of islands that are filled with pattern-based puzzles.",
     "Stage1Scene1TextBox7": "Look ahead. There is a numbered sphere. Go ahead and walk over it to collect it. It will be added to your inventory. ",
     "Stage1Scene1TextBox8": "You can open the inventory with the button on the top of the screen or use the I key.",
+    "Stage1Scene1TextBox9": "There should be 5 more of these numbered spheres around the island, let's go find them.",
     "autoSave": "...Auto Saving Complete"
   },
   "es": {
@@ -38,6 +40,7 @@
     "Stage1Scene1TextBox6": "I’m Polly. Welcome to the Pattern Islands. A mystic set of islands that are filled with pattern-based puzzles.",
     "Stage1Scene1TextBox7": "Look ahead. There is a numbered sphere. Go ahead and walk over it to collect it. It will be added to your inventory. ",
     "Stage1Scene1TextBox8": "You can open the inventory with the button on the top of the screen or use the I key.",
+    "Stage1Scene1TextBox9": "There should be 5 more of these numbered spheres around the island, let's go find them.",
     "autoSave": "...Auto Saving Complete"
   }, 
 }
