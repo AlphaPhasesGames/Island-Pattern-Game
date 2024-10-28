@@ -105,15 +105,17 @@ namespace Pattern.Quest.Alpha.Phases.Games
         {
             //posOfPlayer = pQTMISaveData.player_position_save;
             currentStage = pQTMISaveData1.current_stage;
-
+           // posOfPlayer = pQTMISaveData1.player_position_save;
             if (currentStage == 1)
             {
                 // taskNumber = pQTMISaveData.task_number;
          
                 SceneManager.LoadScene("Stage 1 Scene 1");
+
+                playerRobot.transform.position = posOfPlayer;
                 //charCont.enabled = false;
                 //LoadPosition();
-               // charCont.enabled = true;
+                // charCont.enabled = true;
 
             }
             /*
@@ -157,7 +159,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     SceneManager.LoadScene("Stage 1 Scene 1");
                     s1S1AS = pQTMISaveData1.s1_s1_as;
                     // taskNumber = sSQFESaveData.task_number;
-                    //playerRobot.transform.position = posOfPlayer;
+                  
                     loadSavesOnce = true;
                         Debug.Log("Stage 1 update runs - load save data from save");
                     }

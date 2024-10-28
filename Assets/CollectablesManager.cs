@@ -8,7 +8,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
     public class CollectablesManager : MonoBehaviour
     {
         public TextMeshProUGUI uiCounter;
+        public Stage1Scene1TextMan textMan;
         public int collectableCount;
+        public bool allSpheresCollected;
+        public bool runOnce;
         // Start is called before the first frame update
         void Start()
         {
@@ -19,6 +22,17 @@ namespace Pattern.Quest.Alpha.Phases.Games
         void Update()
         {
             uiCounter.text = collectableCount.ToString();
+
+            if (!runOnce)
+            {
+                if (collectableCount == 6)
+                {
+                    textMan.arrayPos = 19;
+                    allSpheresCollected = true;
+                    runOnce = true;
+                }
+            }
+           
         }
     }
 }

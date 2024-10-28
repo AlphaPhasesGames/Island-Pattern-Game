@@ -5,11 +5,15 @@ namespace Pattern.Quest.Alpha.Phases.Games
     public class Stage1Scene1LookAtPedastal : MonoBehaviour
     {
         // Reference to the Collider component of the object
+        public Stage1Scene1TextMan textMan;
+        public CollectablesManager collectMan;
         public BoxCollider triggerCollider;
         public Camera playerCamToDisable;
         public Camera pedastalCam;
         public Button closeButton;
         public Button resetButton;
+
+        public bool hasViewedPedastal;
 
         public GameObject slot1Sphere1;
         public GameObject slot1Sphere6Correct;
@@ -62,6 +66,16 @@ namespace Pattern.Quest.Alpha.Phases.Games
         // Handle what happens when the trigger box is clicked
         private void OnTriggerBoxClicked()
         {
+            if (!hasViewedPedastal)
+            {
+                textMan.arrayPos = 10;
+                hasViewedPedastal = true;
+            }
+            if(hasViewedPedastal && collectMan.allSpheresCollected)
+            {
+                textMan.arrayPos = 20;
+            }
+            
             playerCamToDisable.enabled = false;
             pedastalCam.enabled = true;
             triggerCollider.enabled = false;
