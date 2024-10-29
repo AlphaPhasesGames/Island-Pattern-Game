@@ -19,6 +19,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public GameObject no14sphere;
 
         public bool correctPlacement;
+        public bool inCorrectPlacement;
 
         // Start is called before the first frame update
 
@@ -31,6 +32,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no1Prop.invItemImage.gameObject.SetActive(false);
                 no1Prop.sphereHeld = false;
                 correctPlacement = false;
+                inCorrectPlacement = true;
             }
 
             if (no6Prop.sphereHeld)
@@ -50,6 +52,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no7Prop.invItemImage.gameObject.SetActive(false);
                 no7Prop.sphereHeld = false;
                 correctPlacement = false;
+                inCorrectPlacement = true;
 
             }
 
@@ -60,6 +63,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no10Prop.invItemImage.gameObject.SetActive(false);
                 no10Prop.sphereHeld = false;
                 correctPlacement = false;
+                inCorrectPlacement = true;
 
             }
 
@@ -70,6 +74,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no11Prop.invItemImage.gameObject.SetActive(false);
                 no11Prop.sphereHeld = false;
                 correctPlacement = false;
+                inCorrectPlacement = true;
 
             }
 
@@ -80,6 +85,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no14Prop.invItemImage.gameObject.SetActive(false);
                 no14Prop.sphereHeld = false;
                 correctPlacement = false;
+                inCorrectPlacement = true;
 
             }
         }

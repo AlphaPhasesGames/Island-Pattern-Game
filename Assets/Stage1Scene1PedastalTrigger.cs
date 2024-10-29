@@ -9,12 +9,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
     public class Stage1Scene1PedastalTrigger : MonoBehaviour
     {
         public Stage1Scene1TextMan textMan;
-
+        public Stage1Scene1StartScript startScript;
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Player"))
             {
                 textMan.arrayPos = 9;
+                startScript.SaveGame();
                 Destroy(this.gameObject);
             }
         }

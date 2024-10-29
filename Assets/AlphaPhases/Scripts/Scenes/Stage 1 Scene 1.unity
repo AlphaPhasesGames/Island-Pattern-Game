@@ -283,8 +283,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -421, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -398, y: 200}
+  m_SizeDelta: {x: 160, y: 45.321}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &22270432
 MonoBehaviour:
@@ -350,8 +350,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c7117abff51575d40ad766f80a32652a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -425,7 +425,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Reset Slots
+  m_text: 'Reset Slots T
 
 '
   m_isRightToLeft: 0
@@ -460,7 +460,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -902,6 +902,7 @@ MonoBehaviour:
   no11sphere: {fileID: 763197921}
   no14sphere: {fileID: 1591186046}
   correctPlacement: 0
+  inCorrectPlacement: 0
 --- !u!65 &124526342
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1674,7 +1675,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMan: {fileID: 1405688843}
-  startScript: {fileID: 1405688844}
   collectMan: {fileID: 1405688841}
   sphereButton: {fileID: 1526754576}
   pickupSFX: {fileID: 1993277234}
@@ -2368,7 +2368,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rule
+  m_text: Rule t
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2401,7 +2401,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -2480,7 +2480,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 262.65387, y: 32.5}
+  m_AnchoredPosition: {x: 262.65387, y: 47.7}
   m_SizeDelta: {x: 29.3126, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &296454274
@@ -4007,8 +4007,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 423, y: 262}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 423, y: 253.09538}
+  m_SizeDelta: {x: 160, y: 47.8092}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &487851951
 MonoBehaviour:
@@ -4074,8 +4074,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c7117abff51575d40ad766f80a32652a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5056,7 +5056,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -136.63402, y: 0, z: -149.9894, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7999,7 +7999,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Inventory
+  m_text: Inventory T
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8032,7 +8032,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -9103,6 +9103,7 @@ MonoBehaviour:
   no11sphere: {fileID: 1314601712}
   no14sphere: {fileID: 1184849437}
   correctPlacement: 0
+  inCorrectPlacement: 0
 --- !u!1 &1116292857
 GameObject:
   m_ObjectHideFlags: 0
@@ -9259,6 +9260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMan: {fileID: 1405688843}
+  startScript: {fileID: 1405688844}
 --- !u!65 &1117476507
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9860,7 +9862,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.400002, y: 10}
+  m_AnchoredPosition: {x: 11.400002, y: -2.7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1159501210
@@ -10543,7 +10545,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -143.6496, y: 0, z: -156.20683, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -12963,8 +12965,10 @@ MonoBehaviour:
   slot1: {fileID: 124526341}
   slot2: {fileID: 1982374126}
   slot3: {fileID: 1100372479}
+  textMan: {fileID: 1405688843}
   exitTrigger: {fileID: 939134504}
   runOnce: 0
+  runTwice: 0
 --- !u!114 &1405688841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13121,7 +13125,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   main: {fileID: 0}
   sphere1Butt: {fileID: 1526754576}
-  sphere1Image: {fileID: 1798138814}
   collectMan: {fileID: 1405688841}
   charCont: {fileID: 7149143312469555037}
   textMan: {fileID: 1405688843}
@@ -13444,6 +13447,7 @@ GameObject:
   - component: {fileID: 1444527021}
   - component: {fileID: 1444527020}
   - component: {fileID: 1444527019}
+  - component: {fileID: 1444527023}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -13538,6 +13542,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1226813758}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1444527023
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444527018}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 9.999999, y: 0, z: 9.999999}
+  m_Center: {x: 0, y: 1.110223e-16, z: 0}
 --- !u!1 &1451115609
 GameObject:
   m_ObjectHideFlags: 0
@@ -16010,8 +16035,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -416, y: 258}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -395.37207, y: 248.59468}
+  m_SizeDelta: {x: 201.2559, y: 48.8106}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1688628051
 MonoBehaviour:
@@ -16077,8 +16102,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 7f95db05bddae474882a0cec47a6d1c0, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -20159,6 +20184,7 @@ MonoBehaviour:
   no11sphere: {fileID: 1090270379}
   no14sphere: {fileID: 845489256}
   correctPlacement: 0
+  inCorrectPlacement: 0
 --- !u!1 &1992406195 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f7778c990c21f6a43a765dd294d6b80d, type: 3}
@@ -20710,7 +20736,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -390.66623, y: -10.218}
+  m_AnchoredPosition: {x: -390.66623, y: 93}
   m_SizeDelta: {x: 222.6675, y: 120.436}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2011296563

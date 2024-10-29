@@ -290,7 +290,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -846,11 +846,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e69d426e3aa2db34abd56b0ceb0df478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pQTMISaveData1:
+    current_stage: 0
+    player_position_save: {x: 0, y: 0, z: 0}
+    s1_s1_as: 0
+    task_number: 0
+  charCont: {fileID: 0}
+  posOfPlayer: {x: 0, y: 0, z: 0}
   taskNumber: 0
-  playerPosition: {x: 0, y: 0, z: 0}
   playerRobot: {fileID: 0}
   currentStage: 0
   loadSavesOnce: 0
+  s1S1AS: 0
   _langCode: en
   continueButton: {fileID: 1005610664}
   newGameButton: {fileID: 1133733580}
@@ -910,8 +917,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 99.1, y: -181}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 120.51772, y: -179.3106}
+  m_SizeDelta: {x: 191.3003, y: 59.1594}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1005610664
 MonoBehaviour:
@@ -977,8 +984,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c7117abff51575d40ad766f80a32652a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1113,8 +1120,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -84.9, y: -181}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -99.47755, y: -179.3106}
+  m_SizeDelta: {x: 191.3003, y: 59.1594}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1133733580
 MonoBehaviour:
@@ -1180,8 +1187,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 7f95db05bddae474882a0cec47a6d1c0, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1376,7 +1383,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
