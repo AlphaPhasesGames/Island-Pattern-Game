@@ -18,7 +18,7 @@ public class RobotController : MonoBehaviour
     private Vector3 v_velocity; // Handles vertical velocity
     private bool isGrounded; // Is the robot on the ground?
     private float groundDistance = 0.4f; // Distance for ground check
-
+        public bool isCharActive;
     private float inputX;
     private float inputZ;
     
@@ -33,8 +33,12 @@ public class RobotController : MonoBehaviour
 
     void Update()
     {
-        HandleMovementInput();
-        HandleJumpAndGravity();
+            if (isCharActive)
+            {
+                HandleMovementInput();
+                HandleJumpAndGravity();
+            }
+       
       //  HandleMouseRaycast();
     }
 

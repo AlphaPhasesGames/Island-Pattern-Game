@@ -12,6 +12,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Button sphere1Butt;
         public CollectablesManager collectMan;
         public CharacterController charCont;
+        public RobotController robCont;
         public Stage1Scene1TextMan textMan;
         public GameObject player;
 
@@ -20,6 +21,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         {
 
             main = FindObjectOfType<PatternQuestMain>();
+            textMan.positionChanged = true;
          //   main.SaveStage();
             main.charCont = FindObjectOfType<CharacterController>();
             //LoadGame();
@@ -27,8 +29,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
             if (main.s1S1AS)
             {
                 LoadGame();
+                robCont.isCharActive = true;
                 sphere1Butt.gameObject.SetActive(true);
                 collectMan.collectableCount++;
+                textMan.positionChanged = true;
                 textMan.arrayPos = 26;
             }
         }

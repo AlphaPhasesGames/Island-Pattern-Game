@@ -17,6 +17,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             {
                 if (slot1.correctPlacement && slot2.correctPlacement && slot3.correctPlacement)
                 {
+                    textMan.positionChanged = true; // Directly set positionChanged
                     textMan.arrayPos = 24;
                     exitTrigger.gameObject.SetActive(true);
                     runOnce = true;
@@ -27,6 +28,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             {
                 if (slot1.inCorrectPlacement || slot2.inCorrectPlacement || slot3.inCorrectPlacement)
                 {
+                    textMan.positionChanged = true; // Directly set positionChanged
                     textMan.arrayPos = 23;
                     exitTrigger.gameObject.SetActive(true);
                     runTwice = true;

@@ -14,6 +14,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         {
             if (other.CompareTag("Player"))
             {
+                textMan.positionChanged = true; // Directly set positionChanged
                 textMan.arrayPos = 3;
                 Destroy(this.gameObject);
             }

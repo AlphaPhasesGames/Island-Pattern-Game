@@ -27,6 +27,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             {
                 if (collectableCount == 6)
                 {
+                    textMan.positionChanged = true; // Directly set positionChanged
                     textMan.arrayPos = 19;
                     allSpheresCollected = true;
                     runOnce = true;

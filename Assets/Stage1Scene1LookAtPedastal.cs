@@ -68,11 +68,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
         {
             if (!hasViewedPedastal)
             {
+                textMan.positionChanged = true;
                 textMan.arrayPos = 10;
                 hasViewedPedastal = true;
             }
             if(hasViewedPedastal && collectMan.allSpheresCollected)
             {
+                textMan.positionChanged = true;
                 textMan.arrayPos = 20;
             }
             

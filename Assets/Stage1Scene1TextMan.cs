@@ -9,12 +9,15 @@ namespace Pattern.Quest.Alpha.Phases.Games
     public class Stage1Scene1TextMan : MonoBehaviour
     {
         public PatternQuestMain main;
-        public CharacterController charCont;
+        public RobotController robCont;
         public bool hasScrolled;
         public GameObject currentTextSection;
         public int arrayPos;
         public int maxLengthArray;
         public int minLengthArray = 1;
+
+        public bool positionChanged; //= true;
+
 
         public GameObject pollyImage;
         public GameObject unit17Image;
@@ -60,8 +63,29 @@ namespace Pattern.Quest.Alpha.Phases.Games
         }
         // Start is called before the first frame update
 
-        void Start()
+
+        public void Start()
         {
+            if (main.s1S1AS)
+            {
+                arrayPos = 26;
+                ResetPositionFlags(); // Reset for any array position related changes
+                pollyModelToHide.gameObject.SetActive(false);
+                pollyModelToShow.gameObject.SetActive(true);
+                triggerBoxes.gameObject.SetActive(false);
+            }
+            else
+            {
+                StartCoroutine(StartLevelText());
+            }
+
+            maxLengthArray = modelArray.Length;
+            textBools = new bool[maxLengthArray];
+        }
+
+        /* void Start()
+        {
+           
             if (main.s1S1AS)
             {
                 arrayPos = 26;
@@ -78,20 +102,51 @@ namespace Pattern.Quest.Alpha.Phases.Games
            
             maxLengthArray = modelArray.Length;
             textBools = new bool[maxLengthArray];
-        }
+           
+
+
+
+        } */
 
         void Update()
         {
+
+
+
+            // Only process if the position has changed
+            if (positionChanged)
+            {
+                positionChanged = false; // Reset flag after processing
+
+
+                // Deactivate all text objects, activate only the current one
+                for (int i = 0; i < modelArray.Length; i++)
+                {
+                    modelArray[i].SetActive(i == arrayPos);
+                }
+
+                // Handle the current array position if not yet processed
+                if (!textBools[arrayPos])
+                {
+                    HandleArrayPosActions();
+                    textBools[arrayPos] = true;
+                }
+            }
+
+
+            /*
             // Deactivate all text objects before activating the current one
             foreach (var obj in modelArray)
             {
                 obj.SetActive(false);
+                Debug.Log("Running Forever");
             }
 
             // Activate the current text object if within bounds
             if (arrayPos >= 0 && arrayPos < modelArray.Length)
             {
                 modelArray[arrayPos].SetActive(true);
+                Debug.Log("Running Forever2");
             }
 
             // Ensure that actions are only handled once per position
@@ -99,7 +154,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
             {
                 HandleArrayPosActions();
                 textBools[arrayPos] = true;
+                Debug.Log("Running Forever3");
             }
+            */
         }
 
         private void HandleArrayPosActions()
@@ -112,13 +169,14 @@ namespace Pattern.Quest.Alpha.Phases.Games
                         LOLSDK.Instance.SubmitProgress(0, 0, 100);
                         submitOnce = true;
                     }
+                    robCont.isCharActive = false;
                     unit17Image.gameObject.SetActive(true);
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(true);
                     SpeakText("stage3MissionText1"); break;
                 case 1:
-                    charCont.enabled = true;
+                    robCont.isCharActive = true;
                     backwardsButton.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
                     //StopCoroutine(DelayTextButton());
@@ -126,17 +184,18 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage3MissionText2ChooseCar"); break;
                 case 2:
-                  //  textPos1.gameObject.SetActive(false);
-                  //  textPos2.gameObject.SetActive(true);
-                   // unit17Image.gameObject.SetActive(true);
+                    //  textPos1.gameObject.SetActive(false);
+                    //  textPos2.gameObject.SetActive(true);
+                    // unit17Image.gameObject.SetActive(true);
+                    backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage3MissionText3"); break;
                 case 3:
                     StopAllCoroutines();
-                    charCont.enabled = false;
-                  //  textPos2.gameObject.SetActive(false);
-                  //  textPos3.gameObject.SetActive(true);
+                    robCont.isCharActive = false;
+                    //  textPos2.gameObject.SetActive(false);
+                    //  textPos3.gameObject.SetActive(true);
                     textPanal.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(true);
                     SpeakText("stage3MissionText4"); break;
@@ -147,7 +206,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     SpeakText("stage3MissionText5"); break;
                 case 5: SpeakText("stage3MissionText6"); break;
                 case 6:
-                    charCont.enabled = true;
+                    robCont.isCharActive = true;
                     forwardParent.gameObject.SetActive(false);
                     //StopCoroutine(DelayTextButton());
                     HideButton();
@@ -252,7 +311,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 case 25:
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
-                    charCont.enabled = false;
+                    robCont.isCharActive = false;
                     forwardParent.gameObject.SetActive(false);
                     backwardsButton.gameObject.SetActive(false);
                     break;
@@ -267,19 +326,33 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public void ProgressTextForward()
         {
-            arrayPos++;
-            StartCoroutine(DelayTextButton());
-            hasScrolled = false;
-            forwardButton.gameObject.SetActive(false);
+            if (arrayPos < maxLengthArray - 1)
+            {
+                arrayPos++;
+                positionChanged = true; // Mark position as changed
+                StartCoroutine(DelayTextButton());
+                hasScrolled = false;
+                forwardButton.gameObject.SetActive(false);
+            }
         }
 
 
         public void ProgressTextBack()
         {
 
-            arrayPos--;
-            hasScrolled = false;
-            Array.Fill(textBools, false);
+            if (arrayPos > minLengthArray)
+            {
+                arrayPos--;
+                positionChanged = true; // Mark position as changed
+                hasScrolled = false;
+                Array.Fill(textBools, false);
+            }
+        }
+
+        private void ResetPositionFlags()
+        {
+            Array.Fill(textBools, false); // Reset all boolean flags for text
+            positionChanged = true;       // Mark position as changed for Update() processing
         }
 
         public void HideButton()
@@ -300,6 +373,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         {
 
             yield return new WaitForSeconds(4);
+            positionChanged = true;
             textPanal.gameObject.SetActive(true);
             arrayPos = 0;
             Debug.Log("This start coRoutine Runs");
@@ -309,7 +383,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public IEnumerator MoveToBlankInvislbePanalUnit17()
         {
             yield return new WaitForSeconds(5);
-            charCont.enabled = true;
+            robCont.isCharActive = true;
             textPanal.gameObject.SetActive(false);
             arrayPos = 26;
             Debug.Log("This start coRoutine Runs");
