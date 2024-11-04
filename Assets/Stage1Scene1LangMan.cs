@@ -32,6 +32,21 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public TextMeshProUGUI pollyText24;
         public TextMeshProUGUI pollyText25;
 
+        public TextMeshProUGUI inventoryButton;
+        public TextMeshProUGUI closeView;
+        public TextMeshProUGUI ruleButton;
+        public TextMeshProUGUI resetButton;
+        public TextMeshProUGUI rulePanalTitle;
+        public TextMeshProUGUI rulePanalRule;
+
+        public TextMeshProUGUI number1Sphere;
+        public TextMeshProUGUI number6Sphere;
+        public TextMeshProUGUI number7Sphere;
+        public TextMeshProUGUI number10Sphere;
+        public TextMeshProUGUI number11Sphere;
+        public TextMeshProUGUI number14Sphere;
+
+
         private void Awake()
         {
             JSONNode defs = SharedState.LanguageDefs;
@@ -60,6 +75,18 @@ namespace Pattern.Quest.Alpha.Phases.Games
             pollyText23.text = defs["Stage1Scene1TextBox23"];
             pollyText24.text = defs["Stage1Scene1TextBox24Incorrect"];
             pollyText25.text = defs["Stage1Scene1TextBox25Correct"];
+            inventoryButton.text = defs["Inventory"];
+            closeView.text = defs["CloseView"];
+            ruleButton.text = defs["RuleButton"];
+            resetButton.text = defs["ResetButton"];
+            number1Sphere.text = defs["Stage1Number1"];
+            number6Sphere.text = defs["Stage1Number6"];
+            number7Sphere.text = defs["Stage1Number7"];
+            number10Sphere.text = defs["Stage1Number10"];
+            number11Sphere.text = defs["Stage1Number11"];
+            number14Sphere.text = defs["Stage1Number14"];
+            rulePanalTitle.text = defs["Stage1Scene1RuleTitle"];
+            rulePanalRule.text = defs["Stage1Scene1RuleItself"];
         }
     }
 }

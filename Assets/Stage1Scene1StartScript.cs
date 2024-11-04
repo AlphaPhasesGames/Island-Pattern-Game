@@ -15,6 +15,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public RobotController robCont;
         public Stage1Scene1TextMan textMan;
         public GameObject player;
+        public GameObject uiCOllectablesPanal;
 
         // Start is called before the first frame update
         void Start()
@@ -29,6 +30,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             if (main.s1S1AS)
             {
                 LoadGame();
+                uiCOllectablesPanal.gameObject.SetActive(true);
                 robCont.isCharActive = true;
                 sphere1Butt.gameObject.SetActive(true);
                 collectMan.collectableCount++;
