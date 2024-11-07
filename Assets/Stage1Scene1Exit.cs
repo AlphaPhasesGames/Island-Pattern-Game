@@ -8,7 +8,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         {
             if (other.CompareTag("Player"))
             {
-                SceneManager.LoadScene("Stage 2 Scene 1");
+                SceneManager.LoadScene("Stage 1 Scene 2");
             }
         }
     }
