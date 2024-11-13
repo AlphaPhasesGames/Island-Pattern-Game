@@ -45,7 +45,12 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public Button[] textButtons;
         public bool[] textBools;
-
+        public Button sphere2;
+        public Button sphere3;
+        public Button sphere8;
+        public Button sphere10;
+        public Button sphere31;
+        public Button sphere32;
 
         private void Awake()
         {
@@ -115,6 +120,15 @@ namespace Pattern.Quest.Alpha.Phases.Games
                         LOLSDK.Instance.SubmitProgress(0, 20, 100);
                         submitOnce = true;
                     }
+                    
+                    
+                        sphere2.gameObject.SetActive(false);
+                        sphere3.gameObject.SetActive(false);
+                        sphere8.gameObject.SetActive(false);
+                        sphere10.gameObject.SetActive(false);
+                        sphere31.gameObject.SetActive(false);
+                        sphere32.gameObject.SetActive(false);
+                    
                     robCont.isCharActive = false;
                     pollyImage.gameObject.SetActive(true);
                     textPanal.gameObject.SetActive(true);

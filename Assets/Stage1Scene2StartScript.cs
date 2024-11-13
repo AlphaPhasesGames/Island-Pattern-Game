@@ -10,12 +10,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
     {
         public PatternQuestMain main;
      //   public Button sphere1Butt;
-       // public CollectablesManager collectMan;
+        public CollectablesManager collectMan;
         public CharacterController charCont;
         public RobotController robCont;
       //  public Stage1Scene1TextMan textMan;
         public GameObject player;
-      //  public GameObject uiCOllectablesPanal;
+        public GameObject uiCOllectablesPanal;
+
 
         // Start is called before the first frame update
         void Start()
@@ -30,7 +31,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             if (main.s1S2AS)
             {
                 LoadGame();
-              //  uiCOllectablesPanal.gameObject.SetActive(true);
+                uiCOllectablesPanal.gameObject.SetActive(true);
                 robCont.isCharActive = true;
               //  sphere1Butt.gameObject.SetActive(true);
              //   collectMan.collectableCount++;

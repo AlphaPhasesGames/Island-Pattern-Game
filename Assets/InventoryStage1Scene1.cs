@@ -14,7 +14,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Stage1Scene1Number11InvProperties no11Prop;
         public Stage1Scene1Number14InvProperties no14Prop;
 
-        public GameObject sphereNumber1Button;
+       // public GameObject sphereNumber1Button;
 
         public Button closeInv;
         public Button openInv;

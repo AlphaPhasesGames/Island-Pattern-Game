@@ -37,6 +37,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 textMan.positionChanged = true;
                 textMan.arrayPos = 26;
             }
+          
         }
 
         // Update is called once per frame

@@ -18,7 +18,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public bool positionChanged; //= true;
 
-
+        public Button button1;
         public GameObject pollyImage;
         public GameObject unit17Image;
 
@@ -127,6 +127,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(true);
+                    button1.gameObject.SetActive(false);
                     SpeakText("stage3MissionText1"); break;
                 case 1:
                     robCont.isCharActive = true;

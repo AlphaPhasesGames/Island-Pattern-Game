@@ -9,7 +9,11 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         private void OnTriggerEnter(Collider other)
         {
-            MovePlayer();
+            if (other.CompareTag("Player"))
+            {
+                MovePlayer();
+            }
+
         }
 
         public void MovePlayer()

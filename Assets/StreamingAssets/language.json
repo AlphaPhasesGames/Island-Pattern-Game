@@ -51,6 +51,12 @@
     "Stage1Scene2TextBox9": 100,
     "Stage1Scene2TextBox10": 110,
     "Stage1Scene2TextBox11": 85,
+    "Stage2Number2": 20,
+    "Stage2Number3": 20,
+    "Stage2Number8": 20,
+    "Stage2Number10": 20,
+    "Stage2Number31": 20,
+    "Stage2Number32": 20,
     "autoSave": 30
     }
   },
@@ -105,6 +111,12 @@
     "Stage1Scene2TextBox9": "Now we have all the spheres, let's put them in place using the given rule as a guide.",
     "Stage1Scene2TextBox10": "Well done! You completed this pattern puzzle and opened the portal to the Temple of Puzzles.",
     "Stage1Scene2TextBox11": "That doesn't appear right, Have a look at the given rule and try again.",
+    "Stage2Number2": "Number 2",
+    "Stage2Number3": "Number 3",
+    "Stage2Number8": "Number 8",
+    "Stage2Number10": "Number10",
+    "Stage2Number31": "Number31",
+    "Stage2Number32": "Number32",
     "autoSave": "...Auto Saving Complete"
   },
   "es": {
@@ -158,6 +170,12 @@
     "Stage1Scene2TextBox9": "Now we have all the spheres, let's put them in place using the given rule as a guide.",
     "Stage1Scene2TextBox10": "Well done! You completed this pattern puzzle and opened the portal to the Temple of Puzzles.",
     "Stage1Scene2TextBox11": "That doesn't appear right, Have a look at the given rule and try again.",
+    "Stage2Number2": "Number 2",
+    "Stage2Number3": "Number 3",
+    "Stage2Number8": "Number 8",
+    "Stage2Number10": "Number10",
+    "Stage2Number31": "Number31",
+    "Stage2Number32": "Number32",
     "autoSave": "...Auto Saving Complete"
   }
 }

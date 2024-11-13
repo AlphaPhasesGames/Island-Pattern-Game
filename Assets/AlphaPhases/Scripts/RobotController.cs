@@ -21,7 +21,7 @@ public class RobotController : MonoBehaviour
         public bool isCharActive;
     private float inputX;
     private float inputZ;
-    
+        public Animator swing;
     public Camera mainCam; // Reference to the camera
     public LayerMask ignoreMe;
 
@@ -37,6 +37,11 @@ public class RobotController : MonoBehaviour
             {
                 HandleMovementInput();
                 HandleJumpAndGravity();
+
+                if (Input.GetMouseButtonDown(1))
+                {
+                    swing.SetTrigger("swing");
+                }
             }
        
       //  HandleMouseRaycast();

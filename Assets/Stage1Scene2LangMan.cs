@@ -17,10 +17,34 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public TextMeshProUGUI stage1Scene2Text10;
         public TextMeshProUGUI stage1Scene2Text11;
 
+        public TextMeshProUGUI inventoryButton;
+        public TextMeshProUGUI closeViewButton;
+        public TextMeshProUGUI ruleButton;
+        public TextMeshProUGUI ResetButton;
+        public TextMeshProUGUI sphere2Text;
+        public TextMeshProUGUI sphere3Text;
+        public TextMeshProUGUI sphere8Text;
+        public TextMeshProUGUI sphere10Text;
+        public TextMeshProUGUI sphere31Text;
+        public TextMeshProUGUI sphere32Text;
+
 
         private void Awake()
         {
             JSONNode defs = SharedState.LanguageDefs;
+
+            inventoryButton.text = defs["Inventory"];
+            closeViewButton.text = defs["CloseView"];
+            ruleButton.text = defs["RuleButton"];
+            ResetButton.text = defs["ResetButton"];
+            sphere2Text.text = defs["Stage2Number2"];
+            sphere3Text.text = defs["Stage2Number3"];
+            sphere8Text.text = defs["Stage2Number8"];
+            sphere10Text.text = defs["Stage2Number10"];
+            sphere31Text.text = defs["Stage2Number31"];
+            sphere32Text.text = defs["Stage2Number32"];
+
+
             stage1Scene2Text1.text = defs["Stage1Scene2TextBox1"];
             stage1Scene2Text2.text = defs["Stage1Scene2TextBox2"];
             stage1Scene2Text3.text = defs["Stage1Scene2TextBox3"];
