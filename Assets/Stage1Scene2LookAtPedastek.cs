@@ -51,12 +51,12 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public GameObject slot1Sphere31Image;
         public GameObject slot1Sphere32Image;
 
-    //    public Stage1Scene1Number4InvProperties no2Prop;
-    //    public Stage1Scene1Number6InvProperties no4Prop;
-    //    public Stage1Scene1Number7InvProperties no8Prop;
-   //     public Stage1Scene1Number10InvProperties no16Prop;
-     //   public Stage1Scene1Number11InvProperties no32Prop;
-     //   public Stage1Scene1Number14InvProperties no64Prop;
+        public Stage1Scene2Number2InvProperties no2Prop;
+        public Stage1Scene2Number3InvProperties no3Prop;
+        public Stage1Scene2Number8InvProperties no8Prop;
+        public Stage1Scene2Number10InvProperties no10Prop;
+        public Stage1Scene2Number31InvProperties no31Prop;
+        public Stage1Scene2Number32InvProperties no32Prop;
 
         private void Awake()
         {
@@ -66,19 +66,19 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         // Handle what happens when the trigger box is clicked
         private void OnTriggerBoxClicked()
-        {/*
+        {
             if (!hasViewedPedastal)
             {
                 textMan.positionChanged = true;
-                textMan.arrayPos = 10;
+                textMan.arrayPos = 3;
                 hasViewedPedastal = true;
             }
             if (hasViewedPedastal && collectMan.allSpheresCollected)
             {
                 textMan.positionChanged = true;
-                textMan.arrayPos = 20;
+                textMan.arrayPos = 8;
             }
-*/
+
             playerCamToDisable.enabled = false;
             pedastalCam.enabled = true;
             triggerCollider.enabled = false;
@@ -141,13 +141,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
             slot1Sphere31Image.gameObject.SetActive(true);
             slot1Sphere32Image.gameObject.SetActive(true);
 
-            //     no1Prop.DeSelectSphereItem();
-            //     no6Prop.DeSelectSphereItem();
-            //     no7Prop.DeSelectSphereItem();
-            //      no10Prop.DeSelectSphereItem();
-            //     no11Prop.DeSelectSphereItem();
-            //       no14Prop.DeSelectSphereItem();
-            //
+                 no2Prop.DeSelectSphereItem();
+                 no3Prop.DeSelectSphereItem();
+                 no8Prop.DeSelectSphereItem();
+                 no10Prop.DeSelectSphereItem();
+                 no31Prop.DeSelectSphereItem();
+                 no32Prop.DeSelectSphereItem();
+            
         }
     }
 }

@@ -10,7 +10,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
     {
         public PatternQuestMain main;
      //   public Button sphere1Butt;
-        public CollectablesManager collectMan;
+        public Stage1Scene2CollectablesManager collectMan;
         public CharacterController charCont;
         public RobotController robCont;
       //  public Stage1Scene1TextMan textMan;

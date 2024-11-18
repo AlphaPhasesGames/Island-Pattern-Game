@@ -65,7 +65,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
             }
 
-            if (Input.GetKeyDown(KeyCode.Escape) || (Input.GetMouseButtonDown(1)))
+            if (Input.GetKeyDown(KeyCode.Escape))// || (Input.GetMouseButtonDown(1))
             {
 
                 no2Prop.DeSelectSphereItem();

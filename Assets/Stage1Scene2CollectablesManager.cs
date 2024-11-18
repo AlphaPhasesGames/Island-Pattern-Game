@@ -8,7 +8,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
     public class Stage1Scene2CollectablesManager : MonoBehaviour
     {
         public TextMeshProUGUI uiCounter;
-      //  public Stage1Scene1TextMan textMan;
+        public Stage1Scene2TextMan textMan;
         public int collectableCount;
         public bool allSpheresCollected;
         public bool runOnce;
@@ -27,8 +27,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
             {
                 if (collectableCount == 6)
                 {
-                 //   textMan.positionChanged = true; // Directly set positionChanged
-                //    textMan.arrayPos = 19;
+                    textMan.positionChanged = true; // Directly set positionChanged
+                    textMan.arrayPos = 7;
                     allSpheresCollected = true;
                     runOnce = true;
                 }
