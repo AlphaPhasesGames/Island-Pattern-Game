@@ -14,6 +14,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Vector3 player_position_save;
         public bool s1_s1_as;
         public bool s1_s2_as;
+        public bool s2_s1_as;
         [Header("StageTasks")] // header for the save location for the robot       
         public int task_number;
 
@@ -48,6 +49,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             public bool loadSavesOnce;
             public bool s1S1AS;
             public bool s1S2AS;
+            public bool s2S1AS;
 
         #region "stage1stufftobecollapsed"
         [SerializeField, Header("Stage 1 Code")]
@@ -127,20 +129,21 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 playerRobot.transform.position = posOfPlayer;
                 Debug.Log("Loaded Stage 2");
             }
+           
+            if (currentStage == 3)
+            {
+                SceneManager.LoadScene("Stage 2 Scene 1");
+                playerRobot.transform.position = posOfPlayer;
+                Debug.Log("Loaded Stage 3");
+            }
             /*
-                        if (currentStage == 3)
-                        {
-                            SceneManager.LoadScene("Stage 3 Increased Energy");
+           if (currentStage == 4)
+           {
+               SceneManager.LoadScene("Stage 4 Transfering Energy");
 
-                            Debug.Log("Loaded Stage 3");
-                        }
-                        if (currentStage == 4)
-                        {
-                            SceneManager.LoadScene("Stage 4 Transfering Energy");
-
-                            Debug.Log("Loaded Stage 4");
-                        }
-                        */
+               Debug.Log("Loaded Stage 4");
+           }
+           */
             Debug.Log("Loaded Save");
         }
 
@@ -179,6 +182,19 @@ namespace Pattern.Quest.Alpha.Phases.Games
                         loadSavesOnce = true;
                     }
                 }
+
+            if (pQTMISaveData1.current_stage == 3)
+            {
+                if (!loadSavesOnce)
+                {
+                    SceneManager.LoadScene("Stage 2 Scene 1");
+                    s2S1AS = pQTMISaveData1.s2_s1_as;
+                    //   taskNumberCrewQuarters = sSQFESaveData.task_number_crew_quarter;
+                    Debug.Log("Stage 2 update runs - load save data from save");
+                    loadSavesOnce = true;
+                }
+            }
+
             /*
 
            if (pQTMISaveData.current_stage == 3)
@@ -222,6 +238,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
                  pQTMISaveData1.current_stage = currentStage;
                  Save();
             }
+
+           public void SaveS2S1()
+            {
+                 currentStage = 3;
+                 pQTMISaveData1.current_stage = currentStage;
+                 Save();
+            }
                      public void SaveScene1Stage1()
                     {
 
@@ -243,6 +266,19 @@ namespace Pattern.Quest.Alpha.Phases.Games
             Save();
             Debug.Log("Forces Saved Fired");
         }
+
+
+        public void SaveScene2Stage1()
+        {
+
+            pQTMISaveData1.player_position_save = posOfPlayer;
+            pQTMISaveData1.s2_s1_as = s2S1AS;
+
+            //sSQFESaveData.current_stage = currentStage;
+            Save();
+            Debug.Log("Forces Saved Fired");
+        }
+
 
         public void SavePosition()
                     {
