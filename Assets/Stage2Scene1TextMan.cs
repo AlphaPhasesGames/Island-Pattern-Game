@@ -102,6 +102,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 }
             }
 
+           
+
         }
 
         private void HandleArrayPosActions()
@@ -141,10 +143,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage3MissionText3"); break;
-                case 3:              
-        
-                    backwardsButton.gameObject.SetActive(false);
+                case 3:         
                     textPanal.gameObject.SetActive(true);
+                    backwardsButton.gameObject.SetActive(false);
+                    Debug.Log("Firing array 3");
                     forwardParent.gameObject.SetActive(true);
                     SpeakText("stage3MissionText4"); break;
                 case 4:
@@ -153,21 +155,18 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage3MissionText5"); break;
                 case 5:
-                    SpeakText("stage3MissionText6");
-                    forwardParent.gameObject.SetActive(false);
-                    StartCoroutine(MoveToBlankInvislbePanalUnit17()); break;
-                case 6:
-                    backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
-                    //StopCoroutine(DelayTextButton());
-                    // HideButton();
-                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                    backwardsButton.gameObject.SetActive(false);
+                    SpeakText("stage3MissionText6");
+                    forwardParent.gameObject.SetActive(true);
+                    break;
+                case 6:
+                    backwardsButton.gameObject.SetActive(true);
+
                     SpeakText("stage3MissionText7"); break;
                 case 7:
                     // StopAllCoroutines();
                     backwardsButton.gameObject.SetActive(false);
-                    textPanal.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage3MissionText8"); break;
@@ -263,7 +262,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public IEnumerator DelayTextButton()
         {
 
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(3);
             forwardButton.gameObject.SetActive(true);
             Debug.Log("This coRoutine Runs");
 

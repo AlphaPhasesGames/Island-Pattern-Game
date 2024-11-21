@@ -24,7 +24,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public TextMeshProUGUI ruleButton;
         public TextMeshProUGUI resetButton;
         public TextMeshProUGUI triangle;
+        public TextMeshProUGUI triangle2;
+        public TextMeshProUGUI triangle3;
         public TextMeshProUGUI circle;
+        public TextMeshProUGUI circle2;
         public TextMeshProUGUI square;
 
 
@@ -37,7 +40,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
             ruleButton.text = defs["RuleButton"];
             resetButton.text = defs["ResetButton"];
             triangle.text = defs["Stage2Scene1ShapeTriangle"];
+            triangle2.text = defs["Stage2Scene1ShapeTriangle"];
+            triangle3.text = defs["Stage2Scene1ShapeTriangle"];
             circle.text = defs["Stage2Scene1ShapeCircle"];
+            circle2.text = defs["Stage2Scene1ShapeCircle"];
             square.text = defs["Stage2Scene1ShapeSquare"];
 
 
