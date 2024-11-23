@@ -8,11 +8,18 @@ namespace Pattern.Quest.Alpha.Phases.Games
         // Reference to the Collider component of the object
         public Stage1Scene2TextMan textMan;
         public Stage1Scene2CollectablesManager collectMan;
+        public Stage1Scene2ProgressScript progScript;
+
         public BoxCollider triggerCollider;
         public Camera playerCamToDisable;
         public Camera pedastalCam;
         public Button closeButton;
         public Button resetButton;
+
+        public Stage1Scene2SpherePlacementSlot1 slot1;
+        public Stage1Scene2SPherePlacementSlot2 slot2;
+        public Stage1Scene2SpherePlacementSlot3 slot3;
+
 
         public bool hasViewedPedastal;
 
@@ -141,13 +148,18 @@ namespace Pattern.Quest.Alpha.Phases.Games
             slot1Sphere31Image.gameObject.SetActive(true);
             slot1Sphere32Image.gameObject.SetActive(true);
 
-                 no2Prop.DeSelectSphereItem();
-                 no3Prop.DeSelectSphereItem();
-                 no8Prop.DeSelectSphereItem();
-                 no10Prop.DeSelectSphereItem();
-                 no31Prop.DeSelectSphereItem();
-                 no32Prop.DeSelectSphereItem();
-            
+                 no2Prop.DeSelectSphereItemPedastel();
+                 no3Prop.DeSelectSphereItemPedastel();
+                 no8Prop.DeSelectSphereItemPedastel();
+                 no10Prop.DeSelectSphereItemPedastel();
+                 no31Prop.DeSelectSphereItemPedastel();
+                 no32Prop.DeSelectSphereItemPedastel();
+
+            slot1.inCorrectPlacement = false;
+            slot2.inCorrectPlacement = false;
+            slot3.inCorrectPlacement = false;
+            progScript.runTwice = false;
+            textMan.ResetPositionFlags();
         }
     }
 }

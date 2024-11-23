@@ -27,7 +27,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public TextMeshProUGUI sphere10Text;
         public TextMeshProUGUI sphere31Text;
         public TextMeshProUGUI sphere32Text;
-
+        public TextMeshProUGUI ruleTitle;
+        public TextMeshProUGUI ruleItself;
 
         private void Awake()
         {
@@ -43,7 +44,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
             sphere10Text.text = defs["Stage2Number10"];
             sphere31Text.text = defs["Stage2Number31"];
             sphere32Text.text = defs["Stage2Number32"];
-
+            ruleItself.text = defs["Stage1Scene2RuleItself"];
+            ruleTitle.text = defs["Stage1Scene1RuleTitle"];
 
             stage1Scene2Text1.text = defs["Stage1Scene2TextBox1"];
             stage1Scene2Text2.text = defs["Stage1Scene2TextBox2"];

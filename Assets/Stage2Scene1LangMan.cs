@@ -29,7 +29,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public TextMeshProUGUI circle;
         public TextMeshProUGUI circle2;
         public TextMeshProUGUI square;
-
+        public TextMeshProUGUI ruleTitle;
+        public TextMeshProUGUI ruleItself;
 
         private void Awake()
         {
@@ -45,7 +46,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
             circle.text = defs["Stage2Scene1ShapeCircle"];
             circle2.text = defs["Stage2Scene1ShapeCircle"];
             square.text = defs["Stage2Scene1ShapeSquare"];
-
+            ruleItself.text = defs["Stage2Scene1RuleItself"];
+            ruleTitle.text = defs["Stage1Scene1RuleTitle"];
 
             stage2Scene1Text1.text = defs["Stage2Scene1TextBox1"];
             stage2Scene1Text2.text = defs["Stage2Scene1TextBox2"];

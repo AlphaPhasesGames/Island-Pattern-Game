@@ -6240,15 +6240,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 6b0821e95844d3245a3e3808ae253f1e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 75.618355
+      value: 50.46
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6b0821e95844d3245a3e3808ae253f1e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.98
+      value: 0.83
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6b0821e95844d3245a3e3808ae253f1e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -73.84547
+      value: -140.21
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6b0821e95844d3245a3e3808ae253f1e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13896,9 +13896,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Given rule T
-
-'
+  m_text: Pattern Rule t
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14609,7 +14607,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ADD 2t
+  m_text: Add 2 t
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -18650,7 +18648,7 @@ RectTransform:
   m_GameObject: {fileID: 1872755031}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4166, y: 0.4166, z: 0.4166}
+  m_LocalScale: {x: 0.17358471, y: 0.17358471, z: 0.17358471}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 139320205}
@@ -18658,7 +18656,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 85, y: 30}
+  m_AnchoredPosition: {x: 94.4, y: 41.9}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1872755033

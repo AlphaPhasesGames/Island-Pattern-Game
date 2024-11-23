@@ -14,6 +14,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public AudioSource pickupSFX;
         private void OnTriggerEnter(Collider other)
         {
+            textman.StopAllCoroutines();
             textman.positionChanged = true; // Directly set positionChanged
             textman.arrayPos = 16;
             cahrCont.isCharActive = false;

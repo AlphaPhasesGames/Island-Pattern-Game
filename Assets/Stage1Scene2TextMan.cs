@@ -204,7 +204,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     forwardParent.gameObject.SetActive(false);
                     // forwardButton.gameObject.SetActive(true);
                     textPanal.gameObject.SetActive(true);
-                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                   // ResetPositionFlags();
+    
+                    StartCoroutine(MoveToBlankInvislbePanalPlatform());
                     SpeakText("stage3MissionText11"); break;
                 case 11:
                     backwardsButton.gameObject.SetActive(true);
@@ -251,7 +253,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             }
         }
 
-        private void ResetPositionFlags()
+        public void ResetPositionFlags()
         {
             Array.Fill(textBools, false); // Reset all boolean flags for text
             positionChanged = true;       // Mark position as changed for Update() processing
@@ -291,6 +293,18 @@ namespace Pattern.Quest.Alpha.Phases.Games
             Debug.Log("This start coRoutine Runs");
 
         }
+
+        public IEnumerator MoveToBlankInvislbePanalPlatform()
+        {
+            yield return new WaitForSeconds(3);
+           // robCont.isCharActive = true;
+            textPanal.gameObject.SetActive(false);
+            arrayPos = 12;
+            Debug.Log("This start coRoutine Runs");
+
+        }
+
+
         public IEnumerator HideButtons()
         {
             yield return new WaitForSeconds(0.2f);

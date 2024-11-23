@@ -9,11 +9,19 @@ namespace Pattern.Quest.Alpha.Phases.Games
         // Reference to the Collider component of the object
         public Stage2Scene1TextMan textMan;
         public Stage2Scene1Collectables collectMan;
+        public Stage2Scene1ProgressionManager progScript;
         public BoxCollider triggerCollider;
         public Camera playerCamToDisable;
         public Camera pedastalCam;
         public Button closeButton;
         public Button resetButton;
+
+        public Stage2Scene1ShapePlacementSlot1 slot1;
+        public Stage2Scene1ShapePlacementSlot2 slot2;
+        public Stage2Scene1ShapePlacementSlot4 slot4;
+        public Stage2Scene1ShapePlacementSlot3 slot3;
+        public Stage2Scene1ShapePlacement5 slot5;
+        public Stage2Scene1ShapePlacement6 slot6;
 
         public bool hasViewedPedastal;
 
@@ -169,12 +177,21 @@ namespace Pattern.Quest.Alpha.Phases.Games
             slot6Triangle2.gameObject.SetActive(false);
             slot6Triangle3Correct.gameObject.SetActive(false);
 
-            squareProp.DeSelectSphereItem();
-            tri1Prop.DeSelectSphereItem();
-            circle1Prop.DeSelectSphereItem();
-            tri2Prop.DeSelectSphereItem();
-            circle2Prop.DeSelectSphereItem();
+            squareProp.DeSelectSphereItemPedestal();
+            tri1Prop.DeSelectSphereItemPedestel();
+            circle1Prop.DeSelectSphereItemPedastel();
+            tri2Prop.DeSelectSphereItemPedestal();
+            circle2Prop.DeSelectSphereItemPedastel();
             tri3Prop.DeSelectSphereItem();
+
+            slot1.inCorrectPlacement = false;
+            slot2.inCorrectPlacement = false;
+            slot3.inCorrectPlacement = false;
+            slot4.inCorrectPlacement = false;
+            slot5.inCorrectPlacement = false;
+            slot6.inCorrectPlacement = false;
+            progScript.runTwice = false;
+            textMan.ResetPositionFlags();
 
         }
     }
