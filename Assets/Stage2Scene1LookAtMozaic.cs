@@ -7,8 +7,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
     {
 
         // Reference to the Collider component of the object
-       // public Stage1Scene2TextMan textMan;
-       // public Stage1Scene2CollectablesManager collectMan;
+        public Stage2Scene1TextMan textMan;
+        public Stage2Scene1Collectables collectMan;
         public BoxCollider triggerCollider;
         public Camera playerCamToDisable;
         public Camera pedastalCam;
@@ -59,14 +59,14 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public GameObject slot6Triangle2;
         public GameObject slot6Triangle3Correct;
 
-
+        /*
         public Button circleButton;
         public Button circle2Button;
         public Button triangleButton;
         public Button squareButton;
         public Button triangle2Button;
         public Button triangle3Button;
-
+        */
         public GameObject slot1CircleImage2;
         public GameObject slot1Circle1Image;
         public GameObject slot1TriangleImage;
@@ -90,16 +90,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
         // Handle what happens when the trigger box is clicked
         private void OnTriggerBoxClicked()
         {
-            if (!hasViewedPedastal)
+           
+            if (collectMan.allSpheresCollected)
             {
-              //  textMan.positionChanged = true;
-              //  textMan.arrayPos = 3;
+                textMan.StopAllCoroutines();
+                textMan.positionChanged = true;
+                textMan.arrayPos = 10;
                 hasViewedPedastal = true;
-            }
-            if (hasViewedPedastal )// collectMan.allSpheresCollected)
-            {
-              //  textMan.positionChanged = true;
-             //   textMan.arrayPos = 8;
             }
 
             playerCamToDisable.enabled = false;

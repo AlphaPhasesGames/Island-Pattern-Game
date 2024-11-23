@@ -177,7 +177,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
-                    //  StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage3MissionText9");
                     break;
                 case 9:
@@ -195,7 +195,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     forwardParent.gameObject.SetActive(false);
                     // forwardButton.gameObject.SetActive(true);
                     textPanal.gameObject.SetActive(true);
-                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                    //StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage3MissionText11"); break;
                 case 11:
                     backwardsButton.gameObject.SetActive(true);

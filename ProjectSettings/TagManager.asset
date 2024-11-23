@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Club
+  - Square
+  - Circle1
+  - Circle2
+  - Tri1
+  - Tri2
+  - Tri3
   layers:
   - Default
   - TransparentFX
