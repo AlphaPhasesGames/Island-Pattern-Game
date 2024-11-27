@@ -82,11 +82,11 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public GameObject slot1Triangle2Image;
         public GameObject slot1Triangle3Image;
 
-        public Stage2Scene2SquareInventoryItem squareProp;
-        public Stage2Scene2Triangle1InventoryItem tri1Prop;
         public Stage2Scene1CircleInventoryItem circle1Prop;
-        public Stage1SceneTriangle2InventoryItem tri2Prop;
-        public Stage1Scene1Cicle2InventoryItem circle2Prop;
+        public Stage2Scene1Circle2InventoryItem circle2Prop;
+        public Stage2Scene1Triangle1InventoryItem tri1Prop;
+        public Stage2Scene1SquareInventoryItem squareProp;
+        public Stage2Scene1Triangle2 tri2Prop;
         public Stage2Scene1Triangle3InventoryItem tri3Prop;
 
         private void Awake()

@@ -4,10 +4,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
     public class Stage2Scene1ShapePlacementSlot3 : MonoBehaviour
     {
         public Stage2Scene1CircleInventoryItem circle1Prop;
-        public Stage1Scene1Cicle2InventoryItem circle2Prop;
-        public Stage2Scene2Triangle1InventoryItem tri1Prop;
-        public Stage2Scene2SquareInventoryItem squareProp;
-        public Stage1SceneTriangle2InventoryItem tri2Prop;
+        public Stage2Scene1Circle2InventoryItem circle2Prop;
+        public Stage2Scene1Triangle1InventoryItem tri1Prop;
+        public Stage2Scene1SquareInventoryItem squareProp;
+        public Stage2Scene1Triangle2 tri2Prop;
         public Stage2Scene1Triangle3InventoryItem tri3Prop;
 
         public GameObject circle;

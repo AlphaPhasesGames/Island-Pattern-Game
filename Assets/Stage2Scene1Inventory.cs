@@ -7,11 +7,11 @@ namespace Pattern.Quest.Alpha.Phases.Games
     public class Stage2Scene1Inventory : MonoBehaviour
     {
         public GameObject invUIPanal; // declare gameobject for UI inventory panal
-        public Stage2Scene2SquareInventoryItem squareProp;
-        public Stage2Scene2Triangle1InventoryItem tri1Prop;
         public Stage2Scene1CircleInventoryItem circle1Prop;
-        public Stage1SceneTriangle2InventoryItem tri2Prop;
-        public Stage1Scene1Cicle2InventoryItem circle2Prop;
+        public Stage2Scene1Circle2InventoryItem circle2Prop;
+        public Stage2Scene1Triangle1InventoryItem tri1Prop;
+        public Stage2Scene1SquareInventoryItem squareProp;
+        public Stage2Scene1Triangle2 tri2Prop;
         public Stage2Scene1Triangle3InventoryItem tri3Prop;
         //   public Stage1Scene1Number14InvProperties no14Prop;
 

@@ -1369,10 +1369,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle1Prop: {fileID: 6295227904064922047}
-  circle2Prop: {fileID: 6295227904064922049}
-  tri1Prop: {fileID: 6295227904064922046}
-  squareProp: {fileID: 6295227904064922044}
-  tri2Prop: {fileID: 6295227904064922050}
+  circle2Prop: {fileID: 6295227904064922057}
+  tri1Prop: {fileID: 6295227904064922055}
+  squareProp: {fileID: 6295227904064922054}
+  tri2Prop: {fileID: 6295227904064922056}
   tri3Prop: {fileID: 6295227904064922048}
   circle: {fileID: 416719842}
   triangle: {fileID: 397057175}
@@ -2511,10 +2511,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle1Prop: {fileID: 6295227904064922047}
-  circle2Prop: {fileID: 6295227904064922049}
-  tri1Prop: {fileID: 6295227904064922046}
-  squareProp: {fileID: 6295227904064922044}
-  tri2Prop: {fileID: 6295227904064922050}
+  circle2Prop: {fileID: 6295227904064922057}
+  tri1Prop: {fileID: 6295227904064922055}
+  squareProp: {fileID: 6295227904064922054}
+  tri2Prop: {fileID: 6295227904064922056}
   tri3Prop: {fileID: 6295227904064922048}
   circle: {fileID: 418386932}
   triangle: {fileID: 1047461305}
@@ -5972,10 +5972,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle1Prop: {fileID: 6295227904064922047}
-  circle2Prop: {fileID: 6295227904064922049}
-  tri1Prop: {fileID: 6295227904064922046}
-  squareProp: {fileID: 6295227904064922044}
-  tri2Prop: {fileID: 6295227904064922050}
+  circle2Prop: {fileID: 6295227904064922057}
+  tri1Prop: {fileID: 6295227904064922055}
+  squareProp: {fileID: 6295227904064922054}
+  tri2Prop: {fileID: 6295227904064922056}
   tri3Prop: {fileID: 6295227904064922048}
   circle: {fileID: 751524073}
   triangle: {fileID: 221686127}
@@ -6329,10 +6329,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle1Prop: {fileID: 6295227904064922047}
-  circle2Prop: {fileID: 6295227904064922049}
-  tri1Prop: {fileID: 6295227904064922046}
-  squareProp: {fileID: 6295227904064922044}
-  tri2Prop: {fileID: 6295227904064922050}
+  circle2Prop: {fileID: 6295227904064922057}
+  tri1Prop: {fileID: 6295227904064922055}
+  squareProp: {fileID: 6295227904064922054}
+  tri2Prop: {fileID: 6295227904064922056}
   tri3Prop: {fileID: 6295227904064922048}
   circle: {fileID: 7168319787551414434}
   triangle: {fileID: 1374191447350319327}
@@ -6752,10 +6752,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle1Prop: {fileID: 6295227904064922047}
-  circle2Prop: {fileID: 6295227904064922049}
-  tri1Prop: {fileID: 6295227904064922046}
-  squareProp: {fileID: 6295227904064922044}
-  tri2Prop: {fileID: 6295227904064922050}
+  circle2Prop: {fileID: 6295227904064922057}
+  tri1Prop: {fileID: 6295227904064922055}
+  squareProp: {fileID: 6295227904064922054}
+  tri2Prop: {fileID: 6295227904064922056}
   tri3Prop: {fileID: 6295227904064922048}
   circle: {fileID: 620913260}
   triangle: {fileID: 1400400437}
@@ -10932,10 +10932,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle1Prop: {fileID: 6295227904064922047}
-  circle2Prop: {fileID: 6295227904064922049}
-  tri1Prop: {fileID: 6295227904064922046}
-  squareProp: {fileID: 6295227904064922044}
-  tri2Prop: {fileID: 6295227904064922050}
+  circle2Prop: {fileID: 6295227904064922057}
+  tri1Prop: {fileID: 6295227904064922055}
+  squareProp: {fileID: 6295227904064922054}
+  tri2Prop: {fileID: 6295227904064922056}
   tri3Prop: {fileID: 6295227904064922048}
   circle: {fileID: 1775833271}
   triangle: {fileID: 1144874973}
@@ -13647,12 +13647,12 @@ GameObject:
   - component: {fileID: 245966993}
   - component: {fileID: 6295227904064922042}
   - component: {fileID: 6295227904064922045}
-  - component: {fileID: 6295227904064922044}
-  - component: {fileID: 6295227904064922046}
+  - component: {fileID: 6295227904064922055}
   - component: {fileID: 6295227904064922047}
-  - component: {fileID: 6295227904064922050}
-  - component: {fileID: 6295227904064922049}
+  - component: {fileID: 6295227904064922054}
   - component: {fileID: 6295227904064922048}
+  - component: {fileID: 6295227904064922057}
+  - component: {fileID: 6295227904064922056}
   - component: {fileID: 6295227904064922051}
   - component: {fileID: 6295227904064922052}
   - component: {fileID: 6295227904064922053}
@@ -13884,26 +13884,6 @@ MonoBehaviour:
   robCont: {fileID: 1458061333}
   player: {fileID: 748192090}
   uiCOllectablesPanal: {fileID: 1972378195}
---- !u!114 &6295227904064922044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4784630451589649522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b550fdfb9b80cd64c86bd8b796dc3e4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sphereName: {fileID: 1972378196}
-  playerPickedUpObject: 0
-  playerHasBadgeObject: 0
-  invItemImage: {fileID: 1972378200}
-  squareButton: {fileID: 1972378201}
-  checkBool1: 0
-  checkBool2: 0
-  sphereHeld: 0
 --- !u!114 &6295227904064922045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13917,11 +13897,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invUIPanal: {fileID: 1972378203}
-  squareProp: {fileID: 6295227904064922044}
-  tri1Prop: {fileID: 6295227904064922046}
   circle1Prop: {fileID: 6295227904064922047}
-  tri2Prop: {fileID: 6295227904064922050}
-  circle2Prop: {fileID: 6295227904064922049}
+  circle2Prop: {fileID: 6295227904064922057}
+  tri1Prop: {fileID: 6295227904064922055}
+  squareProp: {fileID: 6295227904064922054}
+  tri2Prop: {fileID: 6295227904064922056}
   tri3Prop: {fileID: 6295227904064922048}
   closeInv: {fileID: 1972378202}
   openInv: {fileID: 1972378199}
@@ -13934,26 +13914,6 @@ MonoBehaviour:
   stopRepeat5: 0
   stopRepeat6: 0
   allItemsCollected: 0
---- !u!114 &6295227904064922046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4784630451589649522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffb9251a3bcd31640a69222148b50823, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triangleName: {fileID: 1972378198}
-  playerPickedUpObject: 0
-  playerHasBadgeObject: 0
-  invItemImage: {fileID: 313046540}
-  triangleButton: {fileID: 313046541}
-  checkBool1: 0
-  checkBool2: 0
-  sphereHeld: 0
 --- !u!114 &6295227904064922047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13991,46 +13951,6 @@ MonoBehaviour:
   playerHasBadgeObject: 0
   invItemImage: {fileID: 738627675}
   triangle3Button: {fileID: 738627677}
-  checkBool1: 0
-  checkBool2: 0
-  sphereHeld: 0
---- !u!114 &6295227904064922049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4784630451589649522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca0e17d518725fb40974ef315a42ea04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circle2Name: {fileID: 738627673}
-  playerPickedUpObject: 0
-  playerHasBadgeObject: 0
-  invItemImage: {fileID: 738627672}
-  circle2Button: {fileID: 738627674}
-  checkBool1: 0
-  checkBool2: 0
-  sphereHeld: 0
---- !u!114 &6295227904064922050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4784630451589649522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e6bb06c95b4dd84a9c12592b2fcb957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triangle2Name: {fileID: 738627679}
-  playerPickedUpObject: 0
-  playerHasBadgeObject: 0
-  invItemImage: {fileID: 738627678}
-  triangle2Button: {fileID: 738627680}
   checkBool1: 0
   checkBool2: 0
   sphereHeld: 0
@@ -14088,6 +14008,86 @@ MonoBehaviour:
   exitTrigger: {fileID: 394750816}
   runOnce: 0
   runTwice: 0
+--- !u!114 &6295227904064922054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4784630451589649522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da69371a539054b4ea58dae1c1935b49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphereName: {fileID: 1972378196}
+  playerPickedUpObject: 0
+  playerHasBadgeObject: 0
+  invItemImage: {fileID: 1972378200}
+  squareButton: {fileID: 1972378201}
+  checkBool1: 0
+  checkBool2: 0
+  sphereHeld: 0
+--- !u!114 &6295227904064922055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4784630451589649522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ba12b6ae5f6e534c952a12611ad3ca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triangleName: {fileID: 1972378198}
+  playerPickedUpObject: 0
+  playerHasBadgeObject: 0
+  invItemImage: {fileID: 313046540}
+  triangleButton: {fileID: 313046541}
+  checkBool1: 0
+  checkBool2: 0
+  sphereHeld: 0
+--- !u!114 &6295227904064922056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4784630451589649522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fb92e40634ba4b459005f6a9a0cae31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triangle2Name: {fileID: 738627679}
+  playerPickedUpObject: 0
+  playerHasBadgeObject: 0
+  invItemImage: {fileID: 738627678}
+  triangle2Button: {fileID: 738627680}
+  checkBool1: 0
+  checkBool2: 0
+  sphereHeld: 0
+--- !u!114 &6295227904064922057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4784630451589649522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bb6f8eeebb625340a4f98dd34260081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circle2Name: {fileID: 738627673}
+  playerPickedUpObject: 0
+  playerHasBadgeObject: 0
+  invItemImage: {fileID: 738627672}
+  circle2Button: {fileID: 738627674}
+  checkBool1: 0
+  checkBool2: 0
+  sphereHeld: 0
 --- !u!23 &6473814926358200126
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14563,11 +14563,11 @@ MonoBehaviour:
   slot1SquareImage: {fileID: 1972378200}
   slot1Triangle2Image: {fileID: 738627678}
   slot1Triangle3Image: {fileID: 738627675}
-  squareProp: {fileID: 6295227904064922044}
-  tri1Prop: {fileID: 6295227904064922046}
   circle1Prop: {fileID: 6295227904064922047}
-  tri2Prop: {fileID: 6295227904064922050}
-  circle2Prop: {fileID: 6295227904064922049}
+  circle2Prop: {fileID: 6295227904064922057}
+  tri1Prop: {fileID: 6295227904064922055}
+  squareProp: {fileID: 6295227904064922054}
+  tri2Prop: {fileID: 6295227904064922056}
   tri3Prop: {fileID: 6295227904064922048}
 --- !u!33 &8981710061452933621
 MeshFilter:
