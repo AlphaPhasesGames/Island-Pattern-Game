@@ -73,18 +73,18 @@ namespace Pattern.Quest.Alpha.Phases.Games
             if (Input.GetKeyDown(KeyCode.Escape) || (Input.GetMouseButtonDown(1)))
             {
 
-                circle1ItemScript.DeSelectSphereItemPedestal();
-                triangle1ItemScript.DeSelectSphereItemPedestel();
-                hex1ItemScript.DeSelectSphereItemPedestal();
-                triangle2ItemScript.DeSelectSphereItemPedestel();
-                square1ItemScript.DeSelectSphereItemPedestal();
-                hex2ItemsScript.DeSelectSphereItemPedestal();
-                circle2ItemScript.DeSelectSphereItemPedestal();
-                hex3ItemScript.DeSelectSphereItemPedestal();
-                square2InvItemScript.DeSelectSphereItemPedestal();
-                circle3InvItemScript.DeSelectSphereItemPedestal();
-                square3InvItemScript.DeSelectSphereItemPedestal();
-                triangle3InvItemScript.DeSelectSphereItemPedestel();
+                circle1ItemScript.DeSelectSphereItem();
+                triangle1ItemScript.DeSelectSphereItem();
+                hex1ItemScript.DeSelectSphereItem();
+                triangle2ItemScript.DeSelectSphereItem();
+                square1ItemScript.DeSelectSphereItem();
+                hex2ItemsScript.DeSelectSphereItem();
+                circle2ItemScript.DeSelectSphereItem();
+                hex3ItemScript.DeSelectSphereItem();
+                square2InvItemScript.DeSelectSphereItem();
+                circle3InvItemScript.DeSelectSphereItem();
+                square3InvItemScript.DeSelectSphereItem();
+                triangle3InvItemScript.DeSelectSphereItem();
             }
         }
 
