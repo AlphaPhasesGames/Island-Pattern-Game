@@ -3,7 +3,7 @@ using SimpleJSON;
 using TMPro;
 namespace Pattern.Quest.Alpha.Phases.Games
 {
-    public class StageScene2LangMan : MonoBehaviour
+    public class Stage2Scene2LangMan : MonoBehaviour
     {
         public TextMeshProUGUI stage2Scene2Text1;
         public TextMeshProUGUI stage2Scene2Text2;
@@ -78,6 +78,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             stage2Scene2Text13.text = defs["Stage2Scene2TextBox13"];
             stage2Scene2Text14.text = defs["Stage2Scene2TextBox14"];
             stage2Scene2Text15.text = defs["Stage2Scene2TextBox15"];
+
         }
     }
 }
