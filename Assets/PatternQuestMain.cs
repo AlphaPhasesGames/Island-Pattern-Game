@@ -200,7 +200,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 if (!loadSavesOnce)
                 {
                     SceneManager.LoadScene("Stage 2 Scene 2");
-                    s2S1AS = pQTMISaveData1.s2_s2_as;
+                    s2S2AS = pQTMISaveData1.s2_s2_as;
                     //   taskNumberCrewQuarters = sSQFESaveData.task_number_crew_quarter;
                     Debug.Log("Stage 2 update runs - load save data from save");
                     loadSavesOnce = true;

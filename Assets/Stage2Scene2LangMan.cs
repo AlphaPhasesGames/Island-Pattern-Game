@@ -60,7 +60,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             hexagon1.text = defs["Stage2Scene1ShapeHexagon"];
             hexagon2.text = defs["Stage2Scene1ShapeHexagon"];
             hexagon3.text = defs["Stage2Scene1ShapeHexagon"];
-            ruleItself.text = defs["Stage2Scene1RuleItself"];
+            ruleItself.text = defs["Stage2Scene2RuleItself"];
             ruleTitle.text = defs["Stage1Scene1RuleTitle"];
 
             stage2Scene2Text1.text = defs["Stage2Scene2TextBox1"];

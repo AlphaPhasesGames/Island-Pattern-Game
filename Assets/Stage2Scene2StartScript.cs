@@ -9,6 +9,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
     public class Stage2Scene2StartScript : MonoBehaviour
     {
+        public Stage2Scene2TextMan textMan;
         public PatternQuestMain main;
         public CharacterController charCont;
         public RobotController robCont;
@@ -30,8 +31,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 robCont.isCharActive = true;
                 //  sphere1Butt.gameObject.SetActive(true);
                 //   collectMan.collectableCount++;
-                //  textMan.positionChanged = true;
-                //  textMan.arrayPos = 26;
+                  textMan.positionChanged = true;
+                  textMan.arrayPos = 17;
             }
         }
 

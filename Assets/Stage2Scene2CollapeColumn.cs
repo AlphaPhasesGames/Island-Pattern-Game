@@ -1,22 +1,29 @@
 using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
-
-public class Stage2Scene2CollapeColumn : MonoBehaviour
+using UnityEngine.UI;
+using LoLSDK;
+namespace Pattern.Quest.Alpha.Phases.Games
 {
-    public Rigidbody rb;
+    public class Stage2Scene2CollapeColumn : MonoBehaviour
+    {
+        public Rigidbody rb;
+        public Stage2Scene2TextMan textman;
     private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
         {
-            rb.isKinematic = false;
-            StartCoroutine(DeleteColumn());
+            if (other.CompareTag("Player"))
+            {
+                rb.isKinematic = false;
+                StartCoroutine(DeleteColumn());
+            }
         }
-    }
 
-    public IEnumerator DeleteColumn()
-    {
-        yield return new WaitForSeconds(2f);
-        Destroy(this.gameObject);
-    }
+        public IEnumerator DeleteColumn()
+        {
+            yield return new WaitForSeconds(2f);
+            textman.positionChanged = true;
+            textman.arrayPos = 6;
+            Destroy(this.gameObject);
+        }
+    } 
 }
