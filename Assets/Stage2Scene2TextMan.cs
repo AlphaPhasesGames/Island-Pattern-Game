@@ -65,7 +65,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         {
             if (main.s2S2AS)
             {
-                arrayPos = 16;
+                arrayPos = 17;
                 ResetPositionFlags(); // Reset for any array position related changes
             }
             else
@@ -194,20 +194,18 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage3MissionText8"); break;
                 case 8:
-
-                    //textPanalParent.gameObject.SetActive(true);
-                    // pollyImage.gameObject.SetActive(true);
+                  
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(false);
-                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                    forwardParent.gameObject.SetActive(true);
+                 
                     SpeakText("stage3MissionText9");
                     break;
                 case 9:
                     //  pollyImage.gameObject.SetActive(true);
-                    backwardsButton.gameObject.SetActive(false);
+                    backwardsButton.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
-                    textPanal.gameObject.SetActive(true);
+                 
                     // main.s1S1AS = true;
                     // main.SaveScene1Stage1();
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
@@ -215,19 +213,18 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     break;
                 case 10:
                     backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(false);
+                    forwardParent.gameObject.SetActive(true);
                     // forwardButton.gameObject.SetActive(true);
                     textPanal.gameObject.SetActive(true);
                     //StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage3MissionText11"); break;
                 case 11:
-                    textPanal.gameObject.SetActive(true);
-                    backwardsButton.gameObject.SetActive(false);
-                    StartCoroutine(MoveToBlankInvislbePanalPedestal());
+                    forwardParent.gameObject.SetActive(true);
+                    backwardsButton.gameObject.SetActive(true);
                     SpeakText("stage3MissionText12"); break;
 
                 case 12:
-
+                    forwardParent.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     // charCont.enabled = false;
@@ -235,10 +232,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     // backwardsButton.gameObject.SetActive(false);
                     break;
                 case 13:
-                    textPanal.gameObject.SetActive(false);
-                    // charCont.enabled = false;
-                    // forwardParent.gameObject.SetActive(false);
-                    // backwardsButton.gameObject.SetActive(false);
+                    backwardsButton.gameObject.SetActive(false);
+                    textPanal.gameObject.SetActive(true);
+                    forwardParent.gameObject.SetActive(false);
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
 
                 case 14:
@@ -250,20 +247,29 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     // backwardsButton.gameObject.SetActive(false);
                     break;
                 case 15:
-                    textPanal.gameObject.SetActive(false);
+                    textPanal.gameObject.SetActive(true);
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     // charCont.enabled = false;
                     // forwardParent.gameObject.SetActive(false);
                     // backwardsButton.gameObject.SetActive(false);
                     break;
 
                 case 16:
-                    textPanal.gameObject.SetActive(false);
+                    textPanal.gameObject.SetActive(true);
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     // charCont.enabled = false;
                     // forwardParent.gameObject.SetActive(false);
                     // backwardsButton.gameObject.SetActive(false);
                     break;
 
                 case 17:
+                    textPanal.gameObject.SetActive(false);
+                    // charCont.enabled = false;
+                    // forwardParent.gameObject.SetActive(false);
+                    // backwardsButton.gameObject.SetActive(false);
+                    break;
+
+                case 18:
                     textPanal.gameObject.SetActive(false);
                     // charCont.enabled = false;
                     // forwardParent.gameObject.SetActive(false);
@@ -333,7 +339,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             yield return new WaitForSeconds(5);
             robCont.isCharActive = true;
             textPanal.gameObject.SetActive(false);
-            arrayPos = 16;
+            arrayPos = 17;
             Debug.Log("This start coRoutine Runs");
 
         }

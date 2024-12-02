@@ -5,9 +5,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
     public class Stage2Scene2LookAtMozaic : MonoBehaviour
     {
         // Reference to the Collider component of the object
-    //    public Stage2Scene1TextMan textMan;
-    //    public Stage2Scene1Collectables collectMan;
-    //    public Stage2Scene1ProgressionManager progScript;
+       public Stage2Scene2TextMan textMan;
+       public S2S2CollectionsManager collectMan;
+       // public Stage2Scene1ProgressionManager progScript;
         public BoxCollider triggerCollider;
         public Camera playerCamToDisable;
         public Camera pedastalCam;
@@ -208,15 +208,15 @@ namespace Pattern.Quest.Alpha.Phases.Games
         // Handle what happens when the trigger box is clicked
         private void OnTriggerBoxClicked()
         {
-/*
-            if (collectMan.allSpheresCollected)
+
+            if (!collectMan.allSpheresCollected)
             {
                 textMan.StopAllCoroutines();
                 textMan.positionChanged = true;
                 textMan.arrayPos = 10;
                 hasViewedPedastal = true;
             }
-*/
+
             playerCamToDisable.enabled = false;
             pedastalCam.enabled = true;
             triggerCollider.enabled = false;

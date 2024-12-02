@@ -128,7 +128,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(true);
                     button1.gameObject.SetActive(false);
-                    SpeakText("stage3MissionText1"); break;
+                    SpeakText("stage1Scene1TextBox1"); break;
                 case 1:
                     robCont.isCharActive = true;
                     backwardsButton.gameObject.SetActive(true);
@@ -136,7 +136,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     //StopCoroutine(DelayTextButton());
                     HideButton();
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage3MissionText2ChooseCar"); break;
+                    SpeakText("stage1Scene1TextBox2"); break;
                 case 2:
                     //  textPos1.gameObject.SetActive(false);
                     //  textPos2.gameObject.SetActive(true);
@@ -144,7 +144,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage3MissionText3"); break;
+                    SpeakText("stage1Scene1TextBox3"); break;
                 case 3:
                     StopAllCoroutines();
                     robCont.isCharActive = false;
@@ -152,26 +152,26 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     //  textPos3.gameObject.SetActive(true);
                     textPanal.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(true);
-                    SpeakText("stage3MissionText4"); break;
+                    SpeakText("stage1Scene1TextBox4"); break;
                 case 4:
                     backwardsButton.gameObject.SetActive(true);
                     unit17Image.gameObject.SetActive(false);
                     pollyImage.gameObject.SetActive(true);
-                    SpeakText("stage3MissionText5"); break;
-                case 5: SpeakText("stage3MissionText6"); break;
+                    SpeakText("stage1Scene1TextBox5"); break;
+                case 5: SpeakText("stage1Scene1TextBox6"); break;
                 case 6:
                     robCont.isCharActive = true;
                     forwardParent.gameObject.SetActive(false);
                     //StopCoroutine(DelayTextButton());
                     HideButton();
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage3MissionText7"); break;
+                    SpeakText("stage1Scene1TextBox7"); break;
                 case 7:
                     StopAllCoroutines();
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(true);
-                    SpeakText("stage3MissionText8"); break;
+                    SpeakText("stage1Scene1TextBox8"); break;
                 case 8:
                     
                     //textPanalParent.gameObject.SetActive(true);
@@ -181,7 +181,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     pollyModelToShow.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage3MissionText9");
+                    SpeakText("stage1Scene1TextBox9");
                     break;
                 case 9:
                     pollyImage.gameObject.SetActive(true);
@@ -191,77 +191,80 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     main.s1S1AS = true;
                     main.SaveScene1Stage1();
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage3MissionText10");
+                    SpeakText("stage1Scene1TextBox10");
                     break;                    
                 case 10:
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(true);
                     forwardButton.gameObject.SetActive(true);
                     textPanal.gameObject.SetActive(true);
-                    SpeakText("stage3MissionText11"); break;
+                    SpeakText("stage1Scene1TextBox11"); break;
                 case 11:
                     backwardsButton.gameObject.SetActive(true);
-                    SpeakText("stage3MissionText12"); break;
+                    SpeakText("stage1Scene1TextBox12"); break;
                 case 12:
-                        SpeakText("stage3MissionText13"); break;
+                        SpeakText("stage1Scene1TextBox13"); break;
                 case 13:
-                        SpeakText("stage3MissionText14"); break;
+                        SpeakText("stage1Scene1TextBox14"); break;
                 case 14:
-                        SpeakText("stage3MissionText15");
+                        SpeakText("stage1Scene1TextBox15");
                         break;
                 case 15:
                     StopAllCoroutines();
                     forwardParent.gameObject.SetActive(true);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage3MissionText16");
+                    SpeakText("stage1Scene1TextBox16");
                         break;
                 case 16:
                     forwardParent.gameObject.SetActive(true);
                     forwardButton.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
-                    SpeakText("stage3MissionText11"); break;
+                    SpeakText("stage1Scene1TextBox17"); break;
                 case 17:
                     backwardsButton.gameObject.SetActive(true);
-                    SpeakText("stage3MissionText11"); break;
+                    SpeakText("stage1Scene1TextBox18"); break;
                 case 18:
 
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage3MissionText12"); break;
+                    SpeakText("stage1Scene1TextBox19"); break;
                 case 19:
                     forwardParent.gameObject.SetActive(false);
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage3MissionText13"); break;
+                    SpeakText("stage1Scene1TextBox20"); break;
                 case 20:
                     forwardButton.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
-                    SpeakText("stage3MissionText14"); break;
+                    SpeakText("stage1Scene1TextBox21"); break;
                 case 21:
                     backwardsButton.gameObject.SetActive(false);
-                    SpeakText("stage3MissionText15");
+                    SpeakText("stage1Scene1TextBox22");
                         break;
                 case 22:
                     StopAllCoroutines();
                     forwardParent.gameObject.SetActive(true);
                     //StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage3MissionText16");
-                        break;
+                    SpeakText("stage1Scene1TextBox23");
+                    break;
                 case 23:
+                    textPanal.gameObject.SetActive(true);
                     forwardButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
+                    StartCoroutine(MoveToBlankInvislbePanalPlatform());
+                    SpeakText("stage1Scene1TextBox24Incorrect");
                     break;
                 case 24:
+                    textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
-                    forwardButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage3MissionText16");
-                        break;
+                    SpeakText("stage1Scene1TextBox25Correct");
+                    break;
                 case 25:
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
@@ -303,7 +306,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             }
         }
 
-        private void ResetPositionFlags()
+        public void ResetPositionFlags()
         {
             Array.Fill(textBools, false); // Reset all boolean flags for text
             positionChanged = true;       // Mark position as changed for Update() processing
@@ -343,11 +346,19 @@ namespace Pattern.Quest.Alpha.Phases.Games
             Debug.Log("This start coRoutine Runs");
 
         }
-      
 
+        public IEnumerator MoveToBlankInvislbePanalPlatform()
+        {
+            yield return new WaitForSeconds(3);
+            // robCont.isCharActive = true;
+            textPanal.gameObject.SetActive(false);
+            arrayPos = 12;
+            Debug.Log("This start coRoutine Runs");
+
+        }
         public void IntroTTSSpeak(int textIndex)
         {
-            string textKey = $"stage3MissionText{textIndex}";
+            string textKey = $"stage1Scene1TextBox{textIndex}";
             LOLSDK.Instance.SpeakText(textKey);
             Debug.Log($"Intro Text {textIndex} Button is pressed");
         }

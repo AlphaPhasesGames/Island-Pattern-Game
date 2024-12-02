@@ -16,14 +16,29 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Stage1Scene1TextMan textMan;
         public GameObject player;
         public GameObject uiCOllectablesPanal;
+        public GameObject pollyImage;
+        public GameObject ruleButton;
+        public GameObject ruleItem;
+        // public GameObject sphere1;
+        public GameObject sphere6;
+        public GameObject sphere7;
+        public GameObject sphere10;
+        public GameObject sphere11;
+        public GameObject sphere14;
+
+        // public GameObject sphere1;
+        public GameObject sphere6ToHide;
+        public GameObject sphere7ToHide;
+        public GameObject sphere10ToHide;
+        public GameObject sphere11ToHide;
+        public GameObject sphere14ToHide;
 
         // Start is called before the first frame update
-        void Start()
+        private void Awake() 
         {
-
             main = FindObjectOfType<PatternQuestMain>();
             textMan.positionChanged = true;
-         //   main.SaveStage();
+            //   main.SaveStage();
             main.charCont = FindObjectOfType<CharacterController>();
             //LoadGame();
             main.playerRobot = player.gameObject;
@@ -36,30 +51,33 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 collectMan.collectableCount++;
                 textMan.positionChanged = true;
                 textMan.arrayPos = 26;
+                pollyImage.gameObject.SetActive(true);
             }
-          
+            if (main.s1S1SpheresCollected)
+            {
+               // sphere1.gameObject.SetActive(true);
+                sphere6.gameObject.SetActive(true);
+                sphere7.gameObject.SetActive(true);
+                sphere10.gameObject.SetActive(true);
+                sphere11.gameObject.SetActive(true);
+                sphere14.gameObject.SetActive(true);
+
+                sphere6ToHide.gameObject.SetActive(false);
+                sphere7ToHide.gameObject.SetActive(false);
+                sphere10ToHide.gameObject.SetActive(false);
+                sphere11ToHide.gameObject.SetActive(false);
+                sphere14ToHide.gameObject.SetActive(false);
+
+                collectMan.allSpheresCollected = true;
+                collectMan.collectableCount = 6;
+
+                ruleButton.gameObject.SetActive(true);
+                ruleItem.gameObject.SetActive(false);
+            }
         }
 
         // Update is called once per frame
-
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.F5))
-            {
-                SaveGame();
-            }
-
-            if (Input.GetKeyDown(KeyCode.F6))
-            {
-                
-                LoadGame();
-               
-
-            }
-
-
-        }
-
+             
         public void SaveGame()
         {
 

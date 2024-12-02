@@ -11,6 +11,12 @@ TagManager:
   - Tri1
   - Tri2
   - Tri3
+  - Square2
+  - Square3
+  - Circle3
+  - Hex1
+  - Hex2
+  - Hex3
   layers:
   - Default
   - TransparentFX

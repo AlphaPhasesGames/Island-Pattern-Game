@@ -16,7 +16,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public int minLengthArray = 1;
 
         public bool positionChanged; //= true;
-
+        public GameObject collectablesUiCounter;
 
         public GameObject pollyImage;
         public GameObject unit17Image;
@@ -146,6 +146,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     main.s1S2AS = true;
                     main.SaveScene1Stage2();
                     main.SaveS1S2();
+                    collectablesUiCounter.gameObject.SetActive(true);
+
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage3MissionText3"); break;
                 case 3:

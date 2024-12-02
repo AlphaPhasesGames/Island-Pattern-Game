@@ -6,7 +6,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
 {
     public class PickupStage2Scene2Hex1 : MonoBehaviour
     {
-        // public Stage2Scene1Collectables collectMan;
+        public S2S2CollectionsManager collectMan;
         public GameObject hex1;
         public Button hex1Button;
         public AudioSource pickupSFX;
@@ -15,7 +15,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             if (other.CompareTag("Player"))
             {
                 pickupSFX.Play();
-                // collectMan.collectableCount++;
+                collectMan.collectableCount++;
                 hex1Button.gameObject.SetActive(true);
                 hex1.gameObject.SetActive(false);
             }

@@ -13,6 +13,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public int current_stage; // int to hold the level number
         public Vector3 player_position_save;
         public bool s1_s1_as;
+        public bool s1_s1_spheres_collected;
+        public bool s1_s1_rule_collected;
         public bool s1_s2_as;
         public bool s2_s1_as;
         public bool s2_s2_as;
@@ -49,6 +51,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
             public bool loadSavesOnce;
             public bool s1S1AS;
+            public bool s1S1SpheresCollected;
+            public bool s1S1RuleCollected;
+
             public bool s1S2AS;
             public bool s2S1AS;
             public bool s2S2AS;
@@ -115,10 +120,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
             if (currentStage == 1)
             {
                 // taskNumber = pQTMISaveData.task_number;
-         
-                SceneManager.LoadScene("Stage 1 Scene 1");
-
                 playerRobot.transform.position = posOfPlayer;
+                SceneManager.LoadScene("Stage 1 Scene 1");
+                //playerRobot.transform.position = posOfPlayer;
+
                 //charCont.enabled = false;
                 //LoadPosition();
                 // charCont.enabled = true;
@@ -163,8 +168,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
                    
                     SceneManager.LoadScene("Stage 1 Scene 1");
                     s1S1AS = pQTMISaveData1.s1_s1_as;
+                    s1S1SpheresCollected = pQTMISaveData1.s1_s1_spheres_collected;
+
                     // taskNumber = sSQFESaveData.task_number;
-                  
+
                     loadSavesOnce = true;
                         Debug.Log("Stage 1 update runs - load save data from save");
                     }
@@ -244,7 +251,14 @@ namespace Pattern.Quest.Alpha.Phases.Games
                  Save();
             }
 
-            public void SaveS1S2()
+        public void SaveS1S1Collectables()
+        {
+            s1S1SpheresCollected = true;
+            pQTMISaveData1.s1_s1_spheres_collected = s1S1SpheresCollected;
+            Save();
+        }
+
+        public void SaveS1S2()
             {
                  currentStage = 2;
                  pQTMISaveData1.current_stage = currentStage;

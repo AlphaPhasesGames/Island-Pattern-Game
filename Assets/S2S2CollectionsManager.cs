@@ -5,18 +5,17 @@ using UnityEngine.UI;
 using TMPro;
 namespace Pattern.Quest.Alpha.Phases.Games
 {
-    public class CollectablesManager : MonoBehaviour
+    public class S2S2CollectionsManager : MonoBehaviour
     {
         public TextMeshProUGUI uiCounter;
-        public PatternQuestMain main;
-        public Stage1Scene1TextMan textMan;
+        public Stage2Scene2TextMan textMan;
         public int collectableCount;
         public bool allSpheresCollected;
         public bool runOnce;
         // Start is called before the first frame update
-        private void Awake()
+        void Start()
         {
-            main = GameObject.FindObjectOfType<PatternQuestMain>();
+
         }
 
         // Update is called once per frame
@@ -26,16 +25,15 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
             if (!runOnce)
             {
-                if (collectableCount == 6)
+                if (collectableCount == 12)
                 {
                     textMan.positionChanged = true; // Directly set positionChanged
-                    textMan.arrayPos = 19;
+                    textMan.arrayPos = 13;
                     allSpheresCollected = true;
-                    main.SaveS1S1Collectables();
                     runOnce = true;
                 }
             }
-           
+
         }
     }
 }

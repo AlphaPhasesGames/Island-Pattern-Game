@@ -7,11 +7,16 @@ namespace Pattern.Quest.Alpha.Phases.Games
         // Reference to the Collider component of the object
         public Stage1Scene1TextMan textMan;
         public CollectablesManager collectMan;
+        public Stage1Scene1ProgressScript progMan;
         public BoxCollider triggerCollider;
         public Camera playerCamToDisable;
         public Camera pedastalCam;
         public Button closeButton;
         public Button resetButton;
+
+        public Stage1Scene1SpherePlacementSlot1 slot1;
+        public Stage1Scene1SpherePlacementSlot2 slot2;
+        public Stage1Scene1SpherePlacementSlot3 slot3;
 
         public bool hasViewedPedastal;
 
@@ -93,7 +98,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             playerCamToDisable.enabled = true;
             pedastalCam.enabled = false;
             triggerCollider.enabled = true;
-            resetButton.gameObject.SetActive(true);
+            resetButton.gameObject.SetActive(false);
             closeButton.gameObject.SetActive(false);
         }
 
@@ -140,13 +145,18 @@ namespace Pattern.Quest.Alpha.Phases.Games
             slot1Sphere11Image.gameObject.SetActive(true);
             slot1Sphere14Image.gameObject.SetActive(true);
 
-            no1Prop.DeSelectSphereItem();
-            no6Prop.DeSelectSphereItem();
-            no7Prop.DeSelectSphereItem();
-            no10Prop.DeSelectSphereItem();
-            no11Prop.DeSelectSphereItem();
-            no14Prop.DeSelectSphereItem();
+            no1Prop.DeSelectSphereItemPed();
+            no6Prop.DeSelectSphereItemPed();
+            no7Prop.DeSelectSphereItemPed();
+            no10Prop.DeSelectSphereItemProg();
+            no11Prop.DeSelectSphereItemPed();
+            no14Prop.DeSelectSphereItemPed();
 
+            slot1.inCorrectPlacement = false;
+            slot2.inCorrectPlacement = false;
+            slot3.inCorrectPlacement = false;
+            progMan.runTwice = false;
+            textMan.ResetPositionFlags();
         }    
     }
 }
