@@ -309,7 +309,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public IEnumerator HideButtons()
         {
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.1f);
             sphere2.gameObject.SetActive(false);
             sphere3.gameObject.SetActive(false);
             sphere8.gameObject.SetActive(false);

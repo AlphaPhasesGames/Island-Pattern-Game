@@ -16,6 +16,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public bool s1_s1_spheres_collected;
         public bool s1_s1_rule_collected;
         public bool s1_s2_as;
+        public bool s1_s2_spheres_collected;
         public bool s2_s1_as;
         public bool s2_s2_as;
         [Header("StageTasks")] // header for the save location for the robot       
@@ -55,6 +56,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             public bool s1S1RuleCollected;
 
             public bool s1S2AS;
+            public bool s1S2SpheresCollected;
             public bool s2S1AS;
             public bool s2S2AS;
 
@@ -184,6 +186,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     {
                         SceneManager.LoadScene("Stage 1 Scene 2");
                         s1S2AS = pQTMISaveData1.s1_s2_as;
+                        s1S2SpheresCollected = pQTMISaveData1.s1_s2_spheres_collected;
                     //   taskNumberCrewQuarters = sSQFESaveData.task_number_crew_quarter;
                     Debug.Log("Stage 2 update runs - load save data from save");
                         loadSavesOnce = true;
@@ -255,6 +258,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
         {
             s1S1SpheresCollected = true;
             pQTMISaveData1.s1_s1_spheres_collected = s1S1SpheresCollected;
+            Save();
+        }
+
+        public void SaveS1S2Collectables()
+        {
+            s1S2SpheresCollected = true;
+            pQTMISaveData1.s1_s2_spheres_collected = s1S2SpheresCollected;
             Save();
         }
 

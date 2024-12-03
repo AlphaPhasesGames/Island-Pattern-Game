@@ -50,7 +50,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public IEnumerator RemoveCrate()
         {
             yield return new WaitForSeconds(2);
-            crate.gameObject.SetActive(false);
+            Destroy(crate);
         }
 
         private void OnTriggerEnter(Collider other)

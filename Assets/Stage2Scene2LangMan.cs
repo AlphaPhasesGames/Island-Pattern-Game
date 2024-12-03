@@ -45,41 +45,41 @@ namespace Pattern.Quest.Alpha.Phases.Games
         {
             JSONNode defs = SharedState.LanguageDefs;
 
-            inventoryButton.text = defs["Inventory"];
-            closeViewButton.text = defs["CloseView"];
-            ruleButton.text = defs["RuleButton"];
-            resetButton.text = defs["ResetButton"];
-            triangle.text = defs["Stage2Scene1ShapeTriangle"];
-            triangle2.text = defs["Stage2Scene1ShapeTriangle"];
-            triangle3.text = defs["Stage2Scene1ShapeTriangle"];
-            circle.text = defs["Stage2Scene1ShapeCircle"];
-            circle2.text = defs["Stage2Scene1ShapeCircle"];
-            circle3.text = defs["Stage2Scene1ShapeCircle"];
-            square.text = defs["Stage2Scene1ShapeSquare"];
-            square2.text = defs["Stage2Scene1ShapeSquare"];
-            square3.text = defs["Stage2Scene1ShapeSquare"];
-            hexagon1.text = defs["Stage2Scene1ShapeHexagon"];
-            hexagon2.text = defs["Stage2Scene1ShapeHexagon"];
-            hexagon3.text = defs["Stage2Scene1ShapeHexagon"];
-            ruleItself.text = defs["Stage2Scene2RuleItself"];
-            ruleTitle.text = defs["Stage1Scene1RuleTitle"];
+            inventoryButton.text = defs["inventory"];
+            closeViewButton.text = defs["closeView"];
+            ruleButton.text = defs["ruleButton"];
+            resetButton.text = defs["resetButton"];
+            triangle.text = defs["stage2Scene1ShapeTriangle"];
+            triangle2.text = defs["stage2Scene1ShapeTriangle"];
+            triangle3.text = defs["stage2Scene1ShapeTriangle"];
+            circle.text = defs["stage2Scene1ShapeCircle"];
+            circle2.text = defs["stage2Scene1ShapeCircle"];
+            circle3.text = defs["stage2Scene1ShapeCircle"];
+            square.text = defs["stage2Scene1ShapeSquare"];
+            square2.text = defs["stage2Scene1ShapeSquare"];
+            square3.text = defs["stage2Scene1ShapeSquare"];
+            hexagon1.text = defs["stage2Scene1ShapeHexagon"];
+            hexagon2.text = defs["stage2Scene1ShapeHexagon"];
+            hexagon3.text = defs["stage2Scene1ShapeHexagon"];
+            ruleItself.text = defs["stage2Scene2RuleItself"];
+            ruleTitle.text = defs["stage1Scene1RuleTitle"];
 
-            stage2Scene2Text1.text = defs["Stage2Scene2TextBox1"];
-            stage2Scene2Text2.text = defs["Stage2Scene2TextBox2"];
-            stage2Scene2Text3.text = defs["Stage2Scene2TextBox3"];
-            stage2Scene2Text4.text = defs["Stage2Scene2TextBox4"];
-            stage2Scene2Text5.text = defs["Stage2Scene2TextBox5"];
-            stage2Scene2Text6.text = defs["Stage2Scene2TextBox6"];
-            stage2Scene2Text7.text = defs["Stage2Scene2TextBox7"];
-            stage2Scene2Text8.text = defs["Stage2Scene2TextBox8"];
-            stage2Scene2Text9.text = defs["Stage2Scene2TextBox9"];
-            stage2Scene2Text10.text = defs["Stage2Scene2TextBox10"];
-            stage2Scene2Text11.text = defs["Stage2Scene2TextBox11"];
-            stage2Scene2Text12.text = defs["Stage2Scene2TextBox12"];
-            stage2Scene2Text13.text = defs["Stage2Scene2TextBox13"];
-            stage2Scene2Text14.text = defs["Stage2Scene2TextBox14"];
-            stage2Scene2Text15.text = defs["Stage2Scene2TextBox15"];
-            stage2Scene2Text16.text = defs["Stage2Scene2TextBox16"];
+            stage2Scene2Text1.text = defs["stage2Scene2TextBox1"];
+            stage2Scene2Text2.text = defs["stage2Scene2TextBox2"];
+            stage2Scene2Text3.text = defs["stage2Scene2TextBox3"];
+            stage2Scene2Text4.text = defs["stage2Scene2TextBox4"];
+            stage2Scene2Text5.text = defs["stage2Scene2TextBox5"];
+            stage2Scene2Text6.text = defs["stage2Scene2TextBox6"];
+            stage2Scene2Text7.text = defs["stage2Scene2TextBox7"];
+            stage2Scene2Text8.text = defs["stage2Scene2TextBox8"];
+            stage2Scene2Text9.text = defs["stage2Scene2TextBox9"];
+            stage2Scene2Text10.text = defs["stage2Scene2TextBox10"];
+            stage2Scene2Text11.text = defs["stage2Scene2TextBox11"];
+            stage2Scene2Text12.text = defs["stage2Scene2TextBox12"];
+            stage2Scene2Text13.text = defs["stage2Scene2TextBox13"];
+            stage2Scene2Text14.text = defs["stage2Scene2TextBox14"];
+            stage2Scene2Text15.text = defs["stage2Scene2TextBox15"];
+            stage2Scene2Text16.text = defs["stage2Scene2TextBox16"];
 
         }
     }
