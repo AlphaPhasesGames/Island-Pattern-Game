@@ -9,6 +9,14 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public float forceStrength = 10f; // Strength of the force
         public GameObject sphere1;
         public GameObject crate;
+        public bool runOnce;
+
+        public AudioSource audioSource;
+
+        // Set pitch variation range
+        [SerializeField] private float minPitch = 0.9f;
+        [SerializeField] private float maxPitch = 1.1f;
+
         void ApplySphericalForce()
         {
             // Find all colliders within the sphere of influence
@@ -57,8 +65,15 @@ namespace Pattern.Quest.Alpha.Phases.Games
         {
             if(other.CompareTag("Club"))
             {
-                ApplySphericalForce();
-                Debug.Log("This explosion triggered");
+                if (!runOnce)
+                {
+                    audioSource.pitch = UnityEngine.Random.Range(minPitch, maxPitch); // Set random pitch
+                    audioSource.Play(); // Play the sound
+                    ApplySphericalForce();
+                    Debug.Log("This explosion triggered");
+                    runOnce = true;
+                }
+
             }
         }
 

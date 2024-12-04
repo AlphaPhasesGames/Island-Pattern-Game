@@ -9,14 +9,15 @@ namespace Pattern.Quest.Alpha.Phases.Games
     {
         public TextMeshProUGUI uiCounter;
         public Stage2Scene1TextMan textMan;
+        public PatternQuestMain main;
         public int collectableCount;
         public bool allSpheresCollected;
         public bool runOnce;
-        // Start is called before the first frame update
-        void Start()
+        private void Awake()
         {
-
+            main = GameObject.FindObjectOfType<PatternQuestMain>();
         }
+
 
         // Update is called once per frame
         void Update()
@@ -29,6 +30,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 {
                     textMan.positionChanged = true; // Directly set positionChanged
                     textMan.arrayPos = 9;
+                    main.SaveS2S1Collectables();
                     allSpheresCollected = true;
                     runOnce = true;
                 }

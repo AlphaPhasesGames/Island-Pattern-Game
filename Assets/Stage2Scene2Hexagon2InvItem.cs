@@ -97,6 +97,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 playerHasBadgeObject = false;
                 hexagon2Button.gameObject.SetActive(true);
                 hexagon2Held = false;
+                hexagon2Name.gameObject.SetActive(false); // hide text for gold item
+
                 Debug.Log("Inv Item Picked");
             }
         }
@@ -110,6 +112,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
             playerHasBadgeObject = false;
             hexagon2Button.gameObject.SetActive(true);
             hexagon2Held = false;
+            hexagon2Name.gameObject.SetActive(false); // hide text for gold item
+
             Debug.Log("Inv Item Picked");
 
         }

@@ -38,7 +38,7 @@ public class RobotController : MonoBehaviour
                 HandleMovementInput();
                 HandleJumpAndGravity();
 
-                if (Input.GetMouseButtonDown(0))
+                if (Input.GetMouseButtonDown(0) || (Input.GetKeyDown(KeyCode.E)))
                 {
                     swing.SetTrigger("swing");
                 }

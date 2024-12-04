@@ -9,11 +9,21 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public float forceStrength = 10f; // Strength of the force
       //  public GameObject sphere1;
         public GameObject crate;
+
+        public AudioSource audioSource;
+
+        // Set pitch variation range
+        [SerializeField] private float minPitch = 0.9f;
+        [SerializeField] private float maxPitch = 1.1f;
+
+      
+
         void ApplySphericalForce()
         {
             // Find all colliders within the sphere of influence
             Collider[] colliders = Physics.OverlapSphere(transform.position, forceRadius);
-
+            
+            audioSource.Play(); // Play the sound
             foreach (Collider nearbyObject in colliders)
             {
                 Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
@@ -53,6 +63,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         {
             if (other.CompareTag("Club"))
             {
+                audioSource.pitch = UnityEngine.Random.Range(minPitch, maxPitch); // Set random pitch
                 ApplySphericalForce();
                 Debug.Log("This explosion triggered");
             }

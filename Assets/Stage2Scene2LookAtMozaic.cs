@@ -7,20 +7,26 @@ namespace Pattern.Quest.Alpha.Phases.Games
         // Reference to the Collider component of the object
        public Stage2Scene2TextMan textMan;
        public S2S2CollectionsManager collectMan;
-       // public Stage2Scene1ProgressionManager progScript;
+        public Stage2Scene2ProgMan progScript;
         public BoxCollider triggerCollider;
         public Camera playerCamToDisable;
         public Camera pedastalCam;
         public Button closeButton;
         public Button resetButton;
-/*
-        public Stage2Scene1ShapePlacementSlot1 slot1;
-        public Stage2Scene1ShapePlacementSlot2 slot2;
-        public Stage2Scene1ShapePlacementSlot4 slot4;
-        public Stage2Scene1ShapePlacementSlot3 slot3;
-        public Stage2Scene1ShapePlacement5 slot5;
-        public Stage2Scene1ShapePlacement6 slot6;
-*/
+
+        public Stage2Scene2ShapePlacementSlot1 slot1;
+        public Stage2Scene2ShapePlacementSlot2 slot2;
+        public Stage2Scene2ShapePlacementSlot4 slot4;
+        public Stage2Scene2ShapePlacementSlot3 slot3;
+        public Stage2Scene2ShapePlacementSlot5 slot5;
+        public Stage2Scene2ShapePlacementSlot6 slot6;
+        public Stage2Scene2ShapePlacementSlot7 slot7;
+        public Stage2Scene2ShapePlacementSlot8 slot8;
+        public Stage2Scene2ShapePlacementSlot9 slot9;
+        public Stage2Scene2ShapePlacementSlot10 slot10;
+        public Stage2Scene2ShapePlacementSlot11 slot11;
+        public Stage2Scene2ShapePlacementSlot12 slot12;
+
         public bool hasViewedPedastal;
 
         public GameObject slot1Circle1Correct;
@@ -191,14 +197,23 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public GameObject slot1Circle3mage;
         public GameObject slot1Square3Image;
         public GameObject slot1Triangle3Image;
-/*
+
+        public Stage2Scene2Circle1InvItem circle1Prop;
+        public Stage2Scene2Circle2InvItem circle2Prop;
+        public StageScene2Circle3InvItem circle3Prop;
+
         public Stage2Scene2SquareInventoryItem squareProp;
+        public StageScene2Square2InvItem square2Prop;
+        public StageScene2Square3InvItem square3Prop;
+
         public Stage2Scene2Triangle1InventoryItem tri1Prop;
-        public Stage2Scene1CircleInventoryItem circle1Prop;
-        public Stage1SceneTriangle2InventoryItem tri2Prop;
-        public Stage1Scene1Cicle2InventoryItem circle2Prop;
-        public Stage2Scene1Triangle3InventoryItem tri3Prop;
-*/
+        public Stage2Scene2TriangleInventoryItem tri2Prop;
+        public Stage2Scene2Triangle3InvItem tri3Prop;
+
+        public Stage2Scene2Hexagon1InvItem hex1Prop;
+        public Stage2Scene2Hexagon2InvItem hex2Prop;
+        public Stage2Scene2Hexagon3InvItem hex3Prop;
+
         private void Awake()
         {
             closeButton.onClick.AddListener(ClosePedastalVeiw);
@@ -404,13 +419,19 @@ namespace Pattern.Quest.Alpha.Phases.Games
             slot12Circle3.gameObject.SetActive(false);
             slot12Square3.gameObject.SetActive(false);
             slot12Triangle3Correct.gameObject.SetActive(false);
-            /*
+           
             squareProp.DeSelectSphereItemPedestal();
+            square2Prop.DeSelectSphereItemPedestal();
+            square3Prop.DeSelectSphereItemPedestal();
             tri1Prop.DeSelectSphereItemPedestel();
-            circle1Prop.DeSelectSphereItemPedastel();
-            tri2Prop.DeSelectSphereItemPedestal();
-            circle2Prop.DeSelectSphereItemPedastel();
-            tri3Prop.DeSelectSphereItem();
+            tri2Prop.DeSelectSphereItemPedestel();
+            tri3Prop.DeSelectSphereItemPedestel();
+            circle1Prop.DeSelectSphereItemPedestal();
+            circle2Prop.DeSelectSphereItemPedestal();
+            circle3Prop.DeSelectSphereItemPedestal();
+            tri1Prop.DeSelectSphereItemPedestel();
+            tri2Prop.DeSelectSphereItemPedestel();
+            tri3Prop.DeSelectSphereItemPedestel();
 
             slot1.inCorrectPlacement = false;
             slot2.inCorrectPlacement = false;
@@ -418,10 +439,16 @@ namespace Pattern.Quest.Alpha.Phases.Games
             slot4.inCorrectPlacement = false;
             slot5.inCorrectPlacement = false;
             slot6.inCorrectPlacement = false;
-           
+            slot7.inCorrectPlacement = false;
+            slot8.inCorrectPlacement = false;
+            slot9.inCorrectPlacement = false;
+            slot10.inCorrectPlacement = false;
+            slot11.inCorrectPlacement = false;
+            slot12.inCorrectPlacement = false;
+
             progScript.runTwice = false;
             textMan.ResetPositionFlags();
-             */
+            
         }
     }
 

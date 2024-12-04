@@ -43,6 +43,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 circle1Prop.circle1Held = false;
                 correctPlacement = true;
                 inCorrectPlacement = false;
+
             }
 
             if (circle2Prop.circle2Held)

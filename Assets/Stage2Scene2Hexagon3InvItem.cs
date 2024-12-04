@@ -96,6 +96,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 invItemImage.gameObject.SetActive(false); // this enables the image of the game obect to be held
                 playerHasBadgeObject = false;
                 hexagon3Button.gameObject.SetActive(true);
+                hexagon3Name.gameObject.SetActive(false); // hide text for gold item
+
                 hexagon3Held = false;
                 Debug.Log("Inv Item Picked");
             }
@@ -110,6 +112,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
             playerHasBadgeObject = false;
             hexagon3Button.gameObject.SetActive(true);
             hexagon3Held = false;
+            hexagon3Name.gameObject.SetActive(false); // hide text for gold item
+
             Debug.Log("Inv Item Picked");
 
         }

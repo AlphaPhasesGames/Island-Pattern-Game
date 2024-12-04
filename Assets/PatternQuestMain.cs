@@ -18,7 +18,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public bool s1_s2_as;
         public bool s1_s2_spheres_collected;
         public bool s2_s1_as;
+        public bool s2_s1_shapes_collected;
         public bool s2_s2_as;
+        public bool s2_s2_shapes_collected;
         [Header("StageTasks")] // header for the save location for the robot       
         public int task_number;
 
@@ -58,7 +60,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
             public bool s1S2AS;
             public bool s1S2SpheresCollected;
             public bool s2S1AS;
+            public bool s2S1ShapesCollected;
             public bool s2S2AS;
+            public bool s2S2ShapesCollected;
 
         #region "stage1stufftobecollapsed"
         [SerializeField, Header("Stage 1 Code")]
@@ -99,7 +103,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 Helper.StateButtonInitialize<PQTMISaveData>(newGameButton, continueButton, OnLoad); // initialise LOLSDK helper function and attached both new game and continue buttons to it
             }
 
-
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.H))
+            {
+                SceneManager.LoadScene("Stage 2 Scene 2");
+            }
+        }
         public void Save()
             {
                 LOLSDK.Instance.SaveState(pQTMISaveData1); // save data to cargoSaveData
@@ -199,6 +209,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 {
                     SceneManager.LoadScene("Stage 2 Scene 1");
                     s2S1AS = pQTMISaveData1.s2_s1_as;
+                    s2S1ShapesCollected = pQTMISaveData1.s2_s1_shapes_collected;
                     //   taskNumberCrewQuarters = sSQFESaveData.task_number_crew_quarter;
                     Debug.Log("Stage 2 update runs - load save data from save");
                     loadSavesOnce = true;
@@ -211,6 +222,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 {
                     SceneManager.LoadScene("Stage 2 Scene 2");
                     s2S2AS = pQTMISaveData1.s2_s2_as;
+                    s2S2ShapesCollected = pQTMISaveData1.s2_s2_shapes_collected;
                     //   taskNumberCrewQuarters = sSQFESaveData.task_number_crew_quarter;
                     Debug.Log("Stage 2 update runs - load save data from save");
                     loadSavesOnce = true;
@@ -265,6 +277,20 @@ namespace Pattern.Quest.Alpha.Phases.Games
         {
             s1S2SpheresCollected = true;
             pQTMISaveData1.s1_s2_spheres_collected = s1S2SpheresCollected;
+            Save();
+        }
+
+        public void SaveS2S1Collectables()
+        {
+            s2S1ShapesCollected = true;
+            pQTMISaveData1.s2_s1_shapes_collected = s2S1ShapesCollected;
+            Save();
+        }
+
+        public void SaveS2S2Collectables()
+        {
+            s2S2ShapesCollected = true;
+            pQTMISaveData1.s2_s2_shapes_collected = s2S2ShapesCollected;
             Save();
         }
 
