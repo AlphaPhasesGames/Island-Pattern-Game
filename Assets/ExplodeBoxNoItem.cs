@@ -9,6 +9,18 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public float forceStrength = 10f; // Strength of the force
        // public GameObject sphere1;
         public GameObject crate;
+
+        public AudioSource audioSource;
+
+        // Set pitch variation range
+        [SerializeField] private float minPitch = 0.9f;
+        [SerializeField] private float maxPitch = 1.1f;
+
+        private void Awake()
+        {
+            audioSource.pitch = UnityEngine.Random.Range(minPitch, maxPitch); // Set random pitch
+        }
+
         void ApplySphericalForce()
         {
             // Find all colliders within the sphere of influence
@@ -17,7 +29,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
             foreach (Collider nearbyObject in colliders)
             {
                 Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
-               // sphere1.gameObject.SetActive(true);
+                // sphere1.gameObject.SetActive(true);
+                audioSource.Play(); // Play the sound
                 StartCoroutine(RemoveCrate());
                 // Apply force only if the object has a Rigidbody
                 if (rb != null)
@@ -58,6 +71,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
             if (other.CompareTag("Club"))
             {
                 ApplySphericalForce();
+               
+
                 Debug.Log("This explosion triggered");
             }
         }

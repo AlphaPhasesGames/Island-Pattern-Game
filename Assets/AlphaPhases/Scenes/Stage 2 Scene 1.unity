@@ -229,6 +229,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 5440417}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &13434978 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -437,6 +440,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 64959617}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1 &68453890 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3703086235678447535, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -457,6 +463,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 68453890}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1 &74955964 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3698574166530741855, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
@@ -511,6 +520,10 @@ PrefabInstance:
       propertyPath: sphere1
       value: 
       objectReference: {fileID: 1697189598}
+    - target: {fileID: 1703932181035768756, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1281062155}
     - target: {fileID: 3703086235678447535, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
       propertyPath: m_Name
       value: BreakBox Variant Circle 2
@@ -792,6 +805,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 114549691}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1 &120587753
 GameObject:
   m_ObjectHideFlags: 0
@@ -1161,6 +1177,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 164805511}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &164805513 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -1858,6 +1877,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 323435723}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1001 &339890821
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1959,6 +1981,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 339890822}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &339890824 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -2053,6 +2078,10 @@ PrefabInstance:
       propertyPath: sphere1
       value: 
       objectReference: {fileID: 4682144885892063363}
+    - target: {fileID: 1703932181035768756, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1281062155}
     - target: {fileID: 3703086235678447535, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
       propertyPath: m_Name
       value: BreakBox Variant Circle 1
@@ -3121,6 +3150,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 455544119}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &475270658 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0005098a4d59cb6438fceb536a1e82aa, type: 3}
@@ -3430,6 +3462,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 499935137}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &499935139 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -3629,6 +3664,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 511989513}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1001 &512143215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3798,6 +3836,10 @@ PrefabInstance:
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 36f288254d4f6e048aaa8d063838ce61, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 36f288254d4f6e048aaa8d063838ce61, type: 3}
       propertyPath: m_MotionVectors
       value: 2
       objectReference: {fileID: 0}
@@ -3958,6 +4000,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 514550736}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1001 &518264628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3970,6 +4015,10 @@ PrefabInstance:
       propertyPath: sphere1
       value: 
       objectReference: {fileID: 1218570676}
+    - target: {fileID: 1703932181035768756, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1281062155}
     - target: {fileID: 3703086235678447535, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
       propertyPath: m_Name
       value: BreakBox Variant Tri 3
@@ -4697,6 +4746,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 603776789}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &603776791 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -4803,6 +4855,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 616647137}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &616647139 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -5708,6 +5763,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 665658344}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &665658346 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -5819,6 +5877,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 36f288254d4f6e048aaa8d063838ce61, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 36f288254d4f6e048aaa8d063838ce61, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 36f288254d4f6e048aaa8d063838ce61, type: 3}
       propertyPath: m_MotionVectors
@@ -7900,6 +7962,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 958779267}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1 &958896216
 GameObject:
   m_ObjectHideFlags: 0
@@ -8112,6 +8177,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 964063701}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!114 &980056084 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6405201485709860972, guid: 98bdf6f524786ba46a56d2b6f4eeeceb, type: 3}
@@ -8399,6 +8467,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1024191060}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &1024191062 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -8534,6 +8605,9 @@ MonoBehaviour:
   forceRadius: 1.5
   forceStrength: 10
   crate: {fileID: 935549510}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1 &1040414514
 GameObject:
   m_ObjectHideFlags: 0
@@ -9009,6 +9083,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1072717444}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &1072717446 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -9220,6 +9297,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1089166072}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &1089166074 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -9245,6 +9325,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1101855694}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1001 &1101976663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9351,6 +9434,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1101976665}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1001 &1106210383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9603,6 +9689,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 151643804}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1 &1119661615
 GameObject:
   m_ObjectHideFlags: 0
@@ -9728,6 +9817,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1122059517}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1001 &1124712180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9829,6 +9921,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1124712181}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &1124712183 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -10290,6 +10385,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1200384325}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1001 &1206007667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10396,6 +10494,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1206007669}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1001 &1207021267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11071,6 +11172,134 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.000005, y: 0.0000032672879, z: 10.000001}
   m_Center: {x: 0.0000038146973, y: 0, z: -0.0000009536743}
+--- !u!1 &1281062153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1281062154}
+  - component: {fileID: 1281062155}
+  m_Layer: 0
+  m_Name: Break
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1281062154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281062153}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 298498486199157447}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1281062155
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281062153}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6d84196d1456e1c498d57a972cffe02b, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1284455773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11837,6 +12066,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1346558943}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &1346558945 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -12100,6 +12332,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1392572863}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &1392572865 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -12544,6 +12779,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1431356122}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1 &1437536301 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6354332580187452585, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
@@ -12655,6 +12893,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1447131148}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1001 &1449148964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12761,6 +13002,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1449148966}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!114 &1458061333 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1980827523116921918, guid: ccbeacf2483045e43baa205d8d7cae2c, type: 3}
@@ -13311,6 +13555,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1528222701}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &1528222703 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -13501,6 +13748,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1549925260}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &1549925262 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -13607,6 +13857,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1564898418}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &1564898420 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -13739,6 +13992,10 @@ PrefabInstance:
       propertyPath: sphere1
       value: 
       objectReference: {fileID: 316439157339934640}
+    - target: {fileID: 1703932181035768756, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1281062155}
     - target: {fileID: 3703086235678447535, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
       propertyPath: m_Name
       value: BreakBox Variant Tri1
@@ -13915,6 +14172,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1630062029}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1001 &1630793945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14021,6 +14281,10 @@ MonoBehaviour:
   forceStrength: 10
   sphere1: {fileID: 284672216}
   crate: {fileID: 1645603304}
+  runOnce: 0
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1001 &1654008231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14127,6 +14391,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1654008233}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!114 &1668249611 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1700977506600960664, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
@@ -14539,6 +14806,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1694069129}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1 &1697189598
 GameObject:
   m_ObjectHideFlags: 0
@@ -15466,6 +15736,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1759729880}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1 &1775833271
 GameObject:
   m_ObjectHideFlags: 0
@@ -15743,6 +16016,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1802079691}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &1802079693 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -16055,6 +16331,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1888681284}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &1888681286 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -16166,6 +16445,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1893288277}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1001 &1895450129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16396,6 +16678,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1899084550}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1001 &1907548586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16663,6 +16948,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 1935531436}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &1935531438 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -18021,6 +18309,10 @@ PrefabInstance:
       propertyPath: sphere1
       value: 
       objectReference: {fileID: 737305714}
+    - target: {fileID: 1703932181035768756, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1281062155}
     - target: {fileID: 3703086235678447535, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
       propertyPath: m_Name
       value: BreakBox Variant Tri 2
@@ -18335,6 +18627,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 2033869864}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &2080276901 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -18355,6 +18650,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 481228091}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1001 &2108590218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18461,6 +18759,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 2108590220}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1001 &2119650278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18681,6 +18982,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 2120352700}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!4 &2120352702 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4048685364409322773, guid: 2ab94577eddb13e40986e1ee0f647eb4, type: 3}
@@ -18949,6 +19253,9 @@ MonoBehaviour:
   forceRadius: 1.7
   forceStrength: 10
   crate: {fileID: 2145062353}
+  audioSource: {fileID: 1281062155}
+  minPitch: 0.9
+  maxPitch: 1.1
 --- !u!1 &18795127320728533
 GameObject:
   m_ObjectHideFlags: 0
@@ -18979,6 +19286,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3386538802264769209}
+  - {fileID: 1281062154}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &316439157339934640
