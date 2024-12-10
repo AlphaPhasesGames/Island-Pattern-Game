@@ -20,7 +20,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         //    public GameObject pollyImage;
         //   public GameObject unit17Image;
 
-
+        public GameObject collectabelUI;
 
         public GameObject[] modelArray;
 
@@ -29,6 +29,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Camera templeViewCam;
         public Camera playerCam;
         public Camera stair1Cam;
+        public Camera stair2Cam;
         public Camera dockCam;
         public Camera pedastelCam;
 
@@ -195,34 +196,36 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     forwardParent.gameObject.SetActive(true);
                     SpeakText("stage1Scene1TextBox14"); break;
                 case 14:
+                    collectabelUI.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
                     SpeakText("stage1Scene1TextBox15");
                     StartCoroutine(MoveToandFromStairs1());
                     break;
                 case 15:
-                    StopAllCoroutines();
-                    forwardParent.gameObject.SetActive(true);
+                    textPanal.gameObject.SetActive(true);
+                    backwardsButton.gameObject.SetActive(false);
+                    forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage1Scene1TextBox16");
                     break;
                 case 16:
                     forwardParent.gameObject.SetActive(true);
-                    forwardButton.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     SpeakText("stage1Scene1TextBox17"); break;
                 case 17:
                     backwardsButton.gameObject.SetActive(true);
+                    forwardParent.gameObject.SetActive(false);
+                    StartCoroutine(MoveBackToPlayerFromPlatform());
                     SpeakText("stage1Scene1TextBox18"); break;
                 case 18:
-
-                    forwardParent.gameObject.SetActive(false);
-                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                    textPanal.gameObject.SetActive(true);
+                    forwardParent.gameObject.SetActive(true);
                     SpeakText("stage1Scene1TextBox19"); break;
                 case 19:
                     forwardParent.gameObject.SetActive(false);
-                    backwardsButton.gameObject.SetActive(false);
-                    textPanal.gameObject.SetActive(true);
+                    backwardsButton.gameObject.SetActive(true);
+                    StartCoroutine(showDockBriefly());
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage1Scene1TextBox20"); break;
                 case 20:
@@ -364,6 +367,18 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         }
 
+        public IEnumerator MoveBackToPlayerFromPlatform()
+        {
+            yield return new WaitForSeconds(3);
+            stair2Cam.enabled = false;
+            playerCam.enabled = true;
+            textPanal.gameObject.SetActive(false);
+            arrayPos = 26;
+            Debug.Log("This start coRoutine Runs");
+
+        }
+
+
         public IEnumerator MoveToBlankFromHint1()
         {
             yield return new WaitForSeconds(14);
@@ -450,6 +465,14 @@ namespace Pattern.Quest.Alpha.Phases.Games
             LOLSDK.Instance.SpeakText(textKey);
         }
 
+        public IEnumerator showDockBriefly()
+        {
+            dockCam.enabled = true;
+            playerCam.enabled = false;
+            yield return new WaitForSeconds(2);
+            dockCam.enabled = false;
+            playerCam.enabled = true;
+        }
 
         public void ResetBools()
         {
