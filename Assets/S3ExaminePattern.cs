@@ -48,10 +48,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
          
             if (!pathShowing)
             {
-                playerCam.enabled = false;
-                stairsCam.enabled = true;
+              
                 textMan.arrayPos = 13;
-                stairsPath1.gameObject.SetActive(true);
                 pathShowing = true;
             }
         }

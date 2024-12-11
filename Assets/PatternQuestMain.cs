@@ -21,16 +21,14 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public bool s2_s1_shapes_collected;
         public bool s2_s2_as;
         public bool s2_s2_shapes_collected;
-        [Header("StageTasks")] // header for the save location for the robot       
-        public int task_number;
-
-        //  public int task_number_crew_quarter;
-        //  public int task_number_comms_room;
-        //  public int task_number_dock;
-        // public int task_number_ship;
+        public bool s3_as;
+        public int s3_task_number;
+        public bool s3_shapes_collected_p1;
+        public bool s3_shapes_collected_p2;
+        public bool s3_dock_found;
 
     }
-    
+
     public class PatternQuestMain : MonoBehaviour
     {
   
@@ -41,11 +39,6 @@ namespace Pattern.Quest.Alpha.Phases.Games
             PQTMISaveData pQTMISaveData1; // get access to save section of this script
             public CharacterController charCont;
             public Vector3 posOfPlayer;
-            public int taskNumber;
-        //   public int taskNumberCrewQuarters;
-        //  public int taskNumberCommsRoom;
-        // public int taskNumberDock;
-        //   public int taskNumberShip;
 
           
             public GameObject playerRobot;
@@ -63,6 +56,12 @@ namespace Pattern.Quest.Alpha.Phases.Games
             public bool s2S1ShapesCollected;
             public bool s2S2AS;
             public bool s2S2ShapesCollected;
+
+            public bool s3AS;
+            public int s3TaskNo;
+            public bool s3ShapesCollectedPath1;
+            public bool s3ShapesCollectedPath2;
+            public bool s3DockFound;
 
         #region "stage1stufftobecollapsed"
         [SerializeField, Header("Stage 1 Code")]
@@ -161,6 +160,14 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 playerRobot.transform.position = posOfPlayer;
                 Debug.Log("Loaded Stage 3");
             }
+
+            if (currentStage == 5)
+            {
+                SceneManager.LoadScene("Stage 3 Scene 1");
+                playerRobot.transform.position = posOfPlayer;
+                Debug.Log("Loaded Stage 3");
+            }
+
             Debug.Log("Loaded Save");
         }
 
@@ -229,33 +236,25 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 }
             }
 
-            /*
+           
 
-           if (pQTMISaveData.current_stage == 3)
+           if (pQTMISaveData1.current_stage == 5)
            {
 
                if (!loadSavesOnce)
                {
-                   SceneManager.LoadScene("Stage 3 Increased Energy");
-
-                   loadSavesOnce = true;
+                   SceneManager.LoadScene("Stage 3 Scene 1");
+                    s3AS = pQTMISaveData1.s3_as;
+                    s3TaskNo = pQTMISaveData1.s3_task_number;
+                    s3ShapesCollectedPath1 = pQTMISaveData1.s3_shapes_collected_p1;
+                    s3ShapesCollectedPath2 = pQTMISaveData1.s3_shapes_collected_p2;
+                    s3DockFound = pQTMISaveData1.s3_dock_found;
+                    loadSavesOnce = true;
                    Debug.Log("Stage 3 update runs - load save data from save");
 
                }
            }
-
-           if (pQTMISaveData.current_stage == 4)
-           {
-
-               if (!loadSavesOnce)
-               {
-                   SceneManager.LoadScene("Stage 4 Transfering Energy");
-                   // currentStage = tusomSaveData.current_stage;
-                   loadSavesOnce = true;
-                   Debug.Log("Stage 4 update runs - load save data from save");
-               }
-           }
-           */
+ 
             Debug.Log("Load Function Called");
             }
 
@@ -294,6 +293,20 @@ namespace Pattern.Quest.Alpha.Phases.Games
             Save();
         }
 
+        public void SaveS3CollectablesPath1()
+        {
+            s3ShapesCollectedPath1 = true;
+            pQTMISaveData1.s3_shapes_collected_p1 = s3ShapesCollectedPath1;
+            Save();
+        }
+
+        public void SaveS3CollectablesPath2()
+        {
+            s3ShapesCollectedPath2 = true;
+            pQTMISaveData1.s3_shapes_collected_p2 = s3ShapesCollectedPath2;
+            Save();
+        }
+
         public void SaveS1S2()
             {
                  currentStage = 2;
@@ -310,6 +323,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public void SaveS2S2()
         {
             currentStage = 4;
+            pQTMISaveData1.current_stage = currentStage;
+            Save();
+        }
+
+        public void SaveS3()
+        {
+            currentStage = 5;
             pQTMISaveData1.current_stage = currentStage;
             Save();
         }
@@ -358,6 +378,18 @@ namespace Pattern.Quest.Alpha.Phases.Games
             Save();
             Debug.Log("Forces Saved Fired");
         }
+
+        public void SaveScene3Pos()
+        {
+
+            pQTMISaveData1.player_position_save = posOfPlayer;
+            pQTMISaveData1.s3_as = s3AS;
+
+            //sSQFESaveData.current_stage = currentStage;
+            Save();
+            Debug.Log("Forces Saved Fired");
+        }
+
         public void SavePosition()
                     {
                         pQTMISaveData1.player_position_save = posOfPlayer;
@@ -374,35 +406,18 @@ namespace Pattern.Quest.Alpha.Phases.Games
                         Debug.Log("Forces Load Fired");
                     }
 
-
-            /*
-                   public void SaveStage2()
-                   {
-                       currentStage = 2;
-                           pQTMISaveData.current_stage = currentStage;
-                       //sSQFESaveData.current_stage = currentStage;
-                       Save();
-                       Debug.Log("Forces Saved Fired");
-                   }
-
-                   public void SaveStage3()
-                   {
-                       currentStage = 3;
-                           pQTMISaveData.current_stage = currentStage;
-                       //sSQFESaveData.current_stage = currentStage;
-                       Save();
-                       Debug.Log("Forces Saved Fired");
-                   }
-
-                   public void SaveStage4()
-                   {
-                       currentStage = 4;
-                       pQTMISaveData.current_stage = currentStage;
-                       //sSQFESaveData.current_stage = currentStage;
-                       Save();
-                       Debug.Log("Forces Saved Fired");
-                   }
-           */
-            #endregion
+        public void SaveTask()
+        {
+            pQTMISaveData1.s3_task_number = s3TaskNo;
+            Save();
         }
+
+        public void SaveDock()
+        {
+            pQTMISaveData1.s3_dock_found = s3DockFound;
+            Save();
+        }
+
+        #endregion
+    }
     }

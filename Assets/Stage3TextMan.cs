@@ -26,6 +26,11 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public GameObject textPanal;
 
+        public GameObject stairsPath1;
+        public GameObject stairsPath2;
+        public GameObject boxesPath2;
+        public GameObject boxesPath1;
+
         public Camera templeViewCam;
         public Camera playerCam;
         public Camera stair1Cam;
@@ -66,22 +71,55 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public void Start()
         {
 
-            StartCoroutine(StartLevelText());
-            /*
-            if (main.s1S1AS)
+           
+            
+            if (main.s3AS)
             {
                 arrayPos = 26;
                 ResetPositionFlags(); // Reset for any array position related changes
-                pollyModelToHide.gameObject.SetActive(false);
-                pollyModelToShow.gameObject.SetActive(true);
-                triggerBoxes.gameObject.SetActive(false);
+                if (main.s3TaskNo == 1)
+                {
+                   positionChanged = true;
+                   arrayPos = 3;
+                   
+                }
+
+                if (main.s3TaskNo == 2)
+                {
+                    stairsPath1.gameObject.SetActive(true);
+                   positionChanged = true;
+                    collectabelUI.gameObject.SetActive(true);
+                    arrayPos = 13;
+                }
+
+                if (main.s3TaskNo == 3)
+                {
+                    stairsPath2.gameObject.SetActive(true);
+                    boxesPath1.gameObject.SetActive(false);
+                    boxesPath2.gameObject.SetActive(true);
+                    collectabelUI.gameObject.SetActive(true);
+                   positionChanged = true;
+                   arrayPos = 16;
+                }
+
+                if (main.s3TaskNo == 4)
+                {
+                    stairsPath1.gameObject.SetActive(false);
+                    stairsPath2.gameObject.SetActive(false);
+                    boxesPath1.gameObject.SetActive(false);
+                    boxesPath2.gameObject.SetActive(false);
+                    collectabelUI.gameObject.SetActive(true);
+                    positionChanged = true;
+                    arrayPos = 18;
+                }
+
             }
             else
             {
-             
+                StartCoroutine(StartLevelText());
             }
 
-           */
+           
              maxLengthArray = modelArray.Length;
             textBools = new bool[maxLengthArray];
         }
@@ -135,11 +173,19 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 case 2:
                     SpeakText("stage1Scene1TextBox3"); break;
                 case 3:
+                    textPanal.gameObject.SetActive(true);
                     templeViewCam.enabled = true;
                     forwardParent.gameObject.SetActive(false);
+                    main.s3TaskNo = 1;
+                    main.s3AS = true;
+                    main.SaveTask();
+                    main.SaveS3();
+                    main.SaveScene3Pos();
                     StartCoroutine(MoveToBlankFromTempleCamView());
                     SpeakText("stage1Scene1TextBox4"); break;
                 case 4:
+                    main.s3DockFound = true;
+                    main.SaveDock();
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(true);
@@ -192,10 +238,16 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     StartCoroutine(MoveToBlankFromHint2());
                     SpeakText("stage1Scene1TextBox13"); break;
                 case 13:
+                    playerCam.enabled = false;
+                    stair1Cam.enabled = true; 
+                    stairsPath1.gameObject.SetActive(true);
+                    main.s3TaskNo = 2;
+                    main.SaveTask();
                     textPanal.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(true);
                     SpeakText("stage1Scene1TextBox14"); break;
                 case 14:
+
                     collectabelUI.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
                     SpeakText("stage1Scene1TextBox15");
@@ -209,6 +261,12 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     SpeakText("stage1Scene1TextBox16");
                     break;
                 case 16:
+                    main.s3TaskNo = 3;
+                    main.SaveTask();
+                    main.s3ShapesCollectedPath1 = true;
+                    main.SaveS3CollectablesPath1();
+                    stair2Cam.enabled = true;
+                    playerCam.enabled = false;
                     forwardParent.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
@@ -225,12 +283,16 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 case 19:
                     forwardParent.gameObject.SetActive(false);
                     backwardsButton.gameObject.SetActive(true);
+                    main.s3ShapesCollectedPath2 = true;
+                    main.SaveS3CollectablesPath2();
+                    main.s3TaskNo = 4;
+                    main.SaveTask();
                     StartCoroutine(showDockBriefly());
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage1Scene1TextBox20"); break;
                 case 20:
-                    forwardButton.gameObject.SetActive(true);
-                    forwardParent.gameObject.SetActive(true);
+
+                    forwardParent.gameObject.SetActive(false);
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     SpeakText("stage1Scene1TextBox21"); break;
@@ -370,6 +432,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public IEnumerator MoveBackToPlayerFromPlatform()
         {
             yield return new WaitForSeconds(3);
+            robCont.isCharActive = true;
             stair2Cam.enabled = false;
             playerCam.enabled = true;
             textPanal.gameObject.SetActive(false);
@@ -433,7 +496,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public IEnumerator MoveToandFromStairs1()
         {
             yield return new WaitForSeconds(4);
-            // robCont.isCharActive = true;
+            robCont.isCharActive = true;
             textPanal.gameObject.SetActive(false);
             stair1Cam.enabled = false;
             playerCam.enabled = true;

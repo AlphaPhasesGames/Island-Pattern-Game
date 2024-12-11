@@ -10,17 +10,29 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Camera dockCam;
         public Camera playerCam;
         public bool lookedAtOnce;
+        public PatternQuestMain main;
+        private void Awake()
+        {
+            main = GameObject.FindObjectOfType<PatternQuestMain>();
+        }
+
+
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Player"))
             {
                 if (!lookedAtOnce)
                 {
-                    dockCam.enabled = true;
-                    playerCam.enabled = false;
-                    textMan.positionChanged = true;
-                    textMan.arrayPos = 4;
-                    lookedAtOnce = true;
+                  
+                    if (!main.s3DockFound)
+                    {
+                        dockCam.enabled = true;
+                        playerCam.enabled = false;
+                        textMan.positionChanged = true;
+                        textMan.arrayPos = 4;
+                        lookedAtOnce = true;
+                    }
+                  
                 }
               
             }
