@@ -295,37 +295,36 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     forwardParent.gameObject.SetActive(false);
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
+
                     SpeakText("stage1Scene1TextBox21"); break;
                 case 21:
+                    forwardParent.gameObject.SetActive(false);
                     backwardsButton.gameObject.SetActive(false);
+                    textPanal.gameObject.SetActive(true);
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage1Scene1TextBox22");
                     break;
                 case 22:
-                    StopAllCoroutines();
+                    backwardsButton.gameObject.SetActive(false);
+                    textPanal.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(true);
                     //StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage1Scene1TextBox23");
                     break;
                 case 23:
-                    textPanal.gameObject.SetActive(true);
-                    forwardButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(false);
+                    backwardsButton.gameObject.SetActive(false);
                     //StartCoroutine(MoveToBlankInvislbePanalPlatform());
                     SpeakText("stage1Scene1TextBox24Incorrect");
                     break;
                 case 24:
-                    textPanal.gameObject.SetActive(true);
-                    backwardsButton.gameObject.SetActive(false);
+                 
+                    backwardsButton.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage1Scene1TextBox25Correct");
                     break;
                 case 25:
-                    backwardsButton.gameObject.SetActive(false);
-                    textPanal.gameObject.SetActive(true);
-                    robCont.isCharActive = false;
-                    forwardParent.gameObject.SetActive(false);
-                    backwardsButton.gameObject.SetActive(false);
+                  
                     break;
                 case 26:
                     textPanal.gameObject.SetActive(false);

@@ -14,6 +14,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Button closeButton;
         public Button resetButton;
 
+        public GameObject sphere1Text;
+        public GameObject sphere2Text;
+        public GameObject sphere3Text;
+        public GameObject sphere4Text;
+        public GameObject sphere5Text;
+        public GameObject sphere6Text;
+
         public Stage1Scene1SpherePlacementSlot1 slot1;
         public Stage1Scene1SpherePlacementSlot2 slot2;
         public Stage1Scene1SpherePlacementSlot3 slot3;
@@ -73,12 +80,14 @@ namespace Pattern.Quest.Alpha.Phases.Games
         {
             if (!hasViewedPedastal)
             {
+                textMan.StopAllCoroutines();
                 textMan.positionChanged = true;
                 textMan.arrayPos = 10;
                 hasViewedPedastal = true;
             }
             if(hasViewedPedastal && collectMan.allSpheresCollected)
             {
+                textMan.StopAllCoroutines();
                 textMan.positionChanged = true;
                 textMan.arrayPos = 20;
             }
@@ -151,6 +160,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
             no10Prop.DeSelectSphereItemProg();
             no11Prop.DeSelectSphereItemPed();
             no14Prop.DeSelectSphereItemPed();
+
+            sphere1Text.gameObject.SetActive(false);
+            sphere2Text.gameObject.SetActive(false);
+            sphere3Text.gameObject.SetActive(false);
+            sphere4Text.gameObject.SetActive(false);
+            sphere5Text.gameObject.SetActive(false);
+            sphere6Text.gameObject.SetActive(false);
 
             slot1.inCorrectPlacement = false;
             slot2.inCorrectPlacement = false;

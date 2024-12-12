@@ -17,6 +17,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public GameObject no11sphere;
         public GameObject no14sphere;
 
+        public AudioSource correctSFX;
+        public AudioSource incorrectSFX;
+
         public bool correctPlacement;
         public bool inCorrectPlacement;
 
@@ -32,7 +35,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no1Prop.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
-
+                incorrectSFX.Play();
             }
 
             if (no6Prop.sphereHeld)
@@ -43,7 +46,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no6Prop.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
-
+                incorrectSFX.Play();
             }
 
             if (no7Prop.sphereHeld)
@@ -54,7 +57,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no7Prop.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
-
+                incorrectSFX.Play();
             }
 
             if (no10Prop.sphereHeld)
@@ -65,7 +68,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no10Prop.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
-
+                incorrectSFX.Play();
             }
 
             if (no11Prop.sphereHeld)
@@ -76,7 +79,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no11Prop.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
-
+                incorrectSFX.Play();
             }
 
             if (no14Prop.sphereHeld)
@@ -86,7 +89,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no14Prop.invItemImage.gameObject.SetActive(false);
                 no14Prop.sphereHeld = false;
                 correctPlacement = true;
-
+                correctSFX.Play();
             }
         }
     }
