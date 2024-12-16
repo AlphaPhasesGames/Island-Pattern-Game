@@ -10,6 +10,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public GameObject square;
         public Button squareButton;
         public AudioSource pickupSFX;
+
+
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Player"))

@@ -53,7 +53,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             {
                 if (!checkBool2)
                 {
-                    DeSelectSphereItem();
+                    DeSelectSphereItemPed();
                     checkBool2 = true;
                     checkBool1 = false;
                     Debug.Log("eScope held");
@@ -101,7 +101,21 @@ namespace Pattern.Quest.Alpha.Phases.Games
             }
         }
 
-        public void DeSelectSphereItemPedastel() // gold fucntion for mouse click
+
+        public void DeSelectSphereItemPed() // gold fucntion for mouse click
+        {
+            if (playerPickedUpObject)
+            {
+                //    robCont.StopRobotMoving(); // stop the robot moving when in use
+                playerPickedUpObject = false; // playerPickedUpObject = true, to pick up object from inventory
+                invItemImage.gameObject.SetActive(false); // this enables the image of the game obect to be held
+                playerHasBadgeObject = false;
+                //   triangleButton.gameObject.SetActive(true);
+                sphereHeld = false;
+                Debug.Log("Inv Item Picked");
+            }
+        }
+            public void DeSelectSphereItemPedastel() // gold fucntion for mouse click
         {
             
                 //    robCont.StopRobotMoving(); // stop the robot moving when in use

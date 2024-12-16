@@ -20,6 +20,12 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Stage1Scene2SPherePlacementSlot2 slot2;
         public Stage1Scene2SpherePlacementSlot3 slot3;
 
+        public GameObject sphere1Text;
+        public GameObject sphere2Text;
+        public GameObject sphere3Text;
+        public GameObject sphere4Text;
+        public GameObject sphere5Text;
+        public GameObject sphere6Text;
 
         public bool hasViewedPedastal;
 
@@ -148,7 +154,14 @@ namespace Pattern.Quest.Alpha.Phases.Games
             slot1Sphere31Image.gameObject.SetActive(true);
             slot1Sphere32Image.gameObject.SetActive(true);
 
-                 no2Prop.DeSelectSphereItemPedastel();
+            sphere1Text.gameObject.SetActive(false);
+            sphere2Text.gameObject.SetActive(false);
+            sphere3Text.gameObject.SetActive(false);
+            sphere4Text.gameObject.SetActive(false);
+            sphere5Text.gameObject.SetActive(false);
+            sphere6Text.gameObject.SetActive(false);
+
+            no2Prop.DeSelectSphereItemPedastel();
                  no3Prop.DeSelectSphereItemPedastel();
                  no8Prop.DeSelectSphereItemPedastel();
                  no10Prop.DeSelectSphereItemPedastel();

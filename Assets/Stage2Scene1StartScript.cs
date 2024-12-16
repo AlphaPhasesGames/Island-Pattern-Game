@@ -56,6 +56,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
             if (main.s2S1ShapesCollected)
             {
+                LoadGame();
                 shapeTri1.gameObject.SetActive(true);
                 shapeTri2.gameObject.SetActive(true);
                 shapeTri3.gameObject.SetActive(true);

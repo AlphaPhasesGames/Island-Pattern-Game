@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using LoLSDK;
 namespace Pattern.Quest.Alpha.Phases.Games
 {
 
@@ -24,6 +25,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Stage2Scene1ShapePlacement6 slot6;
 
         public bool hasViewedPedastal;
+
+        public GameObject sphere1Text;
+        public GameObject sphere2Text;
+        public GameObject sphere3Text;
+        public GameObject sphere4Text;
+        public GameObject sphere5Text;
+        public GameObject sphere6Text;
 
         public GameObject slot1CircleCorrect;
         public GameObject slot1Circle2;
@@ -67,14 +75,14 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public GameObject slot6Triangle2;
         public GameObject slot6Triangle3Correct;
 
-        /*
+       
         public Button circleButton;
         public Button circle2Button;
         public Button triangleButton;
         public Button squareButton;
         public Button triangle2Button;
         public Button triangle3Button;
-        */
+        
         public GameObject slot1CircleImage2;
         public GameObject slot1Circle1Image;
         public GameObject slot1TriangleImage;
@@ -105,18 +113,27 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 textMan.positionChanged = true;
                 textMan.arrayPos = 10;
                 hasViewedPedastal = true;
+                playerCamToDisable.enabled = false;
+                pedastalCam.enabled = true;
+                triggerCollider.enabled = false;
+                closeButton.gameObject.SetActive(true);
+                resetButton.gameObject.SetActive(true);
             }
-
-            playerCamToDisable.enabled = false;
-            pedastalCam.enabled = true;
-            triggerCollider.enabled = false;
-            closeButton.gameObject.SetActive(true);
-            resetButton.gameObject.SetActive(true);
+            else
+            {
+                textMan.StopAllCoroutines();
+                textMan.positionChanged = true;
+                textMan.arrayPos = 2;
+                playerCamToDisable.enabled = false;
+                triggerCollider.enabled = false;
+                pedastalCam.enabled = true;
+                closeButton.gameObject.SetActive(true);
+            }
             Debug.Log("Trigger box clicked!");
             // Add your logic here (e.g., open a door, activate something, etc.)
         }
 
-        private void ClosePedastalVeiw()
+        public void ClosePedastalVeiw()
         {
             playerCamToDisable.enabled = true;
             pedastalCam.enabled = false;
@@ -183,6 +200,20 @@ namespace Pattern.Quest.Alpha.Phases.Games
             tri2Prop.DeSelectSphereItemPedestal();
             circle2Prop.DeSelectSphereItemPedastel();
             tri3Prop.DeSelectSphereItem();
+
+            sphere1Text.gameObject.SetActive(false);
+            sphere2Text.gameObject.SetActive(false);
+            sphere3Text.gameObject.SetActive(false);
+            sphere4Text.gameObject.SetActive(false);
+            sphere5Text.gameObject.SetActive(false);
+            sphere6Text.gameObject.SetActive(false);
+
+            circleButton.gameObject.SetActive(true);
+            circle2Button.gameObject.SetActive(true);
+            triangleButton.gameObject.SetActive(true);
+            triangle2Button.gameObject.SetActive(true);
+            triangle3Button.gameObject.SetActive(true);
+            squareButton.gameObject.SetActive(true);
 
             slot1.inCorrectPlacement = false;
             slot2.inCorrectPlacement = false;

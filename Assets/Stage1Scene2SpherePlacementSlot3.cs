@@ -20,6 +20,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public bool correctPlacement;
         public bool inCorrectPlacement;
 
+        public AudioSource correctSFX;
+        public AudioSource incorrectSFX;
+
         // Start is called before the first frame update
 
         public void OnMouseDown()
@@ -32,6 +35,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no2Prop.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
+                incorrectSFX.Play();
+
             }
 
             if (no3Prop.sphereHeld)
@@ -42,6 +47,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no3Prop.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
+                incorrectSFX.Play();
 
             }
 
@@ -53,6 +59,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no8Prop.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
+                incorrectSFX.Play();
 
             }
 
@@ -64,6 +71,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no10Prop.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
+                incorrectSFX.Play();
 
             }
 
@@ -75,6 +83,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no31Prop.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
+                incorrectSFX.Play();
 
             }
 
@@ -86,6 +95,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no32Prop.sphereHeld = false;
                 correctPlacement = true;
                 inCorrectPlacement = false;
+                correctSFX.Play();
 
             }
         }

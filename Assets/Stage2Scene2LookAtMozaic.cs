@@ -27,6 +27,32 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Stage2Scene2ShapePlacementSlot11 slot11;
         public Stage2Scene2ShapePlacementSlot12 slot12;
 
+        public GameObject text1;
+        public GameObject text2;
+        public GameObject text3;
+        public GameObject text4;
+        public GameObject text5;
+        public GameObject text6;
+        public GameObject text7;
+        public GameObject text8;
+        public GameObject text9;
+        public GameObject text10;
+        public GameObject text11;
+        public GameObject text12;
+
+        public GameObject button1;
+        public GameObject button2;
+        public GameObject button3;
+        public GameObject button4;
+        public GameObject button5;
+        public GameObject button6;
+        public GameObject button7;
+        public GameObject button8;
+        public GameObject button9;
+        public GameObject button10;
+        public GameObject button11;
+        public GameObject button12;
+
         public bool hasViewedPedastal;
 
         public GameObject slot1Circle1Correct;
@@ -232,6 +258,14 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 hasViewedPedastal = true;
             }
 
+            if (collectMan.allSpheresCollected)
+            {
+                textMan.StopAllCoroutines();
+                textMan.positionChanged = true;
+                textMan.arrayPos = 16;
+                hasViewedPedastal = true;
+            }
+
             playerCamToDisable.enabled = false;
             pedastalCam.enabled = true;
             triggerCollider.enabled = false;
@@ -241,7 +275,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             // Add your logic here (e.g., open a door, activate something, etc.)
         }
 
-        private void ClosePedastalVeiw()
+        public void ClosePedastalVeiw()
         {
             playerCamToDisable.enabled = true;
             pedastalCam.enabled = false;
@@ -445,6 +479,34 @@ namespace Pattern.Quest.Alpha.Phases.Games
             slot10.inCorrectPlacement = false;
             slot11.inCorrectPlacement = false;
             slot12.inCorrectPlacement = false;
+
+            button1.gameObject.SetActive(true);
+            button2.gameObject.SetActive(true);
+            button3.gameObject.SetActive(true);
+            button4.gameObject.SetActive(true);
+            button5.gameObject.SetActive(true);
+            button6.gameObject.SetActive(true);
+            button7.gameObject.SetActive(true);
+            button8.gameObject.SetActive(true);
+            button9.gameObject.SetActive(true);
+            button10.gameObject.SetActive(true);
+            button11.gameObject.SetActive(true);
+            button12.gameObject.SetActive(true);
+
+            text1.gameObject.SetActive(false);
+            text2.gameObject.SetActive(false);
+            text3.gameObject.SetActive(false);
+            text4.gameObject.SetActive(false);
+            text5.gameObject.SetActive(false);
+            text6.gameObject.SetActive(false);
+            text7.gameObject.SetActive(false);
+            text8.gameObject.SetActive(false);
+            text9.gameObject.SetActive(false);
+            text10.gameObject.SetActive(false);
+            text11.gameObject.SetActive(false);
+            text12.gameObject.SetActive(false);
+
+
 
             progScript.runTwice = false;
             textMan.ResetPositionFlags();

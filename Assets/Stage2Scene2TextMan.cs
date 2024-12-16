@@ -10,6 +10,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public PatternQuestMain main;
         public RobotController robCont;
         public Stage2Scene2StartScript startScript;
+        public Stage2Scene2LookAtMozaic mozaic;
         public bool hasScrolled;
         public GameObject currentTextSection;
         public int arrayPos;
@@ -20,6 +21,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public GameObject pollyImage;
         public GameObject unit17Image;
+
+     
 
         public GameObject[] modelArray;
 
@@ -114,7 +117,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 case 0:
                     if (!submitOnce)
                     {
-                        LOLSDK.Instance.SubmitProgress(0, 20, 100);
+                        LOLSDK.Instance.SubmitProgress(0, 70, 100);
                         submitOnce = true;
                     }
 
@@ -227,13 +230,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     forwardParent.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage2Scene2TextBox13"); break;
+                    SpeakText("stage2Scene2TextBox13"); 
                     break;
                 case 13:
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
-                    SpeakText("stage2Scene2TextBox14"); break;
+                    SpeakText("stage2Scene2TextBox14"); 
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
 
@@ -241,20 +244,22 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
                     textPanal.gameObject.SetActive(true);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage2Scene2TextBox15"); break;
+                    SpeakText("stage2Scene2TextBox15"); 
                     break;
                 case 15:
+
+                    mozaic.ClosePedastalVeiw();
                     textPanal.gameObject.SetActive(true);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage2Scene2TextBox16"); break;
+                    SpeakText("stage2Scene2TextBox16"); 
                     break;
 
                 case 16:
-                    textPanal.gameObject.SetActive(false);
-                   // StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    // charCont.enabled = false;
-                    // forwardParent.gameObject.SetActive(false);
-                    // backwardsButton.gameObject.SetActive(false);
+                    forwardParent.gameObject.SetActive(false);
+                    backwardsButton.gameObject.SetActive(false);
+                    textPanal.gameObject.SetActive(true);
+                    SpeakText("stage2Scene2TextBox17");
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;
 
                 case 17:
@@ -321,7 +326,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public IEnumerator StartLevelText()
         {
 
-            yield return new WaitForSeconds(4);
+            yield return new WaitForSeconds(2);
             positionChanged = true;
             textPanal.gameObject.SetActive(true);
             arrayPos = 0;
