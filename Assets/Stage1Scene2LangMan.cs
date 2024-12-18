@@ -16,7 +16,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public TextMeshProUGUI stage1Scene2Text9;
         public TextMeshProUGUI stage1Scene2Text10;
         public TextMeshProUGUI stage1Scene2Text11;
-
+        public TextMeshProUGUI stage1Scene2Text12;
         public TextMeshProUGUI inventoryButton;
         public TextMeshProUGUI closeViewButton;
         public TextMeshProUGUI ruleButton;
@@ -58,6 +58,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             stage1Scene2Text9.text = defs["stage1Scene2TextBox9"];
             stage1Scene2Text10.text = defs["stage1Scene2TextBox10"];
             stage1Scene2Text11.text = defs["stage1Scene2TextBox11"];
+            stage1Scene2Text12.text = defs["stage1Scene2TextBox12"];
         }
     }
 }

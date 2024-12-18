@@ -48,7 +48,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 robCont.isCharActive = true;
                 //  sphere1Butt.gameObject.SetActive(true);
                 //   collectMan.collectableCount++;
-             
+                textMan.positionChanged = true;
+                ShowText();
+               
                 Debug.Log("This start fucntion runs");
             }
 
@@ -65,17 +67,17 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
                 collectMan.allSpheresCollected = true;
                 collectMan.collectableCount = 6;
-
+                textMan.positionChanged = true;
+                textMan.arrayPos = 7;
                 ruleButton.gameObject.SetActive(true);
                 ruleItem.gameObject.SetActive(false);
             }
-            else
-            {
-                StartCoroutine(ShowText());
-            }
+           
             
 
         }
+
+    
 
         // Update is called once per frame
 
@@ -107,12 +109,12 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         }
 
-        public IEnumerator ShowText()
+        public void ShowText()
         {
-            yield return new WaitForSeconds(0.2f);
-            textMan.positionChanged = true;
-            textMan.arrayPos = 5;
 
+           
+            textMan.arrayPos = 12;
+           // textMan.ResetBools();
         }
     }
 }

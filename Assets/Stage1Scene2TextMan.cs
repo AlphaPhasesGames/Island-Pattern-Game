@@ -9,12 +9,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
     {
         public PatternQuestMain main;
         public RobotController robCont;
+        public Stage1Scene2StartScript startS;
         public bool hasScrolled;
         public GameObject currentTextSection;
         public int arrayPos;
         public int maxLengthArray;
         public int minLengthArray = 1;
-
+        public Stage1Scene2LookAtPedastek lookP;
         public bool positionChanged; //= true;
         public GameObject collectablesUiCounter;
 
@@ -148,7 +149,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     main.SaveScene1Stage2();
                     main.SaveS1S2();
                     collectablesUiCounter.gameObject.SetActive(true);
-
+                    startS.SaveGame();
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage1Scene2TextBox3"); break;
                 case 3:
@@ -167,6 +168,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 case 5: 
                     textPanal.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
+                    lookP.ClosePedastalVeiw();
                     SpeakText("stage1Scene2TextBox6");
                     StartCoroutine(MoveToBlankInvislbePanalUnit17()); break;
                 case 6:
@@ -200,8 +202,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     forwardParent.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     invPanal.gameObject.SetActive(false);
-                    pedCam.enabled = false;
-                    playerCam.enabled = true;
+                    lookP.ClosePedastalVeiw();
+                    
+                    // pedCam.enabled = false;
+                  //  playerCam.enabled = true;
                     // main.s1S1AS = true;
                     // main.SaveScene1Stage1();
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
@@ -217,18 +221,14 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     StartCoroutine(MoveToBlankInvislbePanalPlatform());
                     SpeakText("stage1Scene2TextBox11"); break;
                 case 11:
+                   
+
+                case 12:
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalPlatform());
-                    SpeakText("stage1Scene2TextBox12"); break;
-
-                case 12:
-
-                    textPanal.gameObject.SetActive(false);
-                    // charCont.enabled = false;
-                    // forwardParent.gameObject.SetActive(false);
-                    // backwardsButton.gameObject.SetActive(false);
+                    SpeakText("stage1Scene2TextBox12");
                     break;
                 case 13:
                     textPanal.gameObject.SetActive(false);
@@ -307,7 +307,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             yield return new WaitForSeconds(5);
             robCont.isCharActive = true;
             textPanal.gameObject.SetActive(false);
-            arrayPos = 12;
+            arrayPos = 13;
             Debug.Log("This start coRoutine Runs");
 
         }
@@ -317,7 +317,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             yield return new WaitForSeconds(3);
            // robCont.isCharActive = true;
             textPanal.gameObject.SetActive(false);
-            arrayPos = 12;
+            arrayPos = 13;
             Debug.Log("This start coRoutine Runs");
 
         }

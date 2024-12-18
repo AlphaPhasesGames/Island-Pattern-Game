@@ -102,12 +102,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
         }
 
 
-        private void ClosePedastalVeiw()
+        public void ClosePedastalVeiw()
         {
+           // resetButton.gameObject.SetActive(false);
             playerCamToDisable.enabled = true;
             pedastalCam.enabled = false;
             triggerCollider.enabled = true;
-            resetButton.gameObject.SetActive(true);
+            resetButton.gameObject.SetActive(false);
             closeButton.gameObject.SetActive(false);
         }
 
