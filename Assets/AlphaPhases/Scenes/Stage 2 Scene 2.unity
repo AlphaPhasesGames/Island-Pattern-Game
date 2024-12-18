@@ -7094,6 +7094,7 @@ MonoBehaviour:
   inCorrectPlacement: 0
   correctSFX: {fileID: 1568026169}
   incorrectSFX: {fileID: 1512064138}
+  slotFilled: 0
 --- !u!1 &157281453
 GameObject:
   m_ObjectHideFlags: 0
@@ -8898,6 +8899,7 @@ MonoBehaviour:
   inCorrectPlacement: 0
   correctSFX: {fileID: 1568026169}
   incorrectSFX: {fileID: 1512064138}
+  slotFilled: 0
 --- !u!1 &202425275
 GameObject:
   m_ObjectHideFlags: 0
@@ -15282,6 +15284,7 @@ MonoBehaviour:
   inCorrectPlacement: 0
   correctSFX: {fileID: 1568026169}
   incorrectSFX: {fileID: 1512064138}
+  slotFilled: 0
 --- !u!114 &354251553 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6467051555295409331, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
@@ -19971,7 +19974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -22961,6 +22964,7 @@ MonoBehaviour:
   inCorrectPlacement: 0
   correctSFX: {fileID: 1568026169}
   incorrectSFX: {fileID: 1512064138}
+  slotFilled: 0
 --- !u!1 &496871999
 GameObject:
   m_ObjectHideFlags: 0
@@ -23209,6 +23213,7 @@ MonoBehaviour:
   inCorrectPlacement: 0
   correctSFX: {fileID: 1568026169}
   incorrectSFX: {fileID: 1512064138}
+  slotFIlled: 0
 --- !u!1 &501934659
 GameObject:
   m_ObjectHideFlags: 0
@@ -29227,7 +29232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -36641,7 +36646,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &840694693
 Transform:
   m_ObjectHideFlags: 0
@@ -42907,7 +42912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -44320,6 +44325,7 @@ MonoBehaviour:
   inCorrectPlacement: 0
   correctSFX: {fileID: 1568026169}
   incorrectSFX: {fileID: 1512064138}
+  slotFIlled: 0
 --- !u!1 &1016950076
 GameObject:
   m_ObjectHideFlags: 0
@@ -45546,6 +45552,7 @@ MonoBehaviour:
   inCorrectPlacement: 0
   correctSFX: {fileID: 1568026169}
   incorrectSFX: {fileID: 1512064138}
+  slotFilled: 0
 --- !u!1001 &1061599955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45679,7 +45686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -47450,6 +47457,7 @@ MonoBehaviour:
   inCorrectPlacement: 0
   correctSFX: {fileID: 1568026169}
   incorrectSFX: {fileID: 1512064138}
+  slotFilled: 0
 --- !u!1 &1107635480
 GameObject:
   m_ObjectHideFlags: 0
@@ -50649,6 +50657,7 @@ MonoBehaviour:
   inCorrectPlacement: 0
   correctSFX: {fileID: 1568026169}
   incorrectSFX: {fileID: 1512064138}
+  slotFilled: 0
 --- !u!1 &1199513888
 GameObject:
   m_ObjectHideFlags: 0
@@ -62299,7 +62308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -71356,6 +71365,7 @@ MonoBehaviour:
   inCorrectPlacement: 0
   correctSFX: {fileID: 1568026169}
   incorrectSFX: {fileID: 1512064138}
+  slotFilled: 0
 --- !u!1 &1705529470
 GameObject:
   m_ObjectHideFlags: 0
@@ -72816,6 +72826,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 19281319704886876, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 25480706301194775, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -72824,10 +72838,30 @@ PrefabInstance:
       propertyPath: m_text
       value: Maybe that rule we found will help us. T
       objectReference: {fileID: 0}
+    - target: {fileID: 620910040783777729, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755499363936565827, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265698983437919658, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1522233348705139259, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
       propertyPath: m_text
       value: Oh that was the wrong platform. Let's look at the rule and try again.
         T
+      objectReference: {fileID: 0}
+    - target: {fileID: 1668565006909955195, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1700977506600960664, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2393905543105965971, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
       propertyPath: m_Pivot.x
@@ -72913,6 +72947,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Maybe we could find a rule in the previous room to help us. T
       objectReference: {fileID: 0}
+    - target: {fileID: 2946593142196784556, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3489982269213967591, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
       propertyPath: m_text
       value: Excellent. You found a rule that should help us get out of the temple.
@@ -72923,6 +72961,10 @@ PrefabInstance:
       value: Some of those look platforms look unsteady. If we're gonna make it across
         we need to know the correct path. T
       objectReference: {fileID: 0}
+    - target: {fileID: 4693339219715046226, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5453597145587496982, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
       propertyPath: m_text
       value: "There\u2019s the mosaic puzzle we need to solve to open the exit. T"
@@ -72930,6 +72972,10 @@ PrefabInstance:
     - target: {fileID: 5970198362384489825, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
       propertyPath: m_Name
       value: TExtCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098925947378273348, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6467051555295409331, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
       propertyPath: m_text
@@ -72939,9 +72985,17 @@ PrefabInstance:
       propertyPath: m_text
       value: Well done you made it across. T
       objectReference: {fileID: 0}
+    - target: {fileID: 7761833252047894801, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8311467402846385298, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
       propertyPath: m_text
       value: Looks like we're gonna have to jump on some of those platforms. T
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433025224434869900, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8458779834195227509, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
       propertyPath: m_text
@@ -72955,6 +73009,10 @@ PrefabInstance:
       propertyPath: m_text
       value: This puzzle looks different. There's a new shape included in the pattern.
         T
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193718770638225777, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -73828,6 +73886,7 @@ MonoBehaviour:
   inCorrectPlacement: 0
   correctSFX: {fileID: 1568026169}
   incorrectSFX: {fileID: 1512064138}
+  slotFIlled: 0
 --- !u!1 &1749249250
 GameObject:
   m_ObjectHideFlags: 0
@@ -76648,6 +76707,7 @@ MonoBehaviour:
   inCorrectPlacement: 0
   correctSFX: {fileID: 1568026169}
   incorrectSFX: {fileID: 1512064138}
+  slotFilled: 0
 --- !u!1 &1817723477
 GameObject:
   m_ObjectHideFlags: 0
@@ -77653,7 +77713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -103617,6 +103677,7 @@ MonoBehaviour:
   pedastalCam: {fileID: 501934662}
   closeButton: {fileID: 1326600728}
   resetButton: {fileID: 1463795108}
+  invPanal: {fileID: 1972378211}
   slot1: {fileID: 1053148659}
   slot2: {fileID: 1106390054}
   slot4: {fileID: 498857681}

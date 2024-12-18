@@ -16,7 +16,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public int minLengthArray = 1;
 
         public bool positionChanged;
-
+        public S3LookAtPedestak lookPed;
         //    public GameObject pollyImage;
         //   public GameObject unit17Image;
 
@@ -24,7 +24,12 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public GameObject[] modelArray;
 
+        
         public GameObject textPanal;
+
+        public Animator boat;
+        public Animator blackAnim;
+        public GameObject blackFade;
 
         public GameObject stairsPath1;
         public GameObject stairsPath2;
@@ -37,7 +42,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Camera stair2Cam;
         public Camera dockCam;
         public Camera pedastelCam;
-
+        public Camera boatCam;
         public bool panalOpen;
         public bool runOnce;
         public bool runOnce2;
@@ -155,23 +160,23 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 case 0:
                     if (!submitOnce)
                     {
-                    //    LOLSDK.Instance.SubmitProgress(0, 0, 100);
+                       LOLSDK.Instance.SubmitProgress(0, 90, 100);
                         submitOnce = true;
                     }
                     //robCont.isCharActive = false;
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(true);
-                    SpeakText("stage1Scene1TextBox1"); break;
+                    SpeakText("stage3Scene1TextBox1"); break;
                 case 1:
                     //robCont.isCharActive = true;
                     backwardsButton.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(true);
                     //StopCoroutine(DelayTextButton());
                  
-                    SpeakText("stage1Scene1TextBox2"); break;
+                    SpeakText("stage3Scene1TextBox2"); break;
                 case 2:
-                    SpeakText("stage1Scene1TextBox3"); break;
+                    SpeakText("stage3Scene1TextBox3"); break;
                 case 3:
                     textPanal.gameObject.SetActive(true);
                     templeViewCam.enabled = true;
@@ -182,15 +187,15 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     main.SaveS3();
                     main.SaveScene3Pos();
                     StartCoroutine(MoveToBlankFromTempleCamView());
-                    SpeakText("stage1Scene1TextBox4"); break;
+                    SpeakText("stage3Scene1TextBox4"); break;
                 case 4:
                     main.s3DockFound = true;
                     main.SaveDock();
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(true);
-                    SpeakText("stage1Scene1TextBox5"); break;
-                case 5: SpeakText("stage1Scene1TextBox6");
+                    SpeakText("stage3Scene1TextBox5"); break;
+                case 5: SpeakText("stage3Scene1TextBox6");
                     backwardsButton.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveCamToPedastel());
@@ -200,16 +205,16 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     forwardParent.gameObject.SetActive(true);
                     //StopCoroutine(DelayTextButton());
                     
-                    SpeakText("stage1Scene1TextBox7"); break;
+                    SpeakText("stage3Scene1TextBox7"); break;
                 case 7:
                   
                     backwardsButton.gameObject.SetActive(true);
-                    SpeakText("stage1Scene1TextBox8"); break;
+                    SpeakText("stage3Scene1TextBox8"); break;
                 case 8:
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveCamToPedastel2());
-                    SpeakText("stage1Scene1TextBox9");
+                    SpeakText("stage3Scene1TextBox9");
                     break;
                 case 9:
                    
@@ -217,26 +222,26 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     forwardParent.gameObject.SetActive(true);
                     textPanal.gameObject.SetActive(true);
 
-                    SpeakText("stage1Scene1TextBox10");
+                    SpeakText("stage3Scene1TextBox10");
                     break;
                 case 10:
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(Hint1());
                     StartCoroutine(Hint2());
-                    SpeakText("stage1Scene1TextBox11"); break;
+                    SpeakText("stage3Scene1TextBox11"); break;
                 case 11:
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankFromHint1());
-                    SpeakText("stage1Scene1TextBox12"); break;
+                    SpeakText("stage3Scene1TextBox12"); break;
                 case 12:
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankFromHint2());
-                    SpeakText("stage1Scene1TextBox13"); break;
+                    SpeakText("stage3Scene1TextBox13"); break;
                 case 13:
                     playerCam.enabled = false;
                     stair1Cam.enabled = true; 
@@ -245,12 +250,12 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     main.SaveTask();
                     textPanal.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(true);
-                    SpeakText("stage1Scene1TextBox14"); break;
+                    SpeakText("stage3Scene1TextBox14"); break;
                 case 14:
 
                     collectabelUI.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
-                    SpeakText("stage1Scene1TextBox15");
+                    SpeakText("stage3Scene1TextBox15");
                     StartCoroutine(MoveToandFromStairs1());
                     break;
                 case 15:
@@ -258,7 +263,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage1Scene1TextBox16");
+                    SpeakText("stage3Scene1TextBox16");
                     break;
                 case 16:
                     main.s3TaskNo = 3;
@@ -270,16 +275,17 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     forwardParent.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
-                    SpeakText("stage1Scene1TextBox17"); break;
+                    SpeakText("stage3Scene1TextBox17"); break;
                 case 17:
                     backwardsButton.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveBackToPlayerFromPlatform());
-                    SpeakText("stage1Scene1TextBox18"); break;
+                    SpeakText("stage3Scene1TextBox18"); break;
                 case 18:
+                    backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(true);
-                    SpeakText("stage1Scene1TextBox19"); break;
+                    SpeakText("stage3Scene1TextBox19"); break;
                 case 19:
                     forwardParent.gameObject.SetActive(false);
                     backwardsButton.gameObject.SetActive(true);
@@ -289,39 +295,42 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     main.SaveTask();
                     StartCoroutine(showDockBriefly());
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage1Scene1TextBox20"); break;
+                    SpeakText("stage3Scene1TextBox20"); break;
                 case 20:
 
                     forwardParent.gameObject.SetActive(false);
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
 
-                    SpeakText("stage1Scene1TextBox21"); break;
+                    SpeakText("stage3Scene1TextBox21"); break;
                 case 21:
                     forwardParent.gameObject.SetActive(false);
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage1Scene1TextBox22");
+                    SpeakText("stage3Scene1TextBox22");
                     break;
                 case 22:
+                    lookPed.ClosePedastalVeiwEnd();
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(true);
                     //StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage1Scene1TextBox23");
+                    SpeakText("stage3Scene1TextBox23");
                     break;
                 case 23:
-                    backwardsButton.gameObject.SetActive(false);
+                        pedastelCam.enabled = false;
+                        boatCam.enabled = true;
+                   // backwardsButton.gameObject.SetActive(false);
                     //StartCoroutine(MoveToBlankInvislbePanalPlatform());
-                    SpeakText("stage1Scene1TextBox24Incorrect");
+                    SpeakText("stage3Scene1TextBox24");
                     break;
                 case 24:
-                 
+                    
                     backwardsButton.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
-                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage1Scene1TextBox25Correct");
+                    StartCoroutine(MoveToBlankInvislbePanalEnd());
+                    SpeakText("stage3Scene1TextBox25");
                     break;
                 case 25:
                   
@@ -380,7 +389,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public IEnumerator DelayTextButton()
         {
 
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(3);
             forwardButton.gameObject.SetActive(true);
             Debug.Log("This coRoutine Runs");
 
@@ -389,7 +398,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public IEnumerator StartLevelText()
         {
 
-            yield return new WaitForSeconds(4);
+            yield return new WaitForSeconds(1.5f);
             positionChanged = true;
             textPanal.gameObject.SetActive(true);
             arrayPos = 0;
@@ -423,6 +432,22 @@ namespace Pattern.Quest.Alpha.Phases.Games
             yield return new WaitForSeconds(5);
             robCont.isCharActive = true;
             textPanal.gameObject.SetActive(false);
+            arrayPos = 26;
+            Debug.Log("This start coRoutine Runs");
+
+        }
+
+        public IEnumerator MoveToBlankInvislbePanalEnd()
+        {
+            yield return new WaitForSeconds(5);
+            // robCont.isCharActive = true;
+ 
+            boat.SetBool("boat", true);
+            blackFade.gameObject.SetActive(true);
+            blackAnim.SetBool("fade", true);
+            textPanal.gameObject.SetActive(false);
+            LOLSDK.Instance.SubmitProgress(0, 100, 100);
+            LOLSDK.Instance.CompleteGame();
             arrayPos = 26;
             Debug.Log("This start coRoutine Runs");
 

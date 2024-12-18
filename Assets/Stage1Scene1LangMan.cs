@@ -73,8 +73,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
             pollyText21.text = defs["stage1Scene1TextBox21"];
             pollyText22.text = defs["stage1Scene1TextBox22"];
             pollyText23.text = defs["stage1Scene1TextBox23"];
-            pollyText24.text = defs["stage1Scene1TextBox24Incorrect"];
-            pollyText25.text = defs["stage1Scene1TextBox25Correct"];
+            pollyText24.text = defs["stage1Scene1TextBox24"];
+            pollyText25.text = defs["stage1Scene1TextBox25"];
             inventoryButton.text = defs["inventory"];
             closeView.text = defs["closeView"];
             ruleButton.text = defs["ruleButton"];

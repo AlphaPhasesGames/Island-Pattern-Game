@@ -14,6 +14,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Button closeButton;
         public Button resetButton;
 
+
+
         public GameObject sphere1Text;
         public GameObject sphere2Text;
         public GameObject sphere3Text;
@@ -69,6 +71,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Stage1Scene1Number11InvProperties no11Prop;
         public Stage1Scene1Number14InvProperties no14Prop;
 
+        public RobotController robCont;
+        public GameObject robotToHide;
+
         private void Awake()
         {
             closeButton.onClick.AddListener(ClosePedastalVeiw);
@@ -102,8 +107,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
         }
 
 
-        private void ClosePedastalVeiw()
+        public void ClosePedastalVeiw()
         {
+            robCont.isCharActive = true;
+            robotToHide.gameObject.SetActive(true);
             playerCamToDisable.enabled = true;
             pedastalCam.enabled = false;
             triggerCollider.enabled = true;
@@ -171,6 +178,11 @@ namespace Pattern.Quest.Alpha.Phases.Games
             slot1.inCorrectPlacement = false;
             slot2.inCorrectPlacement = false;
             slot3.inCorrectPlacement = false;
+
+            slot1.slotFilled = false;
+            slot2.slotFilled = false;
+            slot3.slotFilled = false;
+
             progMan.runTwice = false;
             textMan.ResetPositionFlags();
         }    

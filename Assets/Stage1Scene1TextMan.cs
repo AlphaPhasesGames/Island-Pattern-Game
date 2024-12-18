@@ -10,6 +10,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
     {
         public PatternQuestMain main;
         public RobotController robCont;
+        public Stage1Scene1LookAtPedastal pedLook;
         public bool hasScrolled;
         public GameObject currentTextSection;
         public int arrayPos;
@@ -37,8 +38,6 @@ namespace Pattern.Quest.Alpha.Phases.Games
       //  public GameObject textPanalParent;
         public GameObject textPanal;
 
-        public Camera pedCam;
-        public Camera playerCam;
      
         public bool panalOpen;
         public bool runOnce;
@@ -53,7 +52,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Button[] textButtons;
         public bool[] textBools;
 
-
+        public GameObject robotToHide;
         private void Awake()
         {
             forwardButton.onClick.AddListener(ProgressTextForward);
@@ -166,7 +165,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     SpeakText("stage1Scene1TextBox5"); break;
                 case 5: SpeakText("stage1Scene1TextBox6"); break;
                 case 6:
-                    robCont.isCharActive = true;
+                   
                     forwardParent.gameObject.SetActive(false);
                     //StopCoroutine(DelayTextButton());
                     HideButton();
@@ -200,6 +199,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     SpeakText("stage1Scene1TextBox10");
                     break;                    
                 case 10:
+                    robCont.isCharActive = false;
+                    robotToHide.gameObject.SetActive(false);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(true);
                     forwardButton.gameObject.SetActive(true);
@@ -218,6 +219,11 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 case 15:
                     StopAllCoroutines();
                     forwardParent.gameObject.SetActive(true);
+                    robCont.isCharActive = true;
+                    robotToHide.gameObject.SetActive(true);
+
+                    invPanal.gameObject.SetActive(false);
+                    pedLook.ClosePedastalVeiw();
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage1Scene1TextBox16");
                         break;
@@ -242,6 +248,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage1Scene1TextBox20"); break;
                 case 20:
+                    robCont.isCharActive = false;
+                    robotToHide.gameObject.SetActive(false);
                     forwardButton.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
@@ -258,7 +266,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     SpeakText("stage1Scene1TextBox23");
                     break;
                 case 23:
-                    SpeakText("stage1Scene1TextBox24Incorrect");
+                    SpeakText("stage1Scene1TextBox24");
                     textPanal.gameObject.SetActive(true);
                     forwardButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
@@ -266,16 +274,16 @@ namespace Pattern.Quest.Alpha.Phases.Games
             
                     break;
                 case 24:
+                    robCont.isCharActive = false;
+                    robotToHide.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
-                    pedCam.enabled = false;
-                    playerCam.enabled = true;
+                    pedLook.ClosePedastalVeiw();
                     invPanal.gameObject.SetActive(false);
-                    resetButton.gameObject.SetActive(false);
-                    closeButton.gameObject.SetActive(false);
+
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage1Scene1TextBox25Correct");
+                    SpeakText("stage1Scene1TextBox25");
                     break;
                 case 25:
                     backwardsButton.gameObject.SetActive(false);

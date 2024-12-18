@@ -850,14 +850,38 @@ MonoBehaviour:
     current_stage: 0
     player_position_save: {x: 0, y: 0, z: 0}
     s1_s1_as: 0
-    task_number: 0
+    s1_s1_spheres_collected: 0
+    s1_s1_rule_collected: 0
+    s1_s2_as: 0
+    s1_s2_spheres_collected: 0
+    s2_s1_as: 0
+    s2_s1_shapes_collected: 0
+    s2_s2_as: 0
+    s2_s2_shapes_collected: 0
+    s3_as: 0
+    s3_task_number: 0
+    s3_shapes_collected_p1: 0
+    s3_shapes_collected_p2: 0
+    s3_dock_found: 0
   charCont: {fileID: 0}
   posOfPlayer: {x: 0, y: 0, z: 0}
-  taskNumber: 0
   playerRobot: {fileID: 0}
   currentStage: 0
   loadSavesOnce: 0
   s1S1AS: 0
+  s1S1SpheresCollected: 0
+  s1S1RuleCollected: 0
+  s1S2AS: 0
+  s1S2SpheresCollected: 0
+  s2S1AS: 0
+  s2S1ShapesCollected: 0
+  s2S2AS: 0
+  s2S2ShapesCollected: 0
+  s3AS: 0
+  s3TaskNo: 0
+  s3ShapesCollectedPath1: 0
+  s3ShapesCollectedPath2: 0
+  s3DockFound: 0
   _langCode: en
   continueButton: {fileID: 1005610664}
   newGameButton: {fileID: 1133733580}
@@ -933,7 +957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1136,7 +1160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}

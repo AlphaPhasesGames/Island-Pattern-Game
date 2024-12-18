@@ -13,6 +13,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Camera pedastalCam;
         public Button closeButton;
         public Button resetButton;
+        public GameObject invPanal;
 
         public Stage2Scene2ShapePlacementSlot1 slot1;
         public Stage2Scene2ShapePlacementSlot2 slot2;
@@ -280,8 +281,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
             playerCamToDisable.enabled = true;
             pedastalCam.enabled = false;
             triggerCollider.enabled = true;
-            resetButton.gameObject.SetActive(true);
+            resetButton.gameObject.SetActive(false);
             closeButton.gameObject.SetActive(false);
+            invPanal.gameObject.SetActive(false);
         }
 
 
@@ -506,7 +508,18 @@ namespace Pattern.Quest.Alpha.Phases.Games
             text11.gameObject.SetActive(false);
             text12.gameObject.SetActive(false);
 
-
+            slot1.slotFilled = false;
+            slot2.slotFilled = false;
+            slot3.slotFIlled = false;
+            slot4.slotFIlled = false;
+            slot5.slotFIlled = false;
+            slot6.slotFilled = false;
+            slot7.slotFilled = false;
+            slot8.slotFilled = false;
+            slot9.slotFilled = false;
+            slot10.slotFilled = false;
+            slot11.slotFilled = false;
+            slot12.slotFilled = false;
 
             progScript.runTwice = false;
             textMan.ResetPositionFlags();

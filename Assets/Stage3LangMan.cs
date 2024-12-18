@@ -35,7 +35,18 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public TextMeshProUGUI closeViewButton;
         public TextMeshProUGUI resetButton;
 
-
+        public TextMeshProUGUI sphere1Text;
+        public TextMeshProUGUI sphere4Text;
+        public TextMeshProUGUI sphere7Text;
+        public TextMeshProUGUI sphere10Text;
+        public TextMeshProUGUI sphere13Text;
+        public TextMeshProUGUI sphere16Text;
+        public TextMeshProUGUI sphere19Text;
+        public TextMeshProUGUI sphere22Text;
+        public TextMeshProUGUI sphere25Text;
+        public TextMeshProUGUI sphere28Text;
+        public TextMeshProUGUI sphere31Text;
+        public TextMeshProUGUI sphere34Text;
 
         private void Awake()
         {
@@ -70,6 +81,19 @@ namespace Pattern.Quest.Alpha.Phases.Games
             stage2Scene2Text23.text = defs["stage3Scene1TextBox23"];
             stage2Scene2Text24.text = defs["stage3Scene1TextBox24"];
             stage2Scene2Text25.text = defs["stage3Scene1TextBox25"];
+
+            sphere1Text.text = defs["stage3Number1"];
+            sphere4Text.text = defs["stage3Number4"];
+            sphere7Text.text = defs["stage3Number7"];
+            sphere10Text.text = defs["stage2Number10"];
+            sphere13Text.text = defs["stage3Number13"];
+            sphere16Text.text = defs["stage3Number16"];
+            sphere19Text.text = defs["stage3Number19"];
+            sphere22Text.text = defs["stage3Number22"];
+            sphere25Text.text = defs["stage3Number25"];
+            sphere28Text.text = defs["stage3Number28"];
+            sphere31Text.text = defs["stage3Number31"];
+            sphere34Text.text = defs["stage2Number34"];
 
         }
     }

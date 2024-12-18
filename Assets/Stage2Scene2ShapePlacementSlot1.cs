@@ -34,152 +34,180 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public AudioSource correctSFX;
         public AudioSource incorrectSFX;
 
+        public bool slotFilled;
         // Start is called before the first frame update
 
         public void OnMouseDown()
         {
-            if (circle1Prop.circle1Held)
+            if (!slotFilled)
             {
-                circle.gameObject.SetActive(true);
-                circle1Prop.circle1Button.gameObject.SetActive(false);
-                circle1Prop.invItemImage.gameObject.SetActive(false);
-                circle1Prop.circle1Held = false;
-                correctPlacement = true;
-                inCorrectPlacement = false;
-                correctSFX.Play();
+                if (circle1Prop.circle1Held)
+                {
+                    circle.gameObject.SetActive(true);
+                    circle1Prop.circle1Button.gameObject.SetActive(false);
+                    circle1Prop.invItemImage.gameObject.SetActive(false);
+                    circle1Prop.circle1Held = false;
+                    correctPlacement = true;
+                    inCorrectPlacement = false;
+                    correctSFX.Play();
+                    slotFilled = true;
+                }
+
+                if (circle2Prop.circle2Held)
+                {
+
+                    circle.gameObject.SetActive(true);
+                    circle2Prop.circle2Button.gameObject.SetActive(false);
+                    circle1Prop.invItemImage.gameObject.SetActive(false);
+                    circle2Prop.circle2Held = false;
+                    correctPlacement = true;
+                    inCorrectPlacement = false;
+                    correctSFX.Play();
+                    slotFilled = true;
+
+                }
+
+                if (circle3Prop.circle3Held)
+                {
+
+                    circle.gameObject.SetActive(true);
+                    circle3Prop.circle3Button.gameObject.SetActive(false);
+                    circle3Prop.invItemImage.gameObject.SetActive(false);
+                    circle3Prop.circle3Held = false;
+                    correctPlacement = true;
+                    inCorrectPlacement = false;
+                    correctSFX.Play();
+                    slotFilled = true;
+
+                }
+
+                if (tri1Prop.sphereHeld)
+                {
+                    triangle.gameObject.SetActive(true);
+                    tri1Prop.triangleButton.gameObject.SetActive(false);
+                    tri1Prop.invItemImage.gameObject.SetActive(false);
+                    tri1Prop.sphereHeld = false;
+                    correctPlacement = false;
+                    inCorrectPlacement = true;
+                    incorrectSFX.Play();
+                    slotFilled = true;
+
+                }
+
+                if (tri2Prop.sphereHeld)
+                {
+                    triangle.gameObject.SetActive(true);
+                    tri2Prop.triangleButton.gameObject.SetActive(false);
+                    tri2Prop.invItemImage.gameObject.SetActive(false);
+                    tri2Prop.sphereHeld = false;
+                    correctPlacement = false;
+                    inCorrectPlacement = true;
+                    incorrectSFX.Play();
+                    slotFilled = true;
+
+
+                }
+
+                if (tri3Prop.triangle3Held)
+                {
+                    triangle.gameObject.SetActive(true);
+                    tri3Prop.triangle3Button.gameObject.SetActive(false);
+                    tri3Prop.invItemImage.gameObject.SetActive(false);
+                    tri3Prop.triangle3Held = false;
+                    correctPlacement = false;
+                    inCorrectPlacement = true;
+                    incorrectSFX.Play();
+                    slotFilled = true;
+
+
+                }
+
+
+                if (squareProp.sphereHeld)
+                {
+                    square.gameObject.SetActive(true);
+                    squareProp.squareButton.gameObject.SetActive(false);
+                    squareProp.invItemImage.gameObject.SetActive(false);
+                    squareProp.sphereHeld = false;
+                    correctPlacement = false;
+                    inCorrectPlacement = true;
+                    incorrectSFX.Play();
+                    slotFilled = true;
+
+
+                }
+
+                if (square2Prop.square2Held)
+                {
+                    square.gameObject.SetActive(true);
+                    square2Prop.square2Button.gameObject.SetActive(false);
+                    square2Prop.invItemImage.gameObject.SetActive(false);
+                    square2Prop.square2Held = false;
+                    correctPlacement = false;
+                    inCorrectPlacement = true;
+                    incorrectSFX.Play();
+                    slotFilled = true;
+
+
+                }
+
+                if (square3Prop.square3Held)
+                {
+                    square.gameObject.SetActive(true);
+                    square3Prop.square3Button.gameObject.SetActive(false);
+                    square3Prop.invItemImage.gameObject.SetActive(false);
+                    square3Prop.square3Held = false;
+                    correctPlacement = false;
+                    inCorrectPlacement = true;
+                    incorrectSFX.Play();
+                    slotFilled = true;
+
+
+                }
+
+                if (hex1Prop.hexagon1Held)
+                {
+                    hexagon.gameObject.SetActive(true);
+                    hex1Prop.hexagon1Button.gameObject.SetActive(false);
+                    hex1Prop.invItemImage.gameObject.SetActive(false);
+                    hex1Prop.hexagon1Held = false;
+                    correctPlacement = false;
+                    inCorrectPlacement = true;
+                    incorrectSFX.Play();
+                    slotFilled = true;
+
+
+                }
+
+                if (hex2Prop.hexagon2Held)
+                {
+                    hexagon.gameObject.SetActive(true);
+                    hex2Prop.hexagon2Button.gameObject.SetActive(false);
+                    hex2Prop.invItemImage.gameObject.SetActive(false);
+                    hex2Prop.hexagon2Held = false;
+                    correctPlacement = false;
+                    inCorrectPlacement = true;
+                    incorrectSFX.Play();
+                    slotFilled = true;
+
+
+                }
+
+                if (hex3Prop.hexagon3Held)
+                {
+                    hexagon.gameObject.SetActive(true);
+                    hex3Prop.hexagon3Button.gameObject.SetActive(false);
+                    hex3Prop.invItemImage.gameObject.SetActive(false);
+                    hex3Prop.hexagon3Held = false;
+                    correctPlacement = false;
+                    inCorrectPlacement = true;
+                    incorrectSFX.Play();
+                    slotFilled = true;
+
+
+                }
             }
 
-            if (circle2Prop.circle2Held)
-            {
-
-                circle.gameObject.SetActive(true);
-                circle2Prop.circle2Button.gameObject.SetActive(false);
-                circle1Prop.invItemImage.gameObject.SetActive(false);
-                circle2Prop.circle2Held = false;
-                correctPlacement = true;
-                inCorrectPlacement = false;
-                correctSFX.Play();
-            }
-
-            if (circle3Prop.circle3Held)
-            {
-
-                circle.gameObject.SetActive(true);
-                circle3Prop.circle3Button.gameObject.SetActive(false);
-                circle3Prop.invItemImage.gameObject.SetActive(false);
-                circle3Prop.circle3Held = false;
-                correctPlacement = true;
-                inCorrectPlacement = false;
-                correctSFX.Play();
-            }
-
-            if (tri1Prop.sphereHeld)
-            {
-                triangle.gameObject.SetActive(true);
-                tri1Prop.triangleButton.gameObject.SetActive(false);
-                tri1Prop.invItemImage.gameObject.SetActive(false);
-                tri1Prop.sphereHeld = false;
-                correctPlacement = false;
-                inCorrectPlacement = true;
-                incorrectSFX.Play();
-            }
-
-            if (tri2Prop.sphereHeld)
-            {
-                triangle.gameObject.SetActive(true);
-                tri2Prop.triangleButton.gameObject.SetActive(false);
-                tri2Prop.invItemImage.gameObject.SetActive(false);
-                tri2Prop.sphereHeld = false;
-                correctPlacement = false;
-                inCorrectPlacement = true;
-                incorrectSFX.Play();
-
-            }
-
-            if (tri3Prop.triangle3Held)
-            {
-                triangle.gameObject.SetActive(true);
-                tri3Prop.triangle3Button.gameObject.SetActive(false);
-                tri3Prop.invItemImage.gameObject.SetActive(false);
-                tri3Prop.triangle3Held = false;
-                correctPlacement = false;
-                inCorrectPlacement = true;
-                incorrectSFX.Play();
-
-            }
-
-
-            if (squareProp.sphereHeld)
-            {
-                square.gameObject.SetActive(true);
-                squareProp.squareButton.gameObject.SetActive(false);
-                squareProp.invItemImage.gameObject.SetActive(false);
-                squareProp.sphereHeld = false;
-                correctPlacement = false;
-                inCorrectPlacement = true;
-                incorrectSFX.Play();
-
-            }
-
-            if (square2Prop.square2Held)
-            {
-                square.gameObject.SetActive(true);
-                square2Prop.square2Button.gameObject.SetActive(false);
-                square2Prop.invItemImage.gameObject.SetActive(false);
-                square2Prop.square2Held = false;
-                correctPlacement = false;
-                inCorrectPlacement = true;
-                incorrectSFX.Play();
-
-            }
-
-            if (square3Prop.square3Held)
-            {
-                square.gameObject.SetActive(true);
-                square3Prop.square3Button.gameObject.SetActive(false);
-                square3Prop.invItemImage.gameObject.SetActive(false);
-                square3Prop.square3Held = false;
-                correctPlacement = false;
-                inCorrectPlacement = true;
-                incorrectSFX.Play();
-
-            }
-
-            if (hex1Prop.hexagon1Held)
-            {
-                hexagon.gameObject.SetActive(true);
-                hex1Prop.hexagon1Button.gameObject.SetActive(false);
-                hex1Prop.invItemImage.gameObject.SetActive(false);
-                hex1Prop.hexagon1Held = false;
-                correctPlacement = false;
-                inCorrectPlacement = true;
-                incorrectSFX.Play();
-
-            }
-
-            if (hex2Prop.hexagon2Held)
-            {
-                hexagon.gameObject.SetActive(true);
-                hex2Prop.hexagon2Button.gameObject.SetActive(false);
-                hex2Prop.invItemImage.gameObject.SetActive(false);
-                hex2Prop.hexagon2Held = false;
-                correctPlacement = false;
-                inCorrectPlacement = true;
-                incorrectSFX.Play();
-
-            }
-
-            if (hex3Prop.hexagon3Held)
-            {
-                hexagon.gameObject.SetActive(true);
-                hex3Prop.hexagon3Button.gameObject.SetActive(false);
-                hex3Prop.invItemImage.gameObject.SetActive(false);
-                hex3Prop.hexagon3Held = false;
-                correctPlacement = false;
-                inCorrectPlacement = true;
-                incorrectSFX.Play();
-
-            }
         }
     }
 }

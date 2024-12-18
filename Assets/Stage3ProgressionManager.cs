@@ -20,6 +20,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public GameObject exitTrigger;
         public bool runOnce;
         public bool runTwice;
+
+
         private void Update()
         {
             if (!runOnce)
@@ -29,6 +31,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     textMan.positionChanged = true; // Directly set positionChanged
                     textMan.arrayPos = 22;
                     exitTrigger.gameObject.SetActive(true);
+
                     runOnce = true;
                 }
             }
@@ -37,6 +40,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             {
                 if (slot1.inCorrectPlacement || slot2.inCorrectPlacement || slot3.inCorrectPlacement || slot4.inCorrectPlacement || slot5.inCorrectPlacement || slot6.inCorrectPlacement || slot7.inCorrectPlacement || slot8.inCorrectPlacement || slot9.inCorrectPlacement || slot10.inCorrectPlacement || slot11.inCorrectPlacement || slot12.inCorrectPlacement)
                 {
+                    textMan.ResetBools();
                     textMan.positionChanged = true; // Directly set positionChanged
                     textMan.arrayPos = 21;
                     //exitTrigger.gameObject.SetActive(true);

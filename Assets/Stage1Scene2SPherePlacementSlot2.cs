@@ -23,82 +23,86 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public AudioSource correctSFX;
         public AudioSource incorrectSFX;
-
+        public bool slotFilled;
         // Start is called before the first frame update
 
         public void OnMouseDown()
         {
-            if (no2Prop.sphereHeld)
+            if (!slotFilled)
             {
-                no2sphere.gameObject.SetActive(true);
-                no2Prop.sphereButton.gameObject.SetActive(false);
-                no2Prop.invItemImage.gameObject.SetActive(false);
-                no2Prop.sphereHeld = false;
-                correctPlacement = false;
-                inCorrectPlacement = true;
-                incorrectSFX.Play();
+                if (no2Prop.sphereHeld)
+                {
+                    no2sphere.gameObject.SetActive(true);
+                    no2Prop.sphereButton.gameObject.SetActive(false);
+                    no2Prop.invItemImage.gameObject.SetActive(false);
+                    no2Prop.sphereHeld = false;
+                    correctPlacement = false;
+                    inCorrectPlacement = true;
+                    incorrectSFX.Play();
+                    slotFilled = true;
+                }
 
+                if (no3Prop.sphereHeld)
+                {
+                    no3sphere.gameObject.SetActive(true);
+                    no3Prop.sphereButton.gameObject.SetActive(false);
+                    no3Prop.invItemImage.gameObject.SetActive(false);
+                    no3Prop.sphereHeld = false;
+                    correctPlacement = false;
+                    inCorrectPlacement = true;
+                    incorrectSFX.Play();
+                    slotFilled = true;
+                }
+
+                if (no8Prop.sphereHeld)
+                {
+                    no8sphere.gameObject.SetActive(true);
+                    no8Prop.sphereButton.gameObject.SetActive(false);
+                    no8Prop.invItemImage.gameObject.SetActive(false);
+                    no8Prop.sphereHeld = false;
+                    correctPlacement = true;
+                    inCorrectPlacement = false;
+                    correctSFX.Play();
+                    slotFilled = true;
+                }
+
+                if (no10Prop.sphereHeld)
+                {
+                    no10sphere.gameObject.SetActive(true);
+                    no10Prop.sphereButton.gameObject.SetActive(false);
+                    no10Prop.invItemImage.gameObject.SetActive(false);
+                    no10Prop.sphereHeld = false;
+                    correctPlacement = false;
+                    inCorrectPlacement = true;
+                    incorrectSFX.Play();
+                    slotFilled = true;
+                }
+
+                if (no31Prop.sphereHeld)
+                {
+                    no31sphere.gameObject.SetActive(true);
+                    no31Prop.sphereButton.gameObject.SetActive(false);
+                    no31Prop.invItemImage.gameObject.SetActive(false);
+                    no31Prop.sphereHeld = false;
+                    correctPlacement = false;
+                    inCorrectPlacement = true;
+                    incorrectSFX.Play();
+                    slotFilled = true;
+                }
+
+                if (no32Prop.sphereHeld)
+                {
+                    no32sphere.gameObject.SetActive(true);
+                    no32Prop.sphereButton.gameObject.SetActive(false);
+                    no32Prop.invItemImage.gameObject.SetActive(false);
+                    no32Prop.sphereHeld = false;
+                    correctPlacement = false;
+                    inCorrectPlacement = true;
+                    incorrectSFX.Play();
+                    slotFilled = true;
+                }
             }
-
-            if (no3Prop.sphereHeld)
-            {
-                no3sphere.gameObject.SetActive(true);
-                no3Prop.sphereButton.gameObject.SetActive(false);
-                no3Prop.invItemImage.gameObject.SetActive(false);
-                no3Prop.sphereHeld = false;
-                correctPlacement = false;
-                inCorrectPlacement = true;
-                incorrectSFX.Play();
-
-            }
-
-            if (no8Prop.sphereHeld)
-            {
-                no8sphere.gameObject.SetActive(true);
-                no8Prop.sphereButton.gameObject.SetActive(false);
-                no8Prop.invItemImage.gameObject.SetActive(false);
-                no8Prop.sphereHeld = false;
-                correctPlacement = true;
-                inCorrectPlacement = false;
-                correctSFX.Play();
-
-            }
-
-            if (no10Prop.sphereHeld)
-            {
-                no10sphere.gameObject.SetActive(true);
-                no10Prop.sphereButton.gameObject.SetActive(false);
-                no10Prop.invItemImage.gameObject.SetActive(false);
-                no10Prop.sphereHeld = false;
-                correctPlacement = false;
-                inCorrectPlacement = true;
-                incorrectSFX.Play();
-
-            }
-
-            if (no31Prop.sphereHeld)
-            {
-                no31sphere.gameObject.SetActive(true);
-                no31Prop.sphereButton.gameObject.SetActive(false);
-                no31Prop.invItemImage.gameObject.SetActive(false);
-                no31Prop.sphereHeld = false;
-                correctPlacement = false;
-                inCorrectPlacement = true;
-                incorrectSFX.Play();
-
-            }
-
-            if (no32Prop.sphereHeld)
-            {
-                no32sphere.gameObject.SetActive(true);
-                no32Prop.sphereButton.gameObject.SetActive(false);
-                no32Prop.invItemImage.gameObject.SetActive(false);
-                no32Prop.sphereHeld = false;
-                correctPlacement = false;
-                inCorrectPlacement = true;
-                incorrectSFX.Play();
-
-            }
+ 
         }
     }
 }

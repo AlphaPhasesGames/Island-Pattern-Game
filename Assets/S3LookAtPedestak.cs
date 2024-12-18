@@ -16,7 +16,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Button resetButton;
 
         public bool hasViewedPedastal;
-
+        public GameObject invPanal;
         public Stage3NumberPlacementSlot1 slot1;
         public Stage3NumberPlacementSlot2 slot2;
         public Stage3NumberPlacementSlot3 slot3;
@@ -187,6 +187,32 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public GameObject slot12No31;
         public GameObject slot12No34;
 
+        public GameObject slotNo1Button;
+        public GameObject slotNo2Button;
+        public GameObject slotNo3Button;
+        public GameObject slotNo4Button;
+        public GameObject slotNo5Button;
+        public GameObject slotNo6Button;
+        public GameObject slotNo7Button;
+        public GameObject slotNo8Button;
+        public GameObject slotNo9Button;
+        public GameObject slotNo10Button;
+        public GameObject slotNo11Button;
+        public GameObject slotNo12Button;
+
+        public GameObject slotNo1ButtonText;
+        public GameObject slotNo2ButtonText;
+        public GameObject slotNo3ButtonText;
+        public GameObject slotNo4ButtonText;
+        public GameObject slotNo5ButtonText;
+        public GameObject slotNo6ButtonText;
+        public GameObject slotNo7ButtonText;
+        public GameObject slotNo8ButtonText;
+        public GameObject slotNo9ButtonText;
+        public GameObject slotNo10ButtonText;
+        public GameObject slotNo11ButtonText;
+        public GameObject slotNo12ButtonText;
+
         public Stage3Number1InvProperties sphereNo1Item;
         public Stage3Number4InvProperties sphereNo4Item;
         public Stage3Number7InvProperties sphereNo7Item;
@@ -244,7 +270,14 @@ namespace Pattern.Quest.Alpha.Phases.Games
             textMan.arrayPos = 26;
         }
 
-
+        public void ClosePedastalVeiwEnd()
+        {
+           
+            
+            invPanal.gameObject.SetActive(false);
+            resetButton.gameObject.SetActive(false);
+            closeButton.gameObject.SetActive(false);
+        }
 
 
         public void ResetSpeheres()
@@ -417,6 +450,46 @@ namespace Pattern.Quest.Alpha.Phases.Games
             slot10.inCorrectPlacement = false;
             slot11.inCorrectPlacement = false;
             slot12.inCorrectPlacement = false;
+
+           slotNo1Button.gameObject.SetActive(true);
+           slotNo2Button.gameObject.SetActive(true);
+           slotNo3Button.gameObject.SetActive(true);
+           slotNo4Button.gameObject.SetActive(true);
+           slotNo5Button.gameObject.SetActive(true);
+           slotNo6Button.gameObject.SetActive(true);
+           slotNo7Button.gameObject.SetActive(true);
+           slotNo8Button.gameObject.SetActive(true);
+           slotNo9Button.gameObject.SetActive(true);
+           slotNo10Button.gameObject.SetActive(true);
+           slotNo11Button.gameObject.SetActive(true);
+           slotNo12Button.gameObject.SetActive(true);
+
+
+            slotNo1ButtonText.gameObject.SetActive(false);
+            slotNo2ButtonText.gameObject.SetActive(false);
+            slotNo3ButtonText.gameObject.SetActive(false);
+            slotNo4ButtonText.gameObject.SetActive(false);
+            slotNo5ButtonText.gameObject.SetActive(false);
+            slotNo6ButtonText.gameObject.SetActive(false);
+            slotNo7ButtonText.gameObject.SetActive(false);
+            slotNo8ButtonText.gameObject.SetActive(false);
+            slotNo9ButtonText.gameObject.SetActive(false);
+            slotNo10ButtonText.gameObject.SetActive(false);
+            slotNo11ButtonText.gameObject.SetActive(false);
+            slotNo12ButtonText.gameObject.SetActive(false);
+
+            slot1.slotFilled = false;
+            slot2.slotFilled = false;
+            slot3.slotFilled = false;
+            slot4.slotFilled = false;
+            slot5.slotFilled = false;
+            slot6.slotFilled = false;
+            slot7.slotFilled = false;
+            slot8.slotFilled = false;
+            slot9.slotFilled = false;
+            slot10.slotFilled = false;
+            slot11.slotFilled = false;
+            slot12.slotFilled = false;
 
             progScript.runTwice = false;
             textMan.ResetPositionFlags();

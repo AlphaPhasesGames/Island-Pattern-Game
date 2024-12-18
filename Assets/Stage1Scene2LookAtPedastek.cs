@@ -171,6 +171,11 @@ namespace Pattern.Quest.Alpha.Phases.Games
             slot1.inCorrectPlacement = false;
             slot2.inCorrectPlacement = false;
             slot3.inCorrectPlacement = false;
+
+            slot1.slotFilled = false;
+            slot2.slotFilled = false;
+            slot3.slotFilled = false;
+
             progScript.runTwice = false;
             textMan.ResetPositionFlags();
         }

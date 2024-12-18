@@ -30,7 +30,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public GameObject sphereNo31;
         public GameObject sphereNo34;
 
+        public AudioSource correctSFX;
+        public AudioSource incorrectSFX;
 
+        public bool slotFilled;
 
         public bool correctPlacement;
         public bool inCorrectPlacement;
@@ -45,7 +48,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no1InvProp.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
-
+                slotFilled = true;
+                incorrectSFX.Play();
             }
 
             if (no4InvProp.sphereHeld)
@@ -57,7 +61,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no4InvProp.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
-
+                slotFilled = true;
+                incorrectSFX.Play();
             }
 
             if (no7InvProp.sphereHeld)
@@ -69,7 +74,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no7InvProp.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
-
+                slotFilled = true;
+                incorrectSFX.Play();
             }
 
             if (no10InvProp.sphereHeld)
@@ -81,7 +87,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no10InvProp.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
-
+                slotFilled = true;
+                incorrectSFX.Play();
             }
 
             if (no13InvProp.sphereHeld)
@@ -93,7 +100,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no13InvProp.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
-
+                slotFilled = true;
+                incorrectSFX.Play();
             }
 
             if (no16InvProp.sphereHeld)
@@ -105,7 +113,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no16InvProp.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
-
+                slotFilled = true;
+                incorrectSFX.Play();
             }
 
 
@@ -118,7 +127,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no19InvProp.sphereHeld = false;
                 correctPlacement = true;
                 inCorrectPlacement = false;
-
+                slotFilled = true;
+                correctSFX.Play();
             }
 
             if (no22InvProp.sphereHeld)
@@ -130,7 +140,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no22InvProp.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
-
+                slotFilled = true;
+                incorrectSFX.Play();
             }
 
             if (no25InvProp.sphereHeld)
@@ -142,7 +153,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no25InvProp.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
-
+                slotFilled = true;
+                incorrectSFX.Play();
             }
 
             if (no28InvProp.sphereHeld)
@@ -154,7 +166,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no28InvProp.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
-
+                slotFilled = true;
+                incorrectSFX.Play();
             }
 
             if (no31InvProp.sphereHeld)
@@ -166,7 +179,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no31InvProp.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
-
+                slotFilled = true;
+                incorrectSFX.Play();
             }
 
             if (no34InvProp.sphereHeld)
@@ -178,7 +192,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no34InvProp.sphereHeld = false;
                 correctPlacement = false;
                 inCorrectPlacement = true;
-
+                slotFilled = true;
+                incorrectSFX.Play();
             }
         }
     }

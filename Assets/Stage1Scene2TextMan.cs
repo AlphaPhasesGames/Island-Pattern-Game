@@ -108,7 +108,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     textBools[arrayPos] = true;
                 }
             }
-       
+
+          
         }
 
         private void HandleArrayPosActions()
@@ -163,8 +164,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     unit17Image.gameObject.SetActive(false);
                   //  pollyImage.gameObject.SetActive(true);
                     SpeakText("stage1Scene2TextBox5"); break;
-                case 5: SpeakText("stage1Scene2TextBox6");
+                case 5: 
+                    textPanal.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
+                    SpeakText("stage1Scene2TextBox6");
                     StartCoroutine(MoveToBlankInvislbePanalUnit17()); break;
                 case 6:
                     backwardsButton.gameObject.SetActive(false);
@@ -222,7 +225,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
                 case 12:
 
-                    textPanal.gameObject.SetActive(true);
+                    textPanal.gameObject.SetActive(false);
                     // charCont.enabled = false;
                     // forwardParent.gameObject.SetActive(false);
                     // backwardsButton.gameObject.SetActive(false);

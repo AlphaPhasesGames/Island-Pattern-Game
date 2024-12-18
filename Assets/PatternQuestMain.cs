@@ -106,7 +106,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         {
             if (Input.GetKeyDown(KeyCode.H))
             {
-                SceneManager.LoadScene("Stage 2 Scene 2");
+                SceneManager.LoadScene("Stage 3 Scene 1");
             }
         }
         public void Save()

@@ -12,7 +12,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Stage1Scene2CollectablesManager collectMan;
         public CharacterController charCont;
         public RobotController robCont;
-      //  public Stage1Scene1TextMan textMan;
+        public Stage1Scene2TextMan textMan;
         public GameObject player;
         public GameObject uiCOllectablesPanal;
         public GameObject ruleButton;
@@ -46,10 +46,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 LoadGame();
                 uiCOllectablesPanal.gameObject.SetActive(true);
                 robCont.isCharActive = true;
-              //  sphere1Butt.gameObject.SetActive(true);
-             //   collectMan.collectableCount++;
-              //  textMan.positionChanged = true;
-              //  textMan.arrayPos = 26;
+                //  sphere1Butt.gameObject.SetActive(true);
+                //   collectMan.collectableCount++;
+             
+                Debug.Log("This start fucntion runs");
             }
 
             if (main.s1S2SpheresCollected)
@@ -69,6 +69,11 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 ruleButton.gameObject.SetActive(true);
                 ruleItem.gameObject.SetActive(false);
             }
+            else
+            {
+                StartCoroutine(ShowText());
+            }
+            
 
         }
 
@@ -99,6 +104,14 @@ namespace Pattern.Quest.Alpha.Phases.Games
             sphere10.gameObject.SetActive(true);
             sphere31.gameObject.SetActive(true);
             sphere32.gameObject.SetActive(true);
+
+        }
+
+        public IEnumerator ShowText()
+        {
+            yield return new WaitForSeconds(0.2f);
+            textMan.positionChanged = true;
+            textMan.arrayPos = 5;
 
         }
     }
