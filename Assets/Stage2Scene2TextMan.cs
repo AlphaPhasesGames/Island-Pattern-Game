@@ -138,8 +138,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     main.SaveScene2Stage2();
                     main.SaveS2S2();
                     startScript.SaveGame();
+                    SpeakText("stage2Scene2TextBox1");
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage2Scene2TextBox1"); break;
+                    break;
                 case 1:
                     backwardsButton.gameObject.SetActive(false);
                     robCont.isCharActive = false;
@@ -217,9 +218,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 case 10:
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(true);
-                    // forwardButton.gameObject.SetActive(true);
+                    mozaic.ClosePedastalVeiw();
                     textPanal.gameObject.SetActive(true);
-                    //StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage2Scene2TextBox11"); break;
                 case 11:
                     forwardParent.gameObject.SetActive(true);
