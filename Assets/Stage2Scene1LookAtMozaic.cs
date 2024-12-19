@@ -97,6 +97,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Stage2Scene1Triangle2 tri2Prop;
         public Stage2Scene1Triangle3InventoryItem tri3Prop;
 
+        public RobotController robCont;
+        public GameObject robotToHide;
+
         private void Awake()
         {
             closeButton.onClick.AddListener(ClosePedastalVeiw);
@@ -129,16 +132,21 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 pedastalCam.enabled = true;
                 closeButton.gameObject.SetActive(true);
             }
+
+            robCont.isCharActive = false;
+            robotToHide.gameObject.SetActive(false);
             Debug.Log("Trigger box clicked!");
             // Add your logic here (e.g., open a door, activate something, etc.)
         }
 
         public void ClosePedastalVeiw()
         {
+            robCont.isCharActive = true;
+            robotToHide.gameObject.SetActive(true);
             playerCamToDisable.enabled = true;
             pedastalCam.enabled = false;
             triggerCollider.enabled = true;
-            resetButton.gameObject.SetActive(true);
+            resetButton.gameObject.SetActive(false);
             closeButton.gameObject.SetActive(false);
         }
 

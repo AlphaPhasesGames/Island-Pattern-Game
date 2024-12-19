@@ -71,6 +71,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Stage1Scene2Number31InvProperties no31Prop;
         public Stage1Scene2Number32InvProperties no32Prop;
 
+        public RobotController robCont;
+        public GameObject robotToHide;
+
         private void Awake()
         {
             closeButton.onClick.AddListener(ClosePedastalVeiw);
@@ -104,7 +107,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public void ClosePedastalVeiw()
         {
-           // resetButton.gameObject.SetActive(false);
+            robCont.isCharActive = true;
+            robotToHide.gameObject.SetActive(true);
             playerCamToDisable.enabled = true;
             pedastalCam.enabled = false;
             triggerCollider.enabled = true;

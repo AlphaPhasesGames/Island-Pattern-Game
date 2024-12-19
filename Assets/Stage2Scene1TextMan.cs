@@ -15,7 +15,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public int arrayPos;
         public int maxLengthArray;
         public int minLengthArray = 1;
-
+        public Stage2Scene1LookAtMozaic lookM;
         public bool positionChanged; //= true;
 
         public GameObject pollyImage;
@@ -141,10 +141,11 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage2Scene1TextBox2"); break;
                 case 2:
+                  
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
-                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                    StartCoroutine(MoveToBlankInvislbePanalClose());
                     SpeakText("stage2Scene1TextBox3"); break;
                 case 3:         
                     textPanal.gameObject.SetActive(true);
@@ -209,12 +210,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     SpeakText("stage2Scene1TextBox12"); break;
 
                 case 12:
+                    
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
                     lookScript.ClosePedastalVeiw();
                     invPanal.gameObject.SetActive(false);
-                    StartCoroutine(MoveToBlankInvislbePanalPedestal());
+                    StartCoroutine(MoveToBlankInvislbePanalClose());
                     SpeakText("stage2Scene1TextBox13"); break;
                 case 13:
                     textPanal.gameObject.SetActive(false);
@@ -296,7 +298,16 @@ namespace Pattern.Quest.Alpha.Phases.Games
             Debug.Log("This start coRoutine Runs");
 
         }
+        public IEnumerator MoveToBlankInvislbePanalClose()
+        {
+            yield return new WaitForSeconds(5);
+            lookM.ClosePedastalVeiw();
+            robCont.isCharActive = true;
+            textPanal.gameObject.SetActive(false);
+            arrayPos = 13;
+            Debug.Log("This start coRoutine Runs");
 
+        }
 
         public IEnumerator MoveToBlankInvislbePanalPedestal()
         {

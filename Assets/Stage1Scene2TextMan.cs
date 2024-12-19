@@ -52,7 +52,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Button sphere10;
         public Button sphere31;
         public Button sphere32;
-
+        public GameObject robotToHide;
         private void Awake()
         {
             forwardButton.onClick.AddListener(ProgressTextForward);
@@ -156,6 +156,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     StopAllCoroutines();
                     pollyImage.gameObject.SetActive(true);
                     robCont.isCharActive = false;
+                    robotToHide.gameObject.SetActive(false);
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(true);
@@ -187,9 +188,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage1Scene2TextBox8"); break;
                 case 8:
-
-                    //textPanalParent.gameObject.SetActive(true);
-                    // pollyImage.gameObject.SetActive(true);
+                    robCont.isCharActive = false;
+                    robotToHide.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
