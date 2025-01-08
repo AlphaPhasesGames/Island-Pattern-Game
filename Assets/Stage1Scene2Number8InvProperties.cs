@@ -22,6 +22,12 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public bool checkBool2;
         public bool sphereHeld;
 
+        public Stage1Scene2Number2InvProperties no2Prop;
+        public Stage1Scene2Number3InvProperties no3Prop;
+        public Stage1Scene2Number10InvProperties no10Prop;
+        public Stage1Scene2Number31InvProperties no31Prop;
+        public Stage1Scene2Number32InvProperties no32Prop;
+
         // Start is called before the first frame update
         private void Start()
         {
@@ -88,6 +94,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 playerHasBadgeObject = false;
                 sphereHeld = false;
                 Debug.Log("Inv Item Picked");
+
             }
         }
 
@@ -99,6 +106,11 @@ namespace Pattern.Quest.Alpha.Phases.Games
             playerHasBadgeObject = true;
             sphereHeld = true;
             Debug.Log("Inv Item Picked");
+            no3Prop.DeSelectSphereItem();
+            no2Prop.DeSelectSphereItem();
+            no10Prop.DeSelectSphereItem();
+            no31Prop.DeSelectSphereItem();
+            no32Prop.DeSelectSphereItem();
         }
 
         public void DeSelectSphereItem() // gold fucntion for mouse click

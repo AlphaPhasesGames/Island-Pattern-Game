@@ -15263,6 +15263,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1038531260}
     - target: {fileID: 2224369820727503107, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no2Prop
+      value: 
+      objectReference: {fileID: 1405688850}
+    - target: {fileID: 2224369820727503107, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no3Prop
+      value: 
+      objectReference: {fileID: 1405688856}
+    - target: {fileID: 2224369820727503107, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no8Prop
+      value: 
+      objectReference: {fileID: 1405688855}
+    - target: {fileID: 2224369820727503107, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no31Prop
+      value: 
+      objectReference: {fileID: 1405688853}
+    - target: {fileID: 2224369820727503107, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no32Prop
+      value: 
+      objectReference: {fileID: 1405688852}
+    - target: {fileID: 2224369820727503107, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
       propertyPath: sphereName
       value: 
       objectReference: {fileID: 1271248664}
@@ -15274,6 +15294,26 @@ PrefabInstance:
       propertyPath: sphereButton
       value: 
       objectReference: {fileID: 1459182160}
+    - target: {fileID: 2908707719045298050, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no3Prop
+      value: 
+      objectReference: {fileID: 1405688856}
+    - target: {fileID: 2908707719045298050, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no8Prop
+      value: 
+      objectReference: {fileID: 1405688855}
+    - target: {fileID: 2908707719045298050, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no10Prop
+      value: 
+      objectReference: {fileID: 1405688854}
+    - target: {fileID: 2908707719045298050, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no31Prop
+      value: 
+      objectReference: {fileID: 1405688853}
+    - target: {fileID: 2908707719045298050, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no32Prop
+      value: 
+      objectReference: {fileID: 1405688852}
     - target: {fileID: 2908707719045298050, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
       propertyPath: sphereName
       value: 
@@ -15487,6 +15527,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 607652002}
     - target: {fileID: 3764239145568677784, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no2Prop
+      value: 
+      objectReference: {fileID: 1405688850}
+    - target: {fileID: 3764239145568677784, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no8Prop
+      value: 
+      objectReference: {fileID: 1405688855}
+    - target: {fileID: 3764239145568677784, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no10Prop
+      value: 
+      objectReference: {fileID: 1405688854}
+    - target: {fileID: 3764239145568677784, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no31Prop
+      value: 
+      objectReference: {fileID: 1405688853}
+    - target: {fileID: 3764239145568677784, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no32Prop
+      value: 
+      objectReference: {fileID: 1405688852}
+    - target: {fileID: 3764239145568677784, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
       propertyPath: sphereName
       value: 
       objectReference: {fileID: 2041114983}
@@ -15515,6 +15575,26 @@ PrefabInstance:
       value: Script Manager
       objectReference: {fileID: 0}
     - target: {fileID: 5948554275002036306, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no2Prop
+      value: 
+      objectReference: {fileID: 1405688850}
+    - target: {fileID: 5948554275002036306, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no3Prop
+      value: 
+      objectReference: {fileID: 1405688856}
+    - target: {fileID: 5948554275002036306, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no10Prop
+      value: 
+      objectReference: {fileID: 1405688854}
+    - target: {fileID: 5948554275002036306, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no31Prop
+      value: 
+      objectReference: {fileID: 1405688853}
+    - target: {fileID: 5948554275002036306, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no32Prop
+      value: 
+      objectReference: {fileID: 1405688852}
+    - target: {fileID: 5948554275002036306, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
       propertyPath: sphereName
       value: 
       objectReference: {fileID: 672423425}
@@ -15531,6 +15611,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 781438213}
     - target: {fileID: 7402954157298183522, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no2Prop
+      value: 
+      objectReference: {fileID: 1405688850}
+    - target: {fileID: 7402954157298183522, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no3Prop
+      value: 
+      objectReference: {fileID: 1405688856}
+    - target: {fileID: 7402954157298183522, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no8Prop
+      value: 
+      objectReference: {fileID: 1405688855}
+    - target: {fileID: 7402954157298183522, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no10Prop
+      value: 
+      objectReference: {fileID: 1405688854}
+    - target: {fileID: 7402954157298183522, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no32Prop
+      value: 
+      objectReference: {fileID: 1405688852}
+    - target: {fileID: 7402954157298183522, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
       propertyPath: sphereName
       value: 
       objectReference: {fileID: 1859026423}
@@ -15542,6 +15642,26 @@ PrefabInstance:
       propertyPath: sphereButton
       value: 
       objectReference: {fileID: 275141316}
+    - target: {fileID: 7849836708142338502, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no2Prop
+      value: 
+      objectReference: {fileID: 1405688850}
+    - target: {fileID: 7849836708142338502, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no3Prop
+      value: 
+      objectReference: {fileID: 1405688856}
+    - target: {fileID: 7849836708142338502, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no8Prop
+      value: 
+      objectReference: {fileID: 1405688855}
+    - target: {fileID: 7849836708142338502, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no10Prop
+      value: 
+      objectReference: {fileID: 1405688854}
+    - target: {fileID: 7849836708142338502, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
+      propertyPath: no31Prop
+      value: 
+      objectReference: {fileID: 1405688853}
     - target: {fileID: 7849836708142338502, guid: 177a9e31ecb26aa4aa6ee8fa57643293, type: 3}
       propertyPath: sphereName
       value: 

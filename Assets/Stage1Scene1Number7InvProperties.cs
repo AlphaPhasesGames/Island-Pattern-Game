@@ -22,6 +22,12 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public bool checkBool2;
         public bool sphereHeld;
 
+        public Stage1Scene1Number4InvProperties no1Prop;
+        public Stage1Scene1Number6InvProperties no6Prop;
+        public Stage1Scene1Number10InvProperties no10Prop;
+        public Stage1Scene1Number11InvProperties no11Prop;
+        public Stage1Scene1Number14InvProperties no14Prop;
+
         // Start is called before the first frame update
         private void Start()
         {
@@ -84,6 +90,11 @@ namespace Pattern.Quest.Alpha.Phases.Games
             invItemImage.gameObject.SetActive(true); // this enables the image of the game obect to be held
             playerHasBadgeObject = true;
             sphereHeld = true;
+            no1Prop.DeSelectSphereItem();
+            no6Prop.DeSelectSphereItem();
+            no10Prop.DeSelectSphereItem();
+            no11Prop.DeSelectSphereItem();
+            no14Prop.DeSelectSphereItem();
             Debug.Log("Inv Item Picked");
         }
 

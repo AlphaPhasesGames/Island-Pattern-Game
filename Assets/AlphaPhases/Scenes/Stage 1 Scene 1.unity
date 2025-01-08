@@ -13403,7 +13403,12 @@ MonoBehaviour:
   sphereButton: {fileID: 1526754576}
   checkBool1: 0
   checkBool2: 0
-  sphereHeld: 0
+  sphereHeld: 1
+  no6Prop: {fileID: 1405688839}
+  no7Prop: {fileID: 1405688838}
+  no10Prop: {fileID: 1405688837}
+  no11Prop: {fileID: 1405688836}
+  no14Prop: {fileID: 1405688835}
 --- !u!114 &1405688833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13474,6 +13479,11 @@ MonoBehaviour:
   checkBool1: 0
   checkBool2: 0
   sphereHeld: 0
+  no1Prop: {fileID: 1405688832}
+  no6Prop: {fileID: 1405688839}
+  no7Prop: {fileID: 1405688838}
+  no10Prop: {fileID: 1405688837}
+  no11Prop: {fileID: 1405688836}
 --- !u!114 &1405688836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13494,6 +13504,11 @@ MonoBehaviour:
   checkBool1: 0
   checkBool2: 0
   sphereHeld: 0
+  no6Prop: {fileID: 1405688839}
+  no7Prop: {fileID: 1405688838}
+  no10Prop: {fileID: 1405688837}
+  no4Prop: {fileID: 1405688832}
+  no14Prop: {fileID: 1405688835}
 --- !u!114 &1405688837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13514,6 +13529,11 @@ MonoBehaviour:
   checkBool1: 0
   checkBool2: 0
   sphereHeld: 0
+  no1Prop: {fileID: 1405688832}
+  no6Prop: {fileID: 1405688839}
+  no7Prop: {fileID: 1405688838}
+  no11Prop: {fileID: 1405688836}
+  no14Prop: {fileID: 1405688835}
 --- !u!114 &1405688838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13534,6 +13554,11 @@ MonoBehaviour:
   checkBool1: 0
   checkBool2: 0
   sphereHeld: 0
+  no1Prop: {fileID: 1405688832}
+  no6Prop: {fileID: 1405688839}
+  no10Prop: {fileID: 1405688837}
+  no11Prop: {fileID: 1405688836}
+  no14Prop: {fileID: 1405688835}
 --- !u!114 &1405688839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13554,6 +13579,11 @@ MonoBehaviour:
   checkBool1: 0
   checkBool2: 0
   sphereHeld: 0
+  no1Prop: {fileID: 1405688832}
+  no7Prop: {fileID: 1405688838}
+  no10Prop: {fileID: 1405688837}
+  no11Prop: {fileID: 1405688836}
+  no14Prop: {fileID: 1405688835}
 --- !u!114 &1405688840
 MonoBehaviour:
   m_ObjectHideFlags: 0

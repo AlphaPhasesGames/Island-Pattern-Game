@@ -84,7 +84,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             isInvOpen = !isInvOpen; // if inventory is closed, open. If open, then close it
             stopRepeat = false; // Set stopRepeat bool to false
             stopRepeat2 = false; // set stoprepeat bool to true
-                                 //   robCont.StopRobotMoving();
+            no1Prop.DeSelectSphereItem();
         }
     }
 }
