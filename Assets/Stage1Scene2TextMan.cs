@@ -145,11 +145,17 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 case 2:
                     robCont.isCharActive = true;
                     forwardParent.gameObject.SetActive(false);
-                    main.s1S2AS = true;
-                    main.SaveScene1Stage2();
-                    main.SaveS1S2();
-                    collectablesUiCounter.gameObject.SetActive(true);
-                    startS.SaveGame();
+                    if (!runOnce2)
+                    {
+                        main.s1S2AS = true;
+                        main.SaveScene1Stage2();
+                        main.SaveS1S2();
+                        collectablesUiCounter.gameObject.SetActive(true);
+                        startS.SaveGame();
+                        runOnce2 = true;
+                        Debug.Log("This should run once");
+                    }
+                
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage1Scene2TextBox3"); break;
                 case 3:

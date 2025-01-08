@@ -134,10 +134,14 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
-                    main.s2S2AS = true;
-                    main.SaveScene2Stage2();
-                    main.SaveS2S2();
-                    startScript.SaveGame();
+                    if (!runOnce)
+                    {
+                        main.s2S2AS = true;
+                        main.SaveScene2Stage2();
+                        main.SaveS2S2();
+                        startScript.SaveGame();
+                        runOnce = true;
+                    }
                     SpeakText("stage2Scene2TextBox1");
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     break;

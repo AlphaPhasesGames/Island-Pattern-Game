@@ -82,25 +82,6 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         // Update is called once per frame
 
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.F5))
-            {
-                SaveGame();
-                main.SaveS2S1();
-                main.SaveScene2Stage1();
-            }
-
-            if (Input.GetKeyDown(KeyCode.F6))
-            {
-
-                LoadGame();
-
-
-            }
-
-
-        }
 
         public void SaveGame()
         {

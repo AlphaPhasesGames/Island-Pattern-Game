@@ -73,7 +73,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public RobotController robCont;
         public GameObject robotToHide;
-
+        public GameObject spheresObj;
         private void Awake()
         {
             closeButton.onClick.AddListener(ClosePedastalVeiw);
@@ -88,6 +88,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 textMan.positionChanged = true;
                 textMan.arrayPos = 3;
                 hasViewedPedastal = true;
+                spheresObj.gameObject.SetActive(true);
             }
             if (hasViewedPedastal && collectMan.allSpheresCollected)
             {

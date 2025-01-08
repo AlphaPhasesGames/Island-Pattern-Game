@@ -16,7 +16,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public bool hasViewedPattern;
         public bool pathShowing;
         public GameObject stairsPath1;
-
+        public GameObject robotToHide;
         public Button closeButton;
         private void Awake()
         {
@@ -34,6 +34,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 patternCam.enabled = true;
                 closeButton.gameObject.SetActive(true);
                 thisCollider.enabled = false;
+                robCont.isCharActive = false;
+                robotToHide.gameObject.SetActive(false);
             }
            
         }
@@ -45,7 +47,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
             playerCam.enabled = true;
             patternCam.enabled = false;
             closeButton.gameObject.SetActive(false);
-         
+            robCont.isCharActive = true;
+            robotToHide.gameObject.SetActive(true);
             if (!pathShowing)
             {
               

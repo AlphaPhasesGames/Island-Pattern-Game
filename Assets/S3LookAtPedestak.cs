@@ -14,7 +14,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Camera pedastalCam;
         public Button closeButton;
         public Button resetButton;
-
+        public RobotController robCont;
+        public GameObject robotToHide;
         public bool hasViewedPedastal;
         public GameObject invPanal;
         public Stage3NumberPlacementSlot1 slot1;
@@ -249,7 +250,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 textMan.arrayPos = 20;
                 hasViewedPedastal = true;
             }
-
+            robCont.isCharActive = false;
+            robotToHide.gameObject.SetActive(false);
             playerCamToDisable.enabled = false;
             pedastalCam.enabled = true;
             triggerCollider.enabled = false;
@@ -261,6 +263,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         private void ClosePedastalVeiw()
         {
+            robCont.isCharActive = true;
+            robotToHide.gameObject.SetActive(true);
             textMan.positionChanged = true;
             playerCamToDisable.enabled = true;
             pedastalCam.enabled = false;
@@ -272,8 +276,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public void ClosePedastalVeiwEnd()
         {
-           
-            
+
+          
             invPanal.gameObject.SetActive(false);
             resetButton.gameObject.SetActive(false);
             closeButton.gameObject.SetActive(false);

@@ -230,6 +230,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
             slot5.inCorrectPlacement = false;
             slot6.inCorrectPlacement = false;
 
+            slot1.correctPlacement = false;
+            slot2.correctPlacement = false;
+            slot3.correctPlacement = false;
+            slot4.correctPlacement = false;
+            slot5.correctPlacement = false;
+            slot6.correctPlacement = false;
+
             slot1.slotFilled = false;
             slot2.slotFilled = false;
             slot3.slotFilled = false;

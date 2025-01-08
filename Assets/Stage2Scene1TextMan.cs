@@ -124,7 +124,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                         submitOnce = true;
                     }
                                    
-                    robCont.isCharActive = false;
+                   
                     pollyImage.gameObject.SetActive(true);
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
@@ -132,10 +132,15 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     SpeakText("stage2Scene1TextBox1"); break;
                 case 1:
                     backwardsButton.gameObject.SetActive(true);
-                    main.s2S1AS = true;
-                    main.SaveScene2Stage1();
-                    main.SaveS2S1();
-                    startScript.SaveGame();
+                    if (!runOnce2)
+                    {
+                        main.s2S1AS = true;
+                        main.SaveScene2Stage1();
+                        main.SaveS2S1();
+                        startScript.SaveGame();
+                        runOnce2 = true;
+                    }
+                   
                     collectablesUI.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
@@ -147,7 +152,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalClose());
                     SpeakText("stage2Scene1TextBox3"); break;
-                case 3:         
+                case 3:
+                    robCont.isCharActive = false;
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     Debug.Log("Firing array 3");
@@ -200,7 +206,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     forwardParent.gameObject.SetActive(false);
                     // forwardButton.gameObject.SetActive(true);
                     textPanal.gameObject.SetActive(true);
-                    //StartCoroutine(MoveToBlankInvislbePanalUnit17());
+                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage2Scene1TextBox11"); break;
                 case 11:
                     textPanal.gameObject.SetActive(true);

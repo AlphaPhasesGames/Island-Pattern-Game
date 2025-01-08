@@ -10,14 +10,20 @@ namespace Pattern.Quest.Alpha.Phases.Games
     {
         public Stage1Scene1TextMan textMan;
         public Stage1Scene1StartScript startScript;
+        public bool runOnce;
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Player"))
             {
-                textMan.positionChanged = true; // Directly set positionChanged
-                textMan.arrayPos = 9;
-                startScript.SaveGame();
-                Destroy(this.gameObject);
+                if (!runOnce)
+                {
+                    textMan.positionChanged = true; // Directly set positionChanged
+                    textMan.arrayPos = 9;
+                    startScript.SaveGame();
+                    Destroy(this.gameObject);
+                    runOnce = true;
+                }
+
             }
         }
     }
