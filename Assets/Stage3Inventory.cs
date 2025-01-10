@@ -15,23 +15,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Stage3Number10InvProperties item10Script;
         public Stage3Number13InvProperties item13Script;
         public Stage3Number16InvProperties item16Script;
-        /*
-    public Stage2Scene2TriangleInventoryItem triangle1ItemScript;
-    public Stage2Scene2Hexagon1InvItem hex1ItemScript;
-    public Stage2Scene2Triangle1InventoryItem triangle2ItemScript;
-    public Stage2Scene2SquareInventoryItem square1ItemScript;
-    public Stage2Scene2Hexagon2InvItem hex2ItemsScript;
-    public Stage2Scene2Circle2InvItem circle2ItemScript;
-    public Stage2Scene2Hexagon3InvItem hex3ItemScript;
-    public StageScene2Square2InvItem square2InvItemScript;
-    public StageScene2Circle3InvItem circle3InvItemScript;
-    public StageScene2Square3InvItem square3InvItemScript;
-    public Stage2Scene2Triangle3InvItem triangle3InvItemScript;
-    */
+        public Stage3Number19InvProperties item19Script;
+        public Stage3Number22InvProperties item22Script;
+        public Stage3Number25InvProperties item25Script;
+        public Stage3Number28InvProperties item28Script;
+        public Stage3Number31InvProperties item31Script;
+        public Stage3Number34InvProperties item34Script;
 
-        //   public Stage1Scene1Number14InvProperties no14Prop;
-
-        // public GameObject sphereNumber1Button;
 
         public Button closeInv;
         public Button openInv;
@@ -88,13 +78,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 item10Script.DeSelectSphereItem();
                 item13Script.DeSelectSphereItem();
                 item16Script.DeSelectSphereItem();
-               // circle2ItemScript.DeSelectSphereItem();
-               // hex3ItemScript.DeSelectSphereItem();
-              //  square2InvItemScript.DeSelectSphereItem();
-              //  circle3InvItemScript.DeSelectSphereItem();
-              //  square3InvItemScript.DeSelectSphereItem();
-              //  triangle3InvItemScript.DeSelectSphereItem();
-              
+                item19Script.DeSelectSphereItem();
+                item22Script.DeSelectSphereItem();
+                item25Script.DeSelectSphereItem();
+                item28Script.DeSelectSphereItem();
+                item31Script.DeSelectSphereItem();
+                item34Script.DeSelectSphereItem();
+
             }
         }
 

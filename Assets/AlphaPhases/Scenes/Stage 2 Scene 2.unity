@@ -1091,6 +1091,17 @@ MonoBehaviour:
   checkBool1: 0
   checkBool2: 0
   triangle3Held: 0
+  circle1ItemScript: {fileID: 59353045}
+  triangle1ItemScript: {fileID: 59353056}
+  hex1ItemScript: {fileID: 59353055}
+  triangle2ItemScript: {fileID: 59353054}
+  square1ItemScript: {fileID: 59353053}
+  hex2ItemsScript: {fileID: 59353052}
+  circle2ItemScript: {fileID: 59353051}
+  hex3ItemScript: {fileID: 59353050}
+  square2InvItemScript: {fileID: 59353049}
+  circle3InvItemScript: {fileID: 59353048}
+  square3InvItemScript: {fileID: 59353047}
 --- !u!114 &59353047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1111,6 +1122,17 @@ MonoBehaviour:
   checkBool1: 0
   checkBool2: 0
   square3Held: 0
+  circle1ItemScript: {fileID: 59353045}
+  triangle1ItemScript: {fileID: 59353056}
+  hex1ItemScript: {fileID: 59353055}
+  triangle2ItemScript: {fileID: 59353054}
+  square1ItemScript: {fileID: 59353053}
+  hex2ItemsScript: {fileID: 59353052}
+  circle2ItemScript: {fileID: 59353051}
+  hex3ItemScript: {fileID: 59353050}
+  square2InvItemScript: {fileID: 59353049}
+  circle3InvItemScript: {fileID: 59353048}
+  triangle3InvItemScript: {fileID: 59353046}
 --- !u!114 &59353048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1131,6 +1153,17 @@ MonoBehaviour:
   checkBool1: 0
   checkBool2: 0
   circle3Held: 0
+  circle1ItemScript: {fileID: 59353045}
+  triangle1ItemScript: {fileID: 59353056}
+  hex1ItemScript: {fileID: 59353055}
+  triangle2ItemScript: {fileID: 59353054}
+  square1ItemScript: {fileID: 59353053}
+  hex2ItemsScript: {fileID: 59353052}
+  circle2ItemScript: {fileID: 59353051}
+  hex3ItemScript: {fileID: 59353050}
+  square2InvItemScript: {fileID: 59353049}
+  square3InvItemScript: {fileID: 59353047}
+  triangle3InvItemScript: {fileID: 59353046}
 --- !u!114 &59353049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1151,6 +1184,17 @@ MonoBehaviour:
   checkBool1: 0
   checkBool2: 0
   square2Held: 0
+  circle1ItemScript: {fileID: 59353045}
+  triangle1ItemScript: {fileID: 59353056}
+  hex1ItemScript: {fileID: 59353055}
+  triangle2ItemScript: {fileID: 59353054}
+  square1ItemScript: {fileID: 59353053}
+  hex2ItemsScript: {fileID: 59353052}
+  circle2ItemScript: {fileID: 59353051}
+  hex3ItemScript: {fileID: 59353050}
+  circle3InvItemScript: {fileID: 59353048}
+  square3InvItemScript: {fileID: 59353047}
+  triangle3InvItemScript: {fileID: 59353046}
 --- !u!114 &59353050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1171,6 +1215,17 @@ MonoBehaviour:
   checkBool1: 0
   checkBool2: 0
   hexagon3Held: 0
+  circle1ItemScript: {fileID: 59353045}
+  triangle1ItemScript: {fileID: 59353056}
+  hex1ItemScript: {fileID: 59353055}
+  triangle2ItemScript: {fileID: 59353054}
+  square1ItemScript: {fileID: 59353053}
+  hex2ItemsScript: {fileID: 59353052}
+  circle2ItemScript: {fileID: 59353051}
+  square2InvItemScript: {fileID: 59353049}
+  circle3InvItemScript: {fileID: 59353048}
+  square3InvItemScript: {fileID: 59353047}
+  triangle3InvItemScript: {fileID: 59353046}
 --- !u!114 &59353051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1191,6 +1246,17 @@ MonoBehaviour:
   checkBool1: 0
   checkBool2: 0
   circle2Held: 0
+  circle1ItemScript: {fileID: 59353045}
+  triangle1ItemScript: {fileID: 59353056}
+  hex1ItemScript: {fileID: 59353055}
+  triangle2ItemScript: {fileID: 59353054}
+  square1ItemScript: {fileID: 59353053}
+  hex2ItemsScript: {fileID: 59353052}
+  hex3ItemScript: {fileID: 59353050}
+  square2InvItemScript: {fileID: 59353049}
+  circle3InvItemScript: {fileID: 59353048}
+  square3InvItemScript: {fileID: 59353047}
+  triangle3InvItemScript: {fileID: 59353046}
 --- !u!114 &59353052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1211,6 +1277,17 @@ MonoBehaviour:
   checkBool1: 0
   checkBool2: 0
   hexagon2Held: 0
+  circle1ItemScript: {fileID: 59353045}
+  triangle1ItemScript: {fileID: 59353056}
+  hex1ItemScript: {fileID: 59353055}
+  triangle2ItemScript: {fileID: 59353054}
+  square1ItemScript: {fileID: 59353053}
+  circle2ItemScript: {fileID: 59353051}
+  hex3ItemScript: {fileID: 59353050}
+  square2InvItemScript: {fileID: 59353049}
+  circle3InvItemScript: {fileID: 59353048}
+  square3InvItemScript: {fileID: 59353047}
+  triangle3InvItemScript: {fileID: 59353046}
 --- !u!114 &59353053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1231,6 +1308,17 @@ MonoBehaviour:
   checkBool1: 0
   checkBool2: 0
   sphereHeld: 0
+  circle1ItemScript: {fileID: 59353045}
+  triangle1ItemScript: {fileID: 59353056}
+  hex1ItemScript: {fileID: 59353055}
+  triangle2ItemScript: {fileID: 59353054}
+  hex2ItemsScript: {fileID: 59353052}
+  circle2ItemScript: {fileID: 59353051}
+  hex3ItemScript: {fileID: 59353050}
+  square2InvItemScript: {fileID: 59353049}
+  circle3InvItemScript: {fileID: 59353048}
+  square3InvItemScript: {fileID: 59353047}
+  triangle3InvItemScript: {fileID: 59353046}
 --- !u!114 &59353054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1251,6 +1339,17 @@ MonoBehaviour:
   checkBool1: 0
   checkBool2: 0
   sphereHeld: 0
+  circle1ItemScript: {fileID: 59353045}
+  triangle1ItemScript: {fileID: 59353056}
+  hex1ItemScript: {fileID: 59353055}
+  square1ItemScript: {fileID: 59353053}
+  hex2ItemsScript: {fileID: 59353052}
+  circle2ItemScript: {fileID: 59353051}
+  hex3ItemScript: {fileID: 59353050}
+  square2InvItemScript: {fileID: 59353049}
+  circle3InvItemScript: {fileID: 59353048}
+  square3InvItemScript: {fileID: 59353047}
+  triangle3InvItemScript: {fileID: 59353046}
 --- !u!114 &59353055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1271,6 +1370,17 @@ MonoBehaviour:
   checkBool1: 0
   checkBool2: 0
   hexagon1Held: 0
+  circle1ItemScript: {fileID: 59353045}
+  triangle1ItemScript: {fileID: 59353056}
+  triangle2ItemScript: {fileID: 59353054}
+  square1ItemScript: {fileID: 59353053}
+  hex2ItemsScript: {fileID: 59353052}
+  circle2ItemScript: {fileID: 59353051}
+  hex3ItemScript: {fileID: 59353050}
+  square2InvItemScript: {fileID: 59353049}
+  circle3InvItemScript: {fileID: 59353048}
+  square3InvItemScript: {fileID: 59353047}
+  triangle3InvItemScript: {fileID: 59353046}
 --- !u!114 &59353056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1291,6 +1401,17 @@ MonoBehaviour:
   checkBool1: 0
   checkBool2: 0
   sphereHeld: 0
+  circle1ItemScript: {fileID: 59353045}
+  hex1ItemScript: {fileID: 59353055}
+  triangle2ItemScript: {fileID: 59353054}
+  square1ItemScript: {fileID: 59353053}
+  hex2ItemsScript: {fileID: 59353052}
+  circle2ItemScript: {fileID: 59353051}
+  hex3ItemScript: {fileID: 59353050}
+  square2InvItemScript: {fileID: 59353049}
+  circle3InvItemScript: {fileID: 59353048}
+  square3InvItemScript: {fileID: 59353047}
+  triangle3InvItemScript: {fileID: 59353046}
 --- !u!114 &59353057
 MonoBehaviour:
   m_ObjectHideFlags: 0

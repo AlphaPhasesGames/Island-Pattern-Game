@@ -21,7 +21,17 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public bool checkBool1;
         public bool checkBool2;
         public bool square3Held;
-
+        public Stage2Scene2Circle1InvItem circle1ItemScript;
+        public Stage2Scene2TriangleInventoryItem triangle1ItemScript;
+        public Stage2Scene2Hexagon1InvItem hex1ItemScript;
+        public Stage2Scene2Triangle1InventoryItem triangle2ItemScript;
+        public Stage2Scene2SquareInventoryItem square1ItemScript;
+        public Stage2Scene2Hexagon2InvItem hex2ItemsScript;
+        public Stage2Scene2Circle2InvItem circle2ItemScript;
+        public Stage2Scene2Hexagon3InvItem hex3ItemScript;
+        public StageScene2Square2InvItem square2InvItemScript;
+        public StageScene2Circle3InvItem circle3InvItemScript;
+        public Stage2Scene2Triangle3InvItem triangle3InvItemScript;
         // Start is called before the first frame update
         private void Start()
         {
@@ -84,6 +94,17 @@ namespace Pattern.Quest.Alpha.Phases.Games
             invItemImage.gameObject.SetActive(true); // this enables the image of the game obect to be held
             playerHasBadgeObject = true;
             square3Held = true;
+            circle1ItemScript.DeSelectSphereItem();
+            triangle1ItemScript.DeSelectSphereItem();
+            hex1ItemScript.DeSelectSphereItem();
+            triangle2ItemScript.DeSelectSphereItem();
+            square1ItemScript.DeSelectSphereItem();
+            hex2ItemsScript.DeSelectSphereItem();
+            circle2ItemScript.DeSelectSphereItem();
+            hex3ItemScript.DeSelectSphereItem();
+            square2InvItemScript.DeSelectSphereItem();
+            circle3InvItemScript.DeSelectSphereItem();
+            triangle3InvItemScript.DeSelectSphereItem();
             Debug.Log("Inv Item Picked");
         }
 

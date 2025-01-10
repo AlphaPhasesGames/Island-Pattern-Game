@@ -21,7 +21,17 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public bool checkBool1;
         public bool checkBool2;
         public bool circle3Held;
-
+        public Stage2Scene2Circle1InvItem circle1ItemScript;
+        public Stage2Scene2TriangleInventoryItem triangle1ItemScript;
+        public Stage2Scene2Hexagon1InvItem hex1ItemScript;
+        public Stage2Scene2Triangle1InventoryItem triangle2ItemScript;
+        public Stage2Scene2SquareInventoryItem square1ItemScript;
+        public Stage2Scene2Hexagon2InvItem hex2ItemsScript;
+        public Stage2Scene2Circle2InvItem circle2ItemScript;
+        public Stage2Scene2Hexagon3InvItem hex3ItemScript;
+        public StageScene2Square2InvItem square2InvItemScript;
+        public StageScene2Square3InvItem square3InvItemScript;
+        public Stage2Scene2Triangle3InvItem triangle3InvItemScript;
         // Start is called before the first frame update
         private void Start()
         {
@@ -85,6 +95,17 @@ namespace Pattern.Quest.Alpha.Phases.Games
             playerHasBadgeObject = true;
             circle3Held = true;
             Debug.Log("Inv Item Picked");
+            circle1ItemScript.DeSelectSphereItem();
+            triangle1ItemScript.DeSelectSphereItem();
+            hex1ItemScript.DeSelectSphereItem();
+            triangle2ItemScript.DeSelectSphereItem();
+            square1ItemScript.DeSelectSphereItem();
+            hex2ItemsScript.DeSelectSphereItem();
+            circle2ItemScript.DeSelectSphereItem();
+            hex3ItemScript.DeSelectSphereItem();
+            square2InvItemScript.DeSelectSphereItem();
+            square3InvItemScript.DeSelectSphereItem();
+            triangle3InvItemScript.DeSelectSphereItem();
         }
 
         public void DeSelectSphereItem() // gold fucntion for mouse click

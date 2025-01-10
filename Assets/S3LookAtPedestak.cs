@@ -455,7 +455,20 @@ namespace Pattern.Quest.Alpha.Phases.Games
             slot11.inCorrectPlacement = false;
             slot12.inCorrectPlacement = false;
 
-           slotNo1Button.gameObject.SetActive(true);
+            slot1.correctPlacement = false;
+            slot2.correctPlacement = false;
+            slot3.correctPlacement = false;
+            slot4.correctPlacement = false;
+            slot5.correctPlacement = false;
+            slot6.correctPlacement = false;
+            slot7.correctPlacement = false;
+            slot8.correctPlacement = false;
+            slot9.correctPlacement = false;
+            slot10.correctPlacement = false;
+            slot11.correctPlacement = false;
+            slot12.correctPlacement = false;
+
+            slotNo1Button.gameObject.SetActive(true);
            slotNo2Button.gameObject.SetActive(true);
            slotNo3Button.gameObject.SetActive(true);
            slotNo4Button.gameObject.SetActive(true);
