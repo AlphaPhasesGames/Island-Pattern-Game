@@ -7,12 +7,12 @@ namespace Pattern.Quest.Alpha.Phases.Games
     public class Stage2Scene1Inventory : MonoBehaviour
     {
         public GameObject invUIPanal; // declare gameobject for UI inventory panal
-        public Stage2Scene1CircleInventoryItem circle1Prop;
-        public Stage2Scene1Circle2InventoryItem circle2Prop;
+     //   public Stage2Scene1CircleInventoryItem circle1Prop;
+    //    public Stage2Scene1Circle2InventoryItem circle2Prop;
         public Stage2Scene1Triangle1InventoryItem tri1Prop;
-        public Stage2Scene1SquareInventoryItem squareProp;
+    //    public Stage2Scene1SquareInventoryItem squareProp;
         public Stage2Scene1Triangle2 tri2Prop;
-        public Stage2Scene1Triangle3InventoryItem tri3Prop;
+    //    public Stage2Scene1Triangle3InventoryItem tri3Prop;
         //   public Stage1Scene1Number14InvProperties no14Prop;
 
         // public GameObject sphereNumber1Button;
@@ -26,10 +26,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public bool stopRepeat;
         public bool stopRepeat2;
 
-        public bool stopRepeat3;
-        public bool stopRepeat4;
-        public bool stopRepeat5;
-        public bool stopRepeat6;
+     
 
         public bool allItemsCollected;
 
@@ -68,12 +65,12 @@ namespace Pattern.Quest.Alpha.Phases.Games
             if (Input.GetKeyDown(KeyCode.Escape) || (Input.GetMouseButtonDown(1)))
             {
 
-                squareProp.DeSelectSphereItem();
+             //   squareProp.DeSelectSphereItem();
                 tri1Prop.DeSelectSphereItem();
-                circle1Prop.DeSelectSphereItem();
+                //circle1Prop.DeSelectSphereItem();
                 tri2Prop.DeSelectSphereItem();
-                tri3Prop.DeSelectSphereItem();
-                circle2Prop.DeSelectSphereItem();
+           //     tri3Prop.DeSelectSphereItem();
+           //     circle2Prop.DeSelectSphereItem();
                 
             }
         }

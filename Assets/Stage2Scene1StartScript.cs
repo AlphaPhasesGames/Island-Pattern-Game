@@ -21,17 +21,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public GameObject ruleItem;
         public GameObject shapeTri1;
         public GameObject shapeTri2;
-        public GameObject shapeTri3;
-        public GameObject shapeCircle1;
-        public GameObject shapeCircle2;
-        public GameObject shapeSquare1;
-
+     
         public GameObject shapeTri1Hide;
         public GameObject shapeTri2ToHide;
-        public GameObject shapeTri3ToHide;
-        public GameObject shapeCircle1ToHide;
-        public GameObject shapeCircle2ToHide;
-        public GameObject shapeSquare1ToHide;
+    
 
         // Start is called before the first frame update
         void Start()
@@ -59,20 +52,14 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 LoadGame();
                 shapeTri1.gameObject.SetActive(true);
                 shapeTri2.gameObject.SetActive(true);
-                shapeTri3.gameObject.SetActive(true);
-                shapeCircle1.gameObject.SetActive(true);
-                shapeCircle2.gameObject.SetActive(true);
-                shapeSquare1.gameObject.SetActive(true);
+            
 
                 shapeTri1Hide.gameObject.SetActive(false);
                 shapeTri2ToHide.gameObject.SetActive(false);
-                shapeTri3ToHide.gameObject.SetActive(false);
-                shapeCircle1ToHide.gameObject.SetActive(false);
-                shapeCircle2ToHide.gameObject.SetActive(false);
-                shapeSquare1ToHide.gameObject.SetActive(false);
+            
 
                 collectMan.allSpheresCollected = true;
-                collectMan.collectableCount = 6;
+                collectMan.collectableCount = 2;
 
                 ruleButton.gameObject.SetActive(true);
                 ruleItem.gameObject.SetActive(false);

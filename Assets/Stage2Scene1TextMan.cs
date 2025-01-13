@@ -150,7 +150,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     forwardParent.gameObject.SetActive(false);
-                    StartCoroutine(MoveToBlankInvislbePanalClose());
+                    StartCoroutine(MoveToNextText());
                     SpeakText("stage2Scene1TextBox3"); break;
                 case 3:
                     robCont.isCharActive = false;
@@ -225,12 +225,23 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     StartCoroutine(MoveToBlankInvislbePanalClose());
                     SpeakText("stage2Scene1TextBox13"); break;
                 case 13:
+                    backwardsButton.gameObject.SetActive(false);
+                    forwardParent.gameObject.SetActive(true);
+                    SpeakText("stage2Scene1TextBox3a");
+                    break;
+                case 14:
+                    backwardsButton.gameObject.SetActive(true);
+                    forwardParent.gameObject.SetActive(false);
+                    SpeakText("stage2Scene1TextBox3b");
+                    StartCoroutine(MoveToBlankInvislbePanalClose());
+                    break;
+                case 15:
                     textPanal.gameObject.SetActive(false);
                     // charCont.enabled = false;
                     // forwardParent.gameObject.SetActive(false);
                     // backwardsButton.gameObject.SetActive(false);
                     break;
-                case 14:
+                case 16:
                     textPanal.gameObject.SetActive(false);
                     // charCont.enabled = false;
                     // forwardParent.gameObject.SetActive(false);
@@ -300,17 +311,29 @@ namespace Pattern.Quest.Alpha.Phases.Games
             yield return new WaitForSeconds(5);
             robCont.isCharActive = true;
             textPanal.gameObject.SetActive(false);
+            arrayPos = 15;
+            Debug.Log("This start coRoutine Runs");
+
+        }
+
+        public IEnumerator MoveToNextText()
+        {
+            yield return new WaitForSeconds(6);
+            positionChanged = true;
+            //  robCont.isCharActive = true;
+            //  textPanal.gameObject.SetActive(false);
             arrayPos = 13;
             Debug.Log("This start coRoutine Runs");
 
         }
+
         public IEnumerator MoveToBlankInvislbePanalClose()
         {
             yield return new WaitForSeconds(5);
             lookM.ClosePedastalVeiw();
             robCont.isCharActive = true;
             textPanal.gameObject.SetActive(false);
-            arrayPos = 13;
+            arrayPos = 15;
             Debug.Log("This start coRoutine Runs");
 
         }
@@ -320,7 +343,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             yield return new WaitForSeconds(3);
             robCont.isCharActive = true;
             textPanal.gameObject.SetActive(false);
-            arrayPos = 13;
+            arrayPos = 15;
             Debug.Log("This start coRoutine Runs");
 
         }

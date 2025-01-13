@@ -7,6 +7,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
     {
         public TextMeshProUGUI stage2Scene1Text1;
         public TextMeshProUGUI stage2Scene1Text2;
+        public TextMeshProUGUI stage2Scene1Text2a;
+        public TextMeshProUGUI stage2Scene1Text2b;
         public TextMeshProUGUI stage2Scene1Text3;
         public TextMeshProUGUI stage2Scene1Text4;
         public TextMeshProUGUI stage2Scene1Text5;
@@ -25,12 +27,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public TextMeshProUGUI resetButton;
         public TextMeshProUGUI triangle;
         public TextMeshProUGUI triangle2;
-        public TextMeshProUGUI triangle3;
-        public TextMeshProUGUI circle;
-        public TextMeshProUGUI circle2;
-        public TextMeshProUGUI square;
+     
         public TextMeshProUGUI ruleTitle;
         public TextMeshProUGUI ruleItself;
+        public TextMeshProUGUI ruleItself2;
 
         private void Awake()
         {
@@ -40,17 +40,17 @@ namespace Pattern.Quest.Alpha.Phases.Games
             closeViewButton.text = defs["closeView"];
             ruleButton.text = defs["ruleButton"];
             resetButton.text = defs["resetButton"];
-            triangle.text = defs["stage2Scene1ShapeTriangle"];
-            triangle2.text = defs["stage2Scene1ShapeTriangle"];
-            triangle3.text = defs["stage2Scene1ShapeTriangle"];
-            circle.text = defs["stage2Scene1ShapeCircle"];
-            circle2.text = defs["stage2Scene1ShapeCircle"];
-            square.text = defs["stage2Scene1ShapeSquare"];
+            triangle.text = defs["stage2Scene1ShapeBTriangle"];
+            triangle2.text = defs["stage2Scene1ShapeGTriangle"];
             ruleItself.text = defs["stage2Scene1RuleItself"];
+            ruleItself2.text = defs["stage2Scene1RuleItself2"];
             ruleTitle.text = defs["stage1Scene1RuleTitle"];
+            
 
             stage2Scene1Text1.text = defs["stage2Scene1TextBox1"];
             stage2Scene1Text2.text = defs["stage2Scene1TextBox2"];
+            stage2Scene1Text2a.text = defs["stage2Scene1TextBox3a"];
+            stage2Scene1Text2b.text = defs["stage2Scene1TextBox3b"];
             stage2Scene1Text3.text = defs["stage2Scene1TextBox3"];
             stage2Scene1Text4.text = defs["stage2Scene1TextBox4"];
             stage2Scene1Text5.text = defs["stage2Scene1TextBox5"];

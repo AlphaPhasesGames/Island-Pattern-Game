@@ -38,7 +38,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             if (playerPickedUpObject) // if player has picked up the gold item
             {
                 invItemImage.transform.position = Input.mousePosition; // gold image sticks to mouse cursor
-                triangle2Button.gameObject.SetActive(false);
+               // triangle2Button.gameObject.SetActive(false);
             }
 
             if (sphereHeld)

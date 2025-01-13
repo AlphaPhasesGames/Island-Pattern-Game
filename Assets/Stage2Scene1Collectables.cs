@@ -26,7 +26,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
             if (!runOnce)
             {
-                if (collectableCount == 6)
+                if (collectableCount == 2)
                 {
                     textMan.positionChanged = true; // Directly set positionChanged
                     textMan.arrayPos = 9;

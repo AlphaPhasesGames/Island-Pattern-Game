@@ -21,9 +21,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public bool checkBool1;
         public bool checkBool2;
         public bool sphereHeld;
-        public Stage2Scene1CircleInventoryItem circle1Prop;
-        public Stage2Scene1Circle2InventoryItem circle2Prop;
-        public Stage2Scene1SquareInventoryItem squareProp;
+
+
         public Stage2Scene1Triangle2 tri2Prop;
         public Stage2Scene1Triangle3InventoryItem tri3Prop;
         // Start is called before the first frame update
@@ -38,7 +37,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             if (playerPickedUpObject) // if player has picked up the gold item
             {
                 invItemImage.transform.position = Input.mousePosition; // gold image sticks to mouse cursor
-                triangleButton.gameObject.SetActive(false);
+               // triangleButton.gameObject.SetActive(false);
             }
 
             if (sphereHeld)
@@ -87,13 +86,14 @@ namespace Pattern.Quest.Alpha.Phases.Games
             playerPickedUpObject = true; // playerPickedUpObject = true, to pick up object from inventory
             invItemImage.gameObject.SetActive(true); // this enables the image of the game obect to be held
             playerHasBadgeObject = true;
+           // triangleButton.gameObject.SetActive(true);
             sphereHeld = true;
             Debug.Log("Inv Item Picked");
-            squareProp.DeSelectSphereItem();
-            circle1Prop.DeSelectSphereItem();
+        //    squareProp.DeSelectSphereItem();
+       //     circle1Prop.DeSelectSphereItem();
             tri2Prop.DeSelectSphereItem();
-            tri3Prop.DeSelectSphereItem();
-            circle2Prop.DeSelectSphereItem();
+      //      tri3Prop.DeSelectSphereItem();
+      //      circle2Prop.DeSelectSphereItem();
         }
 
         public void DeSelectSphereItemPed() // gold fucntion for mouse click
@@ -102,7 +102,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             {
                 //    robCont.StopRobotMoving(); // stop the robot moving when in use
                 playerPickedUpObject = false; // playerPickedUpObject = true, to pick up object from inventory
-                invItemImage.gameObject.SetActive(false); // this enables the image of the game obect to be held
+           //     invItemImage.gameObject.SetActive(false); // this enables the image of the game obect to be held
                 playerHasBadgeObject = false;
              //   triangleButton.gameObject.SetActive(true);
                 sphereHeld = false;
