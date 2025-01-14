@@ -8,18 +8,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
     {
         public GameObject invUIPanal; // declare gameobject for UI inventory panal
 
-        public Stage2Scene2Circle1InvItem circle1ItemScript;
-        public Stage2Scene2TriangleInventoryItem triangle1ItemScript;
+
         public Stage2Scene2Hexagon1InvItem hex1ItemScript;
-        public Stage2Scene2Triangle1InventoryItem triangle2ItemScript;
         public Stage2Scene2SquareInventoryItem square1ItemScript;
-        public Stage2Scene2Hexagon2InvItem hex2ItemsScript;
-        public Stage2Scene2Circle2InvItem circle2ItemScript;
-        public Stage2Scene2Hexagon3InvItem hex3ItemScript;
-        public StageScene2Square2InvItem square2InvItemScript;
-        public StageScene2Circle3InvItem circle3InvItemScript;
-        public StageScene2Square3InvItem square3InvItemScript;
-        public Stage2Scene2Triangle3InvItem triangle3InvItemScript;
+        public Stage2Scene2DiamondInvItem diamondItemScript;
 
 
         //   public Stage1Scene1Number14InvProperties no14Prop;
@@ -73,18 +65,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
             if (Input.GetKeyDown(KeyCode.Escape) || (Input.GetMouseButtonDown(1)))
             {
 
-                circle1ItemScript.DeSelectSphereItem();
-                triangle1ItemScript.DeSelectSphereItem();
+
                 hex1ItemScript.DeSelectSphereItem();
-                triangle2ItemScript.DeSelectSphereItem();
                 square1ItemScript.DeSelectSphereItem();
-                hex2ItemsScript.DeSelectSphereItem();
-                circle2ItemScript.DeSelectSphereItem();
-                hex3ItemScript.DeSelectSphereItem();
-                square2InvItemScript.DeSelectSphereItem();
-                circle3InvItemScript.DeSelectSphereItem();
-                square3InvItemScript.DeSelectSphereItem();
-                triangle3InvItemScript.DeSelectSphereItem();
+                diamondItemScript.DeSelectSphereItem();
             }
         }
 

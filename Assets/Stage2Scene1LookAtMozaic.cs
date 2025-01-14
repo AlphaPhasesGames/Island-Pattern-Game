@@ -102,8 +102,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Button greenTriangleButton;
         
 
-        public GameObject slot1BlueTriangleImage;
-        public GameObject slot1GreenTriangle2Image;
+      //  public GameObject slot1BlueTriangleImage;
+     //   public GameObject slot1GreenTriangle2Image;
 
 
         public Stage2Scene1Triangle1InventoryItem tri1Prop;

@@ -25,22 +25,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public TextMeshProUGUI inventoryButton;
         public TextMeshProUGUI closeViewButton;
-        public TextMeshProUGUI ruleButton;
+    //    public TextMeshProUGUI ruleButton;
         public TextMeshProUGUI resetButton;
-        public TextMeshProUGUI triangle;
-        public TextMeshProUGUI triangle2;
-        public TextMeshProUGUI triangle3;
-        public TextMeshProUGUI circle;
-        public TextMeshProUGUI circle2;
-        public TextMeshProUGUI circle3;
         public TextMeshProUGUI square;
-        public TextMeshProUGUI square2;
-        public TextMeshProUGUI square3;
         public TextMeshProUGUI hexagon1;
-        public TextMeshProUGUI hexagon2;
-        public TextMeshProUGUI hexagon3;
-        public TextMeshProUGUI ruleTitle;
-        public TextMeshProUGUI ruleItself;
+        public TextMeshProUGUI diamond;
+      //  public TextMeshProUGUI ruleTitle;
+       // public TextMeshProUGUI ruleItself;
 
         private void Awake()
         {
@@ -48,22 +39,12 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
             inventoryButton.text = defs["inventory"];
             closeViewButton.text = defs["closeView"];
-            ruleButton.text = defs["ruleButton"];
-            resetButton.text = defs["resetButton"];
-            triangle.text = defs["stage2Scene1ShapeTriangle"];
-            triangle2.text = defs["stage2Scene1ShapeTriangle"];
-            triangle3.text = defs["stage2Scene1ShapeTriangle"];
-            circle.text = defs["stage2Scene1ShapeCircle"];
-            circle2.text = defs["stage2Scene1ShapeCircle"];
-            circle3.text = defs["stage2Scene1ShapeCircle"];
-            square.text = defs["stage2Scene1ShapeSquare"];
-            square2.text = defs["stage2Scene1ShapeSquare"];
-            square3.text = defs["stage2Scene1ShapeSquare"];
-            hexagon1.text = defs["stage2Scene1ShapeHexagon"];
-            hexagon2.text = defs["stage2Scene1ShapeHexagon"];
-            hexagon3.text = defs["stage2Scene1ShapeHexagon"];
-            ruleItself.text = defs["stage2Scene2RuleItself"];
-            ruleTitle.text = defs["stage1Scene1RuleTitle"];
+         //   ruleButton.text = defs["ruleButton"];
+         //   resetButton.text = defs["resetButton"];
+        
+            square.text = defs["stage2Scene2ShapeGSquare"];
+            hexagon1.text = defs["stage2Scene2ShapeGPentagon"];
+            diamond.text = defs["stage2Scene2ShapeGDiamond"];
 
             stage2Scene2Text1.text = defs["stage2Scene2TextBox1"];
             stage2Scene2Text2.text = defs["stage2Scene2TextBox2"];

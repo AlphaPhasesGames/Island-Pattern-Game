@@ -18,35 +18,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public GameObject uiCOllectablesPanal;
 
 
-        public GameObject ruleButton;
-        public GameObject ruleItem;
-        public GameObject shapeTri1;
-        public GameObject shapeTri2;
-        public GameObject shapeTri3;
-        public GameObject shapeCircle1;
-        public GameObject shapeCircle2;
-        public GameObject shapeCircle3;
         public GameObject shapeSquare1;
-        public GameObject shapeSquare2;
-        public GameObject shapeSquare3;
-
+        public GameObject shapeDiamond;
         public GameObject shapeHex1;
-        public GameObject shapeHex2;
-        public GameObject shapeHex3;
 
-        public GameObject shapeTri1Hide;
-        public GameObject shapeTri2ToHide;
-        public GameObject shapeTri3ToHide;
-        public GameObject shapeCircle1ToHide;
-        public GameObject shapeCircle2ToHide;
-        public GameObject shapeCircle3ToHide;
         public GameObject shapeSquare1ToHide;
-        public GameObject shapeSquare2ToHide;
-        public GameObject shapeSquare3ToHide;
         public GameObject shapeHex1ToHide;
-        public GameObject shapeHex2ToHide;
-        public GameObject shapeHex3ToHide;
-
+        public GameObject shapeDiamond1ToHide;
         public S2S2RuleItem ruleFound;
 
 
@@ -70,39 +48,18 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
             if (main.s2S2ShapesCollected)
             {
-                shapeTri1.gameObject.SetActive(true);
-                shapeTri2.gameObject.SetActive(true);
-                shapeTri3.gameObject.SetActive(true);
-                shapeCircle1.gameObject.SetActive(true);
-                shapeCircle2.gameObject.SetActive(true);
-                shapeCircle3.gameObject.SetActive(true);
-                shapeSquare1.gameObject.SetActive(true);
-                shapeSquare2.gameObject.SetActive(true);
-                shapeSquare3.gameObject.SetActive(true);
-                shapeHex1.gameObject.SetActive(true);
-                shapeHex2.gameObject.SetActive(true);
-                shapeHex3.gameObject.SetActive(true);
                 LoadGame();
-
-                shapeTri1Hide.gameObject.SetActive(false);
-                shapeTri2ToHide.gameObject.SetActive(false);
-                shapeTri3ToHide.gameObject.SetActive(false);
-                shapeCircle1ToHide.gameObject.SetActive(false);
-                shapeCircle2ToHide.gameObject.SetActive(false);
-                shapeCircle3ToHide.gameObject.SetActive(false);
+                shapeSquare1.gameObject.SetActive(true);
+                shapeHex1.gameObject.SetActive(true);
+                shapeDiamond.gameObject.SetActive(true);
+                           
                 shapeSquare1ToHide.gameObject.SetActive(false);
-                shapeSquare2ToHide.gameObject.SetActive(false);
-                shapeSquare3ToHide.gameObject.SetActive(false);
-
                 shapeHex1ToHide.gameObject.SetActive(false);
-                shapeHex2ToHide.gameObject.SetActive(false);
-                shapeHex3ToHide.gameObject.SetActive(false);
+                shapeDiamond1ToHide.gameObject.SetActive(false);
 
                 collectMan.allSpheresCollected = true;
-                collectMan.collectableCount = 12;
-
-                ruleButton.gameObject.SetActive(true);
-                ruleItem.gameObject.SetActive(false);
+                collectMan.collectableCount = 3;
+                            
                 ruleFound.hasRule = true;
             }
 

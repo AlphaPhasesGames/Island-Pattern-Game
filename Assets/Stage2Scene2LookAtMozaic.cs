@@ -27,219 +27,114 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Stage2Scene2ShapePlacementSlot10 slot10;
         public Stage2Scene2ShapePlacementSlot11 slot11;
         public Stage2Scene2ShapePlacementSlot12 slot12;
+        public stage2scene2shapeplacement13 slot13;
+        public Stage2Scene2ShapePlacement14 slot14;
+        public Stage2Scene2ShapePlacement15 slot15;
+        public Stage2Scene2ShapePlacement16 slot16;
+        public Stage2Scene2ShapePlacement17 slot17;
+        public Stage2Scene2ShapePlacement18 slot18;
+        public Stage2Scene2ShapePlacement19 slot19;
+        public Stage2Scene2ShapePlacement20 slot20;
 
-        public GameObject text1;
-        public GameObject text2;
-        public GameObject text3;
-        public GameObject text4;
-        public GameObject text5;
-        public GameObject text6;
-        public GameObject text7;
-        public GameObject text8;
-        public GameObject text9;
-        public GameObject text10;
-        public GameObject text11;
-        public GameObject text12;
+        public GameObject text1Square;
+        public GameObject text2Diamond;
+        public GameObject text3Pentagon;
 
-        public GameObject button1;
-        public GameObject button2;
-        public GameObject button3;
-        public GameObject button4;
-        public GameObject button5;
-        public GameObject button6;
-        public GameObject button7;
-        public GameObject button8;
-        public GameObject button9;
-        public GameObject button10;
-        public GameObject button11;
-        public GameObject button12;
+        public GameObject button1Square;
+        public GameObject button2Diamond;
+        public GameObject button3Pentagon;
+
 
         public bool hasViewedPedastal;
 
-        public GameObject slot1Circle1Correct;
-        public GameObject slot1Triangle1;
-        public GameObject slot1Hex1;
-        public GameObject slot1Triangle2;
+
+        public GameObject slot1Hex1Correct;
         public GameObject slot1Square1;
-        public GameObject slot1Hex2;
-        public GameObject slot1Circle2;
-        public GameObject slot1Hex3;
-        public GameObject slot1Square2;
-        public GameObject slot1Circle3;
-        public GameObject slot1Square3;
-        public GameObject slot1Triangle3;
+        public GameObject slot1Diamond;
 
-        public GameObject slot2Circle1;
-        public GameObject slot2Triangle1Correct;
         public GameObject slot2Hex1;
-        public GameObject slot2Triangle2;
         public GameObject slot2Square1;
-        public GameObject slot2Hex2;
-        public GameObject slot2Circle2;
-        public GameObject slot2Hex3;
-        public GameObject slot2Square2;
-        public GameObject slot2Circle3;
-        public GameObject slot2Square3;
-        public GameObject slot2Triangle3;
+        public GameObject slot2DiamondCorrect;
 
-        public GameObject slot3Circle1;
-        public GameObject slot3Triangle1;
-        public GameObject slot3Hex1Correct;
-        public GameObject slot3Triangle2;
+        public GameObject slot3Hex1;
         public GameObject slot3Square1;
-        public GameObject slot3Hex2;
-        public GameObject slot3Circle2;
-        public GameObject slot3Hex3;
-        public GameObject slot3Square2;
-        public GameObject slot3Circle3;
-        public GameObject slot3Square3;
-        public GameObject slot3Triangle3;
+        public GameObject slot3DiamondCorrect;
 
-        public GameObject slot4Circle1;
-        public GameObject slot4Triangle1;
-        public GameObject slot4Hex1;
-        public GameObject slot4Triangle2Correct;
+        public GameObject slot4Hex1Correct;
         public GameObject slot4Square1;
-        public GameObject slot4Hex2;
-        public GameObject slot4Circle2;
-        public GameObject slot4Hex3;
-        public GameObject slot4Square2;
-        public GameObject slot4Circle3;
-        public GameObject slot4Square3;
-        public GameObject slot4Triangle3;
+        public GameObject slot4Diamond;
 
-        public GameObject slot5Circle1;
-        public GameObject slot5Triangle1;
         public GameObject slot5Hex1;
-        public GameObject slot5Triangle2;
-        public GameObject slot5Square1Correct;
-        public GameObject slot5Hex2;
-        public GameObject slot5Circle2;
-        public GameObject slot5Hex3;
-        public GameObject slot5Square2;
-        public GameObject slot5Circle3;
-        public GameObject slot5Square3;
-        public GameObject slot5Triangle3;
+        public GameObject slot5Square1;
+        public GameObject slot5DiamondCorrect;
 
-        public GameObject slot6Circle1;
-        public GameObject slot6Triangle1;
         public GameObject slot6Hex1;
-        public GameObject slot6Triangle2;
         public GameObject slot6Square1;
-        public GameObject slot6Hex2Correct;
-        public GameObject slot6Circle2;
-        public GameObject slot6Hex3;
-        public GameObject slot6Square2;
-        public GameObject slot6Circle3;
-        public GameObject slot6Square3;
-        public GameObject slot6Triangle3;
+        public GameObject slot6DiamondCorrect;
 
-        public GameObject slot7Circle1;
-        public GameObject slot7Triangle1;
         public GameObject slot7Hex1;
-        public GameObject slot7Triangle2;
-        public GameObject slot7Square1;
-        public GameObject slot7Hex2;
-        public GameObject slot7Circle2Correct;
-        public GameObject slot7Hex3;
-        public GameObject slot7Square2;
-        public GameObject slot7Circle3;
-        public GameObject slot7Square3;
-        public GameObject slot7Triangle3;
+        public GameObject slot7Square1Correct;
+        public GameObject slot7Diamond;
 
-        public GameObject slot8Circle1;
-        public GameObject slot8Triangle1;
         public GameObject slot8Hex1;
-        public GameObject slot8Triangle2;
-        public GameObject slot8Square1;
-        public GameObject slot8Hex2;
-        public GameObject slot8Circle2;
-        public GameObject slot8Hex3Correct;
-        public GameObject slot8Square2;
-        public GameObject slot8Circle3;
-        public GameObject slot8Square3;
-        public GameObject slot8Triangle3;
+        public GameObject slot8Square1Correct;
+        public GameObject slot8Diamond;
 
-        public GameObject slot9Circle1;
-        public GameObject slot9Triangle1;
         public GameObject slot9Hex1;
-        public GameObject slot9Triangle2;
-        public GameObject slot9Square1;
-        public GameObject slot9Hex2;
-        public GameObject slot9Circle2;
-        public GameObject slot9Hex3;
-        public GameObject slot9Square2Correct;
-        public GameObject slot9Circle3;
-        public GameObject slot9Square3;
-        public GameObject slot9Triangle3;
+        public GameObject slot9Square1Correct;
+        public GameObject slot9Diamond;
 
-        public GameObject slot10Circle1;
-        public GameObject slot10Triangle1;
-        public GameObject slot10Hex1;
-        public GameObject slot10Triangle2;
+        public GameObject slot10Hex1Correct;
         public GameObject slot10Square1;
-        public GameObject slot10Hex2;
-        public GameObject slot10Circle2;
-        public GameObject slot10Hex3;
-        public GameObject slot10Square2;
-        public GameObject slot10Circle3Correct;
-        public GameObject slot10Square3;
-        public GameObject slot10Triangle3;
+        public GameObject slot10Diamond;
 
-        public GameObject slot11Circle1;
-        public GameObject slot11Triangle1;
-        public GameObject slot11Hex1;
-        public GameObject slot11Triangle2;
+        public GameObject slot11Hex1Correct;
         public GameObject slot11Square1;
-        public GameObject slot11Hex2;
-        public GameObject slot11Circle2;
-        public GameObject slot11Hex3;
-        public GameObject slot11Square2;
-        public GameObject slot11Circle3;
-        public GameObject slot11Square3Correct;
-        public GameObject slot11Triangle3;
+        public GameObject slot11Diamond;
 
-        public GameObject slot12Circle1;
-        public GameObject slot12Triangle1;
         public GameObject slot12Hex1;
-        public GameObject slot12Triangle2;
         public GameObject slot12Square1;
-        public GameObject slot12Hex2;
-        public GameObject slot12Circle2;
-        public GameObject slot12Hex3;
-        public GameObject slot12Square2;
-        public GameObject slot12Circle3;
-        public GameObject slot12Square3;
-        public GameObject slot12Triangle3Correct;
+        public GameObject slot12DiamondCorrect;
 
-        public GameObject slot1Circle1Image;
-        public GameObject slot1Triangle1Image;
-        public GameObject slot1Hex1Image;
-        public GameObject slot1Triangle2Image;
-        public GameObject slot1Square1Image;
-        public GameObject slot1Hex2Image;
-        public GameObject slot1Circle2Image2;
-        public GameObject slot1Hex3Image;
-        public GameObject slot1Square2Image;
-        public GameObject slot1Circle3mage;
-        public GameObject slot1Square3Image;
-        public GameObject slot1Triangle3Image;
+        public GameObject slot13Hex1;
+        public GameObject slot13Square1;
+        public GameObject slot13DiamondCorrect;
 
-        public Stage2Scene2Circle1InvItem circle1Prop;
-        public Stage2Scene2Circle2InvItem circle2Prop;
-        public StageScene2Circle3InvItem circle3Prop;
+        public GameObject slot14Hex1;
+        public GameObject slot14Square1Correct;
+        public GameObject slot14Diamond;
+
+        public GameObject slot15Hex1;
+        public GameObject slot15Square1Correct;
+        public GameObject slot15Diamond;
+
+        public GameObject slot16Hex1;
+        public GameObject slot16Square1Correct;
+        public GameObject slot16Diamond;
+
+        public GameObject slot17Hex1Correct;
+        public GameObject slot17Square1;
+        public GameObject slot17Diamond;
+
+        public GameObject slot18Hex1Correct;
+        public GameObject slot18Square1;
+        public GameObject slot18Diamond;
+
+        public GameObject slot19Hex1Correct;
+        public GameObject slot19Square1;
+        public GameObject slot19Diamond;
+
+        public GameObject slot20Hex1Correct;
+        public GameObject slot20Square1;
+        public GameObject slot20Diamond;
+  
+      //  public GameObject slot1Hex1Image;
+     //   public GameObject slot1Square1Image;
+    //    public GameObject slot1Diamond1Image;
 
         public Stage2Scene2SquareInventoryItem squareProp;
-        public StageScene2Square2InvItem square2Prop;
-        public StageScene2Square3InvItem square3Prop;
-
-        public Stage2Scene2Triangle1InventoryItem tri1Prop;
-        public Stage2Scene2TriangleInventoryItem tri2Prop;
-        public Stage2Scene2Triangle3InvItem tri3Prop;
-
         public Stage2Scene2Hexagon1InvItem hex1Prop;
-        public Stage2Scene2Hexagon2InvItem hex2Prop;
-        public Stage2Scene2Hexagon3InvItem hex3Prop;
+        public Stage2Scene2DiamondInvItem diamondProp;
 
         public RobotController robCont;
         public GameObject robotToHide;
@@ -305,175 +200,90 @@ namespace Pattern.Quest.Alpha.Phases.Games
         {
 
 
-            slot1Circle1Correct.gameObject.SetActive(false);
-            slot1Triangle1.gameObject.SetActive(false);
-            slot1Hex1.gameObject.SetActive(false);
-            slot1Triangle2.gameObject.SetActive(false);
+
             slot1Square1.gameObject.SetActive(false);
-            slot1Hex2.gameObject.SetActive(false);
-            slot1Circle2.gameObject.SetActive(false);
-            slot1Hex3.gameObject.SetActive(false);
-            slot1Square2.gameObject.SetActive(false);
-            slot1Circle3.gameObject.SetActive(false);
-            slot1Square3.gameObject.SetActive(false);
-            slot1Triangle3.gameObject.SetActive(false);
+            slot1Hex1Correct.gameObject.SetActive(false);
+            slot1Diamond.gameObject.SetActive(false);
 
-            slot2Circle1.gameObject.SetActive(false);
-            slot2Triangle1Correct.gameObject.SetActive(false);
-            slot2Hex1.gameObject.SetActive(false);
-            slot2Triangle2.gameObject.SetActive(false);
             slot2Square1.gameObject.SetActive(false);
-            slot2Hex2.gameObject.SetActive(false);
-            slot2Circle2.gameObject.SetActive(false);
-            slot2Hex3.gameObject.SetActive(false);
-            slot2Square2.gameObject.SetActive(false);
-            slot2Circle3.gameObject.SetActive(false);
-            slot2Square3.gameObject.SetActive(false);
-            slot2Triangle3.gameObject.SetActive(false);
+            slot2Hex1.gameObject.SetActive(false);
+            slot2DiamondCorrect.gameObject.SetActive(false);
 
-            slot3Circle1.gameObject.SetActive(false);
-            slot3Triangle1.gameObject.SetActive(false);
-            slot3Hex1Correct.gameObject.SetActive(false);
-            slot3Triangle2.gameObject.SetActive(false);
             slot3Square1.gameObject.SetActive(false);
-            slot3Hex2.gameObject.SetActive(false);
-            slot3Circle2.gameObject.SetActive(false);
-            slot3Hex3.gameObject.SetActive(false);
-            slot3Square2.gameObject.SetActive(false);
-            slot3Circle3.gameObject.SetActive(false);
-            slot3Square3.gameObject.SetActive(false);
-            slot3Triangle3.gameObject.SetActive(false);
+            slot3Hex1.gameObject.SetActive(false);
+            slot3DiamondCorrect.gameObject.SetActive(false);
 
-            slot4Circle1.gameObject.SetActive(false);
-            slot4Triangle1.gameObject.SetActive(false);
-            slot4Hex1.gameObject.SetActive(false);
-            slot4Triangle2Correct.gameObject.SetActive(false);
             slot4Square1.gameObject.SetActive(false);
-            slot4Hex2.gameObject.SetActive(false);
-            slot4Circle2.gameObject.SetActive(false);
-            slot4Hex3.gameObject.SetActive(false);
-            slot4Square2.gameObject.SetActive(false);
-            slot4Circle3.gameObject.SetActive(false);
-            slot4Square3.gameObject.SetActive(false);
-            slot4Triangle3.gameObject.SetActive(false);
+            slot4Hex1Correct.gameObject.SetActive(false);
+            slot4Diamond.gameObject.SetActive(false);
 
-            slot5Circle1.gameObject.SetActive(false);
-            slot5Triangle1.gameObject.SetActive(false);
+            slot5Square1.gameObject.SetActive(false);
             slot5Hex1.gameObject.SetActive(false);
-            slot5Triangle2.gameObject.SetActive(false);
-            slot5Square1Correct.gameObject.SetActive(false);
-            slot5Hex2.gameObject.SetActive(false);
-            slot5Circle2.gameObject.SetActive(false);
-            slot5Hex3.gameObject.SetActive(false);
-            slot5Square2.gameObject.SetActive(false);
-            slot5Circle3.gameObject.SetActive(false);
-            slot5Square3.gameObject.SetActive(false);
-            slot5Triangle3.gameObject.SetActive(false);
+            slot5DiamondCorrect.gameObject.SetActive(false);
 
-            slot6Circle1.gameObject.SetActive(false);
-            slot6Triangle1.gameObject.SetActive(false);
-            slot6Hex1.gameObject.SetActive(false);
-            slot6Triangle2.gameObject.SetActive(false);
             slot6Square1.gameObject.SetActive(false);
-            slot6Hex2Correct.gameObject.SetActive(false);
-            slot6Circle2.gameObject.SetActive(false);
-            slot6Hex3.gameObject.SetActive(false);
-            slot6Square2.gameObject.SetActive(false);
-            slot6Circle3.gameObject.SetActive(false);
-            slot6Square3.gameObject.SetActive(false);
-            slot6Triangle3.gameObject.SetActive(false);
+            slot6Hex1.gameObject.SetActive(false);
+            slot6DiamondCorrect.gameObject.SetActive(false);
 
-            slot7Circle1.gameObject.SetActive(false);
-            slot7Triangle1.gameObject.SetActive(false);
+            slot7Square1Correct.gameObject.SetActive(false);
             slot7Hex1.gameObject.SetActive(false);
-            slot7Triangle2.gameObject.SetActive(false);
-            slot7Square1.gameObject.SetActive(false);
-            slot7Hex2.gameObject.SetActive(false);
-            slot7Circle2Correct.gameObject.SetActive(false);
-            slot7Hex3.gameObject.SetActive(false);
-            slot7Square2.gameObject.SetActive(false);
-            slot7Circle3.gameObject.SetActive(false);
-            slot7Square3.gameObject.SetActive(false);
-            slot7Triangle3.gameObject.SetActive(false);
+            slot7Diamond.gameObject.SetActive(false);
 
-            slot8Circle1.gameObject.SetActive(false);
-            slot8Triangle1.gameObject.SetActive(false);
+            slot8Square1Correct.gameObject.SetActive(false);
             slot8Hex1.gameObject.SetActive(false);
-            slot8Triangle2.gameObject.SetActive(false);
-            slot8Square1.gameObject.SetActive(false);
-            slot8Hex2.gameObject.SetActive(false);
-            slot8Circle2.gameObject.SetActive(false);
-            slot8Hex3Correct.gameObject.SetActive(false);
-            slot8Square2.gameObject.SetActive(false);
-            slot8Circle3.gameObject.SetActive(false);
-            slot8Square3.gameObject.SetActive(false);
-            slot8Triangle3.gameObject.SetActive(false);
+            slot8Diamond.gameObject.SetActive(false);
 
-
-            slot9Circle1.gameObject.SetActive(false);
-            slot9Triangle1.gameObject.SetActive(false);
+            slot9Square1Correct.gameObject.SetActive(false);
             slot9Hex1.gameObject.SetActive(false);
-            slot9Triangle2.gameObject.SetActive(false);
-            slot9Square1.gameObject.SetActive(false);
-            slot9Hex2.gameObject.SetActive(false);
-            slot9Circle2.gameObject.SetActive(false);
-            slot9Hex3.gameObject.SetActive(false);
-            slot9Square2Correct.gameObject.SetActive(false);
-            slot9Circle3.gameObject.SetActive(false);
-            slot9Square3.gameObject.SetActive(false);
-            slot9Triangle3.gameObject.SetActive(false);
+            slot9Diamond.gameObject.SetActive(false);
 
-            slot10Circle1.gameObject.SetActive(false);
-            slot10Triangle1.gameObject.SetActive(false);
-            slot10Hex1.gameObject.SetActive(false);
-            slot10Triangle2.gameObject.SetActive(false);
             slot10Square1.gameObject.SetActive(false);
-            slot10Hex2.gameObject.SetActive(false);
-            slot10Circle2.gameObject.SetActive(false);
-            slot10Hex3.gameObject.SetActive(false);
-            slot10Square2.gameObject.SetActive(false);
-            slot10Circle3Correct.gameObject.SetActive(false);
-            slot10Square3.gameObject.SetActive(false);
-            slot10Triangle3.gameObject.SetActive(false);
+            slot10Hex1Correct.gameObject.SetActive(false);
+            slot10Diamond.gameObject.SetActive(false);
 
-            slot11Circle1.gameObject.SetActive(false);
-            slot11Triangle1.gameObject.SetActive(false);
-            slot11Hex1.gameObject.SetActive(false);
-            slot11Triangle2.gameObject.SetActive(false);
             slot11Square1.gameObject.SetActive(false);
-            slot11Hex2.gameObject.SetActive(false);
-            slot11Circle2.gameObject.SetActive(false);
-            slot11Hex3.gameObject.SetActive(false);
-            slot11Square2.gameObject.SetActive(false);
-            slot11Circle3.gameObject.SetActive(false);
-            slot11Square3Correct.gameObject.SetActive(false);
-            slot11Triangle3.gameObject.SetActive(false);
+            slot11Hex1Correct.gameObject.SetActive(false);
+            slot11Diamond.gameObject.SetActive(false);
 
-            slot12Circle1.gameObject.SetActive(false);
-            slot12Triangle1.gameObject.SetActive(false);
-            slot12Hex1.gameObject.SetActive(false);
-            slot12Triangle2.gameObject.SetActive(false);
             slot12Square1.gameObject.SetActive(false);
-            slot12Hex2.gameObject.SetActive(false);
-            slot12Circle2.gameObject.SetActive(false);
-            slot12Hex3.gameObject.SetActive(false);
-            slot12Square2.gameObject.SetActive(false);
-            slot12Circle3.gameObject.SetActive(false);
-            slot12Square3.gameObject.SetActive(false);
-            slot12Triangle3Correct.gameObject.SetActive(false);
-           
+            slot12Hex1.gameObject.SetActive(false);
+            slot12DiamondCorrect.gameObject.SetActive(false);
+
+            slot13Square1.gameObject.SetActive(false);
+            slot13Hex1.gameObject.SetActive(false);
+            slot13DiamondCorrect.gameObject.SetActive(false);
+
+            slot14Square1Correct.gameObject.SetActive(false);
+            slot14Hex1.gameObject.SetActive(false);
+            slot14Diamond.gameObject.SetActive(false);
+
+            slot15Square1Correct.gameObject.SetActive(false);
+            slot15Hex1.gameObject.SetActive(false);
+            slot15Diamond.gameObject.SetActive(false);
+
+            slot16Square1Correct.gameObject.SetActive(false);
+            slot16Hex1.gameObject.SetActive(false);
+            slot16Diamond.gameObject.SetActive(false);
+
+            slot17Square1.gameObject.SetActive(false);
+            slot17Hex1Correct.gameObject.SetActive(false);
+            slot17Diamond.gameObject.SetActive(false);
+
+            slot18Square1.gameObject.SetActive(false);
+            slot18Hex1Correct.gameObject.SetActive(false);
+            slot18Diamond.gameObject.SetActive(false);
+
+            slot19Square1.gameObject.SetActive(false);
+            slot19Hex1Correct.gameObject.SetActive(false);
+            slot19Diamond.gameObject.SetActive(false);
+
+            slot20Square1.gameObject.SetActive(false);
+            slot20Hex1Correct.gameObject.SetActive(false);
+            slot20Diamond.gameObject.SetActive(false);
+
             squareProp.DeSelectSphereItemPedestal();
-            square2Prop.DeSelectSphereItemPedestal();
-            square3Prop.DeSelectSphereItemPedestal();
-            tri1Prop.DeSelectSphereItemPedestel();
-            tri2Prop.DeSelectSphereItemPedestel();
-            tri3Prop.DeSelectSphereItemPedestel();
-            circle1Prop.DeSelectSphereItemPedestal();
-            circle2Prop.DeSelectSphereItemPedestal();
-            circle3Prop.DeSelectSphereItemPedestal();
-            tri1Prop.DeSelectSphereItemPedestel();
-            tri2Prop.DeSelectSphereItemPedestel();
-            tri3Prop.DeSelectSphereItemPedestel();
+            hex1Prop.DeSelectSphereItemPedestal();
+            diamondProp.DeSelectSphereItemPedestal();
 
             slot1.inCorrectPlacement = false;
             slot2.inCorrectPlacement = false;
@@ -487,6 +297,15 @@ namespace Pattern.Quest.Alpha.Phases.Games
             slot10.inCorrectPlacement = false;
             slot11.inCorrectPlacement = false;
             slot12.inCorrectPlacement = false;
+            slot13.inCorrectPlacement = false;
+            slot14.inCorrectPlacement = false;
+            slot15.inCorrectPlacement = false;
+            slot16.inCorrectPlacement = false;
+            slot17.inCorrectPlacement = false;
+            slot18.inCorrectPlacement = false;
+            slot19.inCorrectPlacement = false;
+            slot20.inCorrectPlacement = false;
+
 
             slot1.correctPlacement = false;
             slot2.correctPlacement = false;
@@ -500,38 +319,29 @@ namespace Pattern.Quest.Alpha.Phases.Games
             slot10.correctPlacement = false;
             slot11.correctPlacement = false;
             slot12.correctPlacement = false;
+            slot13.correctPlacement = false;
+            slot14.correctPlacement = false;
+            slot15.correctPlacement = false;
+            slot16.correctPlacement = false;
+            slot17.correctPlacement = false;
+            slot18.correctPlacement = false;
+            slot19.correctPlacement = false;
+            slot20.correctPlacement = false;
 
-            button1.gameObject.SetActive(true);
-            button2.gameObject.SetActive(true);
-            button3.gameObject.SetActive(true);
-            button4.gameObject.SetActive(true);
-            button5.gameObject.SetActive(true);
-            button6.gameObject.SetActive(true);
-            button7.gameObject.SetActive(true);
-            button8.gameObject.SetActive(true);
-            button9.gameObject.SetActive(true);
-            button10.gameObject.SetActive(true);
-            button11.gameObject.SetActive(true);
-            button12.gameObject.SetActive(true);
 
-            text1.gameObject.SetActive(false);
-            text2.gameObject.SetActive(false);
-            text3.gameObject.SetActive(false);
-            text4.gameObject.SetActive(false);
-            text5.gameObject.SetActive(false);
-            text6.gameObject.SetActive(false);
-            text7.gameObject.SetActive(false);
-            text8.gameObject.SetActive(false);
-            text9.gameObject.SetActive(false);
-            text10.gameObject.SetActive(false);
-            text11.gameObject.SetActive(false);
-            text12.gameObject.SetActive(false);
+            button1Square.gameObject.SetActive(true);
+            button2Diamond.gameObject.SetActive(true);
+            button3Pentagon.gameObject.SetActive(true);
+
+            text1Square.gameObject.SetActive(false);
+            text2Diamond.gameObject.SetActive(false);
+            text3Pentagon.gameObject.SetActive(false);
 
             slot1.slotFilled = false;
             slot2.slotFilled = false;
-            slot3.slotFIlled = false;
-            slot4.slotFIlled = false;
-            slot5.slotFIlled = false;
+            slot3.slotFilled = false;
+            slot4.slotFilled = false;
+            slot5.slotFilled = false;
             slot6.slotFilled = false;
             slot7.slotFilled = false;
             slot8.slotFilled = false;
@@ -539,6 +349,15 @@ namespace Pattern.Quest.Alpha.Phases.Games
             slot10.slotFilled = false;
             slot11.slotFilled = false;
             slot12.slotFilled = false;
+            slot13.slotFilled = false;
+            slot14.slotFilled = false;
+            slot15.slotFilled = false;
+            slot16.slotFilled = false;
+            slot17.slotFilled = false;
+            slot18.slotFilled = false;
+            slot19.slotFilled = false;
+            slot20.slotFilled = false;
+
 
             progScript.runTwice = false;
             textMan.ResetPositionFlags();

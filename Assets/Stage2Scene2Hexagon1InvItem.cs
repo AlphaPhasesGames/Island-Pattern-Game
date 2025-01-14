@@ -21,17 +21,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public bool checkBool1;
         public bool checkBool2;
         public bool hexagon1Held;
-        public Stage2Scene2Circle1InvItem circle1ItemScript;
-        public Stage2Scene2TriangleInventoryItem triangle1ItemScript;
-        public Stage2Scene2Triangle1InventoryItem triangle2ItemScript;
         public Stage2Scene2SquareInventoryItem square1ItemScript;
-        public Stage2Scene2Hexagon2InvItem hex2ItemsScript;
-        public Stage2Scene2Circle2InvItem circle2ItemScript;
-        public Stage2Scene2Hexagon3InvItem hex3ItemScript;
-        public StageScene2Square2InvItem square2InvItemScript;
-        public StageScene2Circle3InvItem circle3InvItemScript;
-        public StageScene2Square3InvItem square3InvItemScript;
-        public Stage2Scene2Triangle3InvItem triangle3InvItemScript;
+        public Stage2Scene2DiamondInvItem diamondItemScript;
         // Start is called before the first frame update
         private void Start()
         {
@@ -44,7 +35,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             if (playerPickedUpObject) // if player has picked up the gold item
             {
                 invItemImage.transform.position = Input.mousePosition; // gold image sticks to mouse cursor
-                hexagon1Button.gameObject.SetActive(false);
+              //  hexagon1Button.gameObject.SetActive(false);
             }
 
             if (hexagon1Held)
@@ -94,17 +85,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
             invItemImage.gameObject.SetActive(true); // this enables the image of the game obect to be held
             playerHasBadgeObject = true;
             hexagon1Held = true;
-            circle1ItemScript.DeSelectSphereItem();
-            triangle1ItemScript.DeSelectSphereItem();
-            triangle2ItemScript.DeSelectSphereItem();
+
             square1ItemScript.DeSelectSphereItem();
-            hex2ItemsScript.DeSelectSphereItem();
-            circle2ItemScript.DeSelectSphereItem();
-            hex3ItemScript.DeSelectSphereItem();
-            square2InvItemScript.DeSelectSphereItem();
-            circle3InvItemScript.DeSelectSphereItem();
-            square3InvItemScript.DeSelectSphereItem();
-            triangle3InvItemScript.DeSelectSphereItem();
+            diamondItemScript.DeSelectSphereItem();
             Debug.Log("Inv Item Picked");
         }
 
