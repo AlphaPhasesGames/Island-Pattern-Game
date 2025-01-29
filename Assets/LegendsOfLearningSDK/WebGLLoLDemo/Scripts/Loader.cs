@@ -102,7 +102,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             // Either GameState.Paused or GameState.Resumed
             Debug.Log("HandleGameStateChange");
         }
-
+        
 #if UNITY_EDITOR
         private void LoadMockData()
         {

@@ -133,7 +133,16 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     pollyImage.gameObject.SetActive(true);
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(false);
+                    forwardParent.gameObject.SetActive(true);
+      
+                    SpeakText("stage2Scene2TextBox1");
+                 
+                    break;
+                case 1:
+                    backwardsButton.gameObject.SetActive(true);
+                    // robCont.isCharActive = false;
+                    // pollyImage.gameObject.SetActive(true);
+                    //   textPanal.gameObject.SetActive(true);
                     if (!runOnce)
                     {
                         main.s2S2AS = true;
@@ -142,15 +151,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                         startScript.SaveGame();
                         runOnce = true;
                     }
-                    SpeakText("stage2Scene2TextBox1");
+                    forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    break;
-                case 1:
-                    backwardsButton.gameObject.SetActive(false);
-                    robCont.isCharActive = false;
-                   // pollyImage.gameObject.SetActive(true);
-                    textPanal.gameObject.SetActive(true);
-                    forwardParent.gameObject.SetActive(true);
                     SpeakText("stage2Scene2TextBox2"); break;
                 case 2:
                   
@@ -222,8 +224,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 case 10:
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(true);
-                    mozaic.ClosePedastalVeiw();
                     textPanal.gameObject.SetActive(true);
+                  
                     SpeakText("stage2Scene2TextBox11"); break;
                 case 11:
                     forwardParent.gameObject.SetActive(true);
@@ -233,6 +235,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 case 12:
                     forwardParent.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
+                    mozaic.ClosePedastalVeiw();
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage2Scene2TextBox13"); 
                     break;

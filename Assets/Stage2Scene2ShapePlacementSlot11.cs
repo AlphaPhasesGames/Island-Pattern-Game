@@ -46,7 +46,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     squareProp.sphereHeld = false;
                     correctPlacement = false;
                     inCorrectPlacement = true;
-                    correctSFX.Play();
+                    incorrectSFX.Play();
                     slotFilled = true;
 
                 }
@@ -60,7 +60,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     diamondProp.diamond1Held = false;
                     correctPlacement = false;
                     inCorrectPlacement = true;
-                    correctSFX.Play();
+                    incorrectSFX.Play();
                     slotFilled = true;
 
                 }
