@@ -7074,7 +7074,7 @@ RectTransform:
   m_GameObject: {fileID: 430394710}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2298, y: 1.2298, z: 1.2298}
+  m_LocalScale: {x: 1.0149925, y: 1.0149925, z: 1.0149925}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1287278364}
@@ -9566,7 +9566,7 @@ RectTransform:
   m_GameObject: {fileID: 643843689}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2298, y: 1.2298, z: 1.2298}
+  m_LocalScale: {x: 1.0149925, y: 1.0149925, z: 1.0149925}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1974610185}
@@ -15468,7 +15468,7 @@ RectTransform:
   m_GameObject: {fileID: 970933750}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2298, y: 1.2298, z: 1.2298}
+  m_LocalScale: {x: 1.0149925, y: 1.0149925, z: 1.0149925}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1328272048}
@@ -16734,7 +16734,7 @@ RectTransform:
   m_GameObject: {fileID: 1065470652}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2298, y: 1.2298, z: 1.2298}
+  m_LocalScale: {x: 1.0149925, y: 1.0149925, z: 1.0149925}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 644237772}
@@ -22339,7 +22339,7 @@ RectTransform:
   m_GameObject: {fileID: 1492044437}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2298, y: 1.2298, z: 1.2298}
+  m_LocalScale: {x: 1.0149925, y: 1.0149925, z: 1.0149925}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2123991419}
@@ -26365,6 +26365,18 @@ PrefabInstance:
       propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 675783906402614708, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 675783906402614708, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 675783906402614708, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0149925
+      objectReference: {fileID: 0}
     - target: {fileID: 755499363936565827, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
@@ -26377,6 +26389,18 @@ PrefabInstance:
       propertyPath: m_text
       value: Oh that was the wrong platform. Let's look at the rule and try again.
         T
+      objectReference: {fileID: 0}
+    - target: {fileID: 1612763327756974017, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 1612763327756974017, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 1612763327756974017, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0149925
       objectReference: {fileID: 0}
     - target: {fileID: 1668565006909955195, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
       propertyPath: m_Navigation.m_Mode
@@ -26470,6 +26494,18 @@ PrefabInstance:
       propertyPath: m_text
       value: Maybe we could find a rule in the previous room to help us. T
       objectReference: {fileID: 0}
+    - target: {fileID: 2689553572958383488, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 2689553572958383488, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 2689553572958383488, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0149925
+      objectReference: {fileID: 0}
     - target: {fileID: 2891579167291736012, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -26483,6 +26519,18 @@ PrefabInstance:
       value: Excellent. You found a rule that should help us get out of the temple.
         T
       objectReference: {fileID: 0}
+    - target: {fileID: 3576932447042592013, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 3576932447042592013, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 3576932447042592013, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0149925
+      objectReference: {fileID: 0}
     - target: {fileID: 4234150259267312041, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
       propertyPath: m_text
       value: Some of those look platforms look unsteady. If we're gonna make it across
@@ -26491,6 +26539,18 @@ PrefabInstance:
     - target: {fileID: 4693339219715046226, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877599571132732150, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877599571132732150, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877599571132732150, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0149925
       objectReference: {fileID: 0}
     - target: {fileID: 5453597145587496982, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
       propertyPath: m_text
@@ -26504,6 +26564,18 @@ PrefabInstance:
       propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6114701946920130709, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 6114701946920130709, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 6114701946920130709, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0149925
+      objectReference: {fileID: 0}
     - target: {fileID: 6467051555295409331, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
       propertyPath: m_text
       value: It appears we're still in the temple. Let's have a look around. t
@@ -26512,9 +26584,69 @@ PrefabInstance:
       propertyPath: m_text
       value: Well done you made it across. T
       objectReference: {fileID: 0}
+    - target: {fileID: 7307928190090607167, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 7307928190090607167, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 7307928190090607167, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593012441818610667, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593012441818610667, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 7593012441818610667, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 7647233312467272957, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 7647233312467272957, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 7647233312467272957, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756406495553357925, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756406495553357925, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756406495553357925, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0149925
+      objectReference: {fileID: 0}
     - target: {fileID: 7761833252047894801, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289971424979347733, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289971424979347733, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0149925
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289971424979347733, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0149925
       objectReference: {fileID: 0}
     - target: {fileID: 8311467402846385298, guid: d2d0a92f6cef65c4b9ca766d8f8acda7, type: 3}
       propertyPath: m_text
@@ -28191,7 +28323,7 @@ RectTransform:
   m_GameObject: {fileID: 1843441470}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2298, y: 1.2298, z: 1.2298}
+  m_LocalScale: {x: 1.0149925, y: 1.0149925, z: 1.0149925}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 202425276}

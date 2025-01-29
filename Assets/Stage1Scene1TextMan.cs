@@ -131,7 +131,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     unit17Image.gameObject.SetActive(true);
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(true);
+                    StartCoroutine(DelayTextButton2());
                     button1.gameObject.SetActive(false);
                     SpeakText("stage1Scene1TextBox1"); break;
                 case 1:
@@ -156,7 +156,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     //  textPos2.gameObject.SetActive(false);
                     //  textPos3.gameObject.SetActive(true);
                     textPanal.gameObject.SetActive(true);
-                    forwardParent.gameObject.SetActive(true);
+                    StartCoroutine(DelayTextButton2());
                     SpeakText("stage1Scene1TextBox4"); break;
                 case 4:
                     backwardsButton.gameObject.SetActive(true);
@@ -175,7 +175,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     StopAllCoroutines();
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
-                    forwardParent.gameObject.SetActive(true);
+                    StartCoroutine(DelayTextButton2());
                     SpeakText("stage1Scene1TextBox8"); break;
                 case 8:
                     
@@ -202,8 +202,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     robCont.isCharActive = false;
                     robotToHide.gameObject.SetActive(false);
                     backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(true);
-                    forwardButton.gameObject.SetActive(true);
+                    StartCoroutine(DelayTextButton2());
                     textPanal.gameObject.SetActive(true);
                     SpeakText("stage1Scene1TextBox11"); break;
                 case 11:
@@ -340,12 +339,23 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public IEnumerator DelayTextButton()
         {
 
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(5);
             forwardButton.gameObject.SetActive(true);
+           
             Debug.Log("This coRoutine Runs");
 
         }
 
+        public IEnumerator DelayTextButton2()
+        {
+
+            yield return new WaitForSeconds(5);
+            forwardParent.gameObject.SetActive(true);
+
+            Debug.Log("This coRoutine Runs");
+
+        }
+       
         public IEnumerator StartLevelText()
         {
 
@@ -359,7 +369,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public IEnumerator MoveToBlankInvislbePanalUnit17()
         {
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(6);
             robCont.isCharActive = true;
             textPanal.gameObject.SetActive(false);
             arrayPos = 26;
