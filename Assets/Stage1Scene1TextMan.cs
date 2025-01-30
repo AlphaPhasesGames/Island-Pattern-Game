@@ -146,6 +146,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     //  textPos1.gameObject.SetActive(false);
                     //  textPos2.gameObject.SetActive(true);
                     // unit17Image.gameObject.SetActive(true);
+                    robCont.isCharActive = false;
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
@@ -369,13 +370,15 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public IEnumerator MoveToBlankInvislbePanalUnit17()
         {
-            yield return new WaitForSeconds(6);
+            yield return new WaitForSeconds(5);
             robCont.isCharActive = true;
             textPanal.gameObject.SetActive(false);
             arrayPos = 26;
             Debug.Log("This start coRoutine Runs");
 
         }
+
+
 
         public IEnumerator MoveToBlankInvislbePanalPlatform()
         {

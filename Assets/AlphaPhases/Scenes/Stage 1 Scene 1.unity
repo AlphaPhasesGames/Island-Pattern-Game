@@ -1033,6 +1033,7 @@ MonoBehaviour:
   correctPlacement: 0
   inCorrectPlacement: 0
   slotFilled: 0
+  slotBool: 0
 --- !u!65 &124526342
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13403,7 +13404,7 @@ MonoBehaviour:
   sphereButton: {fileID: 1526754576}
   checkBool1: 0
   checkBool2: 0
-  sphereHeld: 1
+  sphereHeld: 0
   no6Prop: {fileID: 1405688839}
   no7Prop: {fileID: 1405688838}
   no10Prop: {fileID: 1405688837}

@@ -25,11 +25,39 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public bool inCorrectPlacement;
 
         public bool slotFilled;
-
+        public bool slotBool;
         // Start is called before the first frame update
+
+
 
         public void OnMouseDown()
         {
+
+            if (slotFilled)
+            {
+
+                Debug.Log("This slot is now empty");
+
+                correctPlacement = false;
+                slotFilled = false;
+                no1sphere.gameObject.SetActive(false);
+                no6sphere.gameObject.SetActive(false);
+                no7sphere.gameObject.SetActive(false);
+                no10sphere.gameObject.SetActive(false);
+                no11sphere.gameObject.SetActive(false);
+                no14sphere.gameObject.SetActive(false);
+                no14Prop.sphereButton.gameObject.SetActive(true);
+                no1Prop.sphereButton.gameObject.SetActive(true);
+                no6Prop.sphereButton.gameObject.SetActive(true);
+                no7Prop.sphereButton.gameObject.SetActive(true);
+                no10Prop.sphereButton.gameObject.SetActive(true);
+                no11Prop.sphereButton.gameObject.SetActive(true);
+                inCorrectPlacement = false;
+                incorrectSFX.Play();
+                //   slotFilled = false;
+
+            }
+
             if (!slotFilled)
             {
                 if (no1Prop.sphereHeld)
@@ -42,6 +70,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     inCorrectPlacement = true;
                     incorrectSFX.Play();
                     slotFilled = true;
+                   // slotBool = true;
                 }
 
                 if (no6Prop.sphereHeld)
@@ -107,8 +136,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     slotFilled = true;
 
                 }
+                
             }
-
         }
     }
 }
+
+
