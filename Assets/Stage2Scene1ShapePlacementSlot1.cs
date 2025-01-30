@@ -28,12 +28,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public void OnMouseDown()
         {
-
-            if (tri1Prop.sphereHeld)
+            if (!slotFilled)
+            {
+                if (tri1Prop.sphereHeld)
                 {
-                tri1blueTriangle.gameObject.SetActive(true);
-               //     tri1Prop.triangleButton.gameObject.SetActive(false);
-                   tri1Prop.invItemImage.gameObject.SetActive(false);
+                    tri1blueTriangle.gameObject.SetActive(true);
+                    //     tri1Prop.triangleButton.gameObject.SetActive(false);
+                    tri1Prop.invItemImage.gameObject.SetActive(false);
                     tri1Prop.sphereHeld = false;
                     correctPlacement = true;
                     inCorrectPlacement = false;
@@ -42,16 +43,17 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
                 }
 
-            if (tri2Prop.sphereHeld)
-            {
-                tri2greenTriangle.gameObject.SetActive(true);
-                //   tri2Prop.triangle2Button.gameObject.SetActive(false);
-                tri2Prop.invItemImage.gameObject.SetActive(false);
-                tri2Prop.sphereHeld = false;
-                correctPlacement = false;
-                inCorrectPlacement = true;
-                incorrectSFX.Play();
-                slotFilled = true;
+                if (tri2Prop.sphereHeld)
+                {
+                    tri2greenTriangle.gameObject.SetActive(true);
+                    //   tri2Prop.triangle2Button.gameObject.SetActive(false);
+                    tri2Prop.invItemImage.gameObject.SetActive(false);
+                    tri2Prop.sphereHeld = false;
+                    correctPlacement = false;
+                    inCorrectPlacement = true;
+                    incorrectSFX.Play();
+                    slotFilled = true;
+                }
             }
         }
     }

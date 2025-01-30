@@ -49,12 +49,14 @@ namespace Pattern.Quest.Alpha.Phases.Games
             closeButton.gameObject.SetActive(false);
             robCont.isCharActive = true;
             robotToHide.gameObject.SetActive(true);
+         
             if (!pathShowing)
             {
               
                 textMan.arrayPos = 13;
                 pathShowing = true;
             }
+            textMan.StopAllCoroutines();
         }
     }
 }
