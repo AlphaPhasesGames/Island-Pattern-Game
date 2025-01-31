@@ -13,12 +13,16 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public AudioSource pickupSFX;
         private void OnTriggerEnter(Collider other)
         {
-            textman.positionChanged = true; // Directly set positionChanged
-            textman.arrayPos = 8;
-          //  cahrCont.isCharActive = false;
-            ruleButton.gameObject.SetActive(true);
-            pickupSFX.Play();
-            ruleObject.gameObject.SetActive(false);
+            if(other.CompareTag ("Player"))
+            {
+                textman.positionChanged = true; // Directly set positionChanged
+                textman.arrayPos = 8;
+                //  cahrCont.isCharActive = false;
+                ruleButton.gameObject.SetActive(true);
+                pickupSFX.Play();
+                ruleObject.gameObject.SetActive(false);
+            }
+           
 
         }
     }

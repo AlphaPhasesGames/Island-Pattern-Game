@@ -249,7 +249,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     main.s3TaskNo = 2;
                     main.SaveTask();
                     textPanal.gameObject.SetActive(true);
-                    forwardParent.gameObject.SetActive(true);
+                    StartCoroutine(DelayTextButton2());
                     SpeakText("stage3Scene1TextBox14"); break;
                 case 14:
 
@@ -394,6 +394,17 @@ namespace Pattern.Quest.Alpha.Phases.Games
             Debug.Log("This coRoutine Runs");
 
         }
+
+        public IEnumerator DelayTextButton2()
+        {
+
+            yield return new WaitForSeconds(3);
+            forwardButton.gameObject.SetActive(true);
+            forwardParent.gameObject.SetActive(true);
+            Debug.Log("This coRoutine Runs");
+
+        }
+
 
         public IEnumerator StartLevelText()
         {

@@ -22,12 +22,32 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public AudioSource correctSFX;
         public AudioSource incorrectSFX;
-
+        public GameObject shape1Text;
+        public GameObject shape2Text;
         public bool slotFilled;
         // Start is called before the first frame update
 
         public void OnMouseDown()
         {
+
+            if (slotFilled)
+            {
+
+                Debug.Log("This slot is now empty");
+
+                correctPlacement = false;
+                slotFilled = false;
+                tri1blueTriangle.gameObject.SetActive(false);
+                tri2greenTriangle.gameObject.SetActive(false);
+
+                inCorrectPlacement = false;
+                incorrectSFX.Play();
+
+                shape1Text.gameObject.SetActive(false);
+                shape2Text.gameObject.SetActive(false);
+
+            }
+
             if (!slotFilled)
             {
                 if (tri1Prop.sphereHeld)

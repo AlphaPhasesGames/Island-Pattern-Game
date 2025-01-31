@@ -128,7 +128,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     pollyImage.gameObject.SetActive(true);
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(true);
+                    StartCoroutine(DelayTextButton2());
                     SpeakText("stage2Scene1TextBox1"); break;
                 case 1:
                     backwardsButton.gameObject.SetActive(true);
@@ -154,10 +154,11 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     SpeakText("stage2Scene1TextBox3"); break;
                 case 3:
                     robCont.isCharActive = false;
+                    forwardParent.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     Debug.Log("Firing array 3");
-                    forwardParent.gameObject.SetActive(true);
+                    StartCoroutine(DelayTextButton2());
                     SpeakText("stage2Scene1TextBox4"); break;
                 case 4:
                     backwardsButton.gameObject.SetActive(true);
@@ -166,9 +167,10 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     SpeakText("stage2Scene1TextBox5"); break;
                 case 5:
                     textPanal.gameObject.SetActive(true);
+                    robCont.isCharActive = false;
                     backwardsButton.gameObject.SetActive(false);
                     SpeakText("stage2Scene1TextBox6");
-                    forwardParent.gameObject.SetActive(true);
+                    StartCoroutine(DelayTextButton2());
                     break;
                 case 6:
                     backwardsButton.gameObject.SetActive(true);
@@ -289,8 +291,18 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public IEnumerator DelayTextButton()
         {
 
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(5);
             forwardButton.gameObject.SetActive(true);
+            Debug.Log("This coRoutine Runs");
+
+        }
+
+        public IEnumerator DelayTextButton2()
+        {
+
+            yield return new WaitForSeconds(5);
+            forwardButton.gameObject.SetActive(true);
+            forwardParent.gameObject.SetActive(true);
             Debug.Log("This coRoutine Runs");
 
         }

@@ -40,7 +40,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             inventoryButton.text = defs["inventory"];
             closeViewButton.text = defs["closeView"];
          //   ruleButton.text = defs["ruleButton"];
-         //   resetButton.text = defs["resetButton"];
+            resetButton.text = defs["resetButton"];
         
             square.text = defs["stage2Scene2ShapeGSquare"];
             hexagon1.text = defs["stage2Scene2ShapeGPentagon"];

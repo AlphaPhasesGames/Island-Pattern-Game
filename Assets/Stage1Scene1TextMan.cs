@@ -163,8 +163,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     backwardsButton.gameObject.SetActive(true);
                     unit17Image.gameObject.SetActive(false);
                     pollyImage.gameObject.SetActive(true);
+                    forwardParent.gameObject.SetActive(true);
+                    forwardButton.gameObject.SetActive(true);
+                  //  StartCoroutine(DelayTextButton2());
                     SpeakText("stage1Scene1TextBox5"); break;
-                case 5: SpeakText("stage1Scene1TextBox6"); break;
+                case 5: SpeakText("stage1Scene1TextBox6");
+       
+                    break;
                 case 6:
                    
                     forwardParent.gameObject.SetActive(false);
@@ -228,8 +233,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     SpeakText("stage1Scene1TextBox16");
                         break;
                 case 16:
-                    forwardParent.gameObject.SetActive(true);
-                    forwardButton.gameObject.SetActive(true);
+                    // forwardParent.gameObject.SetActive(true);
+                    //  forwardButton.gameObject.SetActive(true);
+                    StartCoroutine(DelayTextButton2());
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
                     SpeakText("stage1Scene1TextBox17"); break;

@@ -26,10 +26,53 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public bool inCorrectPlacement;
 
         public bool slotFilled;
+
+
+        public GameObject sphere1Text;
+        public GameObject sphere2Text;
+        public GameObject sphere3Text;
+        public GameObject sphere4Text;
+        public GameObject sphere5Text;
+        public GameObject sphere6Text;
         // Start is called before the first frame update
 
         public void OnMouseDown()
         {
+
+            if (slotFilled)
+            {
+
+                Debug.Log("This slot is now empty");
+
+                correctPlacement = false;
+                slotFilled = false;
+                no1sphere.gameObject.SetActive(false);
+                no6sphere.gameObject.SetActive(false);
+                no7sphere.gameObject.SetActive(false);
+                no10sphere.gameObject.SetActive(false);
+                no11sphere.gameObject.SetActive(false);
+                no14sphere.gameObject.SetActive(false);
+              
+                no1Prop.sphereButton.gameObject.SetActive(true);
+                no6Prop.sphereButton.gameObject.SetActive(true);
+                no7Prop.sphereButton.gameObject.SetActive(true);
+                no10Prop.sphereButton.gameObject.SetActive(true);
+                no11Prop.sphereButton.gameObject.SetActive(true);
+                no14Prop.sphereButton.gameObject.SetActive(true);
+                inCorrectPlacement = false;
+                incorrectSFX.Play();
+
+                sphere1Text.gameObject.SetActive(false);
+                sphere2Text.gameObject.SetActive(false);
+                sphere3Text.gameObject.SetActive(false);
+                sphere4Text.gameObject.SetActive(false);
+                sphere5Text.gameObject.SetActive(false);
+                sphere6Text.gameObject.SetActive(false);
+
+                //   slotFilled = false;
+
+            }
+
             if (!slotFilled)
             {
 

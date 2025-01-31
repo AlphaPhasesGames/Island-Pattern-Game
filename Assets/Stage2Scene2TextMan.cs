@@ -133,10 +133,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     pollyImage.gameObject.SetActive(true);
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(true);
-      
+                  
                     SpeakText("stage2Scene2TextBox1");
-                 
+                    StartCoroutine(DelayTextButton2());
                     break;
                 case 1:
                     backwardsButton.gameObject.SetActive(true);
@@ -151,6 +150,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                         startScript.SaveGame();
                         runOnce = true;
                     }
+                    forwardButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage2Scene2TextBox2"); break;
@@ -207,8 +207,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                   
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(true);
-                 
+                    StartCoroutine(DelayTextButton2());
+
                     SpeakText("stage2Scene2TextBox9");
                     break;
                 case 9:
@@ -223,9 +223,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     break;
                 case 10:
                     backwardsButton.gameObject.SetActive(false);
-                    forwardParent.gameObject.SetActive(true);
+                   
                     textPanal.gameObject.SetActive(true);
-                  
+                    StartCoroutine(DelayTextButton2());
                     SpeakText("stage2Scene2TextBox11"); break;
                 case 11:
                     forwardParent.gameObject.SetActive(true);
@@ -324,11 +324,22 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public IEnumerator DelayTextButton()
         {
 
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(5);
             forwardButton.gameObject.SetActive(true);
             Debug.Log("This coRoutine Runs");
 
         }
+
+        public IEnumerator DelayTextButton2()
+        {
+
+            yield return new WaitForSeconds(5);
+            forwardButton.gameObject.SetActive(true);
+            forwardParent.gameObject.SetActive(true);
+            Debug.Log("This coRoutine Runs");
+
+        }
+
 
         public IEnumerator StartLevelText()
         {

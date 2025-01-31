@@ -17,12 +17,35 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public AudioSource correctSFX;
         public AudioSource incorrectSFX;
-
+        public GameObject shape1Text;
+        public GameObject shape2Text;
+        public GameObject shape3Text;
         public bool slotFilled;
         // Start is called before the first frame update
 
         public void OnMouseDown()
         {
+
+            if (slotFilled)
+            {
+
+                Debug.Log("This slot is now empty");
+
+                correctPlacement = false;
+                slotFilled = false;
+                hexagon.gameObject.SetActive(false);
+                square.gameObject.SetActive(false);
+                diamond.gameObject.SetActive(false);
+                inCorrectPlacement = false;
+                incorrectSFX.Play();
+
+                shape1Text.gameObject.SetActive(false);
+                shape2Text.gameObject.SetActive(false);
+                shape3Text.gameObject.SetActive(false);
+
+            }
+
+
             if (!slotFilled)
             {
                 if (hex1Prop.hexagon1Held)

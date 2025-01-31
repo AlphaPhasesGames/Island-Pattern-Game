@@ -18,6 +18,13 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public GameObject no11sphere;
         public GameObject no14sphere;
 
+        public GameObject sphere1Text;
+        public GameObject sphere2Text;
+        public GameObject sphere3Text;
+        public GameObject sphere4Text;
+        public GameObject sphere5Text;
+        public GameObject sphere6Text;
+
         public AudioSource correctSFX;
         public AudioSource incorrectSFX;
 
@@ -54,6 +61,14 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 no11Prop.sphereButton.gameObject.SetActive(true);
                 inCorrectPlacement = false;
                 incorrectSFX.Play();
+
+                sphere1Text.gameObject.SetActive(false);
+                sphere2Text.gameObject.SetActive(false);
+                sphere3Text.gameObject.SetActive(false);
+                sphere4Text.gameObject.SetActive(false);
+                sphere5Text.gameObject.SetActive(false);
+                sphere6Text.gameObject.SetActive(false);
+
                 //   slotFilled = false;
 
             }
