@@ -2519,6 +2519,14 @@ PrefabInstance:
       value: 126
       objectReference: {fileID: 0}
     - target: {fileID: -2577548232221058511, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 125.600006
+      objectReference: {fileID: 0}
+    - target: {fileID: -2577548232221058511, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 140.40001
+      objectReference: {fileID: 0}
+    - target: {fileID: -2577548232221058511, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
       propertyPath: m_LocalScale.z
       value: 50.41656
       objectReference: {fileID: 0}
@@ -2529,6 +2537,14 @@ PrefabInstance:
     - target: {fileID: -2577548232221058511, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2484921068739079471, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 137.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -2484921068739079471, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 141.34001
       objectReference: {fileID: 0}
     - target: {fileID: -2484921068739079471, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
       propertyPath: m_LocalScale.z
@@ -2824,6 +2840,30 @@ MonoBehaviour:
   sphereNo28: {fileID: 1974948881}
   sphereNo31: {fileID: 1874077911}
   sphereNo34: {fileID: 710193908}
+  slotNo1ButtonText: {fileID: 0}
+  slotNo2ButtonText: {fileID: 0}
+  slotNo3ButtonText: {fileID: 0}
+  slotNo4ButtonText: {fileID: 0}
+  slotNo5ButtonText: {fileID: 0}
+  slotNo6ButtonText: {fileID: 0}
+  slotNo7ButtonText: {fileID: 0}
+  slotNo8ButtonText: {fileID: 0}
+  slotNo9ButtonText: {fileID: 0}
+  slotNo10ButtonText: {fileID: 0}
+  slotNo11ButtonText: {fileID: 0}
+  slotNo12ButtonText: {fileID: 0}
+  slotNo1Button: {fileID: 811637324}
+  slotNo2Button: {fileID: 169173493}
+  slotNo3Button: {fileID: 811637323}
+  slotNo4Button: {fileID: 811637322}
+  slotNo5Button: {fileID: 811637319}
+  slotNo6Button: {fileID: 811637321}
+  slotNo7Button: {fileID: 811637320}
+  slotNo8Button: {fileID: 1163762940}
+  slotNo9Button: {fileID: 312657953}
+  slotNo10Button: {fileID: 609470901}
+  slotNo11Button: {fileID: 701214260}
+  slotNo12Button: {fileID: 288082727}
   correctSFX: {fileID: 396296294}
   incorrectSFX: {fileID: 501068741}
   slotFilled: 0
@@ -3134,6 +3174,22 @@ PrefabInstance:
     - target: {fileID: -5568371526223589888, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: -2577548232221058511, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 154.41
+      objectReference: {fileID: 0}
+    - target: {fileID: -2577548232221058511, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 142.33
+      objectReference: {fileID: 0}
+    - target: {fileID: -2484921068739079471, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 136.67
+      objectReference: {fileID: 0}
+    - target: {fileID: -2484921068739079471, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 124.84
       objectReference: {fileID: 0}
     - target: {fileID: -2484921068739079471, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
       propertyPath: m_LocalScale.z
@@ -3724,6 +3780,14 @@ PrefabInstance:
       value: 126
       objectReference: {fileID: 0}
     - target: {fileID: -2577548232221058511, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 128.16
+      objectReference: {fileID: 0}
+    - target: {fileID: -2577548232221058511, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 141.40001
+      objectReference: {fileID: 0}
+    - target: {fileID: -2577548232221058511, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
       propertyPath: m_LocalScale.z
       value: 48.16099
       objectReference: {fileID: 0}
@@ -3734,6 +3798,14 @@ PrefabInstance:
     - target: {fileID: -2577548232221058511, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.4018
+      objectReference: {fileID: 0}
+    - target: {fileID: -2484921068739079471, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 125.46001
+      objectReference: {fileID: 0}
+    - target: {fileID: -2484921068739079471, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 138.06
       objectReference: {fileID: 0}
     - target: {fileID: -2484921068739079471, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
       propertyPath: m_LocalScale.z
@@ -10025,6 +10097,30 @@ MonoBehaviour:
   sphereNo34: {fileID: 1065017028}
   correctSFX: {fileID: 396296294}
   incorrectSFX: {fileID: 501068741}
+  slotNo1ButtonText: {fileID: 1993920332}
+  slotNo2ButtonText: {fileID: 1552722333}
+  slotNo3ButtonText: {fileID: 1993920331}
+  slotNo4ButtonText: {fileID: 1993920330}
+  slotNo5ButtonText: {fileID: 1993920327}
+  slotNo6ButtonText: {fileID: 1993920329}
+  slotNo7ButtonText: {fileID: 1993920328}
+  slotNo8ButtonText: {fileID: 334013685}
+  slotNo9ButtonText: {fileID: 132788525}
+  slotNo10ButtonText: {fileID: 1295719621}
+  slotNo11ButtonText: {fileID: 627674378}
+  slotNo12ButtonText: {fileID: 1046894874}
+  slotNo1Button: {fileID: 811637324}
+  slotNo2Button: {fileID: 169173493}
+  slotNo3Button: {fileID: 811637323}
+  slotNo4Button: {fileID: 811637322}
+  slotNo5Button: {fileID: 811637319}
+  slotNo6Button: {fileID: 811637321}
+  slotNo7Button: {fileID: 811637320}
+  slotNo8Button: {fileID: 1163762940}
+  slotNo9Button: {fileID: 312657953}
+  slotNo10Button: {fileID: 609470901}
+  slotNo11Button: {fileID: 701214260}
+  slotNo12Button: {fileID: 288082727}
   slotFilled: 0
   correctPlacement: 0
   inCorrectPlacement: 0
@@ -13051,6 +13147,30 @@ MonoBehaviour:
   sphereNo28: {fileID: 686483640}
   sphereNo31: {fileID: 766595834}
   sphereNo34: {fileID: 286132541}
+  slotNo1ButtonText: {fileID: 1993920332}
+  slotNo2ButtonText: {fileID: 1552722333}
+  slotNo3ButtonText: {fileID: 1993920331}
+  slotNo4ButtonText: {fileID: 1993920330}
+  slotNo5ButtonText: {fileID: 1993920327}
+  slotNo6ButtonText: {fileID: 1993920329}
+  slotNo7ButtonText: {fileID: 1993920328}
+  slotNo8ButtonText: {fileID: 334013685}
+  slotNo9ButtonText: {fileID: 132788525}
+  slotNo10ButtonText: {fileID: 1295719621}
+  slotNo11ButtonText: {fileID: 627674378}
+  slotNo12ButtonText: {fileID: 1046894874}
+  slotNo1Button: {fileID: 811637324}
+  slotNo2Button: {fileID: 169173493}
+  slotNo3Button: {fileID: 811637323}
+  slotNo4Button: {fileID: 811637322}
+  slotNo5Button: {fileID: 811637319}
+  slotNo6Button: {fileID: 811637321}
+  slotNo7Button: {fileID: 811637320}
+  slotNo8Button: {fileID: 1163762940}
+  slotNo9Button: {fileID: 312657953}
+  slotNo10Button: {fileID: 609470901}
+  slotNo11Button: {fileID: 701214260}
+  slotNo12Button: {fileID: 288082727}
   correctSFX: {fileID: 396296294}
   incorrectSFX: {fileID: 501068741}
   slotFilled: 0
@@ -13790,6 +13910,30 @@ MonoBehaviour:
   correctSFX: {fileID: 396296294}
   incorrectSFX: {fileID: 501068741}
   slotFilled: 0
+  slotNo1ButtonText: {fileID: 1993920332}
+  slotNo2ButtonText: {fileID: 1552722333}
+  slotNo3ButtonText: {fileID: 1993920331}
+  slotNo4ButtonText: {fileID: 1993920330}
+  slotNo5ButtonText: {fileID: 1993920327}
+  slotNo6ButtonText: {fileID: 1993920329}
+  slotNo7ButtonText: {fileID: 1993920328}
+  slotNo8ButtonText: {fileID: 334013685}
+  slotNo9ButtonText: {fileID: 132788525}
+  slotNo10ButtonText: {fileID: 1295719621}
+  slotNo11ButtonText: {fileID: 627674378}
+  slotNo12ButtonText: {fileID: 1046894874}
+  slotNo1Button: {fileID: 811637324}
+  slotNo2Button: {fileID: 169173493}
+  slotNo3Button: {fileID: 811637323}
+  slotNo4Button: {fileID: 811637322}
+  slotNo5Button: {fileID: 811637319}
+  slotNo6Button: {fileID: 811637321}
+  slotNo7Button: {fileID: 811637320}
+  slotNo8Button: {fileID: 1163762940}
+  slotNo9Button: {fileID: 312657953}
+  slotNo10Button: {fileID: 609470901}
+  slotNo11Button: {fileID: 701214260}
+  slotNo12Button: {fileID: 288082727}
   correctPlacement: 0
   inCorrectPlacement: 0
 --- !u!1 &583121204
@@ -16378,6 +16522,30 @@ MonoBehaviour:
   sphereNo28: {fileID: 576334878}
   sphereNo31: {fileID: 1706373205}
   sphereNo34: {fileID: 994035745}
+  slotNo1ButtonText: {fileID: 1993920332}
+  slotNo2ButtonText: {fileID: 1552722333}
+  slotNo3ButtonText: {fileID: 1993920331}
+  slotNo4ButtonText: {fileID: 1993920330}
+  slotNo5ButtonText: {fileID: 1993920327}
+  slotNo6ButtonText: {fileID: 1993920329}
+  slotNo7ButtonText: {fileID: 1993920328}
+  slotNo8ButtonText: {fileID: 334013685}
+  slotNo9ButtonText: {fileID: 132788525}
+  slotNo10ButtonText: {fileID: 1295719621}
+  slotNo11ButtonText: {fileID: 627674378}
+  slotNo12ButtonText: {fileID: 1046894874}
+  slotNo1Button: {fileID: 811637324}
+  slotNo2Button: {fileID: 169173493}
+  slotNo3Button: {fileID: 811637323}
+  slotNo4Button: {fileID: 811637322}
+  slotNo5Button: {fileID: 811637319}
+  slotNo6Button: {fileID: 811637321}
+  slotNo7Button: {fileID: 811637320}
+  slotNo8Button: {fileID: 1163762940}
+  slotNo9Button: {fileID: 312657953}
+  slotNo10Button: {fileID: 609470901}
+  slotNo11Button: {fileID: 701214260}
+  slotNo12Button: {fileID: 288082727}
   correctSFX: {fileID: 396296294}
   incorrectSFX: {fileID: 501068741}
   slotFilled: 0
@@ -17625,6 +17793,7 @@ MonoBehaviour:
   robCont: {fileID: 4936466633830017471}
   player: {fileID: 745581833166231001}
   uiCOllectablesPanal: {fileID: 78460081}
+  dockTrigger: {fileID: 691780179}
   sphere1: {fileID: 811637324}
   sphere4: {fileID: 169173493}
   sphere7: {fileID: 811637323}
@@ -24141,6 +24310,30 @@ MonoBehaviour:
   sphereNo34: {fileID: 812940095}
   correctSFX: {fileID: 396296294}
   incorrectSFX: {fileID: 501068741}
+  slotNo1ButtonText: {fileID: 1993920332}
+  slotNo2ButtonText: {fileID: 1552722333}
+  slotNo3ButtonText: {fileID: 1993920331}
+  slotNo4ButtonText: {fileID: 1993920330}
+  slotNo5ButtonText: {fileID: 1993920327}
+  slotNo6ButtonText: {fileID: 1993920329}
+  slotNo7ButtonText: {fileID: 1993920328}
+  slotNo8ButtonText: {fileID: 334013685}
+  slotNo9ButtonText: {fileID: 132788525}
+  slotNo10ButtonText: {fileID: 1295719621}
+  slotNo11ButtonText: {fileID: 627674378}
+  slotNo12ButtonText: {fileID: 1046894874}
+  slotNo1Button: {fileID: 811637324}
+  slotNo2Button: {fileID: 169173493}
+  slotNo3Button: {fileID: 811637323}
+  slotNo4Button: {fileID: 811637322}
+  slotNo5Button: {fileID: 811637319}
+  slotNo6Button: {fileID: 811637321}
+  slotNo7Button: {fileID: 811637320}
+  slotNo8Button: {fileID: 1163762940}
+  slotNo9Button: {fileID: 312657953}
+  slotNo10Button: {fileID: 609470901}
+  slotNo11Button: {fileID: 701214260}
+  slotNo12Button: {fileID: 288082727}
   slotFilled: 0
   correctPlacement: 0
   inCorrectPlacement: 0
@@ -24734,6 +24927,30 @@ MonoBehaviour:
   sphereNo28: {fileID: 2058397199}
   sphereNo31: {fileID: 1074139615}
   sphereNo34: {fileID: 314284471}
+  slotNo1ButtonText: {fileID: 1993920332}
+  slotNo2ButtonText: {fileID: 1552722333}
+  slotNo3ButtonText: {fileID: 1993920331}
+  slotNo4ButtonText: {fileID: 1993920330}
+  slotNo5ButtonText: {fileID: 1993920327}
+  slotNo6ButtonText: {fileID: 1993920329}
+  slotNo7ButtonText: {fileID: 1993920328}
+  slotNo8ButtonText: {fileID: 334013685}
+  slotNo9ButtonText: {fileID: 132788525}
+  slotNo10ButtonText: {fileID: 1295719621}
+  slotNo11ButtonText: {fileID: 627674378}
+  slotNo12ButtonText: {fileID: 1046894874}
+  slotNo1Button: {fileID: 811637324}
+  slotNo2Button: {fileID: 169173493}
+  slotNo3Button: {fileID: 811637323}
+  slotNo4Button: {fileID: 811637322}
+  slotNo5Button: {fileID: 811637319}
+  slotNo6Button: {fileID: 811637321}
+  slotNo7Button: {fileID: 811637320}
+  slotNo8Button: {fileID: 1163762940}
+  slotNo9Button: {fileID: 312657953}
+  slotNo10Button: {fileID: 609470901}
+  slotNo11Button: {fileID: 701214260}
+  slotNo12Button: {fileID: 288082727}
   correctPlacement: 0
   inCorrectPlacement: 0
   correctSFX: {fileID: 396296294}
@@ -25160,6 +25377,30 @@ MonoBehaviour:
   sphereNo28: {fileID: 1452658122}
   sphereNo31: {fileID: 1862436599}
   sphereNo34: {fileID: 205833906}
+  slotNo1ButtonText: {fileID: 1993920332}
+  slotNo2ButtonText: {fileID: 1552722333}
+  slotNo3ButtonText: {fileID: 1993920331}
+  slotNo4ButtonText: {fileID: 1993920330}
+  slotNo5ButtonText: {fileID: 1993920327}
+  slotNo6ButtonText: {fileID: 1993920329}
+  slotNo7ButtonText: {fileID: 1993920328}
+  slotNo8ButtonText: {fileID: 334013685}
+  slotNo9ButtonText: {fileID: 132788525}
+  slotNo10ButtonText: {fileID: 1295719621}
+  slotNo11ButtonText: {fileID: 627674378}
+  slotNo12ButtonText: {fileID: 1046894874}
+  slotNo1Button: {fileID: 811637324}
+  slotNo2Button: {fileID: 169173493}
+  slotNo3Button: {fileID: 811637323}
+  slotNo4Button: {fileID: 811637322}
+  slotNo5Button: {fileID: 811637319}
+  slotNo6Button: {fileID: 811637321}
+  slotNo7Button: {fileID: 811637320}
+  slotNo8Button: {fileID: 1163762940}
+  slotNo9Button: {fileID: 312657953}
+  slotNo10Button: {fileID: 609470901}
+  slotNo11Button: {fileID: 701214260}
+  slotNo12Button: {fileID: 288082727}
   correctPlacement: 0
   inCorrectPlacement: 0
   correctSFX: {fileID: 396296294}
@@ -26511,6 +26752,30 @@ MonoBehaviour:
   sphereNo28: {fileID: 579859373}
   sphereNo31: {fileID: 979061515}
   sphereNo34: {fileID: 528095503}
+  slotNo1ButtonText: {fileID: 1993920332}
+  slotNo2ButtonText: {fileID: 1552722333}
+  slotNo3ButtonText: {fileID: 1993920331}
+  slotNo4ButtonText: {fileID: 1993920330}
+  slotNo5ButtonText: {fileID: 1993920327}
+  slotNo6ButtonText: {fileID: 1993920329}
+  slotNo7ButtonText: {fileID: 1993920328}
+  slotNo8ButtonText: {fileID: 334013685}
+  slotNo9ButtonText: {fileID: 132788525}
+  slotNo10ButtonText: {fileID: 1295719621}
+  slotNo11ButtonText: {fileID: 627674378}
+  slotNo12ButtonText: {fileID: 1046894874}
+  slotNo1Button: {fileID: 811637324}
+  slotNo2Button: {fileID: 169173493}
+  slotNo3Button: {fileID: 811637323}
+  slotNo4Button: {fileID: 811637322}
+  slotNo5Button: {fileID: 811637319}
+  slotNo6Button: {fileID: 811637321}
+  slotNo7Button: {fileID: 811637320}
+  slotNo8Button: {fileID: 1163762940}
+  slotNo9Button: {fileID: 312657953}
+  slotNo10Button: {fileID: 609470901}
+  slotNo11Button: {fileID: 701214260}
+  slotNo12Button: {fileID: 288082727}
   correctPlacement: 0
   inCorrectPlacement: 0
   correctSFX: {fileID: 396296294}
@@ -30805,6 +31070,30 @@ MonoBehaviour:
   sphereNo28: {fileID: 1051578134}
   sphereNo31: {fileID: 1577462255}
   sphereNo34: {fileID: 1285835323}
+  slotNo1ButtonText: {fileID: 1993920332}
+  slotNo2ButtonText: {fileID: 1552722333}
+  slotNo3ButtonText: {fileID: 1993920331}
+  slotNo4ButtonText: {fileID: 1993920330}
+  slotNo5ButtonText: {fileID: 1993920327}
+  slotNo6ButtonText: {fileID: 1993920329}
+  slotNo7ButtonText: {fileID: 1993920328}
+  slotNo8ButtonText: {fileID: 334013685}
+  slotNo9ButtonText: {fileID: 132788525}
+  slotNo10ButtonText: {fileID: 1295719621}
+  slotNo11ButtonText: {fileID: 627674378}
+  slotNo12ButtonText: {fileID: 1046894874}
+  slotNo1Button: {fileID: 811637324}
+  slotNo2Button: {fileID: 169173493}
+  slotNo3Button: {fileID: 811637323}
+  slotNo4Button: {fileID: 811637322}
+  slotNo5Button: {fileID: 811637319}
+  slotNo6Button: {fileID: 811637321}
+  slotNo7Button: {fileID: 811637320}
+  slotNo8Button: {fileID: 1163762940}
+  slotNo9Button: {fileID: 312657953}
+  slotNo10Button: {fileID: 609470901}
+  slotNo11Button: {fileID: 701214260}
+  slotNo12Button: {fileID: 288082727}
   correctSFX: {fileID: 396296294}
   incorrectSFX: {fileID: 501068741}
   slotFilled: 0
@@ -33713,6 +34002,30 @@ MonoBehaviour:
   sphereNo28: {fileID: 1293480298}
   sphereNo31: {fileID: 1821937619}
   sphereNo34: {fileID: 1832970066}
+  slotNo1ButtonText: {fileID: 1993920332}
+  slotNo2ButtonText: {fileID: 1552722333}
+  slotNo3ButtonText: {fileID: 1993920331}
+  slotNo4ButtonText: {fileID: 1993920330}
+  slotNo5ButtonText: {fileID: 1993920327}
+  slotNo6ButtonText: {fileID: 1993920329}
+  slotNo7ButtonText: {fileID: 1993920328}
+  slotNo8ButtonText: {fileID: 334013685}
+  slotNo9ButtonText: {fileID: 132788525}
+  slotNo10ButtonText: {fileID: 1295719621}
+  slotNo11ButtonText: {fileID: 627674378}
+  slotNo12ButtonText: {fileID: 1046894874}
+  slotNo1Button: {fileID: 811637324}
+  slotNo2Button: {fileID: 169173493}
+  slotNo3Button: {fileID: 811637323}
+  slotNo4Button: {fileID: 811637322}
+  slotNo5Button: {fileID: 811637319}
+  slotNo6Button: {fileID: 811637321}
+  slotNo7Button: {fileID: 811637320}
+  slotNo8Button: {fileID: 1163762940}
+  slotNo9Button: {fileID: 312657953}
+  slotNo10Button: {fileID: 609470901}
+  slotNo11Button: {fileID: 701214260}
+  slotNo12Button: {fileID: 288082727}
   correctSFX: {fileID: 396296294}
   incorrectSFX: {fileID: 501068741}
   slotFilled: 0
@@ -42879,6 +43192,22 @@ PrefabInstance:
     - target: {fileID: -5568371526223589888, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: -2577548232221058511, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 139.54001
+      objectReference: {fileID: 0}
+    - target: {fileID: -2577548232221058511, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 147.46503
+      objectReference: {fileID: 0}
+    - target: {fileID: -2484921068739079471, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 142.20001
+      objectReference: {fileID: 0}
+    - target: {fileID: -2484921068739079471, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 144.5
       objectReference: {fileID: 0}
     - target: {fileID: -2484921068739079471, guid: 8393e5349b7bb1d4bb8a84fc3871f8cc, type: 3}
       propertyPath: m_LocalScale.z

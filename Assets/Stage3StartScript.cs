@@ -15,7 +15,9 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public GameObject player;
 
         public GameObject uiCOllectablesPanal;
-        
+
+        public GameObject dockTrigger;
+
         public GameObject sphere1;
         public GameObject sphere4;
         public GameObject sphere7;
@@ -72,7 +74,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 sphere13ToHide.gameObject.SetActive(false);
                 sphere16ToHide.gameObject.SetActive(false);
 
-               
+                dockTrigger.gameObject.SetActive(false);
                 collectMan.collectableCount = 6;
 
 
