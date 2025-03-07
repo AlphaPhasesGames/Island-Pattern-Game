@@ -22,6 +22,15 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 sphereButton.gameObject.SetActive(true);
                 sphere.gameObject.SetActive(false);
             }
+
+            if (other.CompareTag("Club"))
+            {
+                pickupSFX.Play();
+                collectMan.collectableCount++;
+                sphereButton.gameObject.SetActive(true);
+                sphere.gameObject.SetActive(false);
+            }
+
         }
     }
 }

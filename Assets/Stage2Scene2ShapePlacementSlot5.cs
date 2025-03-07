@@ -28,20 +28,22 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
             if (slotFilled)
             {
+                if (!squareProp.sphereHeld && !hex1Prop.hexagon1Held && !diamondProp.diamond1Held) //|| !no2 || !no3 || !no4 || !no5 || !no6)
+                {
+                    Debug.Log("This slot is now empty");
 
-                Debug.Log("This slot is now empty");
+                    correctPlacement = false;
+                    slotFilled = false;
+                    hexagon.gameObject.SetActive(false);
+                    square.gameObject.SetActive(false);
+                    diamond.gameObject.SetActive(false);
+                    inCorrectPlacement = false;
+                    incorrectSFX.Play();
 
-                correctPlacement = false;
-                slotFilled = false;
-                hexagon.gameObject.SetActive(false);
-                square.gameObject.SetActive(false);
-                diamond.gameObject.SetActive(false);
-                inCorrectPlacement = false;
-                incorrectSFX.Play();
-
-                shape1Text.gameObject.SetActive(false);
-                shape2Text.gameObject.SetActive(false);
-                shape3Text.gameObject.SetActive(false);
+                    shape1Text.gameObject.SetActive(false);
+                    shape2Text.gameObject.SetActive(false);
+                    shape3Text.gameObject.SetActive(false);
+                }
             }
 
             if (!slotFilled)

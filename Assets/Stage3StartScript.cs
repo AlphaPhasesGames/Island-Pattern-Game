@@ -74,7 +74,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 sphere13ToHide.gameObject.SetActive(false);
                 sphere16ToHide.gameObject.SetActive(false);
 
-                dockTrigger.gameObject.SetActive(false);
+            //    dockTrigger.gameObject.SetActive(false);
                 collectMan.collectableCount = 6;
 
 
@@ -94,7 +94,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
                 collectMan.allSpheresCollected = true;
                 collectMan.collectableCount = 12;
-
+                dockTrigger.gameObject.SetActive(false);
 
             }
 

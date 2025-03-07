@@ -12,15 +12,22 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public AudioSource pickupSFX;
         private void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag("Player"))
+            if (other.CompareTag("Player") )
             {
                 pickupSFX.Play();
                 collectMan.collectableCount++;
                 sphereButton.gameObject.SetActive(true);
                 sphere.gameObject.SetActive(false);
             }
-          
 
+            if (other.CompareTag("Club"))
+            {
+                pickupSFX.Play();
+                collectMan.collectableCount++;
+                sphereButton.gameObject.SetActive(true);
+                sphere.gameObject.SetActive(false);
+            }
+            
         }
     }
 }

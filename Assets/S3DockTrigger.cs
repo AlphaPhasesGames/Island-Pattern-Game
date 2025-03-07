@@ -11,6 +11,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Camera playerCam;
         public bool lookedAtOnce;
         public PatternQuestMain main;
+        public GameObject dockTrigger;
         private void Awake()
         {
             main = GameObject.FindObjectOfType<PatternQuestMain>();
@@ -31,6 +32,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                         textMan.positionChanged = true;
                         textMan.arrayPos = 4;
                         lookedAtOnce = true;
+                        dockTrigger.gameObject.SetActive(false);
                     }
                   
                 }

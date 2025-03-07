@@ -41,7 +41,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 slotFilled = false;
                 tri1blueTriangle.gameObject.SetActive(false);
                 tri2greenTriangle.gameObject.SetActive(false);
-                
+                             
+
                 inCorrectPlacement = false;
                 incorrectSFX.Play();
 

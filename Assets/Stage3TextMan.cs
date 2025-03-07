@@ -186,6 +186,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     main.SaveTask();
                     main.SaveS3();
                     main.SaveScene3Pos();
+                    StartCoroutine(MoveCameraToDockStart());
                     StartCoroutine(MoveToBlankFromTempleCamView());
                     SpeakText("stage3Scene1TextBox4"); break;
                 case 4:
@@ -541,13 +542,25 @@ namespace Pattern.Quest.Alpha.Phases.Games
         }
         public IEnumerator MoveToBlankFromTempleCamView()
         {
-            yield return new WaitForSeconds(4);
+            yield return new WaitForSeconds(5);
             // robCont.isCharActive = true;
             textPanal.gameObject.SetActive(false);
             arrayPos = 26;
-            templeViewCam.enabled = false;
+            dockCam.enabled = false;
             playerCam.enabled = true;
             robCont.isCharActive = true;
+            Debug.Log("This start coRoutine Runs");
+
+        }
+
+        public IEnumerator MoveCameraToDockStart()
+        {
+            yield return new WaitForSeconds(2.5f);
+            // robCont.isCharActive = true;
+
+            templeViewCam.enabled = false;
+            dockCam.enabled = true;
+
             Debug.Log("This start coRoutine Runs");
 
         }

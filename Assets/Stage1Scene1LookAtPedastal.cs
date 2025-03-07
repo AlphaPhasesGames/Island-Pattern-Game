@@ -91,19 +91,22 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 textMan.arrayPos = 10;
                 hasViewedPedastal = true;
                 spheresObg.gameObject.SetActive(true);
+             //   resetButton.gameObject.SetActive(false);
             }
             if(hasViewedPedastal && collectMan.allSpheresCollected)
             {
                 textMan.StopAllCoroutines();
                 textMan.positionChanged = true;
                 textMan.arrayPos = 20;
+             //   resetButton.gameObject.SetActive(true);
             }
-            
+            robCont.isCharActive = true;
+            robotToHide.gameObject.SetActive(false);
             playerCamToDisable.enabled = false;
             pedastalCam.enabled = true;
             triggerCollider.enabled = false;
             closeButton.gameObject.SetActive(true);
-            resetButton.gameObject.SetActive(true);
+           // resetButton.gameObject.SetActive(true);
             Debug.Log("Trigger box clicked!");
             // Add your logic here (e.g., open a door, activate something, etc.)
         }
@@ -166,7 +169,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             no1Prop.DeSelectSphereItemPed();
             no6Prop.DeSelectSphereItemPed();
             no7Prop.DeSelectSphereItemPed();
-            no10Prop.DeSelectSphereItemProg();
+            no10Prop.DeSelectSphereItemPed();
             no11Prop.DeSelectSphereItemPed();
             no14Prop.DeSelectSphereItemPed();
 

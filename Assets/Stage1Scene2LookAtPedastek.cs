@@ -100,7 +100,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             pedastalCam.enabled = true;
             triggerCollider.enabled = false;
             closeButton.gameObject.SetActive(true);
-            resetButton.gameObject.SetActive(true);
+          //  resetButton.gameObject.SetActive(true);
             Debug.Log("Trigger box clicked!");
             // Add your logic here (e.g., open a door, activate something, etc.)
         }

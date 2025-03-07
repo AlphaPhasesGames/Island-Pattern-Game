@@ -330,7 +330,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public IEnumerator MoveToNextText()
         {
-            yield return new WaitForSeconds(7);
+            yield return new WaitForSeconds(9);
             positionChanged = true;
             //  robCont.isCharActive = true;
             //  textPanal.gameObject.SetActive(false);

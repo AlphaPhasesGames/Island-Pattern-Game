@@ -24,7 +24,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
 
         public Stage2Scene1Triangle2 tri2Prop;
-        public Stage2Scene1Triangle3InventoryItem tri3Prop;
+      //  public Stage2Scene1Triangle3InventoryItem tri3Prop;
         // Start is called before the first frame update
         private void Start()
         {

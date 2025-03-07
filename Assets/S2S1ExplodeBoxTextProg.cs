@@ -10,6 +10,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public float forceStrength = 10f; // Strength of the force
         public GameObject sphere1;
         public GameObject crate;
+        public bool runOnce;
         void ApplySphericalForce()
         {
             // Find all colliders within the sphere of influence
@@ -18,7 +19,12 @@ namespace Pattern.Quest.Alpha.Phases.Games
             foreach (Collider nearbyObject in colliders)
             {
                 Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
-                sphere1.gameObject.SetActive(true);
+                if (!runOnce)
+                {
+                    sphere1.gameObject.SetActive(true);
+                    runOnce = true;
+                }
+              
                 textMan.positionChanged = true;
                 textMan.arrayPos = 5;
                 StartCoroutine(RemoveCrate());
@@ -35,14 +41,14 @@ namespace Pattern.Quest.Alpha.Phases.Games
         }
 
         // Call the force function when needed, for example when pressing a key
-        void Update()
+       /* void Update()
         {
             if (Input.GetKeyDown(KeyCode.H)) // Press Space to activate the force
             {
                 ApplySphericalForce();
             }
         }
-
+*/
         // Optional: visualize the force radius in the editor
         void OnDrawGizmosSelected()
         {

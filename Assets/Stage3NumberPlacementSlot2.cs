@@ -61,58 +61,331 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public AudioSource correctSFX;
         public AudioSource incorrectSFX;
 
+        public bool no1;
+        public bool no2;
+        public bool no3;
+        public bool no4;
+        public bool no5;
+        public bool no6;
+        public bool no7;
+        public bool no8;
+        public bool no9;
+        public bool no10;
+        public bool no11;
+        public bool no12;
+
         public bool slotFilled;
         public void OnMouseDown()
         {
 
-            if (slotFilled)
+            if (slotFilled && no1)
             {
+                if (!no4InvProp.sphereHeld && !no7InvProp.sphereHeld && !no10InvProp.sphereHeld && !no13InvProp.sphereHeld && !no16InvProp.sphereHeld && !no19InvProp.sphereHeld && !no22InvProp.sphereHeld && !no25InvProp.sphereHeld && !no28InvProp.sphereHeld && !no31InvProp.sphereHeld && !no34InvProp.sphereHeld) //|| !no2 || !no3 || !no4 || !no5 || !no6)
+                {
+                    sphereNo1.gameObject.SetActive(false);
+                    no1InvProp.sphereButton.gameObject.SetActive(true);
+                    no1 = false;
+                    slotFilled = false;
+                    slotNo1ButtonText.gameObject.SetActive(false);
+                    slotNo2ButtonText.gameObject.SetActive(false);
+                    slotNo3ButtonText.gameObject.SetActive(false);
+                    slotNo4ButtonText.gameObject.SetActive(false);
+                    slotNo5ButtonText.gameObject.SetActive(false);
+                    slotNo6ButtonText.gameObject.SetActive(false);
+                    slotNo7ButtonText.gameObject.SetActive(false);
+                    slotNo8ButtonText.gameObject.SetActive(false);
+                    slotNo9ButtonText.gameObject.SetActive(false);
+                    slotNo10ButtonText.gameObject.SetActive(false);
+                    slotNo11ButtonText.gameObject.SetActive(false);
+                    slotNo12ButtonText.gameObject.SetActive(false);
+                }
 
-                Debug.Log("This slot is now empty");
+            }
 
-                correctPlacement = false;
-                slotFilled = false;
-                sphereNo1.gameObject.SetActive(false);
-                sphereNo4.gameObject.SetActive(false);
-                sphereNo7.gameObject.SetActive(false);
-                sphereNo10.gameObject.SetActive(false);
-                sphereNo13.gameObject.SetActive(false);
-                sphereNo16.gameObject.SetActive(false);
-                sphereNo19.gameObject.SetActive(false);
-                sphereNo22.gameObject.SetActive(false);
-                sphereNo25.gameObject.SetActive(false);
-                sphereNo28.gameObject.SetActive(false);
-                sphereNo31.gameObject.SetActive(false);
-                sphereNo34.gameObject.SetActive(false);
-                inCorrectPlacement = false;
-                incorrectSFX.Play();
+            else if (slotFilled && no2)
+            {
+                if (!no1InvProp.sphereHeld && !no7InvProp.sphereHeld && !no10InvProp.sphereHeld && !no13InvProp.sphereHeld && !no16InvProp.sphereHeld && !no19InvProp.sphereHeld && !no22InvProp.sphereHeld && !no25InvProp.sphereHeld && !no28InvProp.sphereHeld && !no31InvProp.sphereHeld && !no34InvProp.sphereHeld) //|| !no2 || !no3 || !no4 || !no5 || !no6)
+                {
+                    sphereNo4.gameObject.SetActive(false);
+                    no4InvProp.sphereButton.gameObject.SetActive(true);
+                    no2 = false;
+                    slotFilled = false;
+                    slotNo1ButtonText.gameObject.SetActive(false);
+                    slotNo2ButtonText.gameObject.SetActive(false);
+                    slotNo3ButtonText.gameObject.SetActive(false);
+                    slotNo4ButtonText.gameObject.SetActive(false);
+                    slotNo5ButtonText.gameObject.SetActive(false);
+                    slotNo6ButtonText.gameObject.SetActive(false);
+                    slotNo7ButtonText.gameObject.SetActive(false);
+                    slotNo8ButtonText.gameObject.SetActive(false);
+                    slotNo9ButtonText.gameObject.SetActive(false);
+                    slotNo10ButtonText.gameObject.SetActive(false);
+                    slotNo11ButtonText.gameObject.SetActive(false);
+                    slotNo12ButtonText.gameObject.SetActive(false);
+                    correctPlacement = false;
+                    inCorrectPlacement = false;
+                }
 
-                slotNo1Button.gameObject.SetActive(true);
-                slotNo2Button.gameObject.SetActive(true);
-                slotNo3Button.gameObject.SetActive(true);
-                slotNo4Button.gameObject.SetActive(true);
-                slotNo5Button.gameObject.SetActive(true);
-                slotNo6Button.gameObject.SetActive(true);
-                slotNo7Button.gameObject.SetActive(true);
-                slotNo8Button.gameObject.SetActive(true);
-                slotNo9Button.gameObject.SetActive(true);
-                slotNo10Button.gameObject.SetActive(true);
-                slotNo11Button.gameObject.SetActive(true);
-                slotNo12Button.gameObject.SetActive(true);
+            }
+
+            else if (slotFilled && no3)
+            {
+                if (!no1InvProp.sphereHeld && !no4InvProp.sphereHeld && !no10InvProp.sphereHeld && !no13InvProp.sphereHeld && !no16InvProp.sphereHeld && !no19InvProp.sphereHeld && !no22InvProp.sphereHeld && !no25InvProp.sphereHeld && !no28InvProp.sphereHeld && !no31InvProp.sphereHeld && !no34InvProp.sphereHeld) //|| !no2 || !no3 || !no4 || !no5 || !no6)
+                {
+                    sphereNo7.gameObject.SetActive(false);
+                    no7InvProp.sphereButton.gameObject.SetActive(true);
+                    no3 = false;
+                    slotFilled = false;
+                    slotNo1ButtonText.gameObject.SetActive(false);
+                    slotNo2ButtonText.gameObject.SetActive(false);
+                    slotNo3ButtonText.gameObject.SetActive(false);
+                    slotNo4ButtonText.gameObject.SetActive(false);
+                    slotNo5ButtonText.gameObject.SetActive(false);
+                    slotNo6ButtonText.gameObject.SetActive(false);
+                    slotNo7ButtonText.gameObject.SetActive(false);
+                    slotNo8ButtonText.gameObject.SetActive(false);
+                    slotNo9ButtonText.gameObject.SetActive(false);
+                    slotNo10ButtonText.gameObject.SetActive(false);
+                    slotNo11ButtonText.gameObject.SetActive(false);
+                    slotNo12ButtonText.gameObject.SetActive(false);
+                    correctPlacement = false;
+                    inCorrectPlacement = false;
+                }
+
+            }
+
+            else if (slotFilled && no4)
+            {
+                if (!no1InvProp.sphereHeld && !no4InvProp.sphereHeld && !no7InvProp.sphereHeld && !no13InvProp.sphereHeld && !no16InvProp.sphereHeld && !no19InvProp.sphereHeld && !no22InvProp.sphereHeld && !no25InvProp.sphereHeld && !no28InvProp.sphereHeld && !no31InvProp.sphereHeld && !no34InvProp.sphereHeld) //|| !no2 || !no3 || !no4 || !no5 || !no6)
+                {
+                    sphereNo10.gameObject.SetActive(false);
+                    no10InvProp.sphereButton.gameObject.SetActive(true);
+                    no4 = false;
+                    slotFilled = false;
+                    slotNo1ButtonText.gameObject.SetActive(false);
+                    slotNo2ButtonText.gameObject.SetActive(false);
+                    slotNo3ButtonText.gameObject.SetActive(false);
+                    slotNo4ButtonText.gameObject.SetActive(false);
+                    slotNo5ButtonText.gameObject.SetActive(false);
+                    slotNo6ButtonText.gameObject.SetActive(false);
+                    slotNo7ButtonText.gameObject.SetActive(false);
+                    slotNo8ButtonText.gameObject.SetActive(false);
+                    slotNo9ButtonText.gameObject.SetActive(false);
+                    slotNo10ButtonText.gameObject.SetActive(false);
+                    slotNo11ButtonText.gameObject.SetActive(false);
+                    slotNo12ButtonText.gameObject.SetActive(false);
+                    correctPlacement = false;
+                    inCorrectPlacement = false;
+                }
+
+            }
+
+            else if (slotFilled && no5)
+            {
+                if (!no1InvProp.sphereHeld && !no4InvProp.sphereHeld && !no7InvProp.sphereHeld && !no10InvProp.sphereHeld && !no16InvProp.sphereHeld && !no19InvProp.sphereHeld && !no22InvProp.sphereHeld && !no25InvProp.sphereHeld && !no28InvProp.sphereHeld && !no31InvProp.sphereHeld && !no34InvProp.sphereHeld) //|| !no2 || !no3 || !no4 || !no5 || !no6)
+                {
+                    sphereNo13.gameObject.SetActive(false);
+                    no13InvProp.sphereButton.gameObject.SetActive(true);
+                    no5 = false;
+                    slotFilled = false;
+                    slotNo1ButtonText.gameObject.SetActive(false);
+                    slotNo2ButtonText.gameObject.SetActive(false);
+                    slotNo3ButtonText.gameObject.SetActive(false);
+                    slotNo4ButtonText.gameObject.SetActive(false);
+                    slotNo5ButtonText.gameObject.SetActive(false);
+                    slotNo6ButtonText.gameObject.SetActive(false);
+                    slotNo7ButtonText.gameObject.SetActive(false);
+                    slotNo8ButtonText.gameObject.SetActive(false);
+                    slotNo9ButtonText.gameObject.SetActive(false);
+                    slotNo10ButtonText.gameObject.SetActive(false);
+                    slotNo11ButtonText.gameObject.SetActive(false);
+                    slotNo12ButtonText.gameObject.SetActive(false);
+                    correctPlacement = false;
+                    inCorrectPlacement = false;
+                }
+
+            }
+
+            else if (slotFilled && no6)
+            {
+                if (!no1InvProp.sphereHeld && !no4InvProp.sphereHeld && !no7InvProp.sphereHeld && !no10InvProp.sphereHeld && !no13InvProp.sphereHeld && !no19InvProp.sphereHeld && !no22InvProp.sphereHeld && !no25InvProp.sphereHeld && !no28InvProp.sphereHeld && !no31InvProp.sphereHeld && !no34InvProp.sphereHeld) //|| !no2 || !no3 || !no4 || !no5 || !no6)
+                {
+                    sphereNo16.gameObject.SetActive(false);
+                    no16InvProp.sphereButton.gameObject.SetActive(true);
+                    no6 = false;
+                    slotFilled = false;
+                    slotNo1ButtonText.gameObject.SetActive(false);
+                    slotNo2ButtonText.gameObject.SetActive(false);
+                    slotNo3ButtonText.gameObject.SetActive(false);
+                    slotNo4ButtonText.gameObject.SetActive(false);
+                    slotNo5ButtonText.gameObject.SetActive(false);
+                    slotNo6ButtonText.gameObject.SetActive(false);
+                    slotNo7ButtonText.gameObject.SetActive(false);
+                    slotNo8ButtonText.gameObject.SetActive(false);
+                    slotNo9ButtonText.gameObject.SetActive(false);
+                    slotNo10ButtonText.gameObject.SetActive(false);
+                    slotNo11ButtonText.gameObject.SetActive(false);
+                    slotNo12ButtonText.gameObject.SetActive(false);
+                    correctPlacement = false;
+                    inCorrectPlacement = false;
+                }
+
+            }
 
 
-                slotNo1ButtonText.gameObject.SetActive(false);
-                slotNo2ButtonText.gameObject.SetActive(false);
-                slotNo3ButtonText.gameObject.SetActive(false);
-                slotNo4ButtonText.gameObject.SetActive(false);
-                slotNo5ButtonText.gameObject.SetActive(false);
-                slotNo6ButtonText.gameObject.SetActive(false);
-                slotNo7ButtonText.gameObject.SetActive(false);
-                slotNo8ButtonText.gameObject.SetActive(false);
-                slotNo9ButtonText.gameObject.SetActive(false);
-                slotNo10ButtonText.gameObject.SetActive(false);
-                slotNo11ButtonText.gameObject.SetActive(false);
-                slotNo11ButtonText.gameObject.SetActive(false);
+            else if (slotFilled && no7)
+            {
+                if (!no1InvProp.sphereHeld && !no4InvProp.sphereHeld && !no7InvProp.sphereHeld && !no10InvProp.sphereHeld && !no13InvProp.sphereHeld && !no16InvProp.sphereHeld && !no22InvProp.sphereHeld && !no25InvProp.sphereHeld && !no28InvProp.sphereHeld && !no31InvProp.sphereHeld && !no34InvProp.sphereHeld) //|| !no2 || !no3 || !no4 || !no5 || !no6)
+                {
+                    sphereNo19.gameObject.SetActive(false);
+                    no19InvProp.sphereButton.gameObject.SetActive(true);
+                    no7 = false;
+                    slotFilled = false;
+                    slotNo1ButtonText.gameObject.SetActive(false);
+                    slotNo2ButtonText.gameObject.SetActive(false);
+                    slotNo3ButtonText.gameObject.SetActive(false);
+                    slotNo4ButtonText.gameObject.SetActive(false);
+                    slotNo5ButtonText.gameObject.SetActive(false);
+                    slotNo6ButtonText.gameObject.SetActive(false);
+                    slotNo7ButtonText.gameObject.SetActive(false);
+                    slotNo8ButtonText.gameObject.SetActive(false);
+                    slotNo9ButtonText.gameObject.SetActive(false);
+                    slotNo10ButtonText.gameObject.SetActive(false);
+                    slotNo11ButtonText.gameObject.SetActive(false);
+                    slotNo12ButtonText.gameObject.SetActive(false);
+                    correctPlacement = false;
+                    inCorrectPlacement = false;
+                }
+
+            }
+
+            else if (slotFilled && no8)
+            {
+                if (!no1InvProp.sphereHeld && !no4InvProp.sphereHeld && !no7InvProp.sphereHeld && !no10InvProp.sphereHeld && !no13InvProp.sphereHeld && !no16InvProp.sphereHeld && !no19InvProp.sphereHeld && !no25InvProp.sphereHeld && !no28InvProp.sphereHeld && !no31InvProp.sphereHeld && !no34InvProp.sphereHeld) //|| !no2 || !no3 || !no4 || !no5 || !no6)
+                {
+                    sphereNo22.gameObject.SetActive(false);
+                    no22InvProp.sphereButton.gameObject.SetActive(true);
+                    no8 = false;
+                    slotFilled = false;
+                    slotNo1ButtonText.gameObject.SetActive(false);
+                    slotNo2ButtonText.gameObject.SetActive(false);
+                    slotNo3ButtonText.gameObject.SetActive(false);
+                    slotNo4ButtonText.gameObject.SetActive(false);
+                    slotNo5ButtonText.gameObject.SetActive(false);
+                    slotNo6ButtonText.gameObject.SetActive(false);
+                    slotNo7ButtonText.gameObject.SetActive(false);
+                    slotNo8ButtonText.gameObject.SetActive(false);
+                    slotNo9ButtonText.gameObject.SetActive(false);
+                    slotNo10ButtonText.gameObject.SetActive(false);
+                    slotNo11ButtonText.gameObject.SetActive(false);
+                    slotNo12ButtonText.gameObject.SetActive(false);
+                    correctPlacement = false;
+                    inCorrectPlacement = false;
+                }
+
+            }
+
+            else if (slotFilled && no9)
+            {
+                if (!no1InvProp.sphereHeld && !no4InvProp.sphereHeld && !no7InvProp.sphereHeld && !no10InvProp.sphereHeld && !no13InvProp.sphereHeld && !no16InvProp.sphereHeld && !no19InvProp.sphereHeld && !no22InvProp.sphereHeld && !no28InvProp.sphereHeld && !no31InvProp.sphereHeld && !no34InvProp.sphereHeld) //|| !no2 || !no3 || !no4 || !no5 || !no6)
+                {
+                    sphereNo25.gameObject.SetActive(false);
+                    no25InvProp.sphereButton.gameObject.SetActive(true);
+                    no9 = false;
+                    slotFilled = false;
+                    slotNo1ButtonText.gameObject.SetActive(false);
+                    slotNo2ButtonText.gameObject.SetActive(false);
+                    slotNo3ButtonText.gameObject.SetActive(false);
+                    slotNo4ButtonText.gameObject.SetActive(false);
+                    slotNo5ButtonText.gameObject.SetActive(false);
+                    slotNo6ButtonText.gameObject.SetActive(false);
+                    slotNo7ButtonText.gameObject.SetActive(false);
+                    slotNo8ButtonText.gameObject.SetActive(false);
+                    slotNo9ButtonText.gameObject.SetActive(false);
+                    slotNo10ButtonText.gameObject.SetActive(false);
+                    slotNo11ButtonText.gameObject.SetActive(false);
+                    slotNo12ButtonText.gameObject.SetActive(false);
+                    correctPlacement = false;
+                    inCorrectPlacement = false;
+                }
+
+            }
+
+            else if (slotFilled && no10)
+            {
+                if (!no1InvProp.sphereHeld && !no4InvProp.sphereHeld && !no7InvProp.sphereHeld && !no10InvProp.sphereHeld && !no13InvProp.sphereHeld && !no16InvProp.sphereHeld && !no19InvProp.sphereHeld && !no22InvProp.sphereHeld && !no25InvProp.sphereHeld && !no31InvProp.sphereHeld && !no34InvProp.sphereHeld) //|| !no2 || !no3 || !no4 || !no5 || !no6)
+                {
+                    sphereNo28.gameObject.SetActive(false);
+                    no28InvProp.sphereButton.gameObject.SetActive(true);
+                    no10 = false;
+                    slotFilled = false;
+                    slotNo1ButtonText.gameObject.SetActive(false);
+                    slotNo2ButtonText.gameObject.SetActive(false);
+                    slotNo3ButtonText.gameObject.SetActive(false);
+                    slotNo4ButtonText.gameObject.SetActive(false);
+                    slotNo5ButtonText.gameObject.SetActive(false);
+                    slotNo6ButtonText.gameObject.SetActive(false);
+                    slotNo7ButtonText.gameObject.SetActive(false);
+                    slotNo8ButtonText.gameObject.SetActive(false);
+                    slotNo9ButtonText.gameObject.SetActive(false);
+                    slotNo10ButtonText.gameObject.SetActive(false);
+                    slotNo11ButtonText.gameObject.SetActive(false);
+                    slotNo12ButtonText.gameObject.SetActive(false);
+                    correctPlacement = false;
+                    inCorrectPlacement = false;
+                }
+
+            }
+
+            else if (slotFilled && no11)
+            {
+                if (!no1InvProp.sphereHeld && !no4InvProp.sphereHeld && !no7InvProp.sphereHeld && !no10InvProp.sphereHeld && !no13InvProp.sphereHeld && !no16InvProp.sphereHeld && !no19InvProp.sphereHeld && !no22InvProp.sphereHeld && !no25InvProp.sphereHeld && !no28InvProp.sphereHeld && !no34InvProp.sphereHeld) //|| !no2 || !no3 || !no4 || !no5 || !no6)
+                {
+                    sphereNo31.gameObject.SetActive(false);
+                    no31InvProp.sphereButton.gameObject.SetActive(true);
+                    no11 = false;
+                    slotFilled = false;
+                    slotNo1ButtonText.gameObject.SetActive(false);
+                    slotNo2ButtonText.gameObject.SetActive(false);
+                    slotNo3ButtonText.gameObject.SetActive(false);
+                    slotNo4ButtonText.gameObject.SetActive(false);
+                    slotNo5ButtonText.gameObject.SetActive(false);
+                    slotNo6ButtonText.gameObject.SetActive(false);
+                    slotNo7ButtonText.gameObject.SetActive(false);
+                    slotNo8ButtonText.gameObject.SetActive(false);
+                    slotNo9ButtonText.gameObject.SetActive(false);
+                    slotNo10ButtonText.gameObject.SetActive(false);
+                    slotNo11ButtonText.gameObject.SetActive(false);
+                    slotNo12ButtonText.gameObject.SetActive(false);
+                    correctPlacement = false;
+                    inCorrectPlacement = false;
+                }
+
+            }
+
+            else if (slotFilled && no12)
+            {
+                if (!no1InvProp.sphereHeld && !no4InvProp.sphereHeld && !no7InvProp.sphereHeld && !no10InvProp.sphereHeld && !no13InvProp.sphereHeld && !no16InvProp.sphereHeld && !no19InvProp.sphereHeld && !no22InvProp.sphereHeld && !no25InvProp.sphereHeld && !no28InvProp.sphereHeld && !no31InvProp.sphereHeld) //|| !no2 || !no3 || !no4 || !no5 || !no6)
+                {
+                    sphereNo34.gameObject.SetActive(false);
+                    no34InvProp.sphereButton.gameObject.SetActive(true);
+                    no12 = false;
+                    slotFilled = false;
+                    slotNo1ButtonText.gameObject.SetActive(false);
+                    slotNo2ButtonText.gameObject.SetActive(false);
+                    slotNo3ButtonText.gameObject.SetActive(false);
+                    slotNo4ButtonText.gameObject.SetActive(false);
+                    slotNo5ButtonText.gameObject.SetActive(false);
+                    slotNo6ButtonText.gameObject.SetActive(false);
+                    slotNo7ButtonText.gameObject.SetActive(false);
+                    slotNo8ButtonText.gameObject.SetActive(false);
+                    slotNo9ButtonText.gameObject.SetActive(false);
+                    slotNo10ButtonText.gameObject.SetActive(false);
+                    slotNo11ButtonText.gameObject.SetActive(false);
+                    slotNo12ButtonText.gameObject.SetActive(false);
+                    correctPlacement = false;
+                    inCorrectPlacement = false;
+                }
 
             }
 
@@ -128,6 +401,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     inCorrectPlacement = true;
                     slotFilled = true;
                     incorrectSFX.Play();
+                    no1 = true;
                 }
 
                 if (no4InvProp.sphereHeld)
@@ -141,6 +415,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     inCorrectPlacement = false;
                     slotFilled = true;
                     correctSFX.Play();
+                    no2 = true;
                 }
 
                 if (no7InvProp.sphereHeld)
@@ -154,6 +429,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     inCorrectPlacement = true;
                     slotFilled = true;
                     incorrectSFX.Play();
+                    no3 = true;
                 }
 
                 if (no10InvProp.sphereHeld)
@@ -167,6 +443,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     inCorrectPlacement = true;
                     slotFilled = true;
                     incorrectSFX.Play();
+                    no4 = true;
                 }
 
                 if (no13InvProp.sphereHeld)
@@ -180,6 +457,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     inCorrectPlacement = true;
                     slotFilled = true;
                     incorrectSFX.Play();
+                    no5 = true;
                 }
 
                 if (no16InvProp.sphereHeld)
@@ -193,6 +471,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     inCorrectPlacement = true;
                     slotFilled = true;
                     incorrectSFX.Play();
+                    no6 = true;
                 }
 
 
@@ -207,6 +486,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     inCorrectPlacement = true;
                     slotFilled = true;
                     incorrectSFX.Play();
+                    no7 = true;
                 }
 
                 if (no22InvProp.sphereHeld)
@@ -220,6 +500,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     inCorrectPlacement = true;
                     slotFilled = true;
                     incorrectSFX.Play();
+                    no8 = true;
                 }
 
                 if (no25InvProp.sphereHeld)
@@ -233,6 +514,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     inCorrectPlacement = true;
                     slotFilled = true;
                     incorrectSFX.Play();
+                    no9 = true;
                 }
 
                 if (no28InvProp.sphereHeld)
@@ -246,6 +528,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     inCorrectPlacement = true;
                     slotFilled = true;
                     incorrectSFX.Play();
+                    no10 = true;
                 }
 
                 if (no31InvProp.sphereHeld)
@@ -259,6 +542,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     inCorrectPlacement = true;
                     slotFilled = true;
                     incorrectSFX.Play();
+                    no11 = true;
                 }
 
                 if (no34InvProp.sphereHeld)
@@ -272,6 +556,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     inCorrectPlacement = true;
                     slotFilled = true;
                     incorrectSFX.Play();
+                    no12 = true;
                 }
             }
  

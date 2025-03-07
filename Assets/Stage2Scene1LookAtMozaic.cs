@@ -23,8 +23,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public Stage2Scene1ShapePlacementSlot3 slot3;
         public Stage2Scene1ShapePlacement5 slot5;
         public Stage2Scene1ShapePlacement6 slot6;
-        public Stage2Scene1ShapePlacement5 slot7;
-        public Stage2Scene1ShapePlacement6 slot8;
+        public Stage2Scene1ShapePlacement7 slot7;
+        public Stage2Scene1ShapePlacement8 slot8;
 
         public bool hasViewedPedastal;
 

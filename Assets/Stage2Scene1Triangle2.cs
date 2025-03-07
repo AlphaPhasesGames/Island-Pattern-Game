@@ -21,11 +21,11 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public bool checkBool1;
         public bool checkBool2;
         public bool sphereHeld;
-        public Stage2Scene1CircleInventoryItem circle1Prop;
-        public Stage2Scene1Circle2InventoryItem circle2Prop;
+     //   public Stage2Scene1CircleInventoryItem circle1Prop;
+     //   public Stage2Scene1Circle2InventoryItem circle2Prop;
         public Stage2Scene1Triangle1InventoryItem tri1Prop;
-        public Stage2Scene1SquareInventoryItem squareProp;
-        public Stage2Scene1Triangle3InventoryItem tri3Prop;
+      //  public Stage2Scene1SquareInventoryItem squareProp;
+      //  public Stage2Scene1Triangle3InventoryItem tri3Prop;
         // Start is called before the first frame update
         private void Start()
         {
@@ -89,11 +89,11 @@ namespace Pattern.Quest.Alpha.Phases.Games
             playerHasBadgeObject = true;
             sphereHeld = true;
             Debug.Log("Inv Item Picked");
-            squareProp.DeSelectSphereItem();
+          //  squareProp.DeSelectSphereItem();
             tri1Prop.DeSelectSphereItem();
-            circle1Prop.DeSelectSphereItem();
-            tri3Prop.DeSelectSphereItem();
-            circle2Prop.DeSelectSphereItem();
+        // //   circle1Prop.DeSelectSphereItem();
+        //    tri3Prop.DeSelectSphereItem();
+        //    circle2Prop.DeSelectSphereItem();
         }
 
         public void DeSelectSphereItemPed() // gold fucntion for mouse click

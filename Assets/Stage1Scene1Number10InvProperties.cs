@@ -124,7 +124,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             }
         }
 
-        public void DeSelectSphereItemProg() // gold fucntion for mouse click
+        public void DeSelectSphereItemPed() // gold fucntion for mouse click
         {
 
                 //    robCont.StopRobotMoving(); // stop the robot moving when in use

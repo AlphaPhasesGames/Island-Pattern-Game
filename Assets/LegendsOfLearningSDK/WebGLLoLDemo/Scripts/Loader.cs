@@ -53,7 +53,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
             // Mock the platform-to-game messages when in the Unity editor.
 #if UNITY_EDITOR
-            LoadMockData();
+           LoadMockData();
 #endif
 
             // Then, tell the platform the game is ready.
@@ -102,7 +102,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             // Either GameState.Paused or GameState.Resumed
             Debug.Log("HandleGameStateChange");
         }
-        
+       
 #if UNITY_EDITOR
         private void LoadMockData()
         {
@@ -146,6 +146,6 @@ namespace Pattern.Quest.Alpha.Phases.Games
             }
         }
 #endif
-
+ 
     }
 }
