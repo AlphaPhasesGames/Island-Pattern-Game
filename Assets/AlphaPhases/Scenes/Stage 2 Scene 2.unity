@@ -754,6 +754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5695f544288dcf746a12636aca415107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  progMan: {fileID: 59353062}
   main: {fileID: 0}
   robCont: {fileID: 8745647495598979476}
   startScript: {fileID: 59353058}

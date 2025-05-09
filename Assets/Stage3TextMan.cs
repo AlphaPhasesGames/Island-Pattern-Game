@@ -6,7 +6,8 @@ using LoLSDK;
 namespace Pattern.Quest.Alpha.Phases.Games
 {
     public class Stage3TextMan : MonoBehaviour
-    {
+    { 
+        public Stage3ProgressionManager progMan;
         public PatternQuestMain main;
         public RobotController robCont;
         public bool hasScrolled;
@@ -46,7 +47,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public bool panalOpen;
         public bool runOnce;
         public bool runOnce2;
-
+        public bool runOnce3;
         public bool submitOnce;
         public bool submitOnce2;
         public GameObject forwardParent;
@@ -192,6 +193,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                 case 4:
                     main.s3DockFound = true;
                     main.SaveDock();
+                
                     textPanal.gameObject.SetActive(true);
                     backwardsButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(true);
@@ -294,7 +296,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     main.SaveS3CollectablesPath2();
                     main.s3TaskNo = 4;
                     main.SaveTask();
-                    StartCoroutine(showDockBriefly());
+                    StartCoroutine(ShowDockBriefly());
                     StartCoroutine(MoveToBlankInvislbePanalUnit17());
                     SpeakText("stage3Scene1TextBox20"); break;
                 case 20:
@@ -308,8 +310,12 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     forwardParent.gameObject.SetActive(false);
                     backwardsButton.gameObject.SetActive(false);
                     textPanal.gameObject.SetActive(true);
-                    StartCoroutine(MoveToBlankInvislbePanalUnit17());
-                    SpeakText("stage3Scene1TextBox22");
+                    StartCoroutine(MoveToBlankInvislbePanalPedestal());
+                    if (!runOnce3)
+                    {
+                        SpeakText("stage3Scene1TextBox22");
+                        runOnce3 = true;
+                    }
                     break;
                 case 22:
                     lookPed.ClosePedastalVeiwEnd();
@@ -498,7 +504,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public IEnumerator MoveToBlankInvislbePanalPlatform()
         {
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(5);
             // robCont.isCharActive = true;
             textPanal.gameObject.SetActive(false);
             arrayPos = 12;
@@ -524,6 +530,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             yield return new WaitForSeconds(4);
             pedastelCam.enabled = false;
             playerCam.enabled = true;
+            robCont.enabled = true;
             textPanal.gameObject.SetActive(false);
             Debug.Log("This start coRoutine Runs");
 
@@ -553,6 +560,20 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         }
 
+        public IEnumerator MoveToBlankInvislbePanalPedestal()
+        {
+            yield return new WaitForSeconds(3);
+            robCont.isCharActive = true;
+            textPanal.gameObject.SetActive(false);
+            arrayPos = 26;
+            ResetPositionFlags();
+            progMan.runTwice = false;
+            Debug.Log("This start coRoutine Runs");
+
+        }
+
+
+
         public IEnumerator MoveCameraToDockStart()
         {
             yield return new WaitForSeconds(2.5f);
@@ -576,7 +597,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
             LOLSDK.Instance.SpeakText(textKey);
         }
 
-        public IEnumerator showDockBriefly()
+        public IEnumerator ShowDockBriefly()
         {
             dockCam.enabled = true;
             playerCam.enabled = false;

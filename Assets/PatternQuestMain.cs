@@ -101,7 +101,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
 #endif
                 Helper.StateButtonInitialize<PQTMISaveData>(newGameButton, continueButton, OnLoad); // initialise LOLSDK helper function and attached both new game and continue buttons to it
             }
-
+/*
        private void Update()
         {
            if (Input.GetKeyDown(KeyCode.H))
@@ -109,7 +109,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                SceneManager.LoadScene("Stage 2 Scene 1");
             }
        }
-
+*/
         public void Save()
             {
                 LOLSDK.Instance.SaveState(pQTMISaveData1); // save data to cargoSaveData

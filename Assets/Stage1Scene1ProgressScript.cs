@@ -11,6 +11,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public GameObject exitTrigger;
         public bool runOnce;
         public bool runTwice;
+        public bool allowPanalToCLose;
         private void Update()
         {
             if (!runOnce)
@@ -28,13 +29,22 @@ namespace Pattern.Quest.Alpha.Phases.Games
             {
                 if (slot1.inCorrectPlacement || slot2.inCorrectPlacement || slot3.inCorrectPlacement)
                 {
+                
                     textMan.positionChanged = true; // Directly set positionChanged
                     textMan.arrayPos = 23;
                     //exitTrigger.gameObject.SetActive(true);
+                    //  textMan.textPanal.gameObject.SetActive(true);
+                  
                     runTwice = true;
+                  //  ReppeatFail();
                 }
+                
             }
+            
 
+         
         }
+
+
     }
 }

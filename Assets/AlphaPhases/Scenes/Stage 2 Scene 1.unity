@@ -3750,6 +3750,7 @@ MonoBehaviour:
   forceStrength: 10
   sphere1: {fileID: 316439157339934640}
   crate: {fileID: 3703086236123412672}
+  runOnce: 0
 --- !u!1001 &513867115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24563,6 +24564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb6bb2f32ddf73e429726f8cdeef45c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  progMan: {fileID: 6295227904064922053}
   main: {fileID: 0}
   robCont: {fileID: 1980827522369844585}
   startScript: {fileID: 6295227904064922043}

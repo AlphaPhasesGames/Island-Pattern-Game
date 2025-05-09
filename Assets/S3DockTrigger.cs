@@ -7,6 +7,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
     public class S3DockTrigger : MonoBehaviour
     {
         public Stage3TextMan textMan;
+        public RobotController robCont;
         public Camera dockCam;
         public Camera playerCam;
         public bool lookedAtOnce;
@@ -27,6 +28,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                   
                     if (!main.s3DockFound)
                     {
+                        robCont.enabled = false;
                         dockCam.enabled = true;
                         playerCam.enabled = false;
                         textMan.positionChanged = true;

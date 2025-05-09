@@ -7,6 +7,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
 {
     public class Stage1Scene2TextMan : MonoBehaviour
     {
+        public Stage1Scene2ProgressScript progMan;
         public PatternQuestMain main;
         public RobotController robCont;
         public Stage1Scene2StartScript startS;
@@ -37,7 +38,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public bool panalOpen;
         public bool runOnce;
         public bool runOnce2;
-
+        public bool runOnce3;
         public bool submitOnce;
         public bool submitOnce2;
         public GameObject forwardParent;
@@ -222,10 +223,15 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     forwardParent.gameObject.SetActive(false);
                     // forwardButton.gameObject.SetActive(true);
                     textPanal.gameObject.SetActive(true);
-                   // ResetPositionFlags();
-    
+                    // ResetPositionFlags();
+
                     StartCoroutine(MoveToBlankInvislbePanalPlatform());
-                    SpeakText("stage1Scene2TextBox11"); break;
+                    if (!runOnce3)
+                    {
+                        SpeakText("stage1Scene2TextBox11");
+                        runOnce3 = true;
+                    }
+                    break;
                 case 11:
                    
 
@@ -330,10 +336,12 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public IEnumerator MoveToBlankInvislbePanalPlatform()
         {
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(5);
            // robCont.isCharActive = true;
             textPanal.gameObject.SetActive(false);
             arrayPos = 13;
+            ResetPositionFlags();
+            progMan.runTwice = false;
             Debug.Log("This start coRoutine Runs");
 
         }

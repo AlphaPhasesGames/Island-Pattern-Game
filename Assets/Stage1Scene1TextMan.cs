@@ -11,11 +11,16 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public PatternQuestMain main;
         public RobotController robCont;
         public Stage1Scene1LookAtPedastal pedLook;
+        public Stage1Scene1ProgressScript progScript;
         public bool hasScrolled;
         public GameObject currentTextSection;
         public int arrayPos;
         public int maxLengthArray;
         public int minLengthArray = 1;
+
+        public Stage1Scene1SpherePlacementSlot1 slot1Script;
+        public Stage1Scene1SpherePlacementSlot2 slot2Script;
+        public Stage1Scene1SpherePlacementSlot3 slot3Script;
 
         public bool positionChanged; //= true;
 
@@ -42,7 +47,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
         public bool panalOpen;
         public bool runOnce;
         public bool runOnce2;
-
+        public bool runOnce3;
+        public bool runOnce4;
         public bool submitOnce;
         public bool submitOnce2;
         public GameObject forwardParent;
@@ -215,7 +221,11 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     backwardsButton.gameObject.SetActive(true);
                     SpeakText("stage1Scene1TextBox12"); break;
                 case 12:
-                        SpeakText("stage1Scene1TextBox13"); break;
+                   
+                        SpeakText("stage1Scene1TextBox13");
+                        runOnce4 = true;
+                   
+                    break;
                 case 13:
                         SpeakText("stage1Scene1TextBox14"); break;
                 case 14:
@@ -273,12 +283,19 @@ namespace Pattern.Quest.Alpha.Phases.Games
                     SpeakText("stage1Scene1TextBox23");
                     break;
                 case 23:
-                    SpeakText("stage1Scene1TextBox24");
+                    if (!runOnce3)
+                    {
+                        SpeakText("stage1Scene1TextBox24");
+                        runOnce3 = true;
+                    }
                     textPanal.gameObject.SetActive(true);
                     forwardButton.gameObject.SetActive(false);
                     forwardParent.gameObject.SetActive(false);
+                   
                     StartCoroutine(MoveToBlankInvislbePanalPlatform());
-            
+                    
+                   // 
+
                     break;
                 case 24:
                     robCont.isCharActive = false;
@@ -389,11 +406,19 @@ namespace Pattern.Quest.Alpha.Phases.Games
 
         public IEnumerator MoveToBlankInvislbePanalPlatform()
         {
-            yield return new WaitForSeconds(3);
-            // robCont.isCharActive = true;
-            textPanal.gameObject.SetActive(false);
-            arrayPos = 12;
-            Debug.Log("This start coRoutine Runs");
+           
+                yield return new WaitForSeconds(5);
+                // robCont.isCharActive = true;
+
+                textPanal.gameObject.SetActive(false);
+                arrayPos = 26;
+                ResetPositionFlags();
+                progScript.runTwice = false;
+
+                Debug.Log("This start coRoutine Runs");
+            
+
+          
 
         }
         public void IntroTTSSpeak(int textIndex)

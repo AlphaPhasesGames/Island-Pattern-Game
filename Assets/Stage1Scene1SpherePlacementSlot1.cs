@@ -4,6 +4,8 @@ namespace Pattern.Quest.Alpha.Phases.Games
     public class Stage1Scene1SpherePlacementSlot1 : MonoBehaviour
     {
 
+       // public Stage1Scene1TextMan textMan;
+
         public Stage1Scene1Number4InvProperties no1Prop;
         public Stage1Scene1Number6InvProperties no6Prop;
         public Stage1Scene1Number7InvProperties no7Prop;
@@ -176,6 +178,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
                         incorrectSFX.Play();
                         slotFilled = true;
                         no1 = true;
+                     
                         // slotBool = true;
                     }
 

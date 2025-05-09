@@ -264,6 +264,7 @@ namespace Pattern.Quest.Alpha.Phases.Games
         private void ClosePedastalVeiw()
         {
             robCont.isCharActive = true;
+            robCont.enabled = true;
             robotToHide.gameObject.SetActive(true);
             textMan.positionChanged = true;
             playerCamToDisable.enabled = true;
